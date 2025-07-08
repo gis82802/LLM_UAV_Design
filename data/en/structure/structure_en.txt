@@ -1,0 +1,14 @@
+
+Structure and Airframe Module - Comprehensive Structural Parameters by Scenario
+Based on：無人機智慧化輔助設計平台原型建構計畫
+
+Scenario一 熱帶颱風後應急通訊
+- Wingspan：≥ 3.5 m
+- Airframe Length × Width：≤ 1.5 m × 1.5 m
+- Dry Weight：≤ 5.5 kg
+- Structural Material Density：≤ 2.0 g/cm³（e.g.：碳纖維複材、Kevlar、防鹽霧陽極氧化鋁）
+- Flexural Modulus：≥ 130 GPa
+- Allowable Stress：≥ 600 MPa
+- Payload Bay Dimensions：≥ 250 × 200 × 100 mm
+- Max Payload Weight：≥ 5.5 kg
+- CG Offset Tolerance：±30 mm
