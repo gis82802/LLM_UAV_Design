@@ -1,14 +1,96 @@
+Scenario 1: Long-Endurance Aerial Relay Path
 
-Structure and Airframe Module - Comprehensive Structural Parameters by Scenario
-Based on：無人機智慧化輔助設計平台原型建構計畫
+Emergency Communications Post-Tropical Typhoon
+Wingspan: ≥ 3.5 m
+Airframe Dimensions: ≤ 1.5 m × 1.5 m
+Empty Weight: ≤ 5.5 kg
+Structural Material Density: ≤ 2.0 g/cm³ (e.g., carbon fiber composite, Kevlar, salt-fog resistant anodized aluminum)
+Flexural Modulus: ≥ 130 GPa
+Allowable Stress: ≥ 600 MPa
+Payload Area Dimensions: ≥ 250 × 200 × 100 mm
+Maximum Payload Weight: ≥ 5.5 kg
+Center of Gravity Tolerance: ±30 mm
+Lifeline for Isolated Alpine Villages in Winter
+Wingspan: 3.0–3.5 m
+Airframe Dimensions: ≤ 1.5 m × 1.2 m
+Empty Weight: ≤ 5.0 kg
+Structural Material Density: ≤ 1.8 g/cm³ (e.g., high-toughness plastic, cold-weather composite, aviation foam-lined structure)
+Flexural Modulus: ≥ 120 GPa
+Allowable Stress: ≥ 550 MPa
+Payload Area Dimensions: ≥ 200 × 180 × 100 mm
+Maximum Payload Weight: ≥ 4.0 kg
+Center of Gravity Tolerance: ±25 mm
+Nighttime Maritime Tanker Accident Monitoring
+Wingspan: 3.5–4.0 m
+Airframe Dimensions: ≤ 1.6 m × 1.4 m
+Empty Weight: ≤ 6.0 kg
+Structural Material Density: ≤ 2.0 g/cm³ (e.g., anti-corrosion skin, FRP composite panels, UV-stabilized coating)
+Flexural Modulus: ≥ 130 GPa
+Allowable Stress: ≥ 600 MPa
+Payload Area Dimensions: ≥ 250 × 200 × 120 mm
+Maximum Payload Weight: ≥ 4.5 kg
+Center of Gravity Tolerance: ±30 mm
+Scenario 2: Complex Terrain VTOL Monitoring Path
 
-Scenario一 熱帶颱風後應急通訊
-- Wingspan：≥ 3.5 m
-- Airframe Length × Width：≤ 1.5 m × 1.5 m
-- Dry Weight：≤ 5.5 kg
-- Structural Material Density：≤ 2.0 g/cm³（e.g.：碳纖維複材、Kevlar、防鹽霧陽極氧化鋁）
-- Flexural Modulus：≥ 130 GPa
-- Allowable Stress：≥ 600 MPa
-- Payload Bay Dimensions：≥ 250 × 200 × 100 mm
-- Max Payload Weight：≥ 5.5 kg
-- CG Offset Tolerance：±30 mm
+Early Detection of Mountain Forest Fires
+Wingspan: ≤ 2.0 m
+Airframe Dimensions: ≤ 1.2 m × 1.0 m
+Empty Weight: ≤ 4.5 kg
+Structural Material Density: ≤ 1.8 g/cm³ (e.g., lightweight carbon fiber, EPO/EPP foam plastic, PEEK)
+Flexural Modulus: ≥ 110 GPa
+Allowable Stress: ≥ 500 MPa
+Payload Area Dimensions: ≥ 180 × 150 × 80 mm
+Maximum Payload Weight: ≥ 2.5 kg
+Center of Gravity Tolerance: ±20 mm
+Urban High-Rise Structural Inspection
+Wingspan: 1.5–1.8 m
+Airframe Dimensions: ≤ 1.0 m × 0.8 m
+Empty Weight: ≤ 4.0 kg
+Structural Material Density: ≤ 1.7 g/cm³ (e.g., engineering-grade ABS, aluminum alloy truss composite)
+Flexural Modulus: ≥ 100 GPa
+Allowable Stress: ≥ 450 MPa
+Payload Area Dimensions: ≥ 160 × 120 × 80 mm
+Maximum Payload Weight: ≥ 2.0 kg
+Center of Gravity Tolerance: ±15 mm
+Detailed Inspection of Canyon Transmission Towers
+Wingspan: ≤ 2.2 m
+Airframe Dimensions: ≤ 1.2 m × 1.0 m
+Empty Weight: ≤ 5.0 kg
+Structural Material Density: ≤ 1.9 g/cm³ (e.g., aerospace aluminum alloy frame + carbon fiber skin, foam support)
+Flexural Modulus: ≥ 120 GPa
+Allowable Stress: ≥ 550 MPa
+Payload Area Dimensions: ≥ 200 × 160 × 80 mm
+Maximum Payload Weight: ≥ 3.0 kg
+Center of Gravity Tolerance: ±20 mm
+Scenario 3: Port Area Patrol and Reconnaissance Path
+
+Nighttime Identification of Smuggling Vessels
+Wingspan: 2.8–3.2 m
+Airframe Dimensions: ≤ 1.5 m × 1.2 m
+Empty Weight: ≤ 5.5 kg
+Structural Material Density: ≤ 2.0 g/cm³ (e.g., anodized aluminum alloy, coated carbon fiber, fog-resistant UV-treated panels)
+Flexural Modulus: ≥ 120 GPa
+Allowable Stress: ≥ 550 MPa
+Payload Area Dimensions: ≥ 240 × 200 × 100 mm
+Maximum Payload Weight: ≥ 3.5 kg
+Center of Gravity Tolerance: ±25 mm
+Hazardous Chemical Leak Detection
+Wingspan: 2.5–3.0 m
+Airframe Dimensions: ≤ 1.4 m × 1.0 m
+Empty Weight: ≤ 5.2 kg
+Structural Material Density: ≤ 2.0 g/cm³ (e.g., chemical-resistant composite panels, acid/alkali-resistant plastic)
+Flexural Modulus: ≥ 110 GPa
+Allowable Stress: ≥ 500 MPa
+Payload Area Dimensions: ≥ 230 × 180 × 90 mm
+Maximum Payload Weight: ≥ 3.0 kg
+Center of Gravity Tolerance: ±25 mm
+Automated Berth Scheduling Assistance
+Wingspan: 2.5 m
+Airframe Dimensions: ≤ 1.2 m × 1.0 m
+Empty Weight: ≤ 4.5 kg
+Structural Material Density: ≤ 1.9 g/cm³ (e.g., EPO structural components, honeycomb aluminum panels + plastic skin)
+Flexural Modulus: ≥ 100 GPa
+Allowable Stress: ≥ 450 MPa
+Payload Area Dimensions: ≥ 200 × 150 × 80 mm
+Maximum Payload Weight: ≥ 2.5 kg
+Center of Gravity Tolerance: ±20 mm
