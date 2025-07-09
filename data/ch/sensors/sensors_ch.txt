@@ -1,0 +1,86 @@
+飛控電腦(Aircraft flight control system)
+1. GNSS模組
+1.1 ZED-F9P-01B
+製造商: u-blox
+產品類型: GNSS/GPS模組
+頻率: 1.2276GHz, 1.57542GHz
+擷取靈敏度: -148dBm
+水平定位精度: 0.01m
+電源電壓 - 最小值: 3V
+電源電壓 - 最大值: 3V
+運作供電電流: 68mA
+接口類型: I2C, SPI, UART, USB
+最高工作溫度: +85C
+協議 - GPS、GLONASS: GNSS
+封裝: Reel
+封裝: Cut Tape
+封裝: MouseReel
+品牌: u-blox
+尺寸: 22.35mm x 17.2mm x 2.6mm
+最低工作溫度: -40C
+濕度敏感: Yes
+安裝風格: SMD/SMT
+工作電源電壓: 3V
+產品類型: GPS Modules
+子類別: Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/ZED-F9P-01B?qs=KUoIvG%2F9IlaGeoKVdfwL9Q%3D%3D&srsltid=AfmBOorvAG6ubIJ0wvS_YzRgyU1AQUUay4nnGd8xhstgR0B2jhOKFI9f
+
+2. IMU模組
+2.1 ADIS16470
+製造商: Analog Devices Inc.
+感測器類型: 加速計、陀螺儀
+感測範圍: ±40g、±2000°／秒
+介面: SPI
+電壓 - 電源: 3V ~ 3.6V
+基礎產品編號: ADIS16470
+資料來源: https://www.digikey.tw/zh/products/detail/analog-devices-inc/ADIS16470-PCBZ/7932981
+2.2 ADIS16495
+製造商: Analog Devices Inc.
+系列: iMEMS®
+零件狀態: 有源
+感測器類型: 加速計、迴轉儀、6 軸
+輸出類型: SPI
+工作溫度: -40°C ~ 105°C
+封裝／外殼: 模組
+供應商元件封裝: 模組
+安裝類型: 底盤安裝式
+基礎產品編號: ADIS16495
+資料來源: https://www.digikey.tw/zh/products/detail/analog-devices-inc/ADIS16495-2BMLZ/7931993
+2.3 ADIS16495-2BMLZ
+製造商: Analog Devices Inc.
+系列: iMEMS®
+感測器類型: 加速計、迴轉儀、6 軸
+輸出類型: SPI
+工作溫度: -40°C ~ 105°C
+封裝／外殼: 模組
+供應商元件封裝: 模組
+安裝類型: 底盤安裝式
+基礎產品編號: ADIS16495
+資料來源: https://www.digikey.tw/zh/products/detail/analog-devices-inc/ADIS16495-2BMLZ/7931993
+2.4 MPU-6000
+製造商: TDK
+產品類型: IMU -慣性測量組件
+安裝風格: SMD/SMT
+封裝/外殼: QFN-24
+傳感器類型: 9-axis
+接口類型: I2C, SPI
+輸出類型: Digital
+加速: 10000g	
+靈敏度: 16384 LSB/g
+最低工作溫度: -40C
+最高工作溫度: +105C
+電源電壓 - 最小值: 2.375V
+電源電壓 - 最大值: 3.46V
+封裝: Reel
+封裝: Cut Tape
+封裝: MouseReel
+品牌: TDK InvenSense
+濕度敏感: Yes
+產品類型: IMUs - Inertial Measurement Units
+感應軸: X, Y, Z
+子類別: Sensors
+公司名稱: SmartMotion
+每件重量: 3.018g
+資料來源: https://www.mouser.tw/ProductDetail/TDK-InvenSense/MPU-6000?qs=u4fy%2FsgLU9NMLimeLRzXLA%3D%3D&srsltid=AfmBOooF0e8Jd-lQYZw2i0ocZxIcXYa4GRFjPcPnyc2zC-1NhcNxXfKn
+
+3. 資料鏈模組
