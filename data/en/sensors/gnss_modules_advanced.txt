@@ -1,0 +1,1126 @@
+<Module>
+  Model: ZED-F9P-05B
+  Manufacturer: u-blox
+  Receiver Type: Multi-band GNSS high precision receiver
+  Tags: [High Precision, RTK, Multi-band, Multi-constellation, Automotive]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, Galileo, BeiDou, SBAS, QZSS
+    - Number of Concurrent GNSS: 4
+    - GNSS Bands: GPS/QZSS (L1C/A, L2C), GLONASS (L1OF, L2OF), Galileo (E1-B/C, E5b), BeiDou (B1I, B2I)
+    - Cold Start Time:
+      - 25 s (GPS+GLO+GAL+BDS)
+      - 25 s (GPS+GLO+GAL)
+      - 30 s (GPS+GAL)
+      - 25 s (GPS+GLO)
+      - 30 s (GPS+BDS)
+      - 30 s (GPS)
+    - Hot Start Time: 2 s
+    - Supported A-GNSS Services: u-blox AssistNow Online
+    - Supported Protocols: UBX, NMEA (4.11, 4.10, 4.0, 2.3, 2.1), RTCM 3.4, SPARTN 2.0.1
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): 30 ns
+    - Timing Pulse Accuracy (99%): 60 ns
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.5 m (CEP)
+    - Horizontal (RTK): 0.01 m + 1 ppm
+    - Vertical (RTK): 0.01 m + 1 ppm
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.3 deg
+    - RTK Convergence Time:
+      - < 10 s (for multi-constellation modes)
+      - < 30 s (for GPS only)
+
+  Update Rates:
+    - RTK Max Navigation Update Rate:
+      - 8 Hz (GPS+GLO+GAL+BDS)
+      - 5 Hz (GPS+GLO+GAL)
+      - 15 Hz (GPS+GAL)
+      - 15 Hz (GPS+GLO)
+      - 8 Hz (GPS+BDS)
+      - 20 Hz (GPS)
+    - PVT Update Rate:
+      - 7 Hz (GPS+GLO+GAL+BDS)
+      - 8 Hz (GPS+GLO+GAL)
+      - 14 Hz (GPS+GAL)
+      - 20 Hz (GPS+GLO)
+      - 12 Hz (GPS+BDS)
+      - 25 Hz (GPS)
+    - Raw Data Update Rate:
+      - 10 Hz (GPS+GLO+GAL+BDS)
+      - 10 Hz (GPS+GLO+GAL)
+      - 25 Hz (GPS+GAL)
+      - 25 Hz (GPS+GLO)
+      - 20 Hz (GPS+BDS)
+      - 25 Hz (GPS)
+    - Moving Base RTK Max Navigation Update Rate:
+      - 5 Hz (GPS+GLO+GAL+BDS, GPS+GLO+GAL, GPS+GAL, GPS+GLO, GPS)
+      - 8 Hz (GPS+BDS)
+    - Moving Base RTK Heading Accuracy: 0.4 deg (with 1m baseline) ; accuracy varies with baseline length
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -160 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -157 dBm
+
+  Interfaces:
+    - UART: 2 (Baud Rate: 9600 bit/s to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+    - USB: USB 2.0 Full Speed (12 Mbit/s)
+    - SPI: Yes (Peripheral mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Clock Frequency: 400 kHz Max)
+
+  Additional Features:
+    - Active antenna / LNA control: Yes
+    - Active antenna / LNA supply: Yes
+    - Additional SAW: Yes
+    - Antenna open circuit detection pin: Yes
+    - Antenna short circuit detect / protect pin: Yes
+    - Base station with survey-in: Yes
+    - Carrier phase output: Yes
+    - Data logging: Yes
+    - Jamming detection: Yes
+    - Programmable flash memory: Yes
+    - RTC crystal: Yes
+    - RTK rover: Yes
+    - Secure boot and updates: Yes
+    - Time pulse output: Yes
+    - Galileo OSNMA: Yes
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+    - AssistNow Service: Yes
+    - PointPerfect Service: Yes
+
+  Electrical Data:
+    - RF Input Power (CW): 10 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typical), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.65 V (Min), 3.6 V (Max)
+    - USB Supply Voltage (V_USB): 3.0 V (Min), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 50 mA (Max)
+
+  Environmental Data:
+    - Operating Temperature: -40°C to +85°C
+    - Storage Temperature: -40°C to +85°C
+    - Dynamic Operating Limits - Altitude: 80,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 17.0 mm x 22.0 mm x 2.40 mm
+    - Weight: 1.8 g
+
+  Certifications:
+    - Qualified according to ISO 16750
+    - Based on AEC-Q100 qualified chips
+    - Manufactured at ISO/TS 16949 certified sites
+    - RoHS compliant
+    - MSL 4
+    - European RED certification (CE)
+    - UKCA conformity
+
+  Antenna Requirements:
+    - An active antenna is mandatory.
+    - Pin (active) for external antenna
+
+  Firmware Version: HPG 1.51
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: To benefit from multi-band signal reception, dedicated hardware preparation must be made during the design-in phase.
+    - Assisted GNSS (A-GNSS): Supports u-blox AssistNow Online service.
+    - Differential GNSS (DGNSS): Supports DGNSS according to RTCM 10403.4 when in RTK mode.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-f9p-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R02
+    - Date: 16-Oct-2024
+</Module>
+
+<Module>
+  Model: ZED-F9T-20B
+  Manufacturer: u-blox
+  Receiver Type: Multi-band GNSS receiver for timing applications
+  Tags: [Multi-band, Timing, High Precision Timing, Multi-constellation]
+
+  GNSS Features:
+    - Supported Constellations: GPS, Galileo, BeiDou, NavIC, SBAS, QZSS
+    - GNSS Bands: GPS/QZSS (L1C/A, L2C, L5), Galileo (E1-B/C, E5b, E5a), BeiDou (B11, B1C, B21, B2a), NavIC (SPS-L5)
+    - Cold Start Time:
+      - 25 s (GPS+BDS+GAL)
+      - 29 s (GPS+GAL)
+      - 28 s (GPS+BDS)
+      - 29 s (GPS)
+    - Hot Start Time: 2 s
+    - Supported A-GNSS Services: u-blox AssistNow Online service
+    - Supported Protocols: UBX (u-blox proprietary), NMEA (4.11, 4.10, 4.0, 2.3, 2.1), RTCM 3.3
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Accuracy (Absolute timing mode): 5 ns (1-sigma)
+    - Timing Pulse Accuracy (Differential timing mode): 2.5 ns (1-sigma)
+    - Timing Pulse Frequency: 0.25 Hz to 25 MHz (configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.5 m (Standalone)
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.3 deg
+
+  Update Rates:
+    - PVT Update Rate:
+      - 10 Hz (GPS+BDS+GAL)
+      - 15 Hz (GPS+GAL)
+      - 12 Hz (GPS+BDS)
+      - 20 Hz (GPS)
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -160 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -157 dBm
+
+  Interfaces:
+    - UART: 2 (Baud Rate: 9600 bit/s to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+    - USB: USB 2.0 FS (full speed, 12 Mbit/s)
+    - SPI: Yes (Peripheral mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Clock Frequency: 0 kHz Min, 400 kHz Max)
+
+  Additional Features:
+    - Additional SAW: Yes
+    - Carrier phase output: Yes
+    - Internal oscillator: Yes
+    - Programmable flash memory: Yes
+    - Time pulse output: Yes
+    - Galileo OSNMA: Yes
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+
+  Electrical Data:
+    - RF Input Power (CW): 10 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typical), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.65 V (Min), 3.6 V (Max)
+    - USB Supply Voltage (V_USB): 3.0 V (Min), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 50 mA (Max)
+
+  Environmental Data:
+    - Operating Temperature: -40 to +85 °C
+    - Storage Temperature: -40 to +85 °C
+    - Dynamic Operating Limits - Altitude: 80,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 17.0 mm x 22.0 mm x 2.40 mm (Typical)
+    - Weight: 1.8 g
+
+  Certifications:
+    - Qualified according to ISO 16750
+    - Based on AEC-Q100 qualified GNSS chips
+    - Manufactured at ISO/TS 16949 certified sites
+    - RoHS compliant
+    - MSL 4
+    - European RED certification (CE)
+    - UKCA conformity assessment
+
+  Antenna Requirements:
+    - An active antenna is mandatory
+
+  Firmware Version: TIM 2.25
+
+  Notes:
+    - GNSS Bands Note: Only L1, L2 or L1, L5 bands are supported concurrently.
+    - Multi-frequency Signal Reception Advantage: Unaffected by ionospheric errors
+    - Assisted GNSS (A-GNSS): Supports u-blox AssistNow Online service which provides GNSS assistance information
+    - Differential GNSS (DGNSS): Supports differential timing mode using RTCM 3.3 messages (1005, 1077, 1097, 1127, 4072.1)
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-f9t-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R03
+    - Date: 03-Jan-2025
+</Module>
+
+<Module>
+  Model: NEO-M8T, LEA-M8T
+  Manufacturer: u-blox
+  Receiver Type: 72-channel u-blox M8 engine
+  Tags: [Timing, Multi-constellation, Passive Antenna, Data Logging]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, Galileo, BeiDou, SBAS, QZSS
+    - Number of Concurrent GNSS: 3
+    - GNSS Bands: GPS L1C/A (1575.42 MHz), GLONASS L1OF (around 1602 MHz), BeiDou B1 (1561.098 MHz), Galileo E1-B/C (centered on the GPS L1 frequency band)
+    - Cold Start Time:
+      - 25 s (GPS & GLONASS)
+      - 28 s (GPS & BeiDou)
+      - 29 s (GPS)
+      - 30 s (GLONASS)
+      - 34 s (BeiDou)
+      - 45 s (Galileo)
+    - Hot Start Time: 1 s (for all GNSS combinations)
+    - Supported A-GNSS Services: AssistNow Online, AssistNow Offline, AssistNow Autonomous, OMA SUPL-compliant
+    - Supported Protocols: NMEA, UBX, RTCM
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): < 20 ns (Clear sky, 1-sigma), 500 ns (Indoor)
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz
+
+  Positioning Accuracy:
+    - Horizontal (PVT):
+      - 2.5 m (GPS & GLONASS)
+      - 2.5 m (GPS & BeiDou)
+      - 2.5 m (GPS)
+      - 4.0 m (GLONASS)
+      - 3.0 m (BeiDou)
+      - TBC (Galileo)
+    - Velocity Accuracy:
+      - 0.05 m/s (GPS & GLONASS, GPS & BeiDou, GPS)
+      - 0.1 m/s (GLONASS, BeiDou, Galileo)
+    - Dynamic Heading Accuracy:
+      - 0.3° (GPS & GLONASS, GPS & BeiDou, GPS)
+      - 0.4° (GLONASS)
+      - 0.5° (BeiDou, Galileo)
+
+  Update Rates:
+    - PVT Update Rate:
+      - 4 Hz (GPS & GLONASS, GPS & BeiDou)
+      - 10 Hz (GPS, GLONASS, BeiDou, Galileo)
+
+  Sensitivity:
+    - Tracking & Navigation:
+      - -167 dBm (GPS & GLONASS)
+      - -166 dBm (GPS & BeiDou, GPS, GLONASS)
+      - -159 dBm (BeiDou, Galileo)
+    - Reacquisition:
+      - -160 dBm (GPS & GLONASS, GPS & BeiDou, GPS)
+      - -156 dBm (GLONASS, BeiDou)
+      - -153 dBm (Galileo)
+    - Cold Start:
+      - -148 dBm (GPS & GLONASS, GPS & BeiDou, GPS)
+      - -145 dBm (GLONASS)
+      - -138 dBm (BeiDou)
+      - -143 dBm (Galileo)
+    - Hot Start:
+      - -160 dBm (GPS & GLONASS, GPS & BeiDou, GPS)
+      - -156 dBm (GLONASS)
+      - -155 dBm (BeiDou)
+      - -151 dBm (Galileo)
+
+  Interfaces:
+    - UART: Yes (Default 9600 baud, configurable)
+    - USB: Yes (Full Speed, 12 Mbit/s)
+    - SPI: Yes (Slave mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Max 400 kHz)
+
+  Additional Features:
+    - Additional SAW: Yes
+    - Data logging: Yes
+    - Programmable flash memory: Yes
+    - RTC crystal: Yes
+    - Additional LNA: Yes (For NEO-M8T) / No (For LEA-M8T)
+    - Anti-jamming: Features high dynamic range radios with both analog and digital interference mitigation.
+    - Anti-spoofing: Includes spoofing detection measures to alert the host when signals appear to be suspicious.
+
+  Electrical Data:
+    - RF Input Power (CW): 13 dBm (source impedance = 50 Ω)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typ), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.4 V (Min), 3.6 V (Max)
+    - USB Supply Voltage (V_USB): 3.0 V (Min), 3.3 V (Typ), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 50 mA
+
+  Environmental Data:
+    - Operating Temperature: -40°C to 85°C
+    - Storage Temperature: -40°C to 85°C
+    - Dynamic Operating Limits - Altitude: 50,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions (NEO-M8T): 16.0 x 12.2 x 2.4 mm (Typ.)
+    - Weight (NEO-M8T): 1.6 g
+    - Dimensions (LEA-M8T): 17.0 x 22.4 x 2.4 mm (Typ.)
+    - Weight (LEA-M8T): 2.1 g
+
+  Certifications:
+    - Based on AEC-Q100 qualified GNSS chips
+    - Tests according to ISO 16750
+    - RoHS compliant
+
+  Antenna Requirements:
+    - NEO-M8T: Passive and active antennas. Pin (active) for external antenna, Pin (passive) for external antenna.
+    - LEA-M8T: Active antennas and antenna distribution systems. Active antenna recommendations: Min gain 5 dB, Max gain 40 dB, Max noise figure 1.5 dB. Pin (active) for external antenna, Pin (passive) for external antenna.
+
+  Firmware Version: Flash FW 3.01 TIM 1.10, Flash FW 3.01 TIM 1.12
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: Combining measurements from two constellations improves timing accuracy, especially with limited sky views. It also enhances coverage, reliability, and accuracy.
+    - Assisted GNSS (A-GNSS): Reduces the time-to-first-fix significantly and improves the acquisition sensitivity.
+    - Differential GNSS (DGNSS): Improves GPS position accuracy using real-time data from a nearby reference receiver, starting on receipt of valid RTCM 10402.3 data.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/neolea-m8t-series?legacy=Current#Documentation-&-resources
+    - Document Revision: R08
+    - Date: 11-Oct-2023
+</Module>
+
+<Module>
+  Model: ZED-F9H-01B
+  Manufacturer: u-blox
+  Receiver Type: Multi-band GNSS high precision receiver
+  Tags: [High Precision, Multi-band, Multi-constellation, RTK, Moving Base]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, Galileo, BeiDou, SBAS, QZSS
+    - Number of Concurrent GNSS: 4
+    - GNSS Bands: GPS/QZSS (L1C/A, L2C), GLONASS (L1OF, L2OF), Galileo (E1-B/C, E5b), BeiDou (B1I, B2I)
+    - Cold Start Time:
+      - 25 s (GPS+GLO+GAL+BDS)
+      - 25 s (GPS+GLO+GAL)
+      - 30 s (GPS+GAL)
+      - 26 s (GPS+GLO)
+      - 28 s (GPS+BDS)
+      - 30 s (GPS)
+    - Hot Start Time: 2 s (for all GNSS modes)
+    - Supported A-GNSS Services: u-blox AssistNow™ Online service
+    - Supported Protocols: UBX (Input/output), NMEA 4.11, 4.10 (default), 4.0, 2.3, and 2.1 (Input/output), RTCM 3.3 (Input)
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (configurable)
+
+  Positioning Accuracy:
+    - Velocity Accuracy: 0.05m/s
+    - Dynamic Heading Accuracy: 0.3 deg
+    - RTK Convergence Time:
+      - < 10 s (for GPS+GLO+GAL+BDS, GPS+GLO+GAL, GPS+GAL, GPS+GLO, GPS+BDS)
+      - < 30 s (for GPS only)
+
+  Update Rates:
+    - Moving Base RTK Max Navigation Update Rate:
+      - 8 Hz (GPS+GLO+GAL+BDS)
+      - 8 Hz (GPS+GLO+GAL)
+      - 10 Hz (GPS+GAL)
+      - 10 Hz (GPS+GLO)
+      - 10 Hz (GPS+BDS)
+      - 10 Hz (GPS)
+    - Moving Base RTK Heading Accuracy: 0.4 deg
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -160 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -157 dBm
+
+  Interfaces:
+    - UART: 2 (Baud Rate: 9600 bit/s to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+    - USB: Yes (Full speed, 12 Mbit/s)
+    - SPI: Yes (Peripheral mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Clock Frequency: 0 kHz to 400 kHz)
+
+  Additional Features:
+    - Active antenna / LNA control: Yes
+    - Active antenna / LNA supply: Yes
+    - Additional SAW: Yes
+    - Antenna open circuit detection pin: Yes
+    - Antenna short circuit detect / protect pin: Yes
+    - Data logging: Yes
+    - Jamming detection: Yes
+    - Programmable flash memory: Yes
+    - RTC crystal: Yes
+    - Secure boot and updates: Yes
+    - Time pulse output: Yes
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+
+  Electrical Data:
+    - RF Input Power (CW): 10 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V to 3.6 V
+    - Backup Battery Voltage (V_BCKP): 1.65 V to 3.6 V
+    - USB Supply Voltage (V_USB): -0.5 V to 3.6 V
+    - VCC_RF Output Current (ICC_RF): 50 mA (Max Operating), 200 mA (Absolute Maximum)
+
+  Environmental Data:
+    - Operating Temperature: -40 °C to +85 °C
+    - Storage Temperature: -40 °C to +85 °C
+    - Dynamic Operating Limits - Altitude: 80,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 22.4 x 17.0 x 2.4 mm (Typ.)
+    - Weight: 1.8 g
+
+  Certifications:
+    - Qualified according to ISO 16750
+    - Based on AEC-Q100 qualified chips
+    - Manufactured at ISO/TS 16949 certified sites
+    - RoHS compliant
+    - MSL 4
+    - CE certified
+    - UKCA certified
+
+  Antenna Requirements:
+    - An active antenna is mandatory.
+    - Pin (active) for external antenna
+
+  Firmware Version: HDG 1.13
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: All four major GNSS constellations (GPS, GLONASS, Galileo and BeiDou) plus SBAS and QZSS satellites can be received concurrently.
+    - Assisted GNSS (A-GNSS): Supports u-blox AssistNow Online service.
+    - Differential GNSS (DGNSS): Can decode RTCM messages from a ZED-F9P moving base.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-f9h-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R05
+    - Date: 21-Mar-2024
+</Module>
+
+<Module>
+  Model: ZED-F9P-15B
+  Manufacturer: u-blox
+  Receiver Type: Multi-band GNSS high precision receiver
+  Tags: [High Precision, RTK, Multi-band, Multi-constellation]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, Galileo, BeiDou, SBAS, QZSS, NaviC
+    - Number of Concurrent GNSS: 4
+    - GNSS Bands: GPS/QZSS (L1C/A, L5), GLONASS (L1OF), Galileo (E1-B/C, E5a), BeiDou (B1I, B2a), NaviC (SPS-L5)
+    - Cold Start Time:
+      - 29 s (GPS+GLO+GAL+BDS)
+      - 26 s (GPS+BDS+GAL)
+      - 27 s (GPS+GAL)
+      - 25 s (GPS+GLO)
+      - 28 s (GPS+BDS)
+      - 30 s (GPS)
+    - Hot Start Time: 2 s (for all GNSS combinations)
+    - Supported A-GNSS Services: u-blox AssistNow Online service
+    - Supported Protocols: UBX, NMEA (4.11, 4.10, 4.0, 2.3, 2.1), RTCM 3.3, SPARTN 2.0.1
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): 30 ns
+    - Timing Pulse Accuracy (99%): 60 ns
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.5 m (CEP, 24 hours static)
+    - Horizontal (RTK): 0.01 m + 1 ppm (CEP)
+    - Vertical (RTK): 0.01 m + 1 ppm (Median)
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.3 deg
+    - RTK Convergence Time:
+      - < 12 s (for all multi-GNSS combinations)
+      - < 30 s (for GPS only)
+
+  Update Rates:
+    - RTK Max Navigation Update Rate:
+      - 7 Hz (GPS+GLO+GAL+BDS)
+      - 8 Hz (GPS+BDS+GAL)
+      - 14 Hz (GPS+GAL)
+      - 15 Hz (GPS+GLO)
+      - 10 Hz (GPS+BDS)
+      - 24 Hz (GPS)
+    - PVT Update Rate:
+      - 8 Hz (GPS+GLO+GAL+BDS)
+      - 10 Hz (GPS+BDS+GAL)
+      - 14 Hz (GPS+GAL)
+      - 20 Hz (GPS+GLO)
+      - 12 Hz (GPS+BDS)
+      - 25 Hz (GPS)
+    - Raw Data Update Rate:
+      - 10 Hz (GPS+GLO+GAL+BDS)
+      - 10 Hz (GPS+BDS+GAL)
+      - 20 Hz (GPS+GAL)
+      - 25 Hz (GPS+GLO)
+      - 20 Hz (GPS+BDS)
+      - 25 Hz (GPS)
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -160 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -157 dBm
+
+  Interfaces:
+    - UART: 2 (Baud Rate: 9600 bit/s to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+    - USB: Yes (Full speed, 12 Mbit/s)
+    - SPI: Yes (Peripheral mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Clock Frequency: 0 to 400 kHz)
+
+  Additional Features:
+    - Active antenna / LNA control: Yes
+    - Active antenna / LNA supply: Yes
+    - Additional SAW: Yes
+    - Antenna open circuit detection pin: Yes
+    - Antenna short circuit detect / protect pin: Yes
+    - Base station with survey-in: Yes
+    - Carrier phase output: Yes
+    - Data logging: Yes
+    - Jamming detection: Yes
+    - Programmable flash memory: Yes
+    - RTC crystal: Yes
+    - RTK rover: Yes
+    - Secure boot and updates: Yes
+    - Time pulse output: Yes
+    - Galileo OSNMA: No
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+    - AssistNow Service: Yes
+    - PointPerfect Service: Yes
+
+  Electrical Data:
+    - RF Input Power (CW): 10 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typ), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.65 V (Min), 3.6 V (Max)
+    - USB Supply Voltage (V_USB): 3.0 V (Min), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 50 mA (Typ)
+
+  Environmental Data:
+    - Operating Temperature: -40°C to +85°C
+    - Storage Temperature: -40°C to +85°C
+    - Dynamic Operating Limits - Altitude: 80,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 17.0 x 22.0 x 2.4 mm
+    - Weight: 1.8 g
+
+  Certifications:
+    - Qualified according to ISO 16750
+    - Based on AEC-Q100 qualified GNSS chips
+    - Manufactured at ISO/TS 16949 certified sites
+    - RoHS compliant
+    - MSL 4
+    - European RED certification (CE)
+    - UK conformity assessment (UKCA)
+
+  Antenna Requirements:
+    - An active antenna is mandatory.
+    - Pin (active) for external antenna
+
+  Firmware Version: HPG L1L5 1.40
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: To benefit from multi-band signal reception, dedicated hardware preparation must be made during the design-in phase.
+    - Assisted GNSS (A-GNSS): Aided start time is 2s.
+    - Differential GNSS (DGNSS): The module supports DGNSS according to RTCM 10403.4 when operating in RTK mode.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-f9p-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R04
+    - Date: 10-Jan-2025
+</Module>
+
+<Module>
+  Model: ZED-X20P-00B
+  Manufacturer: u-blox
+  Receiver Type: 672-channel u-blox X20 engine
+  Tags: [High Precision, RTK, Multi-band, Multi-constellation, Anti-spoofing, OSNMA]
+
+  GNSS Features:
+    - Supported Constellations: GPS, Galileo, BeiDou, QZSS, NaviC, SBAS
+    - GNSS Bands: GPS (L1C/A, L2C, L5), GAL (E1 B/C, E5a, E5b), BDS (B1I, B1C, B2a, B3I), QZSS (L1C/A, L1C/B, L2C, L5, L6), NaviC (L1, L5), SBAS (L1C/A), L-band
+    - Cold Start Time: 25 s
+    - Supported A-GNSS Services: AssistNow Online, OMA SUPL & 3GPP compliant
+    - Supported Protocols: NMEA 4.11, UBX binary, RTCM v. 3.4, SPARTN v. 2.0.2
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (Configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.2 m (Standalone), 0.6 m (SBAS)
+    - Horizontal (RTK): 0.6 cm + 1 ppm
+    - RTK Convergence Time: < 7 sec
+
+  Update Rates:
+    - RTK Max Navigation Update Rate: up to 25 Hz
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -160 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -158 dBm
+
+  Interfaces:
+    - UART: 2
+    - SPI: Yes
+    - I2C: Yes
+
+  Additional Features:
+    - Active antenna / LNA control: Yes
+    - Active antenna / LNA supply: Yes
+    - Additional SAW: Yes
+    - Antenna open circuit detection pin: Yes
+    - Antenna short circuit detect / protect pin: Yes
+    - Base station with survey-in: Yes
+    - Carrier phase output: Yes
+    - Jamming detection: Yes (CW detection)
+    - Programmable flash memory: Yes
+    - RTC crystal: Yes
+    - RTK rover: Yes
+    - Secure boot and updates: Yes
+    - Time pulse output: Yes
+    - Galileo OSNMA: Yes
+    - Anti-jamming: CW detection
+    - Anti-spoofing: Advanced anti-spoofing algorithms and OSNMA
+    - Secure boot: Yes
+    - AssistNow Service: Yes
+    - PointPerfect Service: Yes
+
+  Electrical Data:
+    - Supply Voltage (VCC): 2.7 V to 3.6 V
+    - Backup Battery Voltage (V_BCKP): 1.65 V to 3.6 V
+
+  Environmental Data:
+    - Operating Temperature: -40°C to +85°C
+    - Storage Temperature: -40°C to +85°C
+
+  Physical Data:
+    - Dimensions: 17.0 x 22.0 x 2.4 mm
+
+  Certifications:
+    - Vibration: MIL-STD-810G (Category 24, 7.7g RMS)
+    - RoHS compliant (2015/863/EU)
+    - Green (halogen-free)
+    - EU Radio Equipment Directive compliant 2014/53/EU
+    - Qualified according to u-blox qualification policy, based on a subset of AEC-Q104
+    - Manufactured and fully tested in ISO/TS 16949 certified production sites
+
+  Antenna Requirements:
+    - Active
+    - Pin (active) for external antenna
+
+  Firmware Version: Not specified
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: Best position accuracy and availability in different environments
+    - Assisted GNSS (A-GNSS): AssistNow Online, OMA SUPL & 3GPP compliant
+    - Differential GNSS (DGNSS): Supports standard RTCM corrections for Virtual Reference Stations (VRS) in a Network RTK setup or a local base station setup.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-x20p-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R02
+    - Date: Copyright © 2025
+</Module>
+
+<Module>
+  Model: NEO-F10T
+  Manufacturer: u-blox
+  Receiver Type: u-blox F10 receiver
+  Tags: [Timing, Multi-band, Multi-constellation, Anti-jamming, Anti-spoofing]
+
+  GNSS Features:
+    - Supported Constellations: GPS, Galileo, BeiDou, QZSS, SBAS, NavIC
+    - GNSS Bands: GPS/QZSS (L1C/A, L5), Galileo (E1-B/C, E5a), BeiDou (B1C, B2a), NavIC (SPS-L5)
+    - Cold Start Time:
+      - 27 s (GPS+GAL+BDS)
+      - 27 s (GPS+GAL)
+      - 28 s (GPS+BDS)
+      - 29 s (GPS)
+    - Hot Start Time: 2 s (for all listed GNSS combinations)
+    - Supported A-GNSS Services: AssistNow™ Online (GPS L1C/A, Galileo E1, QZSS L1C/A)
+    - Supported Protocols: UBX (u-blox proprietary), NMEA (versions 2.1, 2.3, 4.0, 4.10 and 4.11)
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): 10 ns (1-sigma)
+    - Timing Pulse Accuracy (RMS, jitter removed): 5 ns (1-sigma)
+    - Timing Pulse Frequency: Default 1PPS (0.25 Hz to 25 MHz configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.5 m CEP
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.3 deg
+
+  Update Rates:
+    - PVT Update Rate:
+      - 8 Hz (GPS+GAL+BDS)
+      - 8 Hz (GPS+GAL)
+      - 8 Hz (GPS+BDS)
+      - 10 Hz (GPS)
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -158 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -159 dBm
+
+  Interfaces:
+    - UART: Yes (Baud Rate: 9600 to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+
+  Additional Features:
+    - Additional SAW: Yes
+    - Carrier phase output: Yes
+    - Programmable flash memory: Yes
+    - RTC crystal: Yes
+    - Time pulse output: Yes
+    - Galileo OSNMA: Yes
+    - Anti-jamming: RF interference and jamming detection and reporting
+    - Anti-spoofing: Spoofing detection and reporting
+
+  Electrical Data:
+    - RF Input Power (CW): +15 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typical), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.65 V (Min), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 300 mA (Max)
+
+  Environmental Data:
+    - Operating Temperature: -40 to +85 °C
+    - Storage Temperature: -40 to +85 °C
+    - Dynamic Operating Limits - Altitude: 80,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 16.0 mm x 12.2 mm x 2.4 mm (Typical)
+    - Weight: 1.6 g
+
+  Certifications:
+    - Qualified according to u-blox qualification policy (based on a subset of AEC-Q104)
+    - Manufactured at IATF 16949 certified sites
+    - RoHS compliant
+    - Moisture sensitivity level (MSL) 4
+    - European RED certification (CE)
+
+  Antenna Requirements:
+    - An active antenna is recommended
+
+  Firmware Version: TIM 3.02
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: The dual-band RF front-end architecture enables concurrent reception of multiple dual frequency GNSS constellations, providing nanosecond-level timing accuracy with low power consumption.
+    - Assisted GNSS (A-GNSS): AssistNow Online
+    - Differential GNSS (DGNSS): Supports SBAS (EGNOS, GAGAN, MSAS and WAAS) for ionospheric correction
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/neo-f10t-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R04
+    - Date: 12-May-2025
+</Module>
+
+<Module>
+  Model: ZED-F9R-03B
+  Manufacturer: u-blox
+  Receiver Type: Multi-band GNSS high precision sensor fusion receiver
+  Tags: [High Precision, RTK, Multi-band, Multi-constellation, Sensor Fusion]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, Galileo, BeiDou, SBAS, QZSS
+    - Number of Concurrent GNSS: 4
+    - GNSS Bands: GPS/QZSS (L1C/A, L2C), GLONASS (L1OF, L2OF), Galileo (E1-B/C, E5b), BeiDou (B1I, B2I)
+    - Cold Start Time:
+      - 25 s (GPS+GLO+GAL)
+      - 25 s (GPS+GLO)
+      - 25 s (GPS+GAL)
+      - 28 s (GPS+BDS)
+      - 30 s (GPS+GLO+GAL+BDS)
+    - Hot Start Time: 2 s (for all GNSS combinations)
+    - Supported A-GNSS Services: u-blox AssistNow™ Online service
+    - Supported Protocols: UBX (u-blox proprietary), NMEA (4.11 default, 4.10, 4.0, 2.3, 2.1), SPARTN 2.0.1 (input), RTCM 3.3 (input)
+    - Oscillators: TCXO
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): 30 ns
+    - Timing Pulse Accuracy (99%): 60 ns
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.5 m (CEP)
+    - Horizontal (RTK): 0.01 m + 1 ppm (CEP)
+    - Vertical (RTK): 0.01 m + 1 ppm (Median)
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.2 deg
+    - RTK Convergence Time:
+      - ≤10 s (GPS+GLO+GAL+BDS, GPS+GLO+GAL, GPS+GAL, GPS+GLO)
+      - ≤ 30 s (BDS+GLO)
+
+  Update Rates:
+    - RTK Max Navigation Update Rate:
+      - 30 Hz (Priority navigation mode)
+      - 4 Hz (Non-priority navigation mode)
+
+  Sensitivity:
+    - Tracking & Navigation:
+      - -160 dBm (GPS+GLO+GAL+BDS, GPS+GLO+GAL, GPS+GLO, GPS+BDS)
+      - -159 dBm (GPS+GAL)
+    - Reacquisition:
+      - -160 dBm (GPS+GLO+GAL+BDS, GPS+GLO+GAL, GPS+GLO)
+      - -159 dBm (GPS+GAL)
+      - -158 dBm (GPS+BDS)
+    - Cold Start: -147 dBm (for all GNSS combinations)
+    - Hot Start: -158 dBm (for all GNSS combinations)
+
+  Interfaces:
+    - UART: 2 (Baud Rate: 9600 bit/s to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+    - USB: Yes (Full speed, 12 Mbit/s)
+    - SPI: Yes (Peripheral mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Clock Frequency: 0 kHz to 400 kHz)
+
+  Additional Features:
+    - Additional SAW: Yes
+    - Antenna Open Circuit Detection Pin: Yes
+    - Antenna Short Circuit Detect / Protect Pin: Yes
+    - Carrier Phase Output: Yes
+    - Data Logging: Yes
+    - Programmable Flash Memory: Yes
+    - RTC Crystal: Yes
+    - RTK Rover: Yes
+    - Time Pulse Output: Yes
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+    - AssistNow Service: Yes
+    - PointPerfect Service: Yes
+
+  Electrical Data:
+    - RF Input Power (CW): 10 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typical), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.65 V (Min), 3.6 V (Max)
+    - USB Supply Voltage (V_USB): -0.5 V (Min), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 50 mA (Max)
+
+  Environmental Data:
+    - Operating Temperature: -40 °C to +85 °C
+    - Storage Temperature: -40 °C to +85 °C
+    - Dynamic Operating Limits - Altitude: 80,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 22.00 mm x 17.00 mm x 2.40 mm (Typical)
+    - Weight: 1.8 g
+
+  Certifications:
+    - Qualified according to ISO 16750
+    - Based on AEC-Q100 qualified GNSS chips
+    - Manufactured at ISO/TS 16949 certified sites
+    - RoHS compliant
+    - European RED certification (CE)
+    - UK conformity assessment (UKCA)
+
+  Antenna Requirements:
+    - Active antenna detection and short detection pins available. For design recommendations, the Integration manual is referenced.
+    - Pin (active) for external antenna
+
+  Firmware Version: HPS 1.30
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: Highest positioning accuracy is achieved when tracking signals on both bands from multiple satellites with corresponding correction data.
+    - Assisted GNSS (A-GNSS): The ZED-F9R-03B can use the u-blox AssistNow™ Online service which provides GNSS assistance information.
+    - Differential GNSS (DGNSS): The module supports DGNSS according to RTCM 10403.3 when operating in RTK mode.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-f9r-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R04
+    - Date: 03-May-2024
+</Module>
+
+<Module>
+  Model: NEO-M8P
+  Manufacturer: u-blox
+  Receiver Type: 72-channel u-blox M8 engine
+  Tags: [High Precision, RTK, Multi-constellation, Moving Base]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, BeiDou, QZSS
+    - GNSS Bands: GPS L1C/A (1575.42 MHz), GLONASS L1OF (1602 MHz + k*562.5 kHz), BeiDou B1I (1561.098 MHz)
+    - Cold Start Time:
+      - 28 s (GPS & GLONASS)
+      - 26 s (GPS & BeiDou)
+      - 29 s (GPS)
+    - Hot Start Time: 1 s (for GPS & GLONASS, GPS & BeiDou, and GPS modes)
+    - Supported A-GNSS Services: AssistNow Online
+    - Supported Protocols: NMEA 0183 (V2.1, V2.3, V4.0, V4.1), UBX, RTCM 3.2
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): 30 ns
+    - Timing Pulse Accuracy (99%): 60 ns
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 2.5 m CEP (Standalone)
+    - Horizontal (RTK): 0.025 m + 1 ppm CEP
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.3°
+    - RTK Convergence Time: < 60 s
+
+  Update Rates:
+    - RTK Max Navigation Update Rate:
+      - 5 Hz (GPS & GLONASS)
+      - 5 Hz (GPS & BeiDou)
+      - 8 Hz (GPS)
+    - PVT Update Rate:
+      - 5 Hz (GPS & GLONASS)
+      - 5 Hz (GPS & BeiDou)
+      - 10 Hz (GPS)
+    - Raw Data Update Rate:
+      - 10 Hz (GPS & GLONASS)
+      - 10 Hz (GPS & BeiDou)
+      - 10 Hz (GPS)
+    - Moving Base RTK Max Navigation Update Rate:
+      - 4 Hz (GPS & GLONASS)
+      - 4 Hz (GPS & BeiDou)
+      - 4 Hz (GPS)
+    - Moving Base RTK Heading Accuracy: 0.3° (assuming a 1 m baseline)
+
+  Sensitivity:
+    - Tracking & Navigation: -160 dBm (for GPS & GLONASS, GPS & BeiDou, and GPS modes)
+    - Reacquisition: -160 dBm (for GPS & GLONASS, GPS & BeiDou, and GPS modes)
+    - Cold Start: -148 dBm (for GPS & GLONASS, GPS & BeiDou, and GPS modes)
+    - Hot Start: -157 dBm (for GPS & GLONASS, GPS & BeiDou, and GPS modes)
+
+  Interfaces:
+    - UART: Yes (Baud Rate: 9600 baud (default), configurable)
+    - USB: Yes (USB 2.0 Full Speed (FS) compatible)
+    - SPI: Yes (Slave mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Max 400 kHz)
+
+  Additional Features:
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+
+  Electrical Data:
+    - RF Input Power (CW): 15 dBm (Max)
+    - Supply Voltage (VCC): 2.7 V (Min), 3.0 V (Typ), 3.6 V (Max)
+    - Backup Battery Voltage (V_BCKP): 1.4 V (Min), 3.6 V (Max)
+    - USB Supply Voltage (V_USB): 3.0 V (Min), 3.3 V (Typ), 3.6 V (Max)
+    - VCC_RF Output Current (ICC_RF): 50 mA (Max)
+
+  Environmental Data:
+    - Operating Temperature: -40 °C to 85 °C
+    - Storage Temperature: -40 °C to 85 °C
+    - Dynamic Operating Limits - Altitude: 50,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 12.2 mm x 16.0 mm x 2.4 mm (Typical)
+    - Weight: 1.6 g
+
+  Certifications:
+    - Based on AEC-Q100 qualified chips
+    - Tested according to ISO 16750
+    - RoHS compliant
+
+  Antenna Requirements:
+    - Active antenna recommended with 15 dB minimum gain and 1.5 dB maximum noise figure.
+
+  Firmware Version: FLASH FW3.01 HPG1.40, FLASH FW3.05 HPG1.43
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: The ability to receive and track signals from multiple GNSS systems results in higher coverage, improved reliability, and better accuracy.
+    - Assisted GNSS (A-GNSS): Supply of aiding information (ephemeris, almanac, approximate position, and time) to significantly reduce the time to first fix and improve acquisition sensitivity.
+    - Differential GNSS (DGNSS): Supported according to RTCM 10403.2 when operating in RTK mode.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/neo-m8p-series?legacy=Current#Documentation-&-resources
+    - Document Revision: R11
+    - Date: 16-Dec-2022
+</Module>
+
+<Module>
+  Model: ZED-F9P-01B
+  Manufacturer: u-blox
+  Receiver Type: Multi-band GNSS high precision receiver
+  Tags: [High Precision, RTK, Multi-band, Multi-constellation, Moving Base]
+
+  GNSS Features:
+    - Supported Constellations: GPS, GLONASS, Galileo, BeiDou, QZSS
+    - GNSS Bands: GPS (L1C/A, L2C), GLONASS (L1OF, L2OF), Galileo (E1-B/C, E5b), BeiDou (B1I, B2I)
+    - Cold Start Time:
+      - 24 s (GPS+GLO+GAL+BDS)
+      - 25 s (GPS+GLO+GAL)
+      - 29 s (GPS+GLO)
+      - 28 s (GPS+BDS)
+      - 29 s (GPS)
+      - 26 s (GPS+GAL)
+    - Hot Start Time: 2 s (for all listed GNSS combinations)
+    - Supported A-GNSS Services: AssistNow Online, AssistNow Offline, AssistNow Autonomous
+    - Supported Protocols: UBX, NMEA 4.10, RTCM 3.3
+
+  Timing Features:
+    - Timing Pulse Accuracy (RMS): 30 ns
+    - Timing Pulse Accuracy (99%): 60 ns
+    - Timing Pulse Frequency: 0.25 Hz to 10 MHz (configurable)
+
+  Positioning Accuracy:
+    - Horizontal (PVT): 1.5 m CEP (for all listed GNSS combinations)
+    - Horizontal (RTK): 0.01 m + 1 ppm CEP (for all listed GNSS combinations)
+    - Vertical (RTK): 0.01 m + 1 ppm CEP (for all listed GNSS combinations)
+    - Velocity Accuracy: 0.05 m/s
+    - Dynamic Heading Accuracy: 0.3 deg
+    - RTK Convergence Time:
+      - < 10 s (GPS+GLO+GAL+BDS, GPS+GLO+GAL, GPS+GLO, GPS+BDS, GPS+GAL)
+      - < 30 s (GPS)
+
+  Update Rates:
+    - RTK Max Navigation Update Rate: 8 Hz (GPS+GLO+GAL+BDS)
+    - PVT Update Rate:
+      - 10 Hz (GPS+GLO+GAL+BDS)
+      - 12 Hz (GPS+GLO+GAL)
+      - 25 Hz (GPS+GLO)
+      - 20 Hz (GPS+BDS)
+      - 25 Hz (GPS)
+      - 25 Hz (GPS+GAL)
+    - Raw Data Update Rate:
+      - 20 Hz (GPS+GLO+GAL+BDS)
+      - 20 Hz (GPS+GLO+GAL)
+      - 25 Hz (GPS+GLO)
+      - 25 Hz (GPS+BDS)
+      - 25 Hz (GPS)
+      - 25 Hz (GPS+GAL)
+    - Moving Base RTK Max Navigation Update Rate:
+      - 5 Hz (GPS+GLO+GAL+BDS, GPS+GLO+GAL)
+      - 8 Hz (GPS+GAL, GPS+GLO, GPS)
+      - 10 Hz (GPS+BDS)
+    - Moving Base RTK Heading Accuracy: 0.4 deg (for all listed GNSS combinations)
+
+  Sensitivity:
+    - Tracking & Navigation: -167 dBm
+    - Reacquisition: -160 dBm
+    - Cold Start: -148 dBm
+    - Hot Start: -157 dBm
+
+  Interfaces:
+    - UART: Yes (Baud Rate: 9600 bit/s to 921600 bit/s; TX Baud Rate Accuracy: -1% to +1%; RX Baud Rate Tolerance: -2.5% to +2.5%)
+    - USB: Yes (Full speed, 12 Mbit/s)
+    - SPI: Yes (Slave mode only; Max Transfer Rate: 125 kB/s; Max Clock Frequency: 5.5 MHz)
+    - I2C: Yes (Clock Frequency: 0 kHz to 400 kHz)
+
+  Additional Features:
+    - Anti-jamming: Not specified
+    - Anti-spoofing: Not specified
+
+  Electrical Data:
+    - RF Input Power (CW): 10 dBm (max)
+    - Supply Voltage (VCC): 2.7 V to 3.6 V (max)
+    - Backup Battery Voltage (V_BCKP): 1.65 V to 3.6 V (max)
+    - USB Supply Voltage (V_USB): -0.5 V to 3.6 V (max)
+    - VCC_RF Output Current (ICC_RF): 50 mA (max)
+
+  Environmental Data:
+    - Operating Temperature: -40°C to +85°C
+    - Storage Temperature: -40°C to +85°C
+    - Dynamic Operating Limits - Altitude: 50,000 m
+    - Dynamic Operating Limits - Velocity: 500 m/s
+
+  Physical Data:
+    - Dimensions: 22.00 mm (Typ. A) x 17.00 mm (Typ. B) x 2.40 mm (Typ. C)
+    - Weight: 1.85g
+
+  Certifications:
+    - Based on AEC-Q100 qualified GNSS chips
+    - Tests according to ISO 16750
+    - Compliant with RED 2014/53/EU, EU RoHS 2, and EU RoHS 3
+
+  Antenna Requirements:
+    - An active antenna is mandatory
+
+  Firmware Version: HPG 1.12
+
+  Notes:
+    - Multi-frequency Signal Reception Advantage: All four major GNSS constellations (GPS, GLONASS, Galileo and BeiDou) plus QZSS satellites can be received concurrently.
+    - Assisted GNSS (A-GNSS): AssistNow Online, AssistNow Offline, and AssistNow Autonomous services can be activated.
+    - Differential GNSS (DGNSS): Supported according to RTCM 10403.3.
+
+  Data Source:
+    - URL: https://www.u-blox.com/en/product/zed-f9p-module?legacy=Current#Documentation-&-resources
+    - Document Revision: R09
+    - Date: 24-Mar-2023
+</Module>
