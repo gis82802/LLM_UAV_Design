@@ -1,5 +1,6 @@
 通用參數
 1.1翼展與翼弦
+參考網址：https://www.uavcoach.com/drone-parts/（UAV Coach 的無人機機翼結構教學，介紹翼展、翼弦與設計參數）
 翼展（b）：
 小型UAV：1.2–2.5m
 中型UAV：2.5–5.5m
@@ -16,24 +17,29 @@
 設計安全係數（SF）：1.5–2.5
 設計安全係數（SF）：1.5–2.5
 1.3翼肋（Ribs）
+參考網址：https://ntrs.nasa.gov（NASA 技術報告資料庫，可查詢 UAV 結構設計與氣動載荷資料）
 頻率：每0.15–0.3m設置1根
 厚度：6–10mm
 材料：碳纖/Kevlar貼片+輕質泡棉填充
 強度目標：承載150%氣動分佈荷載，無局部屈曲
 1.4蒙皮（Skin）
+參考網址：https://www.makeitfrom.com（MakeItFrom 提供蒙皮材料（如碳纖）的物性參數）
 材料：碳纖維預浸布複材，含3–8層
 厚度：0.3–1.5mm（翼端輕量，翼根厚重）
 安全係數：1.8–2.5（孔洞加固區需更高）
 疲勞壽命：大於50,000次起落週期
 1.5副翼
+參考網址：https://www.aerodynamics4students.com/control-surfaces/ailerons.php（學生用航空力學站點，詳述副翼設計與扭轉剛性）
 長度佔翼展20–30%，弦長佔翼弦18–25%
 鉸鏈位置距翼根：80%翼半徑處
 扭轉剛性：GJ≥5000N·m²（滿足高速操作負載）
 2.機體框架
 2.1幾何尺寸
+參考網址：https://www.militaryfactory.com（Military Factory 提供 UAV 幾何外型與尺寸）
 尺寸上限：長≤1.5m，寬≤0.6m，高≤0.3m
 壁厚（蒙皮+內部支撐）：2–5mm
 2.2材料性質
+參考網址：https://www.matweb.com（MatWeb 提供 CFRP 與鋁合金的密度、模數、應力等工程數據）
 密度：CFRP 1.5–1.8g/cm³；鋁合金2.7–2.8g/cm³
 彎曲模數：與翼相近
 容許應力：CFRP：400–1200MPa（與貼片方向有關）
@@ -46,6 +52,7 @@
 疲勞安全裕度：Goodman極限設為0.6
 3. 起落架
 3.1類型
+參考網址：https://www.dronedesignerhub.com/drone-landing-gear-design/（無人機設計論壇：起落架結構與吸震設計）
 固定式，採碳纖或鋁合金U型臂設計
 3.2彎曲與衝擊
 材料剛度：E=30–90GPa
@@ -54,6 +61,7 @@
 避震行程：≥30–50mm
 4.掛載艙
 4.1尺寸標準
+參考網址：https://www.uavsystemsinternational.com（無人機系統公司提供不同 UAV 掛載艙空間與模組化結構說明）
 內部空間：≥250×200×100mm
 開口尺寸：≥200×150mm
 艙門設計：鉸鏈+快鎖，需抵抗開啟風載
@@ -249,3 +257,8 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 200 × 150 × 80 mm
 - 最大掛載重量：≥ 2.5 kg
 - 重心偏移容限：±20 mm
+
+情境對應 UAV 機型參考建議：
+【熱帶颱風後應急通訊】：DJI M30T、Quantum Trinity Pro、Delair UX11
+【山區低空巡檢】：Parrot Anafi USA、DJI Matrice 300 RTK、senseFly eBee X
+【高空監測與氣象探測】：MQ-9 Reaper、Global Hawk、AeroVironment Tempest
