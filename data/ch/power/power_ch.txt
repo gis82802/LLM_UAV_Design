@@ -1,13 +1,14 @@
 1.無刷直流馬達(BLDCMotor)
 1.1馬達規格分類表
-|機架尺寸|螺旋槳尺寸|馬達尺寸|KV值範圍|適用場景|
-|150mm以下|3吋以下|1105,1106,1204,1306|3000KV以上|室內競速機|
-|180mm|4吋|1806,2204			|2600-3000KV|小型FPV|
-|210mm|5吋|2205,2208,2305,2306|2300-2600KV|標準FPV|
-|250mm|6吋|2206,2208,2306|2000-2300KV|長續航FPV|
-|350mm|7吋|2506,2508|1200-2000KV|大型載重|
+|機架尺寸 |螺旋槳尺寸|馬達尺寸           |KV值範圍   |適用場景|
+|150mm以下|3吋以下   |1105,1106,1204,1306|3000KV以上 |室內競速機|
+|180mm    |4吋       |1806,2204	         |2600-3000KV|小型FPV|
+|210mm    |5吋       |2205,2208,2305,2306|2300-2600KV|標準FPV|
+|250mm    |6吋       |2206,2208,2306     |2000-2300KV|長續航FPV|
+|350mm    |7吋       |2506,2508          |1200-2000KV|大型載重|
+
 1.2常見馬達型號與規格
-iFlight品牌
+
 型號：iFlightXing-ePro22072750KV
 定子直徑：22mm
 定子高度：7mm
@@ -62,7 +63,8 @@ KV值：1800RPM/V
 電機尺寸：28.5×19.7mm
 磁鐵：N52H高溫磁鐵
 孔紋：16×16mm
-T-Motor品牌
+資料來源：https://iflight-rc.eu/en-cz/products/xing2-2207-2-6s-fpv-motor?_pos=1&_sid=427c49950&_ss=r
+
 型號：T-MotorBlackBird2207V2.01950KV
 定子直徑：22mm
 定子高度：7mm
@@ -93,6 +95,17 @@ KV值：2800RPM/V
 電機尺寸：Φ27.5×30.4mm
 導線：20#AWG150mm
 特色：4S專用高轉速設計T-Motor品牌
+型號：T-MotorBlackbird22072750KV
+定子直徑：22mm
+定子高度：7mm
+KV值：2750RPM/V
+最大功率：600W
+重量：33g
+軸徑：5mm
+工作電壓：14.8V–22.2V(4S–6S)
+特色：與Blackbird團隊聯名設計，為極速競賽場景打造
+資料來源：https://www.getfpv.com/t-motor-black-bird-2207-v2-0-1950kv-2800kv-motor-1pc.html
+
 型號T-MotorV2207V22550KV
 定子直徑：22mm
 定子高度：7mm
@@ -144,23 +157,25 @@ KV值：2020RPM/V
 工作電壓：14.8V–22.2V(4S–6S)
 軸承：日本EZO高精密軸承
 特色：高端競技專用馬達，轉速穩定、耐溫性佳
-型號：T-MotorBlackbird22072750KV
-定子直徑：22mm
-定子高度：7mm
-KV值：2750RPM/V
-最大功率：600W
-重量：33g
+型號：T-MotorMN2814KV770
+定子直徑：28mm
+定子高度：14mm
+KV值：770RPM/V
+最大功率：850W
+重量：65g
 軸徑：5mm
-工作電壓：14.8V–22.2V(4S–6S)
-特色：與Blackbird團隊聯名設計，為極速競賽場景打造
+工作電壓：14.8V-25.2V(4S-7S)
+適用：大型載重無人機
+資料來源：https://store.tmotor.com/search.phpencode=YTozOntzOjg6ImtleXdvcmRzIjtzOjQ6IjIyMDciO3M6NDoidHlwZSI7czoxOiIwIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTc1MTg4MTYzMDt9
+
 推力測試與性能曲線（2207系列）
-|型號|測試槳|測試電壓|峰值推力|峰值電流|峰值功率|效率範圍|
-|V2207V22550KV|T5143|16.8V|1460g|41A|690W|2.11g/W|
-|V2207V32050KV|T5146|22.2V|1580g|36A|800W|1.98g/W|
-|P2207V32550KV|T5147|16.8V|1520g|43A|720W|2.10g/W|
-|F60PROV2020KV|T5146|22.2V|1650g|38A|830W|1.99g/W|
-|Blackbird2750KV|T5143|16.8V|1500g|45A|730W|2.05g/W|
-RCINPOWER品牌
+|型號                 |測試槳|測試電壓|峰值推力|峰值電流|峰值功率|效率範圍|
+|V2207V22550KV        |T5143  |16.8V |1460g   |41A     |690W     |2.11g/W|
+|V2207V32050KV        |T5146  |22.2V |1580g   |36A     |800W     |1.98g/W|
+|P2207V32550KV        |T5147  |16.8V |1520g   |43A     |720W     |2.10g/W|
+|F60PROV2020KV        |T5146  |22.2V |1650g   |38A     |830W     |1.99g/W|
+|Blackbird2750KV      |T5143  |16.8V |1500g   |45A     |730W     |2.05g/W|
+
 型號：RCINPOWERGTSV22207PLUS
 品牌名稱：RCINPOWER
 馬達配置：12N14P
@@ -180,7 +195,8 @@ KV值	空載電流@10V	內阻	最大電流(30秒)	最大連續功率(180秒)	建
 1860KV	1.0A	55mΩ	40A	1000W	5S–6S
 2500KV	1.6A	34mΩ	45A	1000W	4S–5S
 2750KV	2.0A    30mΩ	45A	1000W	4S–5S
-AMAX品牌
+資料來源：https://www.getfpv.com/rcinpower-gts-v2-2207-plus-motor-1860kv-2500kv-2750kv.html
+
 型號：AMAX2207Bando2550KV
 定子直徑：22mm
 定子高度：7mm
@@ -190,33 +206,30 @@ KV值：2550RPM/V
 軸徑：5mm
 工作電壓：7.4V-14.8V(2S-4S)
 特色：競賽專用款
+資料來源：https://amaxshop.com/index.php?route=product/product&product_id=1801
+
 大型長續航馬達
-型號：T-MotorMN2814KV770
-定子直徑：28mm
-定子高度：14mm
-KV值：770RPM/V
-最大功率：850W
-重量：65g
-軸徑：5mm
-工作電壓：14.8V-25.2V(4S-7S)
-適用：大型載重無人機
 1.3馬達選型要點
 KV值定義：電壓每升高1V，馬達轉速增加的RPM數值
 功率計算：P=U×I×η(電壓×電流×效率)
 轉矩常數：Kt=1/KV(單位：N⋅m/A)
 效率範圍：優質馬達效率通常在85-95%之間
+
 2.螺旋槳規格
 2.1螺旋槳尺寸分類
+
 按直徑分類
 3吋螺旋槳：直徑76mm，適用於150mm以下機架
 4吋螺旋槳：直徑102mm，適用於180mm機架
 5吋螺旋槳：直徑127mm，適用於210mm機架
 6吋螺旋槳：直徑152mm，適用於250mm機架
 7吋螺旋槳：直徑178mm，適用於350mm機架
+
 按葉數分類
 雙葉槳：效率最高，速度快，震動小
 三葉槳：平衡性好，推力適中，應用最廣
 四葉槳：推力大，響應快，適合特技飛行
+
 2.2螺旋槳材質特性
 塑膠螺旋槳
 材質：ABS、PC、尼龍等
@@ -228,9 +241,10 @@ KV值定義：電壓每升高1V，馬達轉速增加的RPM數值
 優點：強度高、重量輕、剛性好、耐高溫
 缺點：成本高、易碎、安全性需注意
 適用：競速機、大功率應用、專業用途
+
 2.3常見螺旋槳型號與品牌
 Gemfan品牌塑膠螺旋槳
-型號：Gemfan5040三葉槳
+型號：Gemfan 5040三葉槳
 直徑：127mm(5吋)
 螺距：102mm(4吋)
 葉數：3葉
@@ -238,6 +252,7 @@ Gemfan品牌塑膠螺旋槳
 材質：高韌性ABS
 推力：1200g@50A
 顏色：多色可選
+資料來源：https://emaxmodel.com/products/2-pairs-gemfan-5040-bullnose-3-blade-pc-propeller-cw-ccw-for-rc-multirotors-unbreakable
 型號：Gemfan5045三葉槳
 直徑：127mm(5吋)
 螺距：114mm(4.5吋)
@@ -246,6 +261,7 @@ Gemfan品牌塑膠螺旋槳
 材質：高韌性ABS
 推力：1350g@55A
 顏色：多色可選
+資料來源：https://emaxmodel.com/products/2-pairs-5045-3-blade-propeller-abs-cw-ccw-for-mini-quadcopter
 型號：Gemfan5152三葉槳
 直徑：127mm(5吋)
 螺距：132mm(5.2吋)
@@ -254,6 +270,8 @@ Gemfan品牌塑膠螺旋槳
 材質：高韌性ABS
 推力：1500g@60A
 特色：高螺距設計
+資料來源：https://www.getfpv.com/gemfan-5152-3-blade-propeller-pc-set-of-4.html?srsltid=AfmBOoooi0pmSkpyCjRFdIUxA8I8XN_Pj1AAkG-0kbXDDGVFZS9fHlzy
+
 HQProp品牌塑膠螺旋槳
 型號：HQProp5x4.3x3
 直徑：127mm(5吋)
@@ -270,6 +288,8 @@ HQProp品牌塑膠螺旋槳
 重量：4.6g
 材質：PC+玻璃纖維
 推力：1380g@56A
+資料來源：https://www.hqprop.com/hq-durable-prop-5x43x3v1s-2cw2ccw-poly-carbonate-p0048.html
+
 DAL品牌塑膠螺旋槳
 型號：DAL5040三葉槳
 直徑：127mm(5吋)
@@ -279,25 +299,35 @@ DAL品牌塑膠螺旋槳
 材質：高韌性聚合物
 推力：1150g@48A
 特色：經典設計
+資料來源：https://www.progressiverc.com/products/dal-cyclone-5040-tri-blade-propellers?srsltid=AfmBOopg8a3AjvtZx93zA7ubkl18ArdADmdS0RV9GO-aWG6Ro5hAlRZi
+
 T-Motor品牌碳纖維螺旋槳
-型號：T-MotorT5143三葉槳
-直徑：127mm(5吋)
+型號：T-Motor T5143三葉槳
+直徑：127mm(5.1吋)
 螺距：109mm(4.3吋)
-葉數：3葉
-重量：3.8g
-材質：100%碳纖維
-推力：1320g@54A
-特色：超輕重量，高剛性
-型號：T-MotorT5147三葉槳
-直徑：127mm(5吋)
-螺距：119mm(4.7吋)
 葉數：3葉
 重量：4.0g
 材質：100%碳纖維
+輪毂厚度：7mm
+軸孔：M5
+推力：1320g@54A
+特色：超輕重量，高剛性
+資料來源：https://www.drone-fpv-racer.com/t-motor-t5143s-popo-4pcs-4885.html
+
+型號：T-Motor T5147三葉槳
+直徑：127mm(5.1吋)
+螺距：119mm(4.7吋)
+葉數：3葉
+重量：4.4g
+材質：100%碳纖維
+輪毂厚度：7mm
+安裝孔：5mm
 推力：1450g@58A
 特色：高推力設計
+資料來源：https://www.getfpv.com/t-motor-t5147-propeller-set-of-10.html?srsltid=AfmBOopxyJmTZi22RVlhNddRPemoJ9FuLeHIZT9UrCeoNQ2w-LFadfH2
+
 大尺寸螺旋槳
-型號：Gemfan7042雙葉槳
+型號：Gemfan 7042雙葉槳
 直徑：178mm(7吋)
 螺距：107mm(4.2吋)
 葉數：2葉
@@ -305,24 +335,21 @@ T-Motor品牌碳纖維螺旋槳
 材質：高韌性ABS
 推力：2200g@35A
 特色：長續航設計
-型號：T-MotorT7056三葉槳
-直徑：178mm(7吋)
-螺距：142mm(5.6吋)
-葉數：3葉
-重量：12.5g
-材質：碳纖維
-推力：2800g@45A
-特色：大推力應用
+資料來源：https://www.drone-fpv-racer.com/en/gemfan-7042-2-blades-polycarbonate-4pcs-3083.html
+
 小尺寸螺旋槳
 型號：Gemfan3052三葉槳
 直徑：76mm(3吋)
 螺距：132mm(5.2吋)
 葉數：3葉
-重量：2.1g
+重量：1.35g
 材質：高韌性ABS
+安裝孔： 5mm
 推力：450g@25A
 特色：室內競速專用
-型號：HQProp4x4.5x3
+資料來源：https://www.getfpv.com/gemfan-3052-3-blade-propeller-black-pc-set-of-4.html?srsltid=AfmBOoqZYTtBIYx3zXlFR3kPyKYpkT7k9uwPQpep1C7GIGToKJgdtolO
+
+型號：HQProp 4x4.5x3
 直徑：102mm(4吋)
 螺距：114mm(4.5吋)
 葉數：3葉
@@ -330,6 +357,8 @@ T-Motor品牌碳纖維螺旋槳
 材質：PC+玻璃纖維
 推力：750g@35A
 特色：小型FPV應用
+資料來源：https://shopee.tw/HQProp-4x4.5x3-%E6%A9%98%E8%89%B2-%E4%B8%89%E8%91%89%E8%9E%BA%E6%97%8B%E6%A7%B3%E7%8E%BB%E7%92%83%E7%BA%96%E7%B6%AD%E8%A4%87%E5%90%88%E6%9D%90%E6%96%992%E5%85%A5-(%E4%B8%80%E6%AD%A3%EF%BC%86%E4%B8%80%E5%8F%8D)-HQ-4X4.5X3-TP-O-i.31208419.7292066815
+
 3.鋰聚合物電池(LiPoBattery)
 3.1電池規格參數
 電壓系統
@@ -342,6 +371,7 @@ T-Motor品牌碳纖維螺旋槳
 小型機：450-850mAh
 標準機：1000-1800mAh
 大型機：2200-6000mAh
+
 3.2常見電池型號與品牌
 Tattu品牌4S電池系列
 型號：TattuFunFly4S1300mAh100C
@@ -353,6 +383,8 @@ Tattu品牌4S電池系列
 尺寸：68×35×29mm
 接頭：XT60
 充電接頭：JST-XH
+資料來源：https://genstattu.com/ta-ff-100c-1300-4s1p.html?srsltid=AfmBOopA3R6SF1pFyDvioljditHaSiiMNWVxOcuTZnj_qPvw6rviKP88
+
 型號：TattuFunFly4S1550mAh100C
 標稱電壓：14.8V
 容量：1550mAh
@@ -362,15 +394,19 @@ Tattu品牌4S電池系列
 尺寸：72×35×36mm
 接頭：XT60
 充電接頭：JST-XH
-型號：TattuR-Line3.04S1800mAh120C
+資料來源：https://genstattu.com/ta-ff-100c-1550-4s1p.html?srsltid=AfmBOopPJ8hdKfOQ9ZJE69GXSYU29ZYHjLIKemhZxE-jmKd8Y7gQMDSD
+
+型號：Tattu 1800mAh 4S 120C 14.8V R-Line
 標稱電壓：14.8V
 容量：1800mAh
 放電倍率：120C連續,240C瞬間
 最大放電電流：216A連續,432A瞬間
-重量：215g
-尺寸：108×36×30mm
+重量：197g
+尺寸：78×39×38mm
 接頭：XT60
 特色：競速專用高放電率
+資料來源：https://www.genstattu.com/tattu-r-line-version-3-1800mah-14-8v-120c-4s1p-lipo-battery-pack-with-xt60-plug.html?utm_source=chatgpt.com
+
 CNHL品牌4S電池系列
 型號：CNHL4S1500mAh100C
 標稱電壓：14.8V
@@ -381,6 +417,8 @@ CNHL品牌4S電池系列
 尺寸：105×34×29mm
 接頭：XT60
 特色：高性價比選擇
+資料來源：https://chinahobbyline.com/products/cnhl-black-series-1500mah-14-8v-4s-100c-lipo-battery-with-xt60-plug?srsltid=AfmBOoqe6SExs2jCu80IznAcVZR8keT1YxNCBtfe5kuv0FL-CC6qBoFF
+
 型號：CNHL4S2200mAh70C
 標稱電壓：14.8V
 容量：2200mAh
@@ -390,8 +428,10 @@ CNHL品牌4S電池系列
 尺寸：108×36×36mm
 接頭：XT60
 特色：長續航應用
-GensAce品牌4S電池系列
-型號：GensAce4S1300mAh45C
+資料來源：https://chinahobbyline.com/products/cnhl-gplus-series-2200mah-14-8v-4s-70c-lipo-battery-with-xt60-plug?srsltid=AfmBOopIMJDPyyWfiq0RNxKkOTDGGuzB872icmiu65HSqWbrJhjZ964u
+
+Gens Ace品牌3S電池系列
+型號：Gens Ace 3S1300mAh 45C
 標稱電壓：14.8V
 容量：1300mAh
 放電倍率：45C連續,90C瞬間
@@ -400,8 +440,10 @@ GensAce品牌4S電池系列
 尺寸：105×34×25mm
 接頭：XT60
 特色：穩定可靠
-RDQSeries品牌4S電池系列
-型號：RDQSeries4S1500mAh100C
+資料來源：https://www.amazon.com/-/zh_TW/Gens-11-1V-1300mAh-%E9%99%84%E9%99%A2%E9%95%B7%E6%8F%92%E9%A0%AD-%E5%B9%B3%E9%9D%A2%E7%9B%B4%E5%8D%87%E6%A9%9F%E9%A3%9B%E6%A9%9F/dp/B00WHCQYXG
+
+RDQ Series品牌4S電池系列
+型號：RDQ Series 4S 1500mAh 100C
 標稱電壓：14.8V
 容量：1500mAh
 放電倍率：100C連續,200C瞬間
@@ -410,8 +452,10 @@ RDQSeries品牌4S電池系列
 尺寸：105×34×29mm
 接頭：XT60
 特色：最新FPV技術
+資料來源：https://www.racedayquads.com/products/rdq-series-14-8v-4s-1500mah-100c-lipo-battery-xt60?srsltid=AfmBOopK3qh5tVmRHthUn6tEX0O4UwnrKSQhnaGUbiOnMl7K_WzVaZKb
+
 6S電池系列
-型號：TattuR-Line6S1300mAh120C
+型號：Tattu R-Line 6S 1300mAh 120C
 標稱電壓：22.2V
 容量：1300mAh
 放電倍率：120C連續,240C瞬間
@@ -419,7 +463,9 @@ RDQSeries品牌4S電池系列
 重量：245g
 尺寸：110×37×32mm
 接頭：XT60
-型號：CNHL6S1100mAh100C
+資料來源：https://www.amazon.com/-/zh_TW/R-Line-Version-4/dp/B099F921DM
+
+型號：CNHL 6S 1100mAh 100C
 標稱電壓：22.2V
 容量：1100mAh
 放電倍率：100C連續,200C瞬間
@@ -427,6 +473,8 @@ RDQSeries品牌4S電池系列
 重量：220g
 尺寸：95×35×32mm
 接頭：XT60
+資料來源：https://www.amazon.com/-/zh_TW/1100mAh-22-2V-%E8%B3%BD%E8%BB%8A%E7%84%A1%E4%BA%BA%E6%A9%9F-%E5%9B%9B%E8%BB%B8%E9%A3%9B%E8%A1%8C%E5%99%A8-%E9%A3%9B%E6%A9%9F%E7%9B%B4%E5%8D%87%E6%A9%9F/dp/B07TZDN8WR?th=1
+
 3.3電池選型計算
 飛行時間估算
 飛行時間(分鐘)=電池容量(mAh)/平均電流(mA)×60×0.8
@@ -434,6 +482,7 @@ RDQSeries品牌4S電池系列
 電流需求計算
 總電流需求=馬達數量×單馬達電流×1.2
 其中1.2為安全餘量
+
 4.電子調速器(ESC)
 4.1ESC規格分類
 按電流分類
@@ -441,100 +490,120 @@ RDQSeries品牌4S電池系列
 20AESC：適用於4吋機架
 35AESC：適用於5吋機架
 50AESC：適用於6吋以上大型機
+
 按通訊協議分類
 PWM：傳統脈寬調製，更新率50Hz
 Oneshot125：更新率8kHz
 Oneshot42：更新率24kHz
 Multishot：更新率32kHz
 DShot：數位通訊協議，抗干擾強
+
 4.2常見ESC型號與品牌
 4合1ESC
-型號：iFlightSucceX-E35A4-in-1ESC
-連續電流：35A×4
-瞬間電流：45A×4
+型號：iFlight SucceX-E Mini F7 35A 4-in-1 ESC
+工作電流：2.5A×5
 支援電池：3S-6S
 通訊協議：DShot600/300/150,PWM,Multishot
-尺寸：36×36mm
-重量：8.5g
+孔位：27×27mm
+重量：4.9g
 特色：支援BLHeli_S韌體
 遙測：支援電流/電壓/溫度回傳
-型號：HolybroTekko32F335A4-in-1ESC
+資料來源：https://www.aliexpress.com/item/3256802924990058.html?gatewayAdapt=4itemAdapt
+
+型號：HolybroTekko32 F3 35A 4-in-1ESC
 連續電流：35A×4
 瞬間電流：42A×4
 支援電池：3S-6S
 通訊協議：DShot600/300/150,PWM
-尺寸：36×36mm
+孔位：30.5×30.5mm
 重量：9.2g
 特色：F3處理器，支援BLHeli_32
 遙測：全套遙測功能
-型號：AIKONAK3235A4-in-1ESC
+資料來源：https://www.getfpv.com/holybro-tekko32-35a-4-in-1-blheli32-3-6s-esc.html?srsltid=AfmBOoqrEWgv98cQwT-DBv8DhWvrZylqfZASh8GI0TwopEajGMFM0WL3
+
+型號：AIKON AK32 35A 4-in-1ESC
 連續電流：35A×4
 瞬間電流：40A×4
 支援電池：3S-6S
 通訊協議：DShot600/300/150
-尺寸：36×36mm
-重量：8.8g
+孔位：36×36mm
+重量：20.4g
 特色：32bitARM處理器
 遙測：支援電流/電壓/RPM回傳
+資料來源：https://oscarliang.com/aikon-ak32-4in1-35a-esc/
+
 大電流4合1ESC
-型號：iFlightXROTOR60A4-in-1ESC
+型號：iFlight Micro XROTOR 60A 4-in-1 ESC
 連續電流：60A×4
 瞬間電流：80A×4
 支援電池：3S-8S
 通訊協議：DShot600/300/150
-尺寸：36×36mm
+孔位：30.5×30.5mm
 重量：12.5g
 特色：支援大功率馬達
 遙測：完整遙測功能
-型號：T-MotorF55AProII4-in-1ESC
+資料來源：https://www.aliexpress.com/i/3256804121591591.html?gatewayAdapt=4itemAdapt
+
+型號：T-Motor F55A ProII4-in-1ESC
 連續電流：55A×4
-瞬間電流：70A×4
+瞬間電流：75A×4
 支援電池：3S-6S
 通訊協議：DShot600/300/150
-尺寸：36×36mm
-重量：11.8g
+孔位：30.5×30.5mm
+重量：17.5g
 特色：高品質元件，低溫運行
 遙測：支援完整遙測
-單獨ESC
-型號：BLHeli_S30AESC
+資料來源：https://store.tmotor.com/product/f55a-pro-v2-4in1-fpv-esc.html?srsltid=AfmBOopLKUqfnAxl1r46bzXA8wLLyGEHFyzkKqBeN1F2R8Ee9eBRVJBa
+
+
+型號：BLHeli_S30A ESC
 連續電流：30A
 瞬間電流：40A
 支援電池：2S-4S
 通訊協議：DShot600/300/150,PWM
-尺寸：25×12×6mm
-重量：4.2g
+尺寸：23.8×14.5×5.8mm
+重量：6g
 特色：體積小巧，適合小型機
-型號：HolybroTekko32F350AESC
-連續電流：50A
-瞬間電流：65A
+資料來源：https://www.hobbywing.com/en/uploads/file/20221024/a2af456143335670486f6d4e5122f1e3.pdf
+
+型號：Holybro Tekko32 35A 4-in-1 BLHeli32 3-6s ESC
+連續電流：35A
+瞬間電流：50A
 支援電池：3S-8S
 通訊協議：DShot600/300/150
-尺寸：25×12×6mm
-重量：5.5g
+尺寸：55×40×6.4mm
+重量：17g
 特色：32bit處理器，高性能
+資料來源：https://www.getfpv.com/holybro-tekko32-35a-4-in-1-blheli32-3-6s-esc.html?srsltid=AfmBOoo1hPew46iXHobdc_Hb8fNgWlfLF0FLvT90wk9TMEkD6nOIQ398
+
 大功率單獨ESC
-型號：CastleCreationsPhoenixEdge100AESC
+型號：Castle Creations Phoenix Edge 100 AMP ESC
 連續電流：100A
-瞬間電流：120A
-支援電池：3S-12S
+瞬間電流：100A
+支援電池：2S-8S
 通訊協議：PWM,CastleLink
-尺寸：45×25×15mm
-重量：35g
+孔位：50.8×71.9×23.2mm
+重量：126.6g
 特色：工業級品質，大型機專用
 遙測：完整診斷功能
-型號：YEP80AESC
+資料來源：https://www.castlecreations.com/en/phoenix-edge-100-esc-010-0100-00
+
+型號：YEP 80A ESC
 連續電流：80A
 瞬間電流：100A
 支援電池：2S-6S
 通訊協議：DShot600/300/150,PWM
-尺寸：40×20×8mm
-重量：18g
+孔位：50×30mm
+重量：70g
 特色：高性價比，穩定可靠
+資料來源：https://hobbyking.com/en_us/yep-80a-2-6s-sbec-brushless-speed-controller.html?srsltid=AfmBOorIEej46ByCNXMkV4ZdIXglNiad-CKHftw26AShC84UhB9q1JI-&___store=en_us
+
 4.3ESC選型要點
 電流餘量：選擇電流應為馬達最大電流的1.2-1.5倍
 電壓匹配：確保ESC支援所選電池電壓
 通訊協議：建議選用DShot協議，響應快且抗干擾
 散熱設計：大電流應用需考慮散熱問題
+
 5.系統匹配與計算
 5.1推力重量比計算
 基本公式
@@ -543,6 +612,7 @@ DShot：數位通訊協議，抗干擾強
 航拍機：2：1~3：1
 競速機：4：1~6：1
 特技機：6：1~10：1
+
 5.2功率需求計算
 基本公式
 總功率需求=馬達數量×單馬達功率×負載係數
@@ -550,6 +620,7 @@ DShot：數位通訊協議，抗干擾強
 懸停：0.3~0.5
 一般飛行：0.5~0.7
 激烈飛行：0.7~1.0
+
 5.3飛行時間估算
 考慮因素
 電池容量與電壓
@@ -565,22 +636,26 @@ DShot：數位通訊協議，抗干擾強
 總重量：650g
 懸停電流：約25A
 飛行時間：1500mAh/25A×0.8=4.8分鐘
+
 6.主要供應商與產品鏈接
 6.1馬達製造商
 T-Motor：高端競速馬達領導品牌
 Emax：性價比優秀的選擇
 XING：新興高性能品牌
 BrotherHobby：專業級馬達製造商
+
 6.2電池供應商
 Tattu：專業FPV電池品牌
 CNHL：高性價比選擇
 GensAce：老牌電池製造商
 Turnigy：入門級首選
+
 6.3螺旋槳品牌
 Gemfan：塑膠槳領導品牌
 HQProp：高品質選擇
 DAL：經典三葉槳
 T-Motor：碳纖維槳專家
+
 7.選型建議與注意事項
 7.1新手建議配置
 機架：210mm
@@ -588,18 +663,21 @@ T-Motor：碳纖維槳專家
 螺旋槳：5040三葉塑膠槳
 電池：4S1500mAh75C
 ESC：35A4-in-1
+
 7.2競速機配置
 機架：210mm
 馬達：22072750KV
 螺旋槳：5045三葉碳纖維槳
 電池：4S1300mAh120C
 ESC：50A4-in-1
+
 7.3長續航配置
 機架：250mm
 馬達：25081800KV
 螺旋槳：6045雙葉槳
 電池：4S2200mAh45C
 ESC：35A4-in-1
+
 7.4安全注意事項
 電池充電時必須監控，避免過充
 碳纖維槳破損時應立即更換
