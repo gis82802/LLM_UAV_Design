@@ -1,0 +1,737 @@
+1. Brushless DC Motor (BLDCMotor)
+1.1 Motor Specification Classification Table
+| Frame Size | Propeller Size | Motor Size | KV Value Range | Applicable Scenarios |
+| Below 150mm | Below 3 inches | 1105, 1106, 1204, 1306 | Above 3000KV | Indoor Racing Drone |
+|180mm | 7 inches | 1806,2204 | 2600-3000KV | Small FPV |
+|210mm | 8.5 inches | 2205,2208,2305,2306 | 2300-2600KV | Standard FPV |
+|250mm | 10 inches | 2206,2208,2306 | 2000-2300KV | Long Endurance FPV |
+|350mm | 14 inches | 2506,2508 | 1200-2000KV | Large Cargo |
+
+
+1.2 Common Motor Models and Specifications
+
+
+Model: iFlightXing-ePro22072750KV
+Stator Diameter: 22mm
+Stator Height: 7mm
+KV value: 2750 RPM/V
+Maximum continuous power: 800.5 W
+Weight: 33.8 g
+Axle diameter: 5mm (high-strength 4mm steel axle)
+Operating Voltage: 7.4V-14.8V (2S-4S)
+Bearings: 9×4×4mm NSK Bearings
+Screw: M3 Axial Screw
+Winding: Single-strand Copper Wire Winding
+Maximum Current: 50.03A (180S)
+Internal Resistance: 41mΩ
+Idle Current: <2.2A@10V
+Configuration: 12N14P
+Electrical dimensions: 28.5×19.7mm
+Magnet: N52H high-temperature magnet
+Hole pattern: 16×16mm
+Model: iFlightXing-ePro22072450KV
+Stator diameter: 22mm
+Stator height: 7mm
+KV value: 2450RPM/V
+Maximum continuous power: 682.1W
+Weight: 33.8g
+Shaft Diameter: 5mm (High-strength 4mm steel shaft)
+Operating Voltage: 7.4V-14.8V (2S-4S)
+Bearings: 9×4×4mm NSK bearings
+Screw: M3 shaft screw
+Winding: Single strand copper wire winding
+Maximum current: 42.63A (180S)
+Internal resistance: 46.8mΩ
+Idle current: <2.0A@10V
+Configuration: 12N14P
+Motor size: 28.5×19.7mm
+Magnet: N52H high-temperature magnet
+Knot pattern: 16×16mm
+Model: iFlightXing-ePro22071800KV
+Stator diameter: 22mm
+Stator height: 7mm
+KV value: 1800 RPM/V
+Maximum continuous power: 845.3W
+Weight: 33.8g
+Shaft diameter: 5mm (high-strength 4mm steel shaft)
+Operating Voltage: 11.1V-22.2V (3S-6S)
+Bearings: 9×4×4mm NSK Bearings
+Screw: M3 Axial Screw
+Winding: Single-strand Copper Wire Winding
+Maximum Current: 35.22A (180S)
+Internal Resistance: 81.5mΩ
+Idle Current: <1.2A@10V
+Configuration: 12N14P
+Electrical dimensions: 28.5×19.7mm
+Magnet: N52H high-temperature magnet
+Hole pattern: 16×16mm
+Source: https://iflight-rc.eu/en-cz/products/xing2-2207-2-6s-fpv-motor?_pos=1&_sid=427c49950&_ss=r
+
+
+Model: T-Motor BlackBird 2207 V2.0 1950KV
+Stator Diameter: 22mm
+Stator Height: 7mm
+KV Value: 1950 RPM/V
+Maximum Power (60 seconds): 903W
+Weight (with cable): 33.4g
+Axle Diameter: 4mm
+Rated Voltage: 6SLiPo
+Peak current (60s): 40A
+Idle current: 1.05A
+Internal resistance: 60mΩ
+Configuration: 12N14P
+Electrical dimensions: Φ27.9×30.4mm
+Wiring: 20#AWG 150mm
+Features: 6S dedicated high-power design
+Model: T-Motor BlackBird 2207 V2.0 2800KV
+Stator diameter: 22mm
+Stator height: 7mm
+KV value: 2800RPM/V
+Maximum power (60 seconds): 610W
+Weight (including wire): 33.4g
+Shaft diameter: 4mm
+Rated voltage: 4SLiPo
+Peak current (60 seconds): 42.4A
+Idle current: 1.8A
+Internal resistance: 45mΩ
+Configuration: 12N14P
+Motor size: Φ27.5×30.4mm
+Wiring: 20#AWG150mm
+Features: 4S dedicated high-speed design T-Motor brand
+Model: T-Motor Blackbird 2207 2750KV
+Stator Diameter: 22mm
+Stator height: 7mm
+KV value: 2750 RPM/V
+Maximum power: 600W
+Weight: 33g
+Diameter: 5mm
+Operating Voltage: 14.8V–22.2V (4S–6S)
+Features: Collaboratively designed with the Blackbird team, built for extreme racing scenarios
+Source: https://www.getfpv.com/t-motor-black-bird-2207-v2-0-1950kv-2800kv-motor-1pc.html
+
+
+Model T-Motor V2207 22550KV
+Stator diameter: 22mm
+Stator height: 7mm
+KV value: 2550 RPM/V
+Maximum Power: 580W
+Weight: 34g
+Shaft Diameter: 5mm (Titanium Alloy Hollow Shaft)
+Operating Voltage: 14.8V–22.2V (4S–6S)
+Bearings: NSK dual bearings
+Housing: Unibell monoblock aluminum alloy structure
+Features: Lightweight, shock-resistant, high 爆发力, preferred for freestyle
+Model: T-Motor V2207.5V 1950KV
+Stator diameter: 22mm
+Stator height: 7.5mm
+KV value: 1950RPM/V
+Maximum power: 600W
+Weight: 33.6g
+Diameter: 5mm (Titanium alloy)
+Operating voltage: 14.8V–22.2V (4S–6S)
+Bearings: NSK precision bearings
+Feature: Balanced design, suitable for aerial photography and medium-speed cross-country aircraft
+Model: T-Motor V2207 V32050KV
+Stator diameter: 22mm
+Stator height: 7mm
+KV value: 2050 RPM/V
+Maximum power: 650W
+Weight: 35g
+Shaft diameter: 5mm
+Operating Voltage: 14.8V–22.2V (4S–6S)
+Bearings: NSK Dual Bearings
+Features: Freestyle Flight Specialized, Linear Thrust Curve, Fast Response
+Model: T-Motor P2207 V32550KV
+Stator diameter: 22mm
+Stator height: 7mm
+KV value: 2550RPM/V
+Maximum power: 680W
+Weight: 33.5g
+Diameter: 5mm
+Operating Voltage: 14.8V–22.2V (4S–6S)
+Bearings: NSK dual bearings
+Feature: High-speed burst power, suitable for racing and quick traversal
+Model: T-Motor F60 PRO V2 2207.52020KV
+Stator diameter: 22mm
+Stator height: 7.5mm
+KV value: 2020 RPM/V
+Maximum power: 720W
+Weight: 34.8g
+Axle diameter: 5mm
+Operating Voltage: 14.8V–22.2V (4S–6S)
+Bearings: Japanese EZO high-precision bearings
+Features: High-end racing 专用 motor, stable speed, excellent temperature resistance
+Model: T-Motor MN2814KV770
+Stator diameter: 28mm
+Stator height: 14mm
+KV value: 770RPM/V
+Maximum power: 850W
+Weight: 65g
+Diameter: 5mm
+Operating Voltage: 14.8V-25.2V (4S-7S)
+Applicable: Large Payload Drones
+Source: https://store.tmotor.com/search.phpencode=YTozOntzOjg6ImtleXdvcmRzIjtzOjQ6IjIyMDciO3M6NDoidHlwZSI7czoxOiIwIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTc1MTg4MTYzMDt9
+
+
+Thrust Test and Performance Curve (2207 Series)
+| Model | Test Propeller | Test Voltage | Peak Thrust | Peak Current | Peak Power | Efficiency Range |
+| V2207V22550KV | T5143 | 16.8V | 1460g | 41A | 690W | 2.11g/W |
+|V2207V32050KV |T5146 |22.2V |1580g |36A |800W |1.98g/W|
+|P2207V32550KV |T5147 |16.8V |1520g |43A |720W |2.10g/W|
+|F60PROV2020KV |T5146 |22.2V |1650g |38A |830W |1.99g/W|
+|Blackbird2750KV |T5143 |16.8V |1500g |45A |730W |2.05g/W|
+
+
+Model: RCINPOWERGTSV22207PLUS
+Brand Name: RCINPOWER
+Motor Configuration: 12N14P
+Thread Direction: CW Clockwise
+Axis diameter: 4mm (hollow shaft)
+Motor size (diameter×length): 27.7mm×31.5mm
+Weight: 31.5g (excluding nut, 3cm wire)
+Stator diameter: 22mm
+Stator height: 7.5mm
+Optional colors: Purple/Pink/Titanium
+Optional KV: 1860KV/2500KV/2750KV
+Operating voltage range:
+1860KV: 5–6S
+2500KV&2750KV: 4–5S
+Power and Current Classification Table (By KV Value)
+KV Value No-load Current@10V Internal Resistance Maximum Current (30s) Maximum Continuous Power (180s) Recommended Voltage
+1860KV 1.0A 55mΩ 40A 1000W 5S–6S
+2500KV 1.6A 34mΩ 45A 1000W 4S–5S
+2750KV 2.0A 30mΩ 45A 1000W 4S–5S
+Source: https://www.getfpv.com/rcinpower-gts-v2-2207-plus-motor-1860kv-2500kv-2750kv.html
+
+
+Model: AMAX2207Bando2550KV
+Stator Diameter: 22mm
+Stator Height: 7mm
+KV Value: 2550 RPM/V
+Maximum Power: 550W
+Weight: 31g
+Axle Diameter: 5mm
+Operating Voltage: 7.4V-14.8V(2S-4S)
+Feature: Competition Exclusive Model
+Source: https://amaxshop.com/index.php?route=product/product&product_id=1801
+
+
+Large Long-Endurance Motor
+Key Points for 1.3 Motor Selection
+KV value definition: The number of RPM the motor speed increases when the voltage rises by 1V
+Power calculation: P = U × I × η (voltage × current × efficiency)
+Torque constant: Kt = 1/KV (unit: N⋅m/A)
+Efficiency range: High-quality motors typically have an efficiency between 85-95%
+
+
+2. Propeller Specifications
+2.1 Propeller Size Classification
+
+
+Classification by Diameter
+3-inch Propeller: Diameter 76mm, suitable for frames below 150mm
+4-inch Propeller: Diameter 102mm, suitable for 180mm frame
+5-inch Propeller: Diameter 127mm, suitable for 210mm frame
+6-inch Propeller: Diameter 152mm, suitable for 250mm frame
+7-inch Propeller: Diameter 178mm, suitable for 350mm frame
+
+
+Categorized by number of blades
+Two-blade propeller: Highest efficiency, fast speed, minimal vibration
+Three-blade propeller: Good balance, moderate thrust, most widely used
+Four-blade propeller: High thrust, quick response, suitable for aerobatic flights
+
+
+2.2 Propeller Material Characteristics
+Plastic Propeller
+Material: ABS, PC, Nylon, etc.
+Advantages: Low cost, lightweight, good toughness, not easy to hurt people
+Disadvantages: Relatively low strength, prone to deformation at high temperatures
+Applications: Beginners, indoor flying, small aircraft
+Carbon Fiber Propeller
+Material: Carbon Fiber Reinforced Polymer (CFRP)
+Advantages: High strength, lightweight, good rigidity, high-temperature resistance
+Disadvantages: High cost, fragile, safety needs attention
+Applications: Racing machines, high-power applications, professional use
+
+
+2.3 Common propeller models and brands
+Gemfan brand plastic propeller
+Model: Gemfan 5040 three-blade propeller
+Diameter: 127mm (5 inches)
+Pitch: 102mm (4 inches)
+Number of Leaves: 3 leaves
+Weight: 4.5g
+Material: High-toughness ABS
+Thrust: 1200g@50A
+Color: Multi-color available
+Source: https://emaxmodel.com/products/2-pairs-gemfan-5040-bullnose-3-blade-pc-propeller-cw-ccw-for-rc-multirotors-unbreakable
+Model: Gemfan5045 three-blade propeller
+Diameter: 127mm (5 inches)
+Pitch: 114mm (4.5 inches)
+Number of Blades: 3 blades
+Weight: 4.8g
+Material: High-toughness ABS
+Thrust: 1350g@55A
+Color: Multiple colors available
+Source: https://emaxmodel.com/products/2-pairs-5045-3-blade-propeller-abs-cw-ccw-for-mini-quadcopter
+Model: Gemfan5152 three-blade propeller
+Diameter: 127mm (5 inches)
+Pitch: 132mm (5.2 inches)
+Number of Blades: 3 blades
+Weight: 5.2g
+Material: High-toughness ABS
+Thrust: 1500g@60A
+Feature: High pitch design
+Source: https://www.getfpv.com/gemfan-5152-3-blade-propeller-pc-set-of-4.html?srsltid=AfmBOoooi0pmSkpyCjRFdIUxA8I8XN_Pj1AAkG-0kbXDDGVFZS9fHlzy
+
+
+HQProp Brand Plastic Propeller
+Model: HQProp5x4.3x3
+Diameter: 127mm (5 inches)
+Pitch: 109mm (4.3 inches)
+Number of Leaves: 3 leaves
+Weight: 4.3g
+Material: PC + Fiber Glass
+Thrust: 1280g@52A
+Feature: High-intensity composite material
+Model: HQProp5x4.5x3
+Diameter: 127mm (5 inches)
+Pitch: 114mm (4.5 inches)
+Number of Leaves: 3 leaves
+Weight: 4.6g
+Material: PC + Fiber Glass
+Thrust: 1380g@56A
+Source: https://www.hqprop.com/hq-durable-prop-5x43x3v1s-2cw2ccw-poly-carbonate-p0048.html
+
+
+DAL brand plastic propeller
+Model: DAL5040 three-blade propeller
+Diameter: 127mm (5 inches)
+Pitch: 102mm (4 inches)
+Number of Blades: 3 blades
+Weight: 4.1g
+Material: High-tensile polymer
+Thrust: 1150g@48A
+Feature: Classic Design
+Source: https://www.progressiverc.com/products/dal-cyclone-5040-tri-blade-propellers?srsltid=AfmBOopg8a3AjvtZx93zA7ubkl18ArdADmdS0RV9GO-aWG6Ro5hAlRZi
+
+
+T-Motor Brand Carbon Fiber Propeller
+Model: T-Motor T5143 three-blade propeller
+Diameter: 127mm (5.1 inches)
+Pitch: 109mm (4.3 inches)
+Number of blades: 3 blades
+Weight: 4.0g
+Material: 100% Carbon Fiber
+Hub Thickness: 7mm
+Bolt Hole: M5
+Thrust: 1320g@54A
+Features: Ultra-lightweight, high rigidity
+Source: https://www.drone-fpv-racer.com/t-motor-t5143s-popo-4pcs-4885.html
+
+
+Model: T-Motor T5147 three-blade propeller
+Diameter: 127mm (5.1 inches)
+Pitch: 119mm (4.7 inches)
+Number of Blades: 3 blades
+Weight: 4.4g
+Material: 100% Carbon Fiber
+Hub Thickness: 7mm
+Mounting Hole: 5mm
+Thrust: 1450g@58A
+Feature: High thrust design
+Source: https://www.getfpv.com/t-motor-t5147-propeller-set-of-10.html?srsltid=AfmBOopxyJmTZi22RVlhNddRPemoJ9FuLeHIZT9UrCeoNQ2w-LFadfH2
+
+
+Large size propeller
+Model: Gemfan 7042 dual blade propeller
+Diameter: 178mm (7 inches)
+Pitch: 107mm (4.2 inches)
+Number of Blades: 2 blades
+Weight: 8.5g
+Material: High-toughness ABS
+Thrust: 2200g@35A
+Features: Long endurance design
+Source: https://www.drone-fpv-racer.com/en/gemfan-7042-2-blades-polycarbonate-4pcs-3083.html
+
+
+Small size propeller
+Model: Gemfan3052 three-blade propeller
+Diameter: 76mm (3 inches)
+Pitch: 132mm (5.2 inches)
+Number of Leaves: 3 leaves
+Weight: 1.35g
+Material: High-toughness ABS
+Mounting Hole: 5mm
+Thrust: 450g@25A
+Feature: Indoor Racing Specific
+Source: https://www.getfpv.com/gemfan-3052-3-blade-propeller-black-pc-set-of-4.html?srsltid=AfmBOoqZYTtBIYx3zXlFR3kPyKYpkT7k9uwPQpep1C7GIGToKJgdtolO
+
+
+Model: HQProp 4x4.5x3
+Diameter: 102mm (4 inches)
+Pitch: 114mm (4.5 inches)
+Number of Blades: 3 blades
+Weight: 3.2g
+Material: PC + Fiber Glass
+Thrust: 750g@35A
+Feature: Small FPV Application
+Source: https://shopee.tw/HQProp-4x4.5x3-%E6%A9%98%E8%89%B2-%E4%B8%89%E8%91%89%E8%9E%BA%E6%97%8B%E6%A7%B3%E7%8E%BB%E7%92%83%E7%BA%96%E7%B6%AD%E8%A4%87%E5%90%88%E6%9D%90%E6%96%992%E5%85%A5-(%E4%B8%80%E6%AD%A3%EF%BC%86%E4%B8%80%E5%8F%8D)-HQ-4X4.5X3-TP-O-i.31208419.7292066815
+
+
+3. Lithium Polymer Battery (LiPoBattery)
+3.1 Battery Specification Parameters
+Voltage System
+1S: 3.7V (Single cell)
+2S: 7.4V (Dual 串联)
+3S: 11.1V (Triple 串联)
+4S: 14.8V (Quad 串联)
+6S: 22.2V (Six 串联)
+Capacity specifications
+Small devices: 450-850mAh
+Standard devices: 1000-1800mAh
+Large devices: 2200-6000mAh
+
+
+3.2 Common Battery Models and Brands
+Tattu brand 4S battery series
+Model: TattuFunFly4S1300mAh100C
+Nominal Voltage: 14.8V
+Capacity: 1300mAh
+Discharge Rate: 100C continuous, 200C burst
+Maximum Discharge Current: 130A continuous, 260A burst
+Weight: 158g
+Dimensions: 68×35×29mm
+Connector: XT60
+Charging Connector: JST-XH
+Source: https://genstattu.com/ta-ff-100c-1300-4s1p.html?srsltid=AfmBOopA3R6SF1pFyDvioljditHaSiiMNWVxOcuTZnj_qPvw6rviKP88
+
+
+Model: TattuFunFly4S1550mAh100C
+Nominal Voltage: 14.8V
+Capacity: 1550mAh
+Discharge Rate: 100C continuous, 200C burst
+Maximum discharge current: 155A continuous, 310A peak
+Weight: 178g
+Dimensions: 72×35×36mm
+Connector: XT60
+Charging Port: JST-XH
+Source: https://genstattu.com/ta-ff-100c-1550-4s1p.html?srsltid=AfmBOopPJ8hdKfOQ9ZJE69GXSYU29ZYHjLIKemhZxE-jmKd8Y7gQMDSD
+
+
+Model: Tattu 1800mAh 4S 120C 14.8V R-Line
+Nominal Voltage: 14.8V
+Capacity: 1800mAh
+Discharge Rate: 120C continuous, 240C burst
+Maximum Discharge Current: 216A continuous, 432A burst
+Weight: 197g
+Size: 78×39×38mm
+Connector: XT60
+Features: Speed racing high discharge rate
+Source: https://www.genstattu.com/tattu-r-line-version-3-1800mah-14-8v-120c-4s1p-lipo-battery-pack-with-xt60-plug.html?utm_source=ChatGPT.com
+
+
+CNHL brand 4S battery series
+Model: CNHL4S1500mAh100C
+Nominal voltage: 14.8V
+Capacity: 1500mAh
+Discharge 倍率：100C continuous, 200C burst
+Maximum discharge current：150A continuous, 300A burst
+Weight：185g
+Dimensions：105×34×29mm
+Prefix: XT60
+Feature: High Value for Money Choice
+Source: https://chinahobbyline.com/products/cnhl-black-series-1500mah-14-8v-4s-100c-lipo-battery-with-xt60-plug?srsltid=AfmBOoqe6SExs2jCu80IznAcVZR8keT1YxNCBtfe5kuv0FL-CC6qBoFF
+
+
+Model: CNHL4S2200mAh70C
+Nominal Voltage: 14.8V
+Capacity: 2200mAh
+Discharge Rate: 70C continuous, 140C burst
+Maximum Discharge Current: 154A continuous, 308A burst
+Weight: 265g
+Dimensions: 108×36×36mm
+Connector: XT60
+Features: Long-lasting application
+Source: https://chinahobbyline.com/products/cnhl-gplus-series-2200mah-14-8v-4s-70c-lipo-battery-with-xt60-plug?srsltid=AfmBOopIMJDPyyWfiq0RNxKkOTDGGuzB872icmiu65HSqWbrJhjZ964u
+
+
+Gens Ace 3S Battery Series
+Model: Gens Ace 3S1300mAh 45C
+Nominal Voltage: 14.8V
+Capacity: 1300mAh
+Discharge Rate: 45C continuous, 90C burst
+Maximum Discharge Current: 58.5A continuous, 117A burst
+Weight: 145g
+Size: 105×34×25mm
+Connector: XT60
+Feature: Stable and Reliable
+Source: https://www.amazon.com/-/zh_TW/Gens-11-1V-1300mAh-%E9%99%84%E9%99%A2%E9%95%B7%E6%8F%92%E9%A0%AD-%E5%B9%B3%E9%9D%A2%E7%9B%B4%E5%8D%87%E6%A9%9F%E9%A3%9B%E6%A9%9F/dp/B00WHCQYXG
+
+
+RDQ Series Brand 4S Battery Series
+Model: RDQ Series 4S 1500mAh 100C
+Nominal Voltage: 14.8V
+Capacity: 1500mAh
+Discharge 倍率：100C continuous, 200C burst
+Maximum discharge current：150A continuous, 300A burst
+Weight：180g
+Dimensions：105×34×29mm
+Prefix: XT60
+Feature: Latest FPV technology
+Source: https://www.racedayquads.com/products/rdq-series-14-8v-4s-1500mah-100c-lipo-battery-xt60?srsltid=AfmBOopK3qh5tVmRHthUn6tEX0O4UwnrKSQhnaGUbiOnMl7K_WzVaZKb
+
+
+6S Battery Series
+Model: Tattu R-Line 6S 1300mAh 120C
+Nominal Voltage: 22.2V
+Capacity: 1300mAh
+Discharge Rate: 120C continuous, 240C burst
+Maximum discharge current: 156A continuous, 312A peak
+Weight: 245g
+Dimensions: 110×37×32mm
+Connector: XT60
+Source: https://www.amazon.com/-/zh_TW/R-Line-Version-4/dp/B099F921DM
+
+
+Model: CNHL 6S 1100mAh 100C
+Nominal Voltage: 22.2V
+Capacity: 1100mAh
+Discharge 倍率：100C continuous, 200C burst
+Maximum discharge current：110A continuous, 220A burst
+Weight：220g
+Dimensions：95×35×32mm
+Prefix: XT60
+Source: https://www.amazon.com/-/zh_TW/1100mAh-22-2V-%E8%B3%BD%E8%BB%8A%E7%84%A1%E4%BA%BA%E6%A9%9F-%E5%9B%9B%E8%BB%B8%E9%A3%9B%E8%A1%8C%E5%99%A8-%E9%A3%9B%E6%A9%9F%E7%9B%B4%E5%8D%87%E6%A9%9F/dp/B07TZDN8WR?th=1
+
+
+3.3 Battery Selection Calculation
+Flight Time Estimation
+Flight time (minutes) = Battery capacity (mAh) / Average current (mA) × 60 × 0.8
+Where 0.8 is the safety factor
+Current requirement calculation
+Total current requirement = Number of motors × Current per motor × 1.2
+1.2 is the safety margin
+
+
+4. Electronic Speed Controller (ESC)
+4.1 ESC specification classification
+Classified by current
+12AESC: Suitable for small machines (under 3 inches)
+20AESC: Suitable for 4-inch rack
+35AESC: Suitable for 5-inch rack
+50AESC: Suitable for large machines over 6 inches
+
+
+Categorized by communication protocol
+PWM: Traditional Pulse Width Modulation, update rate 50Hz
+Oneshot125: Update rate 8kHz
+Oneshot42: Update rate 24kHz
+Multishot: Update rate 32kHz
+DShot: Digital communication protocol, strong anti-interference
+
+
+4.2 Common ESC models and brands
+4-in-1 ESC
+Model: iFlight SucceX-E Mini F7 35A 4-in-1 ESC
+Operating Current: 2.5A×5
+Supported Batteries: 3S-6S
+Communication Protocol: DShot600/300/150, PWM, Multishot
+Hole Size: 27×27mm
+Weight: 4.9g
+Feature: Supports BLHeli_S firmware
+Telemetry: Supports current/voltage/temperature return
+Source: https://www.aliexpress.com/item/3256802924990058.html?gatewayAdapt=4itemAdapt
+
+
+Model: HolybroTekko32 F3 35A 4-in-1ESC
+Continuous Current: 35A×4
+Peak Current: 42A×4
+Battery Support: 3S-6S
+Communication Protocol: DShot600/300/150, PWM
+Mounting Hole Size: 30.5×30.5mm
+Weight: 9.2g
+Features: F3 Processor, Supports BLHeli_32
+Telemetry: Full Telemetry Functionality
+Source: https://www.getfpv.com/holybro-tekko32-35a-4-in-1-blheli32-3-6s-esc.html?srsltid=AfmBOoqrEWgv98cQwT-DBv8DhWvrZylqfZASh8GI0TwopEajGMFM0WL3
+
+
+Model: AIKON AK32 35A 4-in-1ESC
+Continuous current: 35A×4
+Peak current: 40A×4
+Supported battery: 3S-6S
+Communication protocol: DShot600/300/150
+Hole size: 36×36mm
+Weight: 20.4g
+Features: 32-bit ARM processor
+Telemetry: Supports current/voltage/RPM feedback
+Source: https://oscarliang.com/aikon-ak32-4in1-35a-esc/
+
+
+High-Current 4-in-1 ESC
+Model: iFlight Micro XROTOR 60A 4-in-1 ESC
+Continuous Current: 60A x 4
+Instantaneous current: 80A×4
+Supported battery: 3S-8S
+Communication protocol: DShot600/300/150
+Mounting holes: 30.5×30.5mm
+Weight: 12.5g
+Feature: Supports high-power motor
+Remote Control: Full remote control function
+Data Source: https://www.aliexpress.com/i/3256804121591591.html?gatewayAdapt=4itemAdapt
+
+
+Model: T-Motor F55A ProII 4-in-1 ESC
+Continuous Current: 55A x 4
+Peak Current: 75A x 4
+Supported Batteries: 3S-6S
+Communication Protocol: DShot600/300/150
+Mounting Hole Size: 30.5×30.5mm
+Weight: 17.5g
+Features: High-quality components, low-temperature operation
+Remote: Supports full remote telemetry
+Data source: https://store.tmotor.com/product/f55a-pro-v2-4in1-fpv-esc.html?srsltid=AfmBOopLKUqfnAxl1r46bzXA8wLLyGEHFyzkKqBeN1F2R8Ee9eBRVJBa
+
+
+Model: BLHeli_S30A ESC
+Continuous current: 30A
+Instantaneous current: 40A
+Supported battery: 2S-4S
+Communication protocol: DShot600/300/150,PWM
+Dimensions: 23.8×14.5×5.8mm
+Weight: 6g
+Features: Compact size, suitable for small models
+Source: https://www.hobbywing.com/en/uploads/file/20221024/a2af456143335670486f6d4e5122f1e3.pdf
+
+
+Model: Holybro Tekko32 35A 4-in-1 BLHeli32 3-6s ESC
+Continuous current: 35A
+Peak current: 50A
+Supported battery: 3S-8S
+Communication protocol: DShot600/300/150
+Size: 55×40×6.4mm
+Weight: 17g
+Features: 32-bit processor, high performance
+Source: https://www.getfpv.com/holybro-tekko32-35a-4-in-1-blheli32-3-6s-esc.html?srsltid=AfmBOoo1hPew46iXHobdc_Hb8fNgWlfLF0FLvT90wk9TMEkD6nOIQ398
+
+
+High-power standalone ESC
+Model: Castle Creations Phoenix Edge 100 AMP ESC
+Continuous current: 100A
+Peak current: 100A
+Battery Support: 2S-8S
+Communication Protocol: PWM, CastleLink
+Mounting Hole Size: 50.8×71.9×23.2mm
+Weight: 126.6g
+Feature: Industrial-grade quality, large motor dedicated
+Telemetry: Full diagnostic functions
+Data source: https://www.castlecreations.com/en/phoenix-edge-100-esc-010-0100-00
+
+
+Model: YEP 80A ESC
+Continuous current: 80A
+Peak current: 100A
+Supported batteries: 2S-6S
+Communication protocol: DShot600/300/150,PWM
+Socket Size: 50×30mm
+Weight: 70g
+Features: High 性价比, Stable and reliable
+Source: https://hobbyking.com/en_us/yep-80a-2-6s-sbec-brushless-speed-controller.html?srsltid=AfmBOorIEej46ByCNXMkV4ZdIXglNiad-CKHftw26AShC84UhB9q1JI-&___store=en_us
+
+
+4.3 ESC Selection Points
+Current Margin: The selected current should be 1.2-1.5 times the motor's maximum current
+Voltage Matching: Ensure the ESC supports the selected battery voltage
+Communication Protocol: It is recommended to choose the DShot protocol, which offers fast response and good interference resistance
+Heat dissipation design: High-current applications require consideration of heat dissipation issues
+
+
+5. System matching and calculation
+5.1 Thrust-to-weight ratio calculation
+Basic formula
+Thrust-to-weight ratio = Total thrust / Total weight
+Recommended ratio
+Drone: 2:1~3:1
+Racing aircraft: 4:1~6:1
+Special machine: 6:1~10:1
+
+
+5.2 Power demand calculation
+Basic formula
+Total power demand = Number of motors × Power per motor × Load coefficient
+Load coefficient reference
+Hovering: 0.3~0.5
+Normal flight: 0.5~0.7
+Aggressive flight: 0.7~1.0
+
+
+5.3 Flight Time Estimation
+Considerations
+Battery Capacity and Voltage
+Motor Efficiency
+Airplane mode
+Ambient temperature
+Load weight
+Actual calculation example
+Assumed configuration:
+4S1500mAh battery
+4×22072750KV motors
+5045 three-blade propeller
+Total weight: 650g
+Hover current: Approximately 25A
+Flight time: 1500mAh/25A×0.8=4.8 minutes
+
+
+6. Main supplier and product chain link
+6.1 Motor Manufacturers
+T-Motor: Leading brand in high-end racing motors
+Emax: Excellent value-for-money choice
+XING: Emerging high-performance brand
+BrotherHobby: Professional-grade motor manufacturer
+
+
+6.2 Battery supplier
+Tattu: Professional FPV battery brand
+CNHL: High-value-for-money choice
+GensAce: Established battery manufacturer
+Turnigy: Entry-level favorite
+
+
+6.3 Propeller brand
+Gemfan: Leading plastic propeller brand
+HQProp: High-Quality Choice
+DAL: Classic Three-Blade Sail
+T-Motor: Carbon Fiber Sail Expert
+
+
+7. Selection Recommendations and Precautions
+7.1 Recommendations for Beginners
+Frame: 210mm
+Motor: 22072400KV
+Propeller: 5040 three-blade plastic propeller
+Battery: 4S1500mAh75C
+ESC: 35A4-in-1
+
+
+7.2 Racing Machine Configuration
+Frame: 210mm
+Motor: 22072750KV
+Propeller: 5045 three-blade carbon fiber propeller
+Battery: 4S1300mAh120C
+ESC: 50A 4-in-1
+
+
+7.3 Long Endurance Configuration
+Rack: 250mm
+Motor: 25081800KV
+Propeller: 6045 dual blade propeller
+Battery: 4S2200mAh45C
+ESC: 35A4-in-1
+
+
+7.4 Safety Precautions
+Battery charging must be monitored to prevent overcharging
+Carbon fiber oar should be replaced immediately when damaged
+Regularly check the motor screw tightness
+ESC temperature should be improved when it is too high
