@@ -1,96 +1,480 @@
-Scenario 1: Long-Endurance Aerial Relay Path
+General Parameters
+1.1 Wingspan and Chord
+Reference: https://www.uavcoach.com/drone-parts/ (UAV Coach tutorial on drone wing structures, including wingspan, chord, and design parameters)
 
-Emergency Communications Post-Tropical Typhoon
+Wingspan (b):
+
+Small UAV: 1.2–2.5 m
+
+Medium UAV: 2.5–5.5 m
+
+Large UAV: ≥5.5 m
+
+Mean Chord (c):
+
+Ratio Range: Wingspan ÷ 6–12
+
+Example: 5 m wingspan → chord approx. 0.42–0.83 m
+
+Main Spar Design Values:
+
+Spar Height (h_spar): 0.05–0.15 × chord (m)
+
+Spar Width (t_spar): 0.01–0.03 × chord (m)
+
+Material Density: Carbon fiber 1.5 g/cm³, Aluminum 7075 alloy 2.8 g/cm³
+
+Flexural Modulus (E): Carbon fiber 70–250 GPa, Aluminum alloy 69–72 GPa
+
+Allowable Stress (σ_allow): Carbon fiber 600–1500 MPa, Aluminum alloy 300–500 MPa
+
+Design Safety Factor (SF): 1.5–2.5
+
+1.3 Ribs
+Reference: https://ntrs.nasa.gov (NASA Technical Report Server – for UAV structure and aerodynamic load data)
+
+Frequency: 1 rib every 0.15–0.3 m
+
+Thickness: 6–10 mm
+
+Material: Carbon/Kevlar patch + lightweight foam filling
+
+Strength Goal: Sustain 150% aerodynamic distributed load without local buckling
+
+1.4 Skin
+Reference: https://www.makeitfrom.com (Material property data for skin materials like carbon fiber)
+
+Material: Carbon fiber prepreg composite, 3–8 layers
+
+Thickness: 0.3–1.5 mm (thinner at wingtip, thicker at root)
+
+Safety Factor: 1.8–2.5 (higher in reinforced zones)
+
+Fatigue Life: Over 50,000 takeoff-landing cycles
+
+1.5 Ailerons
+Reference: https://www.aerodynamics4students.com/control-surfaces/ailerons.php
+
+Length: 20–30% of wingspan
+
+Chord Length: 18–25% of mean chord
+
+Hinge Position from Wing Root: 80% of semi-span
+
+Torsional Stiffness: GJ ≥ 5000 N·m² (sufficient for high-speed operation loads)
+
+2. Airframe
+2.1 Geometric Dimensions
+Reference: https://www.militaryfactory.com
+
+Max Size: Length ≤ 1.5 m, Width ≤ 0.6 m, Height ≤ 0.3 m
+
+Wall Thickness (Skin + Internal Supports): 2–5 mm
+
+2.2 Material Properties
+Reference: https://www.matweb.com
+
+Density: CFRP 1.5–1.8 g/cm³; Aluminum Alloy 2.7–2.8 g/cm³
+
+Flexural Modulus: Similar to wing
+
+Allowable Stress:
+
+CFRP: 400–1200 MPa (depending on ply orientation)
+
+Aluminum Alloy: 250–450 MPa
+
+2.3 Structural Configuration
+
+Semi-monocoque structure + stiffeners/braces (spaced every 100–150 mm)
+
+Curvature/Stiffening Ribs: Maintain torsional rigidity
+
+2.4 Fatigue and Lifetime
+
+Design Life: 50,000–100,000 flight cycles
+
+Fatigue Safety Margin: Goodman limit = 0.6
+
+3. Landing Gear
+3.1 Type
+Reference: https://www.dronedesignerhub.com/drone-landing-gear-design/
+
+Fixed type; U-shaped arms made from carbon fiber or aluminum alloy
+
+3.2 Bending and Impact
+
+Material Stiffness: E = 30–90 GPa
+
+Design Stress Capacity: σ_allow ≥ 400 MPa
+
+Drop Energy Absorption: mgh ≈ 0.5·m·v², v ≈ 1.2 m/s
+
+Shock Absorption Travel: ≥ 30–50 mm
+
+4. Payload Bay
+4.1 Dimensional Standards
+Reference: https://www.uavsystemsinternational.com
+
+Internal Volume: ≥ 250 × 200 × 100 mm
+
+Opening Size: ≥ 200 × 150 mm
+
+Door Design: Hinged + quick-lock, must resist wind loads
+
+4.2 Load Capacity
+
+Uniform Load: ≥ 5.5 kg
+
+Point Load: ≥ 10 kg
+
+Vibration Standard: MIL-STD-810F
+
+4.3 Structural Interface
+
+Quick-release rail width: 20–30 mm
+
+Interface Tolerance: ±0.2 mm (within 1 m length)
+
+Reinforcement Plate Thickness: 3–6 mm (CFRP or Aluminum)
+
+5. Center of Gravity (CG) Tolerance
+Empty CG Offset Tolerance: ±30 mm (longitudinal axis)
+
+Post-Payload Offset Tolerance: ±20–30 mm, should remain near original CG
+
+Installation Tip: Use rails to adjust payload CG
+
+6. Manufacturing Tolerances
+Skin Seam Gap: ≤ 0.5 mm
+
+Fastener Hole Tolerance: H7/H8
+
+Corner Radius: R ≥ 3–5 mm (to avoid stress concentration)
+
+7. Fatigue Life Indicators
+CFRP Structural Fatigue Life: Tens of thousands to 100,000 cycles
+
+Aluminum Alloy Fatigue Limit: ~30–50% of σ_allow
+
+8. Summary
+Dimensional Parameters:
+
+Wingspan: 1.2–5.5 m; Chord Ratio: 6–12
+
+Fuselage Size: Length ≤ 1.5 m, Width ≤ 0.6 m, Height ≤ 0.3 m
+
+Material Densities:
+
+CFRP: 1.5–1.8 g/cm³; Aluminum Alloy: 2.7–2.8 g/cm³
+
+Mechanical Properties:
+
+Spar E ≥ 130 GPa; σ_allow ≥ 600 MPa
+
+Airframe E ≥ 60 GPa; σ_allow ≥ 300 MPa
+
+Landing Gear σ_allow ≥ 400 MPa; Payload Interface σ_allow ≥ 500 MPa
+
+Structural Tolerances and Precision:
+
+CG Offset Tolerance ±30 mm; Rail ±0.2 mm; Skin Gap ≤ 0.5 mm
+
+Design Life:
+
+≥ 50,000 flight cycles; Fatigue Safety Factor ≥ 1.5
+Flight Scenario Parameters
+1.1 Low Altitude Flight (0–500 m)
+
+Wingspan: 1.2–3.0 m
+
+Fuselage Dimensions (L×W×H): ≤ 1.2 m × 0.5 m × 0.25 m
+
+Empty Weight: ≤ 4.5 kg
+
+Material Density: CFRP 1.5–1.8 g/cm³
+
+Spar Flexural Modulus (E): ≥ 130 GPa
+
+Allowable Stress (σ_allow): ≥ 600 MPa
+
+Landing Gear Shock Travel: ≥ 30 mm
+
+Payload Bay Size: ≥ 200 × 150 × 80 mm
+
+Max Payload: ≤ 4.0 kg
+
+CG Offset Tolerance: ±20 mm
+
+1.2 High Altitude Flight (>500 m)
+
+Wingspan: 3.0–5.5 m
+
+Fuselage Dimensions: ≤ 1.5 m × 0.6 m × 0.3 m
+
+Empty Weight: ≤ 5.5 kg
+
+Material: Preferably CFRP
+
+Spar Flexural Modulus (E): ≥ 150 GPa
+
+Allowable Stress (σ_allow): ≥ 800 MPa
+
+Landing Gear Shock Travel: ≥ 40 mm
+
+Payload Bay Size: ≥ 250 × 200 × 100 mm
+
+Max Payload: ≥ 5.5 kg
+
+CG Offset Tolerance: ±30 mm
+
+1.3 Strong Wind / Harsh Climate
+
+Material: High-strength carbon fiber + Kevlar
+
+Safety Factor: ≥ 2.0
+
+Spar Flexural Modulus (E): ≥ 200 GPa
+
+Allowable Stress (σ_allow): ≥ 1000 MPa
+
+Landing Gear: Reinforced U-type aluminum or carbon fiber
+
+Skin Thickness: 1.0–1.5 mm
+
+Anti-Corrosion Treatment: Anodizing or salt-spray resistant coating
+
+2. Structural Component Parameters (General)
+Wingspan (b): 1.2–5.5 m
+
+Chord (c): b ÷ 6~12
+
+Spar Height (h_spar): 0.05–0.15 × c
+
+Spar Width (t_spar): 0.01–0.03 × c
+
+Material Density: CFRP 1.5 g/cm³ / Aluminum 7075 2.8 g/cm³
+
+Flexural Modulus (E): CFRP 70–250 GPa / Aluminum 69–72 GPa
+
+Allowable Stress (σ_allow): CFRP 600–1500 MPa / Aluminum 300–500 MPa
+
+Rib Spacing: 0.15–0.3 m
+
+Rib Thickness: 6–10 mm
+
+Skin Thickness: 0.3–1.5 mm
+
+Aileron Size: 20–30% of wingspan, 18–25% of chord
+
+Fuselage Dimensions: L ≤ 1.5 m, W ≤ 0.6 m, H ≤ 0.3 m
+
+Landing Gear Travel: 30–50 mm
+
+Payload Bay Size: ≥ 250 × 200 × 100 mm
+
+Max Payload Weight: ≥ 5.5 kg
+
+CG Offset Tolerance: ±30 mm
+
+3. Manufacturing and Lifecycle
+Skin Seam Gap: ≤ 0.5 mm
+
+Fastener Hole Tolerance: H7/H8
+
+Corner Radius (R): ≥ 3–5 mm (to avoid stress concentration)
+
+Fatigue Life: CFRP 50,000–100,000 flight cycles
+
+Fatigue Safety Factor: ≥ 1.5
+
+Application Scenarios and Corresponding Parameters
+Scenario I – Long-Endurance Relay
+1. Emergency Communication Post-Typhoon
+
 Wingspan: ≥ 3.5 m
-Airframe Dimensions: ≤ 1.5 m × 1.5 m
+
+Fuselage Size: ≤ 1.5 m × 1.5 m
+
 Empty Weight: ≤ 5.5 kg
-Structural Material Density: ≤ 2.0 g/cm³ (e.g., carbon fiber composite, Kevlar, salt-fog resistant anodized aluminum)
+
+Material Density: ≤ 2.0 g/cm³ (e.g., CFRP, Kevlar, anodized aluminum)
+
 Flexural Modulus: ≥ 130 GPa
+
 Allowable Stress: ≥ 600 MPa
-Payload Area Dimensions: ≥ 250 × 200 × 100 mm
-Maximum Payload Weight: ≥ 5.5 kg
-Center of Gravity Tolerance: ±30 mm
-Lifeline for Isolated Alpine Villages in Winter
+
+Payload Area: ≥ 250 × 200 × 100 mm
+
+Max Payload: ≥ 5.5 kg
+
+CG Offset Tolerance: ±30 mm
+
+2. Winter Supply to Isolated Mountain Villages
+
 Wingspan: 3.0–3.5 m
-Airframe Dimensions: ≤ 1.5 m × 1.2 m
+
+Fuselage Size: ≤ 1.5 m × 1.2 m
+
 Empty Weight: ≤ 5.0 kg
-Structural Material Density: ≤ 1.8 g/cm³ (e.g., high-toughness plastic, cold-weather composite, aviation foam-lined structure)
+
+Material Density: ≤ 1.8 g/cm³ (e.g., tough plastics, cold-proof composites, foam liners)
+
 Flexural Modulus: ≥ 120 GPa
+
 Allowable Stress: ≥ 550 MPa
-Payload Area Dimensions: ≥ 200 × 180 × 100 mm
-Maximum Payload Weight: ≥ 4.0 kg
-Center of Gravity Tolerance: ±25 mm
-Nighttime Maritime Tanker Accident Monitoring
+
+Payload Area: ≥ 200 × 180 × 100 mm
+
+Max Payload: ≥ 4.0 kg
+
+CG Offset Tolerance: ±25 mm
+
+3. Nighttime Oil Tanker Incident Surveillance at Sea
+
 Wingspan: 3.5–4.0 m
-Airframe Dimensions: ≤ 1.6 m × 1.4 m
+
+Fuselage Size: ≤ 1.6 m × 1.4 m
+
 Empty Weight: ≤ 6.0 kg
-Structural Material Density: ≤ 2.0 g/cm³ (e.g., anti-corrosion skin, FRP composite panels, UV-stabilized coating)
+
+Material Density: ≤ 2.0 g/cm³ (e.g., anti-corrosion skin, FRP boards, UV-resistant coating)
+
 Flexural Modulus: ≥ 130 GPa
+
 Allowable Stress: ≥ 600 MPa
-Payload Area Dimensions: ≥ 250 × 200 × 120 mm
-Maximum Payload Weight: ≥ 4.5 kg
-Center of Gravity Tolerance: ±30 mm
-Scenario 2: Complex Terrain VTOL Monitoring Path
 
-Early Detection of Mountain Forest Fires
+Payload Area: ≥ 250 × 200 × 120 mm
+
+Max Payload: ≥ 4.5 kg
+
+CG Offset Tolerance: ±30 mm
+
+Scenario II – VTOL in Complex Terrain
+1. Early Detection of Forest Fires in Mountains
+
 Wingspan: ≤ 2.0 m
-Airframe Dimensions: ≤ 1.2 m × 1.0 m
-Empty Weight: ≤ 4.5 kg
-Structural Material Density: ≤ 1.8 g/cm³ (e.g., lightweight carbon fiber, EPO/EPP foam plastic, PEEK)
-Flexural Modulus: ≥ 110 GPa
-Allowable Stress: ≥ 500 MPa
-Payload Area Dimensions: ≥ 180 × 150 × 80 mm
-Maximum Payload Weight: ≥ 2.5 kg
-Center of Gravity Tolerance: ±20 mm
-Urban High-Rise Structural Inspection
-Wingspan: 1.5–1.8 m
-Airframe Dimensions: ≤ 1.0 m × 0.8 m
-Empty Weight: ≤ 4.0 kg
-Structural Material Density: ≤ 1.7 g/cm³ (e.g., engineering-grade ABS, aluminum alloy truss composite)
-Flexural Modulus: ≥ 100 GPa
-Allowable Stress: ≥ 450 MPa
-Payload Area Dimensions: ≥ 160 × 120 × 80 mm
-Maximum Payload Weight: ≥ 2.0 kg
-Center of Gravity Tolerance: ±15 mm
-Detailed Inspection of Canyon Transmission Towers
-Wingspan: ≤ 2.2 m
-Airframe Dimensions: ≤ 1.2 m × 1.0 m
-Empty Weight: ≤ 5.0 kg
-Structural Material Density: ≤ 1.9 g/cm³ (e.g., aerospace aluminum alloy frame + carbon fiber skin, foam support)
-Flexural Modulus: ≥ 120 GPa
-Allowable Stress: ≥ 550 MPa
-Payload Area Dimensions: ≥ 200 × 160 × 80 mm
-Maximum Payload Weight: ≥ 3.0 kg
-Center of Gravity Tolerance: ±20 mm
-Scenario 3: Port Area Patrol and Reconnaissance Path
 
-Nighttime Identification of Smuggling Vessels
-Wingspan: 2.8–3.2 m
-Airframe Dimensions: ≤ 1.5 m × 1.2 m
-Empty Weight: ≤ 5.5 kg
-Structural Material Density: ≤ 2.0 g/cm³ (e.g., anodized aluminum alloy, coated carbon fiber, fog-resistant UV-treated panels)
-Flexural Modulus: ≥ 120 GPa
-Allowable Stress: ≥ 550 MPa
-Payload Area Dimensions: ≥ 240 × 200 × 100 mm
-Maximum Payload Weight: ≥ 3.5 kg
-Center of Gravity Tolerance: ±25 mm
-Hazardous Chemical Leak Detection
-Wingspan: 2.5–3.0 m
-Airframe Dimensions: ≤ 1.4 m × 1.0 m
-Empty Weight: ≤ 5.2 kg
-Structural Material Density: ≤ 2.0 g/cm³ (e.g., chemical-resistant composite panels, acid/alkali-resistant plastic)
-Flexural Modulus: ≥ 110 GPa
-Allowable Stress: ≥ 500 MPa
-Payload Area Dimensions: ≥ 230 × 180 × 90 mm
-Maximum Payload Weight: ≥ 3.0 kg
-Center of Gravity Tolerance: ±25 mm
-Automated Berth Scheduling Assistance
-Wingspan: 2.5 m
-Airframe Dimensions: ≤ 1.2 m × 1.0 m
+Fuselage Size: ≤ 1.2 m × 1.0 m
+
 Empty Weight: ≤ 4.5 kg
-Structural Material Density: ≤ 1.9 g/cm³ (e.g., EPO structural components, honeycomb aluminum panels + plastic skin)
+
+Material Density: ≤ 1.8 g/cm³ (e.g., light CFRP, EPO/EPP foam, PEEK)
+
+Flexural Modulus: ≥ 110 GPa
+
+Allowable Stress: ≥ 500 MPa
+
+Payload Area: ≥ 180 × 150 × 80 mm
+
+Max Payload: ≥ 2.5 kg
+
+CG Offset Tolerance: ±20 mm
+
+2. Structural Inspection of Urban Skyscrapers
+
+Wingspan: 1.5–1.8 m
+
+Fuselage Size: ≤ 1.0 m × 0.8 m
+
+Empty Weight: ≤ 4.0 kg
+
+Material Density: ≤ 1.7 g/cm³ (e.g., engineering ABS, aluminum truss composites)
+
 Flexural Modulus: ≥ 100 GPa
+
 Allowable Stress: ≥ 450 MPa
-Payload Area Dimensions: ≥ 200 × 150 × 80 mm
-Maximum Payload Weight: ≥ 2.5 kg
-Center of Gravity Tolerance: ±20 mm
+
+Payload Area: ≥ 160 × 120 × 80 mm
+
+Max Payload: ≥ 2.0 kg
+
+CG Offset Tolerance: ±15 mm
+
+3. Precision Inspection of Power Towers in Canyons
+
+Wingspan: ≤ 2.2 m
+
+Fuselage Size: ≤ 1.2 m × 1.0 m
+
+Empty Weight: ≤ 5.0 kg
+
+Material Density: ≤ 1.9 g/cm³ (e.g., aerospace aluminum + CFRP skin, foam supports)
+
+Flexural Modulus: ≥ 120 GPa
+
+Allowable Stress: ≥ 550 MPa
+
+Payload Area: ≥ 200 × 160 × 80 mm
+
+Max Payload: ≥ 3.0 kg
+
+CG Offset Tolerance: ±20 mm
+
+Scenario III – Harbor Patrol and Surveillance
+1. Nighttime Smuggling Vessel Identification
+
+Wingspan: 2.8–3.2 m
+
+Fuselage Size: ≤ 1.5 m × 1.2 m
+
+Empty Weight: ≤ 5.5 kg
+
+Material Density: ≤ 2.0 g/cm³ (e.g., anodized aluminum, coated CFRP, UV-treated panels)
+
+Flexural Modulus: ≥ 120 GPa
+
+Allowable Stress: ≥ 550 MPa
+
+Payload Area: ≥ 240 × 200 × 100 mm
+
+Max Payload: ≥ 3.5 kg
+
+CG Offset Tolerance: ±25 mm
+
+2. Hazardous Chemical Leak Detection
+
+Wingspan: 2.5–3.0 m
+
+Fuselage Size: ≤ 1.4 m × 1.0 m
+
+Empty Weight: ≤ 5.2 kg
+
+Material Density: ≤ 2.0 g/cm³ (e.g., chemical-resistant composites, acid/base-proof plastics)
+
+Flexural Modulus: ≥ 110 GPa
+
+Allowable Stress: ≥ 500 MPa
+
+Payload Area: ≥ 230 × 180 × 90 mm
+
+Max Payload: ≥ 3.0 kg
+
+CG Offset Tolerance: ±25 mm
+
+3. Automated Berth Scheduling Support
+
+Wingspan: 2.5 m
+
+Fuselage Size: ≤ 1.2 m × 1.0 m
+
+Empty Weight: ≤ 4.5 kg
+
+Material Density: ≤ 1.9 g/cm³ (e.g., EPO parts, honeycomb aluminum + plastic skin)
+
+Flexural Modulus: ≥ 100 GPa
+
+Allowable Stress: ≥ 450 MPa
+
+Payload Area: ≥ 200 × 150 × 80 mm
+
+Max Payload: ≥ 2.5 kg
+
+CG Offset Tolerance: ±20 mm
+
+Recommended UAV Models for Each Scenario
+Emergency Communications After Typhoon: DJI M30T, Quantum Tron, Delair UX11
+
+Low-Altitude Mountain Inspection: Parrot Anafi USA, DJI Matrice 300 RTK, senseFly eBee X
+
+High-Altitude Monitoring and Weather Sensing: MQ-9 Reaper, Global Hawk, AeroVironment Tempest
