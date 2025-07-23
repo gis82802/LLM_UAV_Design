@@ -165,6 +165,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 250 × 200 × 100 mm
 - 最大掛載重量：≥ 5.5 kg
 - 重心偏移容限：±30 mm
+參考網址:https://www.unmannedsystemstechnology.com/company/pterodynamics/x-p5/
 
 2. 冬季高山孤立村落維生線
 - 翼展：3.0 ~ 3.5 m
@@ -176,6 +177,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 200 × 180 × 100 mm
 - 最大掛載重量：≥ 4.0 kg
 - 重心偏移容限：±25 mm
+參考網址:https://skyeton.com/raybird/
 
 3. 夜間海域油輪事故監控
 - 翼展：3.5 ~ 4.0 m
@@ -187,6 +189,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 250 × 200 × 120 mm
 - 最大掛載重量：≥ 4.5 kg
 - 重心偏移容限：±30 mm
+參考網址:https://en.wikipedia.org/wiki/WB_Electronics_FlyEye
 
 【情境二】複雜地形 VTOL 監測路徑
 
@@ -200,6 +203,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 180 × 150 × 80 mm
 - 最大掛載重量：≥ 2.5 kg
 - 重心偏移容限：±20 mm
+參考網址:https://www.infinitdrones.com/products/wingtraone-gen-ii?srsltid=AfmBOoofsFB32AM0XEFcqfIIpmtwYNlkubh50C2uxGRaYViOqETZxNOM
 
 2. 都市高樓結構檢測
 - 翼展：1.5 ~ 1.8 m
@@ -211,6 +215,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 160 × 120 × 80 mm
 - 最大掛載重量：≥ 2.0 kg
 - 重心偏移容限：±15 mm
+參考網址:https://en.wikipedia.org/wiki/Conyca_Geodrone
 
 3. 峽谷輸電塔精檢
 - 翼展：≤ 2.2 m
@@ -222,6 +227,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 200 × 160 × 80 mm
 - 最大掛載重量：≥ 3.0 kg
 - 重心偏移容限：±20 mm
+參考網址:https://fixar.pro/products/fixar007ng/
 
 【情境三】港區巡邏偵查路徑
 
@@ -235,6 +241,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 240 × 200 × 100 mm
 - 最大掛載重量：≥ 3.5 kg
 - 重心偏移容限：±25 mm
+參考網址:https://www.jouav.com/zh/products/cw-100.html
 
 2. 危險化學品洩漏偵測
 - 翼展：2.5 ~ 3.0 m
@@ -246,6 +253,8 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 230 × 180 × 90 mm
 - 最大掛載重量：≥ 3.0 kg
 - 重心偏移容限：±25 mm
+參考網址:https://docs.tuyap.online/FDOCS/46228.pdf
+
 
 3. 自動化泊位排程輔助
 - 翼展：2.5 m
@@ -257,6 +266,7 @@ CFRP：1.5–1.8g/cm³；鋁合金：2.7–2.8g/cm³
 - 掛載區域尺寸：≥ 200 × 150 × 80 mm
 - 最大掛載重量：≥ 2.5 kg
 - 重心偏移容限：±20 mm
+參考網址:https://www.jouav.com/zh/products/cw-007.html
 
 情境對應 UAV 機型參考建議：
 【熱帶颱風後應急通訊】：DJI M30T、Quantum Trinity Pro、Delair UX11
