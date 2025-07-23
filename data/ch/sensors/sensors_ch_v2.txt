@@ -1,0 +1,561 @@
+飛控電腦(Aircraft flight control system)
+1. GNSS模組
+1.1 ZED-F9P-01B
+製造商: u-blox
+產品類型: GNSS/GPS模組
+頻率: 1.2276GHz, 1.57542GHz
+擷取靈敏度: -148dBm
+水平定位精度: 0.01m
+電源電壓 - 最小值: 3V
+電源電壓 - 最大值: 3V
+運作供電電流: 68mA
+接口類型: I2C, SPI, UART, USB
+最高工作溫度: +85C
+協議 - GPS、GLONASS: GNSS
+封裝: Reel
+封裝: Cut Tape
+封裝: MouseReel
+品牌: u-blox
+尺寸: 22.35mm x 17.2mm x 2.6mm
+最低工作溫度: -40C
+濕度敏感: Yes
+安裝風格: SMD/SMT
+工作電源電壓: 3V
+產品類型: GPS Modules
+子類別: Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/ZED-F9P-01B?qs=KUoIvG%2F9IlaGeoKVdfwL9Q%3D%3D&srsltid=AfmBOorvAG6ubIJ0wvS_YzRgyU1AQUUay4nnGd8xhstgR0B2jhOKFI9f
+
+1.2 u-blox NEO-M8N-0
+製造商: u-blox
+產品類型: GNSS/GPS模組
+系列: NEO-M8
+頻率: 1.575 GHz
+通道數: 72 Channel
+首次定位時間-冷啟動: 26s
+擷取靈敏度: -167dBm
+水平定位精度: 2.5m
+電源電壓 - 最小值: 1.65V
+電源電壓 - 最大值: 3.6V
+接口類型: I2C, SPI, UART, USB
+最高工作溫度: +85C
+協議-GPS、GLONASS: GPS, GLONASS, Galileo, BeiDou
+封裝: Reel
+封裝: Cut Tape
+封裝: MouseReel
+品牌: u-blox
+最低工作溫度: -40C
+濕度敏感: Yes
+安裝風格: SMD/SMT
+工作電源電壓: 1.65V to 3.6V
+產品類型: GPS Modules
+子類別:	Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/NEO-M8N-0?qs=zW32dvEIR3unZhZI0KRbew%3D%3D
+
+1.3 u-blox NEO-M8P-2
+製造商:	u-blox	
+產品類型:	GNSS/GPS模組	
+RoHS:	 	
+系列:	NEO-M8P	
+首次定位時間 - 冷啟動:	26 s	
+擷取靈敏度:	- 148 dBm	
+水平定位精度:	2.5 m	
+電源電壓 - 最小值:	2.7 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	25 mA	
+接口類型:	SPI, UART, USB	
+最高工作溫度:	+ 85 C	
+協議 - GPS、GLONASS:	GPS, GLONASS, GNSS	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+品牌:	u-blox	
+尺寸:	12.2 mm x 16.0 mm x 2.4 mm	
+最低工作溫度:	- 40 C	
+濕度敏感:	Yes	
+安裝風格:	SMD/SMT	
+工作電源電壓:	2.7 V to 3.6 V	
+產品類型:	GPS Modules	
+250	
+子類別:	Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/NEO-M8P-2?qs=zW32dvEIR3um1owIgR0I3w%3D%3D
+
+1.4 u-blox LEA-M8T-0
+製造商:	u-blox	
+產品類型:	GNSS/GPS模組	
+RoHS:	 	
+頻率:	1.57542 GHz	
+通道數:	72 Channel	
+首次定位時間 - 冷啟動:	29 s	
+擷取靈敏度:	- 148 dBm	
+水平定位精度:	2.5 m	
+電源電壓 - 最小值:	3 V	
+電源電壓 - 最大值:	3 V	
+運作供電電流:	25 mA	
+接口類型:	SPI, UART, USB	
+最高工作溫度:	+ 85 C	
+協議 - GPS、GLONASS:	GNSS	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+品牌:	u-blox	
+尺寸:	23 mm x 17.1 mm x 2.7 mm	
+最低工作溫度:	- 40 C	
+濕度敏感:	Yes	
+安裝風格:	SMD/SMT	
+工作電源電壓:	3 V	
+產品類型:	GPS Modules	
+250	
+子類別:	Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/LEA-M8T-0?qs=KUoIvG%2F9IlYAaQJ%2F9VN2AQ%3D%3D
+
+1.5 u-blox ZED-F9R-01B
+製造商:	u-blox	
+產品類型:	GNSS/GPS模組	
+系列:	ZED-F9R	
+頻率:	10 MHz	
+首次定位時間 - 冷啟動:	26 s	
+擷取靈敏度:	- 147 dBm	
+水平定位精度:	0.01 m	
+電源電壓 - 最小值:	2.7 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	85 mA	
+接口類型:	I2C, SPI, UART, USB	
+最高工作溫度:	+ 85 C	
+協議 - GPS、GLONASS:	GNSS	
+封裝:	Reel	
+封裝:	Cut Tape	
+品牌:	u-blox	
+最低工作溫度:	- 40 C	
+濕度敏感:	Yes	
+安裝風格:	SMD/SMT	
+工作電源電壓:	2.7 V to 3.6 V	
+產品類型:	GPS Modules	
+250	
+子類別:	Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/ZED-F9R-01B?qs=TuK3vfAjtkUosGkXKJONzA%3D%3D
+
+1.6 u-blox MAX-M10S-00B
+製造商:	u-blox	
+產品類型:	GNSS/GPS模組	
+RoHS:	 	
+系列:	MAX-M10	
+水平定位精度:	4 m	
+電源電壓 - 最小值:	3 V	
+電源電壓 - 最大值:	3 V	
+運作供電電流:	100 mA	
+接口類型:	I2C	
+最高工作溫度:	+ 85 C	
+協議 - GPS、GLONASS:	BeiDou, Galileo, GPS, GLONASS, NAVIC, QZSS	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+品牌:	u-blox	
+尺寸:	10.1 mm x 9.7 mm x 2.5 mm	
+最低工作溫度:	- 40 C	
+濕度敏感:	Yes	
+安裝風格:	SMD/SMT	
+工作電源電壓:	3 V	
+產品類型:	GPS Modules	
+500	
+子類別:	Wireless & RF Modules
+資料來源: https://www.mouser.tw/ProductDetail/u-blox/MAX-M10S-00B?qs=A6eO%252BMLsxmT0PfQYPb7LLQ%3D%3D
+
+1.7 Quectel L76LB-A31
+製造商:	Quectel	
+產品類型:	GNSS/GPS模組	
+RoHS:	 	
+頻率:	1.561098 GHz, 1.57542 GHz, 1.6025625 GHz	
+首次定位時間 - 冷啟動:	35 s	
+擷取靈敏度:	- 148 dBm	
+電源電壓 - 最小值:	3.3 V	
+電源電壓 - 最大值:	3.3 V	
+接口類型:	I2C, UART	
+最高工作溫度:	+ 85 C	
+協議 - GPS、GLONASS:	GNSS	
+封裝:	Reel	
+品牌:	Quectel	
+尺寸:	10.1 mm x 9.7 mm x 2.5 mm	
+最低工作溫度:	- 40 C	
+濕度敏感:	Yes	
+安裝風格:	SMD/SMT	
+工作電源電壓:	3.3 V	
+產品類型:	GPS Modules	
+500	
+子類別:	Wireless & RF Modules	
+公司名稱:	Wireless communication module	
+每件重量:	500 mg
+資料來源: https://www.mouser.tw/ProductDetail/Quectel/L76LB-A31?qs=GedFDFLaBXGO8H9WynjW4Q%3D%3D
+
+
+2. IMU模組
+2.1 ADIS16470
+製造商: Analog Devices Inc.
+感測器類型: 加速計、陀螺儀
+感測範圍: ±40g、±2000°／秒
+介面: SPI
+電壓 - 電源: 3V ~ 3.6V
+基礎產品編號: ADIS16470
+資料來源: https://www.digikey.tw/zh/products/detail/analog-devices-inc/ADIS16470-PCBZ/7932981
+
+2.2 ADIS16495-2BMLZ
+製造商: Analog Devices Inc.
+系列: iMEMS®
+感測器類型: 加速計、迴轉儀、6 軸
+輸出類型: SPI
+工作溫度: -40°C ~ 105°C
+封裝／外殼: 模組
+供應商元件封裝: 模組
+安裝類型: 底盤安裝式
+基礎產品編號: ADIS16495
+資料來源: https://www.digikey.tw/zh/products/detail/analog-devices-inc/ADIS16495-2BMLZ/7931993
+
+2.3 MPU-6000
+製造商:	TDK	
+產品類型:	IMU - 慣性測量組件	
+付運限制：	
+ Mouser目前不在您的地區出售本產品。
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	QFN-24	
+傳感器類型:	9-axis	
+接口類型:	I2C, SPI	
+輸出類型:	Digital	
+加速:	10000 g	
+靈敏度:	16384 LSB/g	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 105 C	
+電源電壓 - 最小值:	2.375 V	
+電源電壓 - 最大值:	3.46 V	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+品牌:	TDK InvenSense	
+濕度敏感:	Yes	
+產品類型:	IMUs - Inertial Measurement Units	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+公司名稱:	SmartMotion	
+每件重量:	3.018 g
+資料來源: https://www.mouser.tw/ProductDetail/TDK-InvenSense/MPU-6000?qs=u4fy%2FsgLU9NMLimeLRzXLA%3D%3D
+
+2.4 InvenSense MPU-9250
+製造商:	TDK	
+產品類型:	IMU - 慣性測量組件	
+付運限制：	
+ Mouser目前不在您的地區出售本產品。
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	QFN-24	
+傳感器類型:	9-axis	
+接口類型:	I2C, SPI	
+輸出類型:	Digital	
+靈敏度:	16384 LSB/g	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	2.4 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	3.7 mA	
+封裝:	Reel	
+品牌:	TDK InvenSense	
+濕度敏感:	Yes	
+工作電源電壓:	2.5 V	
+產品類型:	IMUs - Inertial Measurement Units	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+每件重量:	110 mg
+資料來源: https://www.mouser.tw/ProductDetail/TDK-InvenSense/MPU-9250?qs=u4fy%2FsgLU9OhGjFkQSZssA%3D%3D
+
+2.5 InvenSense ICM-20689
+製造商:	TDK	
+產品類型:	IMU - 慣性測量組件	
+付運限制：	
+ Mouser目前不在您的地區出售本產品。
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	QFN-24	
+傳感器類型:	6-axis	
+接口類型:	I2C, SPI	
+輸出類型:	Digital	
+加速:	2 g, 4 g, 8 g, 16 g	
+分辨率:	16 bit	
+靈敏度:	16384 LSB/g	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	1.71 V	
+電源電壓 - 最大值:	3.45 V	
+運作供電電流:	3 mA	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+品牌:	TDK InvenSense	
+濕度敏感:	Yes	
+工作電源電壓:	1.8 V	
+產品類型:	IMUs - Inertial Measurement Units	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+公司名稱:	SmartMotion	
+每件重量:	1.169 g
+資料來源: https://www.mouser.tw/ProductDetail/TDK-InvenSense/ICM-20689?qs=u4fy%2FsgLU9NcfLrncAE%252BeQ%3D%3D
+
+2.6 InvenSense ICM-20948
+製造商:	TDK	
+產品類型:	IMU - 慣性測量組件	
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	QFN-24	
+傳感器類型:	9-axis	
+接口類型:	I2C, SPI	
+輸出類型:	Digital	
+加速:	2 g, 4 g, 8 g, 16 g	
+分辨率:	16 bit	
+靈敏度:	16384 LSB/g	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	1.71 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	3.11 mA	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+品牌:	TDK InvenSense	
+工作電源電壓:	1.8 V	
+產品類型:	IMUs - Inertial Measurement Units	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+公司名稱:	SmartMotion	
+每件重量:	715.250 mg
+資料來源: https://www.mouser.tw/ProductDetail/TDK-InvenSense/ICM-20948?qs=u4fy%2FsgLU9OtGc31yF%2Friw%3D%3D
+
+2.7 Bosch BMI088
+製造商:	Bosch	
+產品類型:	IMU - 慣性測量組件	
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	LGA-16	
+傳感器類型:	6-axis	
+接口類型:	I2C, SPI	
+輸出類型:	Digital	
+加速:	3 g, 6 g, 12 g, 24 g	
+分辨率:	16 bit	
+靈敏度:	1365 LSB/g, 16.4 LSB/deg/s	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	2.4 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	5.15 mA	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+系列:	BMI088	
+帶寬:	8 Hz to 685 Hz	
+品牌:	Bosch Sensortec	
+產品類型:	IMUs - Inertial Measurement Units	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+零件號別名:	0273.141.365-INV 0273.141.365-1NV	
+每件重量:	672.364 mg
+資料來源: https://www.mouser.tw/ProductDetail/Bosch-Sensortec/BMI088?qs=f9yNj16SXrIMFspTV6RB6Q%3D%3D
+
+2.8 Bosch BNO055
+製造商:	Bosch	
+產品類型:	IMU - 慣性測量組件	
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	LGA-28	
+傳感器類型:	9-axis	
+接口類型:	HID-I2C, I2C, UART	
+輸出類型:	Digital	
+加速:	2 g, 4 g, 8 g, 16 g	
+分辨率:	16 bit	
+靈敏度:	0.001 g/LSB	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	2.4 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	13.7 mA	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+帶寬:	1000 Hz	
+品牌:	Bosch Sensortec	
+產品類型:	IMUs - Inertial Measurement Units	
+範圍:	125 deg/s to 2000 deg/s	
+感應軸:	X, Y, Z	
+4000	
+子類別:	Sensors	
+零件號別名:	0273.141.209-1NV	
+每件重量:	150 mg
+資料來源: https://www.mouser.tw/ProductDetail/Bosch-Sensortec/BNO055?qs=QhAb4EtQfbV8Z2YmISucWw%3D%3D
+
+2.9 LSM6DSOXTR
+製造商:	STMicroelectronics	
+產品類型:	IMU - 慣性測量組件	
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	LGA-14L	
+傳感器類型:	6-axis	
+接口類型:	Serial	
+輸出類型:	Digital	
+加速:	2 g, 4 g, 8 g, 16 g	
+分辨率:	16 bit	
+靈敏度:	0.488 mg/LSB	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	1.71 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	550 uA	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+系列:	LSM6DSOX	
+品牌:	STMicroelectronics	
+濕度敏感:	Yes	
+產品類型:	IMUs - Inertial Measurement Units	
+範圍:	125 dps, 250 dps, 500 dps, 1000 dps, 2000 dps	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+公司名稱:	iNemo	
+每件重量:	13.200 mg
+資料來源: http://mouser.tw/ProductDetail/STMicroelectronics/LSM6DSOXTR?qs=l7cgNqFNU1i9dcjzItLpVQ%3D%3D
+
+2.10 ADIS16470/PCBZ
+製造商:	Analog Devices Inc.	
+產品類型:	位置感測器開發工具	
+RoHS:	 	
+類型:	IMU - Inertial Measurement Unit	
+工作電源電壓:	3.3 V	
+封裝:	Bulk	
+品牌:	Analog Devices	
+尺寸:	33.25 mm x 30.07 mm	
+接口類型:	SPI	
+產品類型:	Position Sensor Development Tools	
+系列:	ADIS16470	
+1	
+子類別:	Development Tools	
+每件重量:	90.720 g
+資料來源: https://www.mouser.tw/ProductDetail/Analog-Devices/ADIS16470-PCBZ?qs=BZBei1rCqCA81gi32nIriA%3D%3D
+
+2.11 ADIS16495-2BMLZ
+製造商:	Analog Devices Inc.	
+產品類型:	IMU - 慣性測量組件	
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	ML-24	
+傳感器類型:	6-axis	
+接口類型:	SPI	
+輸出類型:	Digital	
+加速:	8 g	
+分辨率:	32 bit	
+靈敏度:	655360 LSB/deg/s to 10485760 LSB/deg/s	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 105 C	
+電源電壓 - 最小值:	3 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	89 mA	
+封裝:	Bulk	
+系列:	ADIS16495	
+品牌:	Analog Devices	
+產品類型:	IMUs - Inertial Measurement Units	
+範圍:	+/- 480 deg/s	
+感應軸:	X, Y, Z	
+1	
+子類別:	Sensors	
+每件重量:	42 g
+資料來源: https://www.mouser.tw/ProductDetail/Analog-Devices/ADIS16495-2BMLZ?qs=5aG0NVq1C4z7COxlOASWKw%3D%3D
+
+2.12 EVAL-ADXL355-SDP
+製造商:	Analog Devices Inc.	
+產品類型:	加速感測器開發工具	
+RoHS:	 	
+產品:	Evaluation Boards	
+類型:	Accelerometer Sensor	
+評估工具:	ADXL355BEZ	
+封裝:	Bulk	
+品牌:	Analog Devices	
+產品類型:	Acceleration Sensor Development Tools	
+感應軸:	3-axis	
+系列:	ADXL355	
+1	
+子類別:	Development Tools
+資料來源: https://www.mouser.tw/ProductDetail/Analog-Devices/EVAL-ADXL355-SDP?qs=sGAEpiMZZMtVC8zYynLsnGPhAh%252BrN%252BHM%252BGOGNd1854%2Fzjlxk6OqeUA%3D%3D
+
+2.13 EVAL-ADXL355-PMDZ
+製造商:	Analog Devices Inc.	
+產品類型:	加速感測器開發工具	
+RoHS:	 	
+產品:	Demonstration Boards	
+類型:	Accelerometer Sensor	
+評估工具:	ADXL355	
+封裝:	Bulk	
+品牌:	Analog Devices	
+產品類型:	Acceleration Sensor Development Tools	
+系列:	ADXL355	
+1	
+子類別:	Development Tools	
+每件重量:	129.598 g
+資料來源: https://www.mouser.tw/ProductDetail/Analog-Devices/EVAL-ADXL355-PMDZ?qs=sGAEpiMZZMtVC8zYynLsnKnnLvBGYgT11TlH7j7U3nlJ2DAZy5c4ww%3D%3D
+
+2.14 EVAL-ADXL355Z
+製造商:	Analog Devices Inc.	
+產品類型:	加速感測器開發工具	
+RoHS:	 	
+產品:	Evaluation Boards	
+類型:	Accelerometer Sensor	
+評估工具:	ADXL355	
+工作電源電壓:	2.25 V to 3.6 V	
+封裝:	Bulk	
+加速:	2 g, 4 g, 8 g	
+品牌:	Analog Devices	
+描述/功能:	3-Axis MEMS Accelerometers	
+尺寸:	0.8 in x 0.8 in	
+用於:	ADXL355	
+接口類型:	I2C, SPI	
+最高工作溫度:	+ 125 C	
+最低工作溫度:	- 40 C	
+產品類型:	Acceleration Sensor Development Tools	
+感應軸:	X, Y, Z	
+系列:	ADXL355	
+1	
+子類別:	Development Tools	
+每件重量:	100 g
+資料來源: https://www.mouser.tw/ProductDetail/Analog-Devices/EVAL-ADXL355Z?qs=sGAEpiMZZMtVC8zYynLsnGoEIux45bwV2ILqLHz8sLRQ%252BJaUbjM9bw%3D%3D
+
+2.15 LSM6DSOTR
+製造商:	STMicroelectronics	
+產品類型:	IMU - 慣性測量組件	
+RoHS:	 	
+安裝風格:	SMD/SMT	
+封裝/外殼:	LGA-14	
+傳感器類型:	6-axis	
+接口類型:	I2C, SPI	
+輸出類型:	Digital	
+加速:	2 g, 4 g, 8 g, 16 g	
+分辨率:	16 bit	
+靈敏度:	0.061 mg/LSB, 0.122 mg/LSB, 0.244 mg/LSB, 0.488 mg/LSB	
+最低工作溫度:	- 40 C	
+最高工作溫度:	+ 85 C	
+電源電壓 - 最小值:	1.71 V	
+電源電壓 - 最大值:	3.6 V	
+運作供電電流:	550 uA	
+封裝:	Reel	
+封裝:	Cut Tape	
+封裝:	MouseReel	
+系列:	LSM6DSO	
+品牌:	STMicroelectronics	
+濕度敏感:	Yes	
+工作電源電壓:	1.71 V to 3.6 V	
+產品類型:	IMUs - Inertial Measurement Units	
+感應軸:	X, Y, Z	
+5000	
+子類別:	Sensors	
+每件重量:	13.200 mg
+資料來源: https://www.mouser.tw/ProductDetail/STMicroelectronics/LSM6DSOTR?qs=lc2O%252BfHJPVbD197C5c7oNw%3D%3D
+
+
+3. 資料鏈模組
