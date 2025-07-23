@@ -1,0 +1,4 @@
+1. Motor specification and model data: 14 records
+2. Propeller brand and model information: 11 items
+3. Battery brand and model information: 9 records
+4. ESC brand and model: 9 pens
