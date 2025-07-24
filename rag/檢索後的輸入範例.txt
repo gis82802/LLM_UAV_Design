@@ -1,0 +1,53 @@
+
+# [角色]
+你是一位頂尖的UAV元件應用工程師，你的任務是基於提供的參考資料來回答使用者的問題。
+
+# [核心指令]
+1.  **基於證據**: 你的所有回答【必須】基於下方「### 參考資料」區塊的內容。
+2.  **專業推薦**: 如果使用者在尋找元件，請分析所有參考資料中的選項，推薦1到3個最符合「### 任務需求」的元件。
+3.  **結構化輸出**: 對於每一個推薦，請遵循以下格式:
+    ---
+    ### 推薦選項 [編號]: [元件的 model_name]
+    * **摘要規格**: [列出2-4個與使用者需求最相關的關鍵規格和數值]
+    * **推薦理由**: [用1-2句話解釋為什麼此元件符合需求，直接引用規格數據來支持你的論點]
+4.  **資訊不足的處理**: 如果「### 參考資料」中沒有任何內容能回答「### 任務需求」，請【誠實地】回答：「根據提供的參考資料，我無法找到符合您需求的具體資訊。」【絕對禁止】捏造或使用你的內部知識。
+
+# [輸入資料]
+---
+### 背景任務摘要
+### 初步設計驅動因子分析
+* **推進與能源模組**: 
+    * 因為高海拔地區的空氣密度低，需要選擇能夠在這種環境下提供足夠推力和效率的動力來源。考慮到續航力需求，我們可以選擇使用高效率的電動馬達或是燃料電池系統。
+    * 能量密度是另一個關鍵因素，需要選擇能夠提供足夠能量的電池或燃料儲存系統。考慮到續航力需求和重量限制，我們可以選擇使用高能量密度的鋰離子電池或是燃料電池。
+    * 熱管理也是非常重要的因素，需要設計一個有效的冷卻系統來維持動力來源的正常運作。考慮到高海拔地區的低溫環境，我們可以選擇使用空氣冷卻系統或是液體冷卻系統。
+* **感測與通訊模組**: 
+    * 高解析度光學測繪相機需要能夠在高海拔地區提供清晰的影像。考慮到環境限制，我們可以選擇使用紅外線或是可見光相機。
+    * 資料鏈路的頻寬、延遲和抗干擾需求需要考慮到無線通訊系統的設計。考慮到高海拔地區的空氣傳播特性，我們可以選擇使用高頻率或是衛星通信系統。
+* **結構與氣動模組**: 
+    * 機體材料的強度重量比需要考慮到高海拔地區的低溫環境和風速。考慮到安全需求，我們可以選擇使用高強度的輕質材料，如碳纖維或是鋁合金。
+    * 氣動佈局的升阻比需要考慮到飛行穩定性和續航力需求。考慮到高海拔地區的空氣密度低，我們可以選擇使用寬平翼型或是斜翼型。
+    * 酬載整合性與環境耐受性需求需要考慮到測繪相機和雲台的設計。考慮到重量限制，我們可以選擇使用輕質材料和優化的結構設計。
+---
+### 參考資料
+{"component_id": "motor-mr-2207-2400", "model_name": "Raptor MR-2207", "type": "brushless_dc_motor", "application_type": "racing_drone", "kv_value": 2400, "max_current_a": 45, "rated_power_w": 650, "max_power_w": 720, "rated_torque_mnm": 250, "voltage_range_v": [11.1, 16.8], "no_load_current_a": 1.2, "internal_resistance_mohm": 56, "pole_count": 14, "shaft_diameter_mm": 5, "mounting_hole_pattern_mm": "16x16", "weight_g": 32, "dimensions_mm": [27.5, 27.5, 18.4], "recommended_propeller_size_inch": "5-6", "recommended_esc_ids": ["esc-s-45a-bl32", "esc-q-50a-bl32"], "manufacturer": "FPVTech", "datasheet_url": "https://www.fpvtech.com/datasheets/motor-mr-2207-2400.pdf", "performance_curves_url": "https://www.fpvtech.com/perfdata/motor-mr-2207-2400.png", "features": ["high_efficiency", "low_vibration"], "environmental_adaptability": {"temperature_celsius": [-10, 60], "humidity_percent": [20, 90], "wind_force_mps": [0, 15], "altitude_m": [0, 4000], "pollution": ["dust"], "emi_environment": "high_interference", "vibration": "high_resistance", "noise": "standard_noise"}, "performance_calculation_notes": "馬達效率 (η) 的計算公式為：η = (P_out / P_in) * 100%，其中輸出功率 P_out = τ * ω (扭矩 * 角速度)，輸入功率 P_in = V * I (電壓 * 電流)。最大推力與螺旋槳和電壓相關。", "efficiency_curve_formula_reference": "效率曲線通常呈現為拋物線，在特定負載下達到峰值。η(I) = ( (V - I * R) * (I - I_0) ) / (V * I)，其中 R 為內阻，I_0 為空載電流。", "keywords": ["racing_drone", "2207_motor", "high_kv", "fpv"], "notes": "此型號專為5吋競速無人機設計，反應速度極快。", "status": "in_production", "suggested_retail_price_usd": 21.99, "suppliers": ["FPVExpress", "DroneHobby"], "mtbf_hours": 1500, "after_sales_support": "提供1年原廠保固，線上技術支援。", "maintenance_cycle_recommendations": "每飛行50小時後檢查軸承狀況，並清理馬達內部灰塵。"}
+
+---
+
+{"component_id": "motor-mr-3510-700", "model_name": "SkyLift SL-3510", "type": "brushless_dc_motor", "application_type": "multi_rotor", "kv_value": 700, "max_current_a": 30, "rated_power_w": 450, "max_power_w": 550, "rated_torque_mnm": 600, "voltage_range_v": [14.8, 25.2], "no_load_current_a": 0.8, "internal_resistance_mohm": 110, "pole_count": 14, "shaft_diameter_mm": 4, "mounting_hole_pattern_mm": "19x25", "weight_g": 85, "dimensions_mm": [42.5, 42.5, 28], "recommended_propeller_size_inch": "12-14", "recommended_esc_ids": ["esc-s-40a-bls", "esc-q-40a-pro"], "manufacturer": "AeroDynamics", "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/sl-3510.pdf", "performance_curves_url": "https://www.aerodynamics-corp.com/perfdata/sl-3510.png", "features": ["high_efficiency", "long_lifespan", "built_in_fan"], "environmental_adaptability": {"temperature_celsius": [-20, 50], "humidity_percent": [10, 95], "wind_force_mps": [0, 12], "altitude_m": [0, 5000], "pollution": ["dust", "salt_spray"], "emi_environment": "moderate_interference", "vibration": "moderate_resistance", "noise": "low_noise"}, "performance_calculation_notes": "馬達轉速 (RPM) 計算公式：RPM = Kv * V。實際轉速會因負載而略低。扭矩常數 $K_t \\approx \\frac{60}{2\\pi \\times Kv}$。", "efficiency_curve_formula_reference": "效率主要受銅損 ($I^2R$) 和鐵損 (與轉速和磁通量相關) 影響。", "keywords": ["aerial_photography", "multi_rotor", "low_kv", "payload"], "notes": "適用於中型多旋翼無人機，提供穩定的懸停動力。", "status": "in_production", "suggested_retail_price_usd": 39.5, "suppliers": ["AeroDynamics Official", "ProDroneParts"], "mtbf_hours": 5000, "after_sales_support": "提供2年原廠保固，及付費維修服務。", "maintenance_cycle_recommendations": "每飛行100小時檢查軸承並根據需要添加潤滑油。"}
+
+---
+
+{"component_id": "motor-fw-4250-800", "model_name": "FixedWing Pro FWP-4250", "type": "brushless_dc_motor", "application_type": "fixed_wing", "kv_value": 800, "max_current_a": 60, "rated_power_w": 900, "max_power_w": 1250, "rated_torque_mnm": 1100, "voltage_range_v": [11.1, 22.2], "no_load_current_a": 2.5, "internal_resistance_mohm": 25, "pole_count": 14, "shaft_diameter_mm": 5, "mounting_hole_pattern_mm": "25x25", "weight_g": 155, "dimensions_mm": [42, 42, 50], "recommended_propeller_size_inch": "10-12", "recommended_esc_ids": ["esc-s-80a-fw"], "manufacturer": "PlanePower", "datasheet_url": "https://www.planepower.com/datasheets/fwp-4250.pdf", "performance_curves_url": "https://www.planepower.com/perfdata/fwp-4250.png", "features": ["high_efficiency", "long_lifespan"], "environmental_adaptability": {"temperature_celsius": [-15, 55], "humidity_percent": [20, 90], "wind_force_mps": [0, 20], "altitude_m": [0, 6000], "pollution": ["dust"], "emi_environment": "low_interference", "vibration": "moderate_resistance", "noise": "standard_noise"}, "performance_calculation_notes": "功率消耗 $P = V \\times I$。對於固定翼，推力需求隨飛行速度變化，需匹配合適的螺旋槳以在巡航速度下達到最佳效率。", "efficiency_curve_formula_reference": "可參考製造商提供的推力-電流-轉速對照表進行精確計算。", "keywords": ["fixed_wing", "pusher_motor", "tractor_motor", "uav"], "notes": "高扭矩輸出，適用於中大型固定翼無人機的牽引式或推進式佈局。", "status": "in_production", "suggested_retail_price_usd": 55.0, "suppliers": ["PlanePower Direct", "UAVSystemsIntl"], "mtbf_hours": 4000, "after_sales_support": "提供18個月原廠保固。", "maintenance_cycle_recommendations": "每次飛行前檢查螺絲緊固情況，每100小時檢查軸承磨損。"}
+
+---
+
+{"component_id": "motor-df-70mm-12b", "model_name": "JetStream DF70", "type": "ducted_fan", "application_type": "multi_rotor", "kv_value": 2100, "max_current_a": 85, "rated_power_w": 1800, "max_power_w": 2000, "rated_torque_mnm": 850, "voltage_range_v": [22.2, 25.2], "no_load_current_a": 3.5, "internal_resistance_mohm": 19, "pole_count": 12, "shaft_diameter_mm": 5, "mounting_hole_pattern_mm": "N/A (Integrated)", "weight_g": 350, "dimensions_mm": [90, 90, 115], "recommended_propeller_size_inch": "N/A (Integrated 70mm fan)", "recommended_esc_ids": ["esc-s-100a-pro"], "manufacturer": "EDF Systems", "datasheet_url": "https://www.edfsystems.com/datasheets/df70.pdf", "performance_curves_url": "https://www.edfsystems.com/perfdata/df70.png", "features": ["high_efficiency", "low_vibration", "built_in_fan"], "environmental_adaptability": {"temperature_celsius": [-10, 45], "humidity_percent": [20, 85], "wind_force_mps": [0, 10], "altitude_m": [0, 3000], "pollution": [], "emi_environment": "moderate_interference", "vibration": "low_resistance", "noise": "high_frequency_noise"}, "performance_calculation_notes": "涵道風扇的靜推力 (Static Thrust) 通常由製造商直接標定 (單位g或N)。推力會隨進氣速度增加而略微下降。", "efficiency_curve_formula_reference": "效率 (g/W) 是評估涵道風扇性能的關鍵指標，g/W = Thrust (g) / Power (W)。", "keywords": ["ducted_fan", "edf", "vtol", "jet_model"], "notes": "整合式設計，適用於需要高流速氣流的特殊應用，如VTOL或模型噴氣機。", "status": "in_production", "suggested_retail_price_usd": 129.0, "suppliers": ["EDF Systems", "HobbyKing"], "mtbf_hours": 2000, "after_sales_support": "提供1年保固，動平衡校準服務。", "maintenance_cycle_recommendations": "每20小時檢查扇葉是否有損傷或變形。"}
+
+---
+
+{"component_id": "motor-mr-u15-100", "model_name": "U-Power U15", "type": "brushless_dc_motor", "application_type": "multi_rotor", "kv_value": 100, "max_current_a": 150, "rated_power_w": 6000, "max_power_w": 8000, "rated_torque_mnm": 5500, "voltage_range_v": [44.4, 50.4], "no_load_current_a": 4.0, "internal_resistance_mohm": 22, "pole_count": 24, "shaft_diameter_mm": 15, "mounting_hole_pattern_mm": "40x40", "weight_g": 1600, "dimensions_mm": [155, 155, 65], "recommended_propeller_size_inch": "30-34", "recommended_esc_ids": ["esc-s-150a-pro"], "manufacturer": "T-Motor", "datasheet_url": "https://store.tmotor.com/datasheets/U15_100KV.pdf", "performance_curves_url": "https://store.tmotor.com/perfdata/U15_100KV.png", "features": ["high_efficiency", "long_lifespan", "built_in_fan", "low_vibration"], "environmental_adaptability": {"temperature_celsius": [-25, 60], "humidity_percent": [5, 95], "wind_force_mps": [0, 18], "altitude_m": [0, 5000], "pollution": ["dust", "salt_spray"], "emi_environment": "low_interference", "vibration": "high_resistance", "noise": "low_noise"}, "performance_calculation_notes": "適用於重載無人機。推力可達 25kg 以上 (搭配特定螺旋槳與電壓)。效率是首要考量，以最大化飛行時間。", "efficiency_curve_formula_reference": "η_max > 90% in optimal working range.", "keywords": ["heavy_lift", "agriculture_drone", "industrial_uav", "t-motor"], "notes": "工業級馬達，專為農業植保、物流運輸等重載應用設計，具備高可靠性。", "status": "in_production", "suggested_retail_price_usd": 699.0, "suppliers": ["T-Motor Official Store", "Industrial Drone Solutions"], "mtbf_hours": 10000, "after_sales_support": "提供3年保固及全球維修網絡。", "maintenance_cycle_recommendations": "每200小時進行專業保養，包括軸承更換與線圈絕緣測試。"}
+---
+### 任務需求
+為了滯空效率，推薦什麼樣的馬達與槳葉組合？
+---
+# [你的回答]
