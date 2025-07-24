@@ -1,0 +1,4638 @@
+================================================================================
+父文件視覺化結果 (共 60 個)
+================================================================================
+
+########## 父文件 #1 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "bd01ea99-1dd8-4d3c-91dc-e703129906ed",
+  "source": "power.json",
+  "model_name": "Raptor MR-2207",
+  "component_type": "motors",
+  "sub_type": "brushless_dc_motor"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "motor-mr-2207-2400",
+  "model_name": "Raptor MR-2207",
+  "type": "brushless_dc_motor",
+  "application_type": "racing_drone",
+  "kv_value": 2400,
+  "max_current_a": 45,
+  "rated_power_w": 650,
+  "max_power_w": 720,
+  "rated_torque_mnm": 250,
+  "voltage_range_v": [
+    11.1,
+    16.8
+  ],
+  "no_load_current_a": 1.2,
+  "internal_resistance_mohm": 56,
+  "pole_count": 14,
+  "shaft_diameter_mm": 5,
+  "mounting_hole_pattern_mm": "16x16",
+  "weight_g": 32,
+  "dimensions_mm": [
+    27.5,
+    27.5,
+    18.4
+  ],
+  "recommended_propeller_size_inch": "5-6",
+  "recommended_esc_ids": [
+    "esc-s-45a-bl32",
+    "esc-q-50a-bl32"
+  ],
+  "manufacturer": "FPVTech",
+  "datasheet_url": "https://www.fpvtech.com/datasheets/motor-mr-2207-2400.pdf",
+  "performance_curves_url": "https://www.fpvtech.com/perfdata/motor-mr-2207-2400.png",
+  "features": [
+    "high_efficiency",
+    "low_vibration"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      60
+    ],
+    "humidity_percent": [
+      20,
+      90
+    ],
+    "wind_force_mps": [
+      0,
+      15
+    ],
+    "altitude_m": [
+      0,
+      4000
+    ],
+    "pollution": [
+      "dust"
+    ],
+    "emi_environment": "high_interference",
+    "vibration": "high_resistance",
+    "noise": "standard_noise"
+  },
+  "performance_calculation_notes": "馬達效率 (η) 的計算公式為：η = (P_out / P_in) * 100%，其中輸出功率 P_out = τ * ω (扭矩 * 角速度)，輸入功率 P_in = V * I (電壓 * 電流)。最大推力與螺旋槳和電壓相關。",
+  "efficiency_curve_formula_reference": "效率曲線通常呈現為拋物線，在特定負載下達到峰值。η(I) = ( (V - I * R) * (I - I_0) ) / (V * I)，其中 R 為內阻，I_0 為空載電流。",
+  "keywords": [
+    "racing_drone",
+    "2207_motor",
+    "high_kv",
+    "fpv"
+  ],
+  "notes": "此型號專為5吋競速無人機設計，反應速度極快。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 21.99,
+  "suppliers": [
+    "FPVExpress",
+    "DroneHobby"
+  ],
+  "mtbf_hours": 1500,
+  "after_sales_support": "提供1年原廠保固，線上技術支援。",
+  "maintenance_cycle_recommendations": "每飛行50小時後檢查軸承狀況，並清理馬達內部灰塵。"
+}
+
+########## 父文件 #2 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "ee363354-1450-4c4f-92e8-f5d9074a0258",
+  "source": "power.json",
+  "model_name": "SkyLift SL-3510",
+  "component_type": "motors",
+  "sub_type": "brushless_dc_motor"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "motor-mr-3510-700",
+  "model_name": "SkyLift SL-3510",
+  "type": "brushless_dc_motor",
+  "application_type": "multi_rotor",
+  "kv_value": 700,
+  "max_current_a": 30,
+  "rated_power_w": 450,
+  "max_power_w": 550,
+  "rated_torque_mnm": 600,
+  "voltage_range_v": [
+    14.8,
+    25.2
+  ],
+  "no_load_current_a": 0.8,
+  "internal_resistance_mohm": 110,
+  "pole_count": 14,
+  "shaft_diameter_mm": 4,
+  "mounting_hole_pattern_mm": "19x25",
+  "weight_g": 85,
+  "dimensions_mm": [
+    42.5,
+    42.5,
+    28
+  ],
+  "recommended_propeller_size_inch": "12-14",
+  "recommended_esc_ids": [
+    "esc-s-40a-bls",
+    "esc-q-40a-pro"
+  ],
+  "manufacturer": "AeroDynamics",
+  "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/sl-3510.pdf",
+  "performance_curves_url": "https://www.aerodynamics-corp.com/perfdata/sl-3510.png",
+  "features": [
+    "high_efficiency",
+    "long_lifespan",
+    "built_in_fan"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      50
+    ],
+    "humidity_percent": [
+      10,
+      95
+    ],
+    "wind_force_mps": [
+      0,
+      12
+    ],
+    "altitude_m": [
+      0,
+      5000
+    ],
+    "pollution": [
+      "dust",
+      "salt_spray"
+    ],
+    "emi_environment": "moderate_interference",
+    "vibration": "moderate_resistance",
+    "noise": "low_noise"
+  },
+  "performance_calculation_notes": "馬達轉速 (RPM) 計算公式：RPM = Kv * V。實際轉速會因負載而略低。扭矩常數 $K_t \\approx \\frac{60}{2\\pi \\times Kv}$。",
+  "efficiency_curve_formula_reference": "效率主要受銅損 ($I^2R$) 和鐵損 (與轉速和磁通量相關) 影響。",
+  "keywords": [
+    "aerial_photography",
+    "multi_rotor",
+    "low_kv",
+    "payload"
+  ],
+  "notes": "適用於中型多旋翼無人機，提供穩定的懸停動力。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 39.5,
+  "suppliers": [
+    "AeroDynamics Official",
+    "ProDroneParts"
+  ],
+  "mtbf_hours": 5000,
+  "after_sales_support": "提供2年原廠保固，及付費維修服務。",
+  "maintenance_cycle_recommendations": "每飛行100小時檢查軸承並根據需要添加潤滑油。"
+}
+
+########## 父文件 #3 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "dc10a731-7c1c-4135-be9c-d03196767482",
+  "source": "power.json",
+  "model_name": "FixedWing Pro FWP-4250",
+  "component_type": "motors",
+  "sub_type": "brushless_dc_motor"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "motor-fw-4250-800",
+  "model_name": "FixedWing Pro FWP-4250",
+  "type": "brushless_dc_motor",
+  "application_type": "fixed_wing",
+  "kv_value": 800,
+  "max_current_a": 60,
+  "rated_power_w": 900,
+  "max_power_w": 1250,
+  "rated_torque_mnm": 1100,
+  "voltage_range_v": [
+    11.1,
+    22.2
+  ],
+  "no_load_current_a": 2.5,
+  "internal_resistance_mohm": 25,
+  "pole_count": 14,
+  "shaft_diameter_mm": 5,
+  "mounting_hole_pattern_mm": "25x25",
+  "weight_g": 155,
+  "dimensions_mm": [
+    42,
+    42,
+    50
+  ],
+  "recommended_propeller_size_inch": "10-12",
+  "recommended_esc_ids": [
+    "esc-s-80a-fw"
+  ],
+  "manufacturer": "PlanePower",
+  "datasheet_url": "https://www.planepower.com/datasheets/fwp-4250.pdf",
+  "performance_curves_url": "https://www.planepower.com/perfdata/fwp-4250.png",
+  "features": [
+    "high_efficiency",
+    "long_lifespan"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -15,
+      55
+    ],
+    "humidity_percent": [
+      20,
+      90
+    ],
+    "wind_force_mps": [
+      0,
+      20
+    ],
+    "altitude_m": [
+      0,
+      6000
+    ],
+    "pollution": [
+      "dust"
+    ],
+    "emi_environment": "low_interference",
+    "vibration": "moderate_resistance",
+    "noise": "standard_noise"
+  },
+  "performance_calculation_notes": "功率消耗 $P = V \\times I$。對於固定翼，推力需求隨飛行速度變化，需匹配合適的螺旋槳以在巡航速度下達到最佳效率。",
+  "efficiency_curve_formula_reference": "可參考製造商提供的推力-電流-轉速對照表進行精確計算。",
+  "keywords": [
+    "fixed_wing",
+    "pusher_motor",
+    "tractor_motor",
+    "uav"
+  ],
+  "notes": "高扭矩輸出，適用於中大型固定翼無人機的牽引式或推進式佈局。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 55.0,
+  "suppliers": [
+    "PlanePower Direct",
+    "UAVSystemsIntl"
+  ],
+  "mtbf_hours": 4000,
+  "after_sales_support": "提供18個月原廠保固。",
+  "maintenance_cycle_recommendations": "每次飛行前檢查螺絲緊固情況，每100小時檢查軸承磨損。"
+}
+
+########## 父文件 #4 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "0fc31ba1-7c32-48d6-9a80-948268dac930",
+  "source": "power.json",
+  "model_name": "JetStream DF70",
+  "component_type": "motors",
+  "sub_type": "ducted_fan"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "motor-df-70mm-12b",
+  "model_name": "JetStream DF70",
+  "type": "ducted_fan",
+  "application_type": "multi_rotor",
+  "kv_value": 2100,
+  "max_current_a": 85,
+  "rated_power_w": 1800,
+  "max_power_w": 2000,
+  "rated_torque_mnm": 850,
+  "voltage_range_v": [
+    22.2,
+    25.2
+  ],
+  "no_load_current_a": 3.5,
+  "internal_resistance_mohm": 19,
+  "pole_count": 12,
+  "shaft_diameter_mm": 5,
+  "mounting_hole_pattern_mm": "N/A (Integrated)",
+  "weight_g": 350,
+  "dimensions_mm": [
+    90,
+    90,
+    115
+  ],
+  "recommended_propeller_size_inch": "N/A (Integrated 70mm fan)",
+  "recommended_esc_ids": [
+    "esc-s-100a-pro"
+  ],
+  "manufacturer": "EDF Systems",
+  "datasheet_url": "https://www.edfsystems.com/datasheets/df70.pdf",
+  "performance_curves_url": "https://www.edfsystems.com/perfdata/df70.png",
+  "features": [
+    "high_efficiency",
+    "low_vibration",
+    "built_in_fan"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      45
+    ],
+    "humidity_percent": [
+      20,
+      85
+    ],
+    "wind_force_mps": [
+      0,
+      10
+    ],
+    "altitude_m": [
+      0,
+      3000
+    ],
+    "pollution": [],
+    "emi_environment": "moderate_interference",
+    "vibration": "low_resistance",
+    "noise": "high_frequency_noise"
+  },
+  "performance_calculation_notes": "涵道風扇的靜推力 (Static Thrust) 通常由製造商直接標定 (單位g或N)。推力會隨進氣速度增加而略微下降。",
+  "efficiency_curve_formula_reference": "效率 (g/W) 是評估涵道風扇性能的關鍵指標，g/W = Thrust (g) / Power (W)。",
+  "keywords": [
+    "ducted_fan",
+    "edf",
+    "vtol",
+    "jet_model"
+  ],
+  "notes": "整合式設計，適用於需要高流速氣流的特殊應用，如VTOL或模型噴氣機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 129.0,
+  "suppliers": [
+    "EDF Systems",
+    "HobbyKing"
+  ],
+  "mtbf_hours": 2000,
+  "after_sales_support": "提供1年保固，動平衡校準服務。",
+  "maintenance_cycle_recommendations": "每20小時檢查扇葉是否有損傷或變形。"
+}
+
+########## 父文件 #5 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "a3943990-e4de-4376-b8bd-eee62d1592a8",
+  "source": "power.json",
+  "model_name": "U-Power U15",
+  "component_type": "motors",
+  "sub_type": "brushless_dc_motor"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "motor-mr-u15-100",
+  "model_name": "U-Power U15",
+  "type": "brushless_dc_motor",
+  "application_type": "multi_rotor",
+  "kv_value": 100,
+  "max_current_a": 150,
+  "rated_power_w": 6000,
+  "max_power_w": 8000,
+  "rated_torque_mnm": 5500,
+  "voltage_range_v": [
+    44.4,
+    50.4
+  ],
+  "no_load_current_a": 4.0,
+  "internal_resistance_mohm": 22,
+  "pole_count": 24,
+  "shaft_diameter_mm": 15,
+  "mounting_hole_pattern_mm": "40x40",
+  "weight_g": 1600,
+  "dimensions_mm": [
+    155,
+    155,
+    65
+  ],
+  "recommended_propeller_size_inch": "30-34",
+  "recommended_esc_ids": [
+    "esc-s-150a-pro"
+  ],
+  "manufacturer": "T-Motor",
+  "datasheet_url": "https://store.tmotor.com/datasheets/U15_100KV.pdf",
+  "performance_curves_url": "https://store.tmotor.com/perfdata/U15_100KV.png",
+  "features": [
+    "high_efficiency",
+    "long_lifespan",
+    "built_in_fan",
+    "low_vibration"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -25,
+      60
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "wind_force_mps": [
+      0,
+      18
+    ],
+    "altitude_m": [
+      0,
+      5000
+    ],
+    "pollution": [
+      "dust",
+      "salt_spray"
+    ],
+    "emi_environment": "low_interference",
+    "vibration": "high_resistance",
+    "noise": "low_noise"
+  },
+  "performance_calculation_notes": "適用於重載無人機。推力可達 25kg 以上 (搭配特定螺旋槳與電壓)。效率是首要考量，以最大化飛行時間。",
+  "efficiency_curve_formula_reference": "η_max > 90% in optimal working range.",
+  "keywords": [
+    "heavy_lift",
+    "agriculture_drone",
+    "industrial_uav",
+    "t-motor"
+  ],
+  "notes": "工業級馬達，專為農業植保、物流運輸等重載應用設計，具備高可靠性。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 699.0,
+  "suppliers": [
+    "T-Motor Official Store",
+    "Industrial Drone Solutions"
+  ],
+  "mtbf_hours": 10000,
+  "after_sales_support": "提供3年保固及全球維修網絡。",
+  "maintenance_cycle_recommendations": "每200小時進行專業保養，包括軸承更換與線圈絕緣測試。"
+}
+
+########## 父文件 #6 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "83b31bce-895b-4c51-936f-2fd9982c4c93",
+  "source": "power.json",
+  "model_name": "AeroForce CF1345",
+  "component_type": "propellers",
+  "sub_type": "multi_rotor_propeller"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "prop-mr-cf-1345",
+  "model_name": "AeroForce CF1345",
+  "type": "multi_rotor_propeller",
+  "application_type": "multi_rotor",
+  "blade_count": 2,
+  "diameter_inch": 13,
+  "pitch_inch": 4.5,
+  "material": "carbon_fiber",
+  "weight_g": 18,
+  "bore_diameter_mm": 4,
+  "max_rpm": 8000,
+  "thrust_efficiency_data": [
+    {
+      "rpm": 3000,
+      "thrust_g": 650,
+      "power_w": 55,
+      "efficiency_g_per_w": 11.8
+    },
+    {
+      "rpm": 4500,
+      "thrust_g": 1200,
+      "power_w": 130,
+      "efficiency_g_per_w": 9.2
+    },
+    {
+      "rpm": 6000,
+      "thrust_g": 2100,
+      "power_w": 280,
+      "efficiency_g_per_w": 7.5
+    }
+  ],
+  "recommended_motor_type": "low_kv_motor",
+  "manufacturer": "AeroDynamics",
+  "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/prop-cf1345.pdf",
+  "features": [
+    "high_strength",
+    "lightweight",
+    "high_efficiency"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      80
+    ],
+    "humidity_percent": [
+      0,
+      100
+    ],
+    "wind_force_mps": [
+      0,
+      15
+    ],
+    "noise": "standard_noise"
+  },
+  "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。其中 $C_T$ 是推力係數，$\\rho$ 是空氣密度，n 是轉速 (RPS)，D 是直徑 (m)。",
+  "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。其中 $C_P$ 是功率係數。",
+  "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。實際速度會因槳葉滑流而較低。",
+  "airfoil_profile": "NACA 4412 modified",
+  "hub_type_interface": "Direct Mount (2-hole)",
+  "balancing_precision": "Dynamic balance G2.5",
+  "keywords": [
+    "carbon_fiber_prop",
+    "13_inch",
+    "multi_rotor"
+  ],
+  "notes": "高剛性碳纖維材質可減少槳葉變形，提升高速運轉時的效率。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 25.0,
+  "suppliers": [
+    "AeroDynamics Official",
+    "ProDroneParts"
+  ],
+  "mtbf_hours": 2000,
+  "after_sales_support": "提供裂紋檢測諮詢。",
+  "maintenance_cycle_recommendations": "每次飛行後目視檢查是否有裂紋或損傷。"
+}
+
+########## 父文件 #7 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "e1e460c8-765b-409c-940c-87fc7782e62b",
+  "source": "power.json",
+  "model_name": "Cyclone 5145 V3",
+  "component_type": "propellers",
+  "sub_type": "multi_rotor_propeller"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "prop-race-5145-3b",
+  "model_name": "Cyclone 5145 V3",
+  "type": "multi_rotor_propeller",
+  "application_type": "racing_drone",
+  "blade_count": 3,
+  "diameter_inch": 5.1,
+  "pitch_inch": 4.5,
+  "material": "polycarbonate",
+  "weight_g": 4.2,
+  "bore_diameter_mm": 5,
+  "max_rpm": 25000,
+  "thrust_efficiency_data": [
+    {
+      "rpm": 10000,
+      "thrust_g": 700,
+      "power_w": 150,
+      "efficiency_g_per_w": 4.7
+    },
+    {
+      "rpm": 15000,
+      "thrust_g": 1350,
+      "power_w": 320,
+      "efficiency_g_per_w": 4.2
+    },
+    {
+      "rpm": 20000,
+      "thrust_g": 1800,
+      "power_w": 550,
+      "efficiency_g_per_w": 3.3
+    }
+  ],
+  "recommended_motor_type": "high_kv_motor",
+  "manufacturer": "FPVTech",
+  "datasheet_url": "https://www.fpvtech.com/datasheets/prop-cy5145v3.pdf",
+  "features": [
+    "high_strength",
+    "lightweight"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      50
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "wind_force_mps": [
+      0,
+      15
+    ],
+    "noise": "standard_noise"
+  },
+  "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。三葉槳的 $C_T$ 通常高於同尺寸雙葉槳。",
+  "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。葉片增加會導致功率消耗顯著上升。",
+  "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。",
+  "airfoil_profile": "Custom high-speed profile",
+  "hub_type_interface": "Standard 5mm bore",
+  "balancing_precision": "Factory balanced",
+  "keywords": [
+    "5_inch_prop",
+    "tri_blade",
+    "racing",
+    "freestyle"
+  ],
+  "notes": "高韌性 PC 材質，耐炸，適合競速與花飛練習。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 3.99,
+  "suppliers": [
+    "FPVExpress",
+    "DroneHobby"
+  ],
+  "mtbf_hours": 100,
+  "after_sales_support": "不提供保固，消耗品。",
+  "maintenance_cycle_recommendations": "每次嚴重撞擊後建議更換。"
+}
+
+########## 父文件 #8 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "df1eb444-7a24-4ca0-95cf-1cd70be7eec5",
+  "source": "power.json",
+  "model_name": "AgriFold 3090",
+  "component_type": "propellers",
+  "sub_type": "foldable_propeller"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "prop-mr-fold-3090",
+  "model_name": "AgriFold 3090",
+  "type": "foldable_propeller",
+  "application_type": "multi_rotor",
+  "blade_count": 2,
+  "diameter_inch": 30,
+  "pitch_inch": 9.0,
+  "material": "carbon_fiber_composite",
+  "weight_g": 150,
+  "bore_diameter_mm": 10,
+  "max_rpm": 4000,
+  "thrust_efficiency_data": [
+    {
+      "rpm": 1500,
+      "thrust_g": 5500,
+      "power_w": 800,
+      "efficiency_g_per_w": 6.9
+    },
+    {
+      "rpm": 2500,
+      "thrust_g": 12000,
+      "power_w": 2100,
+      "efficiency_g_per_w": 5.7
+    },
+    {
+      "rpm": 3500,
+      "thrust_g": 22000,
+      "power_w": 4500,
+      "efficiency_g_per_w": 4.9
+    }
+  ],
+  "recommended_motor_type": "low_kv_motor",
+  "manufacturer": "T-Motor",
+  "datasheet_url": "https://store.tmotor.com/datasheets/prop-af3090.pdf",
+  "features": [
+    "high_strength",
+    "high_efficiency",
+    "foldable"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      60
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "wind_force_mps": [
+      0,
+      18
+    ],
+    "noise": "low_noise"
+  },
+  "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。",
+  "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。",
+  "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。",
+  "airfoil_profile": "High-lift airfoil",
+  "hub_type_interface": "Foldable adapter mount (M3 screws)",
+  "balancing_precision": "Dynamic balance G1.0",
+  "keywords": [
+    "agriculture_drone",
+    "heavy_lift",
+    "foldable_prop"
+  ],
+  "notes": "專為農業植保無人機設計，可折疊設計便於運輸和儲存。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 150.0,
+  "suppliers": [
+    "T-Motor Official Store",
+    "Industrial Drone Solutions"
+  ],
+  "mtbf_hours": 1500,
+  "after_sales_support": "提供槳葉動平衡檢測服務。",
+  "maintenance_cycle_recommendations": "每100飛行小時檢查折疊結構的緊固度和磨損情況。"
+}
+
+########## 父文件 #9 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "bd34885f-039d-4114-9241-101aef673978",
+  "source": "power.json",
+  "model_name": "APC 10x4.7 Slow Flyer",
+  "component_type": "propellers",
+  "sub_type": "fixed_wing_propeller"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "prop-fw-apc-1047",
+  "model_name": "APC 10x4.7 Slow Flyer",
+  "type": "fixed_wing_propeller",
+  "application_type": "fixed_wing",
+  "blade_count": 2,
+  "diameter_inch": 10,
+  "pitch_inch": 4.7,
+  "material": "composite",
+  "weight_g": 15,
+  "bore_diameter_mm": 6,
+  "max_rpm": 12000,
+  "thrust_efficiency_data": [
+    {
+      "rpm": 5000,
+      "thrust_g": 800,
+      "power_w": 90,
+      "efficiency_g_per_w": 8.9
+    },
+    {
+      "rpm": 7000,
+      "thrust_g": 1400,
+      "power_w": 180,
+      "efficiency_g_per_w": 7.8
+    },
+    {
+      "rpm": 9000,
+      "thrust_g": 2200,
+      "power_w": 350,
+      "efficiency_g_per_w": 6.3
+    }
+  ],
+  "recommended_motor_type": "low_kv_motor",
+  "manufacturer": "APC Propellers",
+  "datasheet_url": "https://www.apcprop.com/datasheets/10x4.7SF.pdf",
+  "features": [
+    "high_efficiency",
+    "lightweight"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -15,
+      50
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "wind_force_mps": [
+      0,
+      12
+    ],
+    "noise": "standard_noise"
+  },
+  "thrust_calculation_notes": "在有前進速度時，有效推力 $T_{eff} = T_{static} - k \\cdot v$, v為前進速度。",
+  "power_calculation_notes": "功率與飛行速度和攻角相關。",
+  "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。此槳型滑流較大，實際速度約為理論值的60-70%。",
+  "airfoil_profile": "Clark Y",
+  "hub_type_interface": "Stepped bore with adapter rings",
+  "balancing_precision": "Standard factory balance",
+  "keywords": [
+    "fixed_wing",
+    "slow_flyer",
+    "park_flyer",
+    "apc"
+  ],
+  "notes": "經典的慢速飛行槳，適用於訓練機和輕型固定翼航拍機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 4.5,
+  "suppliers": [
+    "APC Propellers US",
+    "Tower Hobbies"
+  ],
+  "mtbf_hours": 500,
+  "after_sales_support": "不提供保固，消耗品。",
+  "maintenance_cycle_recommendations": "著陸不慎或槳葉觸地後應立即檢查更換。"
+}
+
+########## 父文件 #10 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "6e0908a4-b38b-4f15-b4bf-c2f0e8bcff5e",
+  "source": "power.json",
+  "model_name": "Phantom Quiet 9450S",
+  "component_type": "propellers",
+  "sub_type": "low_noise_propeller"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "prop-ln-9450",
+  "model_name": "Phantom Quiet 9450S",
+  "type": "low_noise_propeller",
+  "application_type": "multi_rotor",
+  "blade_count": 2,
+  "diameter_inch": 9.4,
+  "pitch_inch": 5.0,
+  "material": "plastic",
+  "weight_g": 13,
+  "bore_diameter_mm": 8,
+  "max_rpm": 9000,
+  "thrust_efficiency_data": [
+    {
+      "rpm": 4000,
+      "thrust_g": 600,
+      "power_w": 65,
+      "efficiency_g_per_w": 9.2
+    },
+    {
+      "rpm": 6000,
+      "thrust_g": 1100,
+      "power_w": 150,
+      "efficiency_g_per_w": 7.3
+    }
+  ],
+  "recommended_motor_type": "low_kv_motor",
+  "manufacturer": "DJI",
+  "datasheet_url": "https://www.dji.com/phantom-4-pro/info#specs",
+  "features": [
+    "low_noise",
+    "high_efficiency",
+    "self_locking_propeller"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      50
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "wind_force_mps": [
+      0,
+      10
+    ],
+    "noise": "low_noise"
+  },
+  "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。",
+  "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。",
+  "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。",
+  "airfoil_profile": "Custom aerodynamic profile for noise reduction",
+  "hub_type_interface": "DJI Self-locking (Z-bend)",
+  "balancing_precision": "Dynamic balance G2.5",
+  "keywords": [
+    "dji",
+    "phantom",
+    "low_noise",
+    "quick_release"
+  ],
+  "notes": "採用優化的氣動設計，能顯著降低飛行噪音，適合在對噪音敏感的環境下作業。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 15.0,
+  "suppliers": [
+    "DJI Store",
+    "Authorized DJI Dealers"
+  ],
+  "mtbf_hours": 800,
+  "after_sales_support": "提供原廠保固，非人為損壞可換新。",
+  "maintenance_cycle_recommendations": "每次飛行後目視檢查，若有磨損或變形應立即更換。"
+}
+
+########## 父文件 #11 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "8a4f83a6-f8e6-4ae6-bd31-ac1f4be371ad",
+  "source": "power.json",
+  "model_name": "Raptor SLIM 45A",
+  "component_type": "escs",
+  "sub_type": "single_esc"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "esc-s-45a-bl32",
+  "model_name": "Raptor SLIM 45A",
+  "type": "single_esc",
+  "application_type": "racing_drone",
+  "rated_current_a": 45,
+  "burst_current_a": 55,
+  "input_voltage_v": [
+    11.1,
+    25.2
+  ],
+  "bec_output": "none",
+  "firmware_protocol": "BLHeli_32",
+  "pwm_frequency_khz": 96,
+  "refresh_rate_hz": 1200,
+  "weight_g": 7,
+  "dimensions_mm": [
+    35,
+    11,
+    7
+  ],
+  "processor": "STM32G071",
+  "features": [
+    "active_braking",
+    "telemetry",
+    "current_sensing",
+    "thermal_protection"
+  ],
+  "protection_mechanisms": [
+    "over_temperature",
+    "over_current",
+    "startup_protection"
+  ],
+  "data_logging_capability": "Yes, with compatible flight controller",
+  "firmware_upgradability": "Yes, via BLHeliSuite32",
+  "manufacturer": "FPVTech",
+  "datasheet_url": "https://www.fpvtech.com/datasheets/esc-raptor45.pdf",
+  "latest_firmware_software_url": "https://github.com/bitdump/BLHeli",
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      85
+    ],
+    "humidity_percent": [
+      20,
+      90
+    ],
+    "emi_environment": "high_interference",
+    "ip_rating": "IP40"
+  },
+  "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。其中 $I_{rms}$ 是均方根電流，$R_{ds(on)}$ 是MOSFET的導通電阻。在高頻率下，開關損耗也需考慮。",
+  "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。傳導損耗 $P_{conduction} = I^2 \\times R_{ds(on)} \\times D$ (D為占空比)。開關損耗與PWM頻率、電壓和電流上升/下降時間相關。",
+  "keywords": [
+    "blheli_32",
+    "esc",
+    "racing_drone",
+    "telemetry"
+  ],
+  "notes": "32位元處理器提供更快的響應和更平滑的馬達控制，帶有遙測功能，可將電流、溫度等數據回傳飛控。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 18.5,
+  "suppliers": [
+    "FPVExpress",
+    "DroneHobby"
+  ],
+  "mtbf_hours": 2000,
+  "after_sales_support": "提供1年保固，韌體更新支援。",
+  "maintenance_cycle_recommendations": "保持散熱良好，避免泥沙覆蓋。"
+}
+
+########## 父文件 #12 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "c6f5757e-daa4-46e9-9387-af94925a3079",
+  "source": "power.json",
+  "model_name": "Matrix 4-in-1 50A",
+  "component_type": "escs",
+  "sub_type": "quad_esc"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "esc-q-50a-bl32",
+  "model_name": "Matrix 4-in-1 50A",
+  "type": "quad_esc",
+  "application_type": "racing_drone",
+  "rated_current_a": 50,
+  "burst_current_a": 65,
+  "input_voltage_v": [
+    11.1,
+    25.2
+  ],
+  "bec_output": "5V/3A",
+  "firmware_protocol": "BLHeli_32",
+  "pwm_frequency_khz": 96,
+  "refresh_rate_hz": 1200,
+  "weight_g": 16,
+  "dimensions_mm": [
+    36,
+    36,
+    8
+  ],
+  "processor": "STM32F051 (x4)",
+  "features": [
+    "active_braking",
+    "telemetry",
+    "current_sensing",
+    "thermal_protection",
+    "integrated_design"
+  ],
+  "protection_mechanisms": [
+    "over_temperature",
+    "over_current",
+    "startup_protection"
+  ],
+  "data_logging_capability": "Yes",
+  "firmware_upgradability": "Yes",
+  "manufacturer": "FPVTech",
+  "datasheet_url": "https://www.fpvtech.com/datasheets/esc-matrix50.pdf",
+  "latest_firmware_software_url": "https://github.com/bitdump/BLHeli",
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      80
+    ],
+    "humidity_percent": [
+      20,
+      90
+    ],
+    "emi_environment": "high_interference",
+    "ip_rating": "IP40"
+  },
+  "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx 4 \\times (I_{rms}^2 \\times R_{ds(on)})$。四合一設計散熱更集中，需確保機架內有足夠通風。",
+  "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。",
+  "keywords": [
+    "4_in_1_esc",
+    "blheli_32",
+    "fpv",
+    "integrated"
+  ],
+  "notes": "高度整合的四合一電調，簡化了穿越機的組裝流程，並包含一個5V BEC為飛控等設備供電。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 59.99,
+  "suppliers": [
+    "FPVExpress",
+    "DroneHobby"
+  ],
+  "mtbf_hours": 1800,
+  "after_sales_support": "提供1年保固。",
+  "maintenance_cycle_recommendations": "定期檢查焊點是否牢固，散熱片是否潔淨。"
+}
+
+########## 父文件 #13 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "889a03ec-20c4-4474-9e20-594e815402c8",
+  "source": "power.json",
+  "model_name": "HobbyWing FlyFun V5 80A",
+  "component_type": "escs",
+  "sub_type": "single_esc"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "esc-s-80a-fw",
+  "model_name": "HobbyWing FlyFun V5 80A",
+  "type": "single_esc",
+  "application_type": "fixed_wing",
+  "rated_current_a": 80,
+  "burst_current_a": 100,
+  "input_voltage_v": [
+    11.1,
+    25.2
+  ],
+  "bec_output": "5.2V/6V/7.4V @ 8A",
+  "firmware_protocol": "HobbyWing Protocol",
+  "pwm_frequency_khz": 32,
+  "refresh_rate_hz": 500,
+  "weight_g": 92,
+  "dimensions_mm": [
+    69.8,
+    34.6,
+    19.2
+  ],
+  "processor": "High-performance 32-bit ARM",
+  "features": [
+    "active_braking",
+    "thermal_protection",
+    "data_logging"
+  ],
+  "protection_mechanisms": [
+    "over_temperature",
+    "over_current",
+    "startup_protection",
+    "stall_protection"
+  ],
+  "data_logging_capability": "Yes, records max temperature, max current, etc.",
+  "firmware_upgradability": "Yes, via HobbyWing programming box",
+  "manufacturer": "HobbyWing",
+  "datasheet_url": "https://www.hobbywing.com/datasheets/FlyFun_V5_80A.pdf",
+  "latest_firmware_software_url": "https://www.hobbywing.com/pages/download",
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      65
+    ],
+    "humidity_percent": [
+      10,
+      95
+    ],
+    "emi_environment": "low_interference",
+    "ip_rating": "IP20"
+  },
+  "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。大型散熱片設計有助於在持續大電流下散熱。",
+  "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。固定翼應用中，通常工作在部分油門，損耗相對穩定。",
+  "keywords": [
+    "hobbywing",
+    "fixed_wing_esc",
+    "high_power_bec"
+  ],
+  "notes": "專為固定翼設計，具備強大的開關模式BEC，可直接驅動多個大扭矩舵機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 65.0,
+  "suppliers": [
+    "HobbyWing Official",
+    "UAVSystemsIntl"
+  ],
+  "mtbf_hours": 5000,
+  "after_sales_support": "提供2年原廠保固。",
+  "maintenance_cycle_recommendations": "確保放置在通風良好處，避免過熱。"
+}
+
+########## 父文件 #14 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "d4f2d544-00ad-4af6-9e6e-6eadb6ea3351",
+  "source": "power.json",
+  "model_name": "T-Motor Flame 150A",
+  "component_type": "escs",
+  "sub_type": "single_esc"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "esc-s-150a-pro",
+  "model_name": "T-Motor Flame 150A",
+  "type": "single_esc",
+  "application_type": "multi_rotor",
+  "rated_current_a": 150,
+  "burst_current_a": 180,
+  "input_voltage_v": [
+    22.2,
+    52.2
+  ],
+  "bec_output": "none",
+  "firmware_protocol": "T-Motor Protocol (Supports DShot)",
+  "pwm_frequency_khz": 24,
+  "refresh_rate_hz": 600,
+  "weight_g": 180,
+  "dimensions_mm": [
+    105,
+    45,
+    25
+  ],
+  "processor": "32-bit ARM",
+  "features": [
+    "telemetry",
+    "current_sensing",
+    "thermal_protection"
+  ],
+  "protection_mechanisms": [
+    "over_temperature",
+    "over_current",
+    "startup_protection",
+    "stall_protection"
+  ],
+  "data_logging_capability": "Yes, via CAN or UART",
+  "firmware_upgradability": "Yes",
+  "manufacturer": "T-Motor",
+  "datasheet_url": "https://store.tmotor.com/datasheets/Flame150A.pdf",
+  "latest_firmware_software_url": "https://store.tmotor.com/pages/download",
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -25,
+      65
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "emi_environment": "low_interference",
+    "ip_rating": "IP67"
+  },
+  "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。採用灌膠工藝和金屬外殼，散熱性能優異。",
+  "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。",
+  "keywords": [
+    "heavy_lift_esc",
+    "industrial_uav",
+    "t-motor",
+    "waterproof"
+  ],
+  "notes": "工業級大電流電調，IP67防水防塵等級，適用於農業、測繪等嚴苛環境。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 250.0,
+  "suppliers": [
+    "T-Motor Official Store",
+    "Industrial Drone Solutions"
+  ],
+  "mtbf_hours": 8000,
+  "after_sales_support": "提供3年保固及技術支援。",
+  "maintenance_cycle_recommendations": "定期清理外殼，檢查線纜接口是否完好。"
+}
+
+########## 父文件 #15 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "89b64a49-1501-4ef1-bc47-ac4b6a94edfc",
+  "source": "power.json",
+  "model_name": "AeroDyne Standard 40A",
+  "component_type": "escs",
+  "sub_type": "single_esc"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "esc-s-40a-bls",
+  "model_name": "AeroDyne Standard 40A",
+  "type": "single_esc",
+  "application_type": "multi_rotor",
+  "rated_current_a": 40,
+  "burst_current_a": 50,
+  "input_voltage_v": [
+    11.1,
+    16.8
+  ],
+  "bec_output": "none",
+  "firmware_protocol": "BLHeli_S",
+  "pwm_frequency_khz": 48,
+  "refresh_rate_hz": 600,
+  "weight_g": 10,
+  "dimensions_mm": [
+    45,
+    24,
+    11
+  ],
+  "processor": "EFM8BB21",
+  "features": [
+    "active_braking"
+  ],
+  "protection_mechanisms": [
+    "over_temperature",
+    "startup_protection"
+  ],
+  "data_logging_capability": "No",
+  "firmware_upgradability": "Yes, via BLHeliSuite",
+  "manufacturer": "AeroDynamics",
+  "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/esc-std40.pdf",
+  "latest_firmware_software_url": "https://github.com/blheli-configurator/blheli-configurator",
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      80
+    ],
+    "humidity_percent": [
+      20,
+      90
+    ],
+    "emi_environment": "moderate_interference",
+    "ip_rating": "IP20"
+  },
+  "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。",
+  "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。",
+  "keywords": [
+    "blheli_s",
+    "dshot600",
+    "diy_drone"
+  ],
+  "notes": "性價比高的BLHeli_S電調，穩定可靠，適合DIY入門和中階航拍機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 12.0,
+  "suppliers": [
+    "AeroDynamics Official",
+    "ProDroneParts"
+  ],
+  "mtbf_hours": 3000,
+  "after_sales_support": "提供1年保固。",
+  "maintenance_cycle_recommendations": "避免在滿載情況下長時間運行。"
+}
+
+########## 父文件 #16 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "a4fa7fd2-0847-456a-87b2-5d4ece005c89",
+  "source": "power.json",
+  "model_name": "Graphene Panther 2200mAh 4S 75C",
+  "component_type": "batteries",
+  "sub_type": "lipo"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "batt-lipo-2200-4s-75c",
+  "model_name": "Graphene Panther 2200mAh 4S 75C",
+  "type": "lipo",
+  "application_type": "high_discharge",
+  "capacity_mah": 2200,
+  "nominal_voltage_v": 14.8,
+  "discharge_rate_c": 75,
+  "max_burst_rate_c": 150,
+  "max_charge_rate_c": 5,
+  "internal_resistance_mohm_per_cell": 1.5,
+  "cell_count_s": 4,
+  "connector_type": "XT60",
+  "balance_connector_type": "JST-XH",
+  "weight_g": 255,
+  "dimensions_mm": [
+    106,
+    35,
+    34
+  ],
+  "cycle_life_min": 300,
+  "operating_temperature_celsius": [
+    0,
+    60
+  ],
+  "manufacturer": "Turnigy",
+  "datasheet_url": "https://hobbyking.com/datasheets/graphene_panther_2200.pdf",
+  "voltage_discharge_curve_url": "https://hobbyking.com/curves/graphene_panther_2200.png",
+  "safety_certifications": [
+    "UN38.3",
+    "CE",
+    "RoHS"
+  ],
+  "features": [
+    "high_energy_density",
+    "long_cycle_life",
+    "low_internal_resistance"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      60
+    ],
+    "humidity_percent": [
+      20,
+      75
+    ],
+    "altitude_m": [
+      0,
+      4000
+    ]
+  },
+  "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 14.8V \\times 2.2Ah = 32.56 Wh$。",
+  "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 75C \\times 2.2Ah = 165 A$。",
+  "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60。為保護電池壽命，通常只使用80%的容量進行估算。",
+  "state_of_health_estimation_notes": "電池健康度 (SoH) 可透過測量滿電電壓、內阻變化及實際放出容量來綜合評估。SoH (%) = (當前最大可用容量 / 設計容量) * 100%",
+  "energy_density_wh_per_kg": 127.7,
+  "power_density_w_per_kg": 962.7,
+  "storage_voltage_v": 15.2,
+  "number_of_charge_cycles": 0,
+  "self_discharge_rate_per_day": 0.1,
+  "keywords": [
+    "lipo",
+    "4s_battery",
+    "racing_drone",
+    "high_c_rate"
+  ],
+  "notes": "石墨烯添加技術有助於降低內阻、延長壽命和提高放電平台電壓，適合大電流放電的競速應用。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 35.99,
+  "suppliers": [
+    "HobbyKing"
+  ],
+  "mtbf_hours": 500,
+  "after_sales_support": "6個月製造缺陷保固。",
+  "maintenance_cycle_recommendations": "每次使用後檢查電池是否有膨脹、破損。長期不用應充電至儲存電壓 (3.8V/cell) 並存放在陰涼乾燥處。"
+}
+
+########## 父文件 #17 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "366f1b28-0a9a-46fb-ac75-03d14d12f28a",
+  "source": "power.json",
+  "model_name": "LongRanger 18650 Pack 8000mAh 6S",
+  "component_type": "batteries",
+  "sub_type": "li_ion"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "batt-liion-8000-6s-10c",
+  "model_name": "LongRanger 18650 Pack 8000mAh 6S",
+  "type": "li_ion",
+  "application_type": "long_endurance",
+  "capacity_mah": 8000,
+  "nominal_voltage_v": 22.2,
+  "discharge_rate_c": 10,
+  "max_burst_rate_c": 20,
+  "max_charge_rate_c": 1,
+  "internal_resistance_mohm_per_cell": 20,
+  "cell_count_s": 6,
+  "connector_type": "XT90",
+  "balance_connector_type": "JST-XH",
+  "weight_g": 890,
+  "dimensions_mm": [
+    140,
+    70,
+    60
+  ],
+  "cycle_life_min": 500,
+  "operating_temperature_celsius": [
+    -10,
+    60
+  ],
+  "manufacturer": "Endurance Power",
+  "datasheet_url": "https://www.endurancepower.com/datasheets/longranger_8000.pdf",
+  "voltage_discharge_curve_url": "https://www.endurancepower.com/curves/longranger_8000.png",
+  "safety_certifications": [
+    "UN38.3",
+    "CE"
+  ],
+  "features": [
+    "high_energy_density",
+    "long_cycle_life"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      60
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "altitude_m": [
+      0,
+      5000
+    ]
+  },
+  "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 22.2V \\times 8Ah = 177.6 Wh$。",
+  "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 10C \\times 8Ah = 80 A$。",
+  "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.9 (鋰離子電池可用容量百分比較高)。",
+  "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%",
+  "energy_density_wh_per_kg": 199.5,
+  "power_density_w_per_kg": 1995.5,
+  "storage_voltage_v": 21.6,
+  "number_of_charge_cycles": 0,
+  "self_discharge_rate_per_day": 0.05,
+  "keywords": [
+    "li_ion",
+    "long_endurance",
+    "18650_pack",
+    "mapping_drone"
+  ],
+  "notes": "採用高品質18650鋰離子電芯製造，能量密度高，適合需要長航時的測繪、巡檢無人機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 120.0,
+  "suppliers": [
+    "Endurance Power",
+    "UAVSystemsIntl"
+  ],
+  "mtbf_hours": 800,
+  "after_sales_support": "1年保固。",
+  "maintenance_cycle_recommendations": "每月至少進行一次充放電循環以保持電芯活性。避免過度放電。"
+}
+
+########## 父文件 #18 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "1dd16c3d-6c34-4518-beac-eeea6c866fed",
+  "source": "power.json",
+  "model_name": "Tattu Pro 30000mAh 12S 5C",
+  "component_type": "batteries",
+  "sub_type": "lipo"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "batt-lipo-30000-12s-5c",
+  "model_name": "Tattu Pro 30000mAh 12S 5C",
+  "type": "lipo",
+  "application_type": "long_endurance",
+  "capacity_mah": 30000,
+  "nominal_voltage_v": 44.4,
+  "discharge_rate_c": 5,
+  "max_burst_rate_c": 10,
+  "max_charge_rate_c": 2,
+  "internal_resistance_mohm_per_cell": 2.5,
+  "cell_count_s": 12,
+  "connector_type": "AS150U",
+  "balance_connector_type": "JST-XH",
+  "weight_g": 6500,
+  "dimensions_mm": [
+    224,
+    163,
+    117
+  ],
+  "cycle_life_min": 500,
+  "operating_temperature_celsius": [
+    -20,
+    60
+  ],
+  "manufacturer": "Grepow (Tattu)",
+  "datasheet_url": "https://www.genstattu.com/datasheets/tattu_pro_30000.pdf",
+  "voltage_discharge_curve_url": "https://www.genstattu.com/curves/tattu_pro_30000.png",
+  "safety_certifications": [
+    "UN38.3",
+    "CE",
+    "MSDS"
+  ],
+  "features": [
+    "high_energy_density",
+    "long_cycle_life",
+    "fast_charging"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      60
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "altitude_m": [
+      0,
+      4500
+    ]
+  },
+  "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 44.4V \\times 30Ah = 1332 Wh$。",
+  "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 5C \\times 30Ah = 150 A$。",
+  "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.8。",
+  "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%。專業級電池可搭配BMS讀取精確SoH。",
+  "energy_density_wh_per_kg": 204.9,
+  "power_density_w_per_kg": 1024.6,
+  "storage_voltage_v": 45.6,
+  "number_of_charge_cycles": 0,
+  "self_discharge_rate_per_day": 0.1,
+  "keywords": [
+    "heavy_lift",
+    "tattu",
+    "12s_battery",
+    "agriculture_drone"
+  ],
+  "notes": "大容量高電壓電池，為工業級重載無人機提供持久動力，通常與BMS系統搭配使用。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 899.0,
+  "suppliers": [
+    "GensTattu Official",
+    "Industrial Drone Solutions"
+  ],
+  "mtbf_hours": 1000,
+  "after_sales_support": "1年保固。",
+  "maintenance_cycle_recommendations": "使用專用充電器進行平衡充電，定期校準BMS。"
+}
+
+########## 父文件 #19 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "74c5f4c7-2996-4bc1-b980-8b3949dbdba9",
+  "source": "power.json",
+  "model_name": "CNHL G+ 5200mAh 6S 50C",
+  "component_type": "batteries",
+  "sub_type": "lipo"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "batt-lipo-5200-6s-50c",
+  "model_name": "CNHL G+ 5200mAh 6S 50C",
+  "type": "lipo",
+  "application_type": "general_purpose",
+  "capacity_mah": 5200,
+  "nominal_voltage_v": 22.2,
+  "discharge_rate_c": 50,
+  "max_burst_rate_c": 100,
+  "max_charge_rate_c": 5,
+  "internal_resistance_mohm_per_cell": 2.0,
+  "cell_count_s": 6,
+  "connector_type": "XT90",
+  "balance_connector_type": "JST-XH",
+  "weight_g": 780,
+  "dimensions_mm": [
+    145,
+    51,
+    57
+  ],
+  "cycle_life_min": 300,
+  "operating_temperature_celsius": [
+    0,
+    60
+  ],
+  "manufacturer": "China Hobby Line (CNHL)",
+  "datasheet_url": "https://chinahobbyline.com/datasheets/cnhl_gplus_5200.pdf",
+  "voltage_discharge_curve_url": "https://chinahobbyline.com/curves/cnhl_gplus_5200.png",
+  "safety_certifications": [
+    "UN38.3",
+    "CE"
+  ],
+  "features": [
+    "high_energy_density",
+    "fast_charging"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      60
+    ],
+    "humidity_percent": [
+      20,
+      80
+    ],
+    "altitude_m": [
+      0,
+      4000
+    ]
+  },
+  "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 22.2V \\times 5.2Ah = 115.44 Wh$。",
+  "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 50C \\times 5.2Ah = 260 A$。",
+  "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.8。",
+  "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%",
+  "energy_density_wh_per_kg": 148.0,
+  "power_density_w_per_kg": 7435.9,
+  "storage_voltage_v": 22.8,
+  "number_of_charge_cycles": 0,
+  "self_discharge_rate_per_day": 0.1,
+  "keywords": [
+    "lipo",
+    "6s_battery",
+    "freestyle_drone",
+    "cnhl"
+  ],
+  "notes": "性能與價格均衡的通用型電池，適用於大型花式飛行無人機或中型航拍機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 75.0,
+  "suppliers": [
+    "China Hobby Line Official",
+    "FPVExpress"
+  ],
+  "mtbf_hours": 600,
+  "after_sales_support": "6個月製造缺陷保固。",
+  "maintenance_cycle_recommendations": "每次使用後檢查電池是否有膨脹、破損。長期不用應充電至儲存電壓 (3.8V/cell)。"
+}
+
+########## 父文件 #20 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "f73743c7-8b6d-4145-ab41-425838bd342b",
+  "source": "power.json",
+  "model_name": "FutureGen Solid-State 1000Wh/kg Prototype",
+  "component_type": "batteries",
+  "sub_type": "solid_state"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "batt-solid-1000-4s",
+  "model_name": "FutureGen Solid-State 1000Wh/kg Prototype",
+  "type": "solid_state",
+  "application_type": "long_endurance",
+  "capacity_mah": 25000,
+  "nominal_voltage_v": 15.2,
+  "discharge_rate_c": 5,
+  "max_burst_rate_c": 10,
+  "max_charge_rate_c": 1,
+  "internal_resistance_mohm_per_cell": 10,
+  "cell_count_s": 4,
+  "connector_type": "XT90",
+  "balance_connector_type": "JST-XH",
+  "weight_g": 380,
+  "dimensions_mm": [
+    150,
+    50,
+    30
+  ],
+  "cycle_life_min": 1000,
+  "operating_temperature_celsius": [
+    -20,
+    70
+  ],
+  "manufacturer": "FutureGen Power",
+  "datasheet_url": "https://www.futuregen.com/datasheets/solid_state_1000.pdf",
+  "voltage_discharge_curve_url": "https://www.futuregen.com/curves/solid_state_1000.png",
+  "safety_certifications": [],
+  "features": [
+    "high_energy_density",
+    "long_cycle_life",
+    "enhanced_safety"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -30,
+      80
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "altitude_m": [
+      0,
+      8000
+    ]
+  },
+  "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 15.2V \\times 25Ah = 380 Wh$。",
+  "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 5C \\times 25Ah = 125 A$。",
+  "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.95 (固態電池可用容量更高)。",
+  "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%。內阻變化是主要參考指標。",
+  "energy_density_wh_per_kg": 1000,
+  "power_density_w_per_kg": 5000,
+  "storage_voltage_v": 15.2,
+  "number_of_charge_cycles": 0,
+  "self_discharge_rate_per_day": 0.01,
+  "keywords": [
+    "solid_state_battery",
+    "next_gen",
+    "high_energy_density"
+  ],
+  "notes": "原型階段的固態電池，能量密度極高，且不易燃燒，安全性遠超鋰聚合物電池，是未來長航時無人機的發展方向。",
+  "status": "prototype",
+  "suggested_retail_price_usd": 2000.0,
+  "suppliers": [
+    "FutureGen Power (Direct Inquiry)"
+  ],
+  "mtbf_hours": 2000,
+  "after_sales_support": "專案合作形式提供技術支援。",
+  "maintenance_cycle_recommendations": "遵循工程樣品測試指南。"
+}
+
+########## 父文件 #21 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "ee844738-c5d5-45a8-8b2a-571f98fcbec3",
+  "source": "sensor.json",
+  "model_name": "InvenSense MPU-6050",
+  "component_type": "inertial_measurement_units",
+  "sub_type": "imu"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "imu-mpu-6050",
+  "model_name": "InvenSense MPU-6050",
+  "type": "imu",
+  "included_sensors": [
+    "accelerometer",
+    "gyroscope"
+  ],
+  "accelerometer_range_g": [
+    -16,
+    16
+  ],
+  "gyroscope_range_dps": [
+    -2000,
+    2000
+  ],
+  "magnetometer_range_gauss": null,
+  "update_frequency_hz": 1000,
+  "accuracy": {
+    "accelerometer_accuracy_mg": 3,
+    "gyroscope_accuracy_dps_per_sqrt_hz": 0.05,
+    "magnetometer_accuracy_mgauss": null
+  },
+  "temperature_drift_characteristics": {
+    "accelerometer_temp_drift_mg_per_c": 0.5,
+    "gyroscope_temp_drift_dps_per_c": 0.02
+  },
+  "interface_type": "I2C",
+  "weight_g": 0.5,
+  "dimensions_mm": [
+    4,
+    4,
+    0.9
+  ],
+  "power_consumption_mw": 15,
+  "manufacturer": "InvenSense (TDK)",
+  "datasheet_url": "https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/",
+  "features": [
+    "low_noise",
+    "built_in_filtering"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "vibration": "moderate_resistance",
+    "emi_environment": "moderate_interference"
+  },
+  "attitude_estimation_algorithm_compatibility": [
+    "kalman_filter",
+    "complementary_filter"
+  ],
+  "calibration_requirements": "periodic_calibration",
+  "keywords": [
+    "imu",
+    "6_axis",
+    "hobbyist",
+    "diy_drone"
+  ],
+  "notes": "廣泛應用於入門級與DIY無人機的經典6軸IMU，性價比高。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 1.5,
+  "suppliers": [
+    "Digi-Key",
+    "Mouser",
+    "Adafruit"
+  ],
+  "mtbf_hours": 20000,
+  "after_sales_support": "通過經銷商提供技術文件支援。",
+  "maintenance_cycle_recommendations": "每次韌體更新或結構變更後建議重新校準。"
+}
+
+########## 父文件 #22 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "77cc5b21-c020-4126-92f0-68b9f8258e67",
+  "source": "sensor.json",
+  "model_name": "InvenSense ICM-20948",
+  "component_type": "inertial_measurement_units",
+  "sub_type": "imu"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "imu-icm-20948",
+  "model_name": "InvenSense ICM-20948",
+  "type": "imu",
+  "included_sensors": [
+    "accelerometer",
+    "gyroscope",
+    "magnetometer"
+  ],
+  "accelerometer_range_g": [
+    -16,
+    16
+  ],
+  "gyroscope_range_dps": [
+    -2000,
+    2000
+  ],
+  "magnetometer_range_gauss": [
+    -4.9,
+    4.9
+  ],
+  "update_frequency_hz": 4500,
+  "accuracy": {
+    "accelerometer_accuracy_mg": 1,
+    "gyroscope_accuracy_dps_per_sqrt_hz": 0.01,
+    "magnetometer_accuracy_mgauss": 1.5
+  },
+  "temperature_drift_characteristics": {
+    "accelerometer_temp_drift_mg_per_c": 0.3,
+    "gyroscope_temp_drift_dps_per_c": 0.01
+  },
+  "interface_type": "SPI",
+  "weight_g": 0.3,
+  "dimensions_mm": [
+    3,
+    3,
+    1
+  ],
+  "power_consumption_mw": 10,
+  "manufacturer": "InvenSense (TDK)",
+  "datasheet_url": "https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/",
+  "features": [
+    "high_precision",
+    "low_noise"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "vibration": "high_resistance",
+    "emi_environment": "moderate_interference"
+  },
+  "attitude_estimation_algorithm_compatibility": [
+    "ekf",
+    "kalman_filter"
+  ],
+  "calibration_requirements": "periodic_calibration",
+  "keywords": [
+    "9_axis",
+    "spi",
+    "ekf",
+    "px4_compatible"
+  ],
+  "notes": "常見於現代飛控的高性能9軸IMU，低功耗且體積小。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 7.5,
+  "suppliers": [
+    "Digi-Key",
+    "Mouser"
+  ],
+  "mtbf_hours": 30000,
+  "after_sales_support": "提供完整開發文檔和驅動範例。",
+  "maintenance_cycle_recommendations": "建議在-10°C至+50°C溫度範圍內操作以獲得最佳溫漂性能。"
+}
+
+########## 父文件 #23 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "c69617a5-76fa-470f-8fc2-ff2189052dbf",
+  "source": "sensor.json",
+  "model_name": "Bosch Sensortec BMI088",
+  "component_type": "inertial_measurement_units",
+  "sub_type": "imu"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "imu-bmi088",
+  "model_name": "Bosch Sensortec BMI088",
+  "type": "imu",
+  "included_sensors": [
+    "accelerometer",
+    "gyroscope"
+  ],
+  "accelerometer_range_g": [
+    -24,
+    24
+  ],
+  "gyroscope_range_dps": [
+    -2000,
+    2000
+  ],
+  "magnetometer_range_gauss": null,
+  "update_frequency_hz": 2000,
+  "accuracy": {
+    "accelerometer_accuracy_mg": 0.5,
+    "gyroscope_accuracy_dps_per_sqrt_hz": 0.007,
+    "magnetometer_accuracy_mgauss": null
+  },
+  "temperature_drift_characteristics": {
+    "accelerometer_temp_drift_mg_per_c": 0.2,
+    "gyroscope_temp_drift_dps_per_c": 0.008
+  },
+  "interface_type": "SPI",
+  "weight_g": 0.4,
+  "dimensions_mm": [
+    3,
+    4.5,
+    0.95
+  ],
+  "power_consumption_mw": 25,
+  "manufacturer": "Bosch Sensortec",
+  "datasheet_url": "https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi088/",
+  "features": [
+    "high_precision",
+    "temp_drift_compensation",
+    "low_noise"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "vibration": "high_resistance",
+    "emi_environment": "low_interference"
+  },
+  "attitude_estimation_algorithm_compatibility": [
+    "ekf",
+    "kalman_filter"
+  ],
+  "calibration_requirements": "factory_calibration",
+  "keywords": [
+    "industrial_imu",
+    "automotive_grade",
+    "high_g",
+    "vibration_robust"
+  ],
+  "notes": "汽車級IMU，具備極佳的抗震動性能和溫度穩定性，適合工業級無人機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 12.0,
+  "suppliers": [
+    "Arrow Electronics",
+    "Mouser"
+  ],
+  "mtbf_hours": 50000,
+  "after_sales_support": "提供工業級應用支援。",
+  "maintenance_cycle_recommendations": "通常無需重新校準，除非經歷超過規格的衝擊。"
+}
+
+########## 父文件 #24 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "99fe027e-7b4f-4ddc-a0fd-291880e637da",
+  "source": "sensor.json",
+  "model_name": "Analog Devices ADIS16470",
+  "component_type": "inertial_measurement_units",
+  "sub_type": "imu"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "imu-adis16470",
+  "model_name": "Analog Devices ADIS16470",
+  "type": "imu",
+  "included_sensors": [
+    "accelerometer",
+    "gyroscope"
+  ],
+  "accelerometer_range_g": [
+    -8,
+    8
+  ],
+  "gyroscope_range_dps": [
+    -1000,
+    1000
+  ],
+  "magnetometer_range_gauss": null,
+  "update_frequency_hz": 2000,
+  "accuracy": {
+    "accelerometer_accuracy_mg": 0.1,
+    "gyroscope_accuracy_dps_per_sqrt_hz": 0.004,
+    "magnetometer_accuracy_mgauss": null
+  },
+  "temperature_drift_characteristics": {
+    "accelerometer_temp_drift_mg_per_c": 0.015,
+    "gyroscope_temp_drift_dps_per_c": 0.003
+  },
+  "interface_type": "SPI",
+  "weight_g": 16,
+  "dimensions_mm": [
+    24.4,
+    24.4,
+    9.6
+  ],
+  "power_consumption_mw": 500,
+  "manufacturer": "Analog Devices",
+  "datasheet_url": "https://www.analog.com/en/products/adis16470.html",
+  "features": [
+    "high_precision",
+    "temp_drift_compensation",
+    "built_in_filtering"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      105
+    ],
+    "humidity_percent": [
+      0,
+      100
+    ],
+    "vibration": "high_resistance",
+    "emi_environment": "low_interference"
+  },
+  "attitude_estimation_algorithm_compatibility": [
+    "ekf"
+  ],
+  "calibration_requirements": "factory_calibration",
+  "keywords": [
+    "tactical_grade",
+    "high_stability",
+    "precision_navigation"
+  ],
+  "notes": "戰術級IMU，提供極高的穩定性和精度，適用於需要精確導航和定位的測繪及國防應用。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 450.0,
+  "suppliers": [
+    "Analog Devices Direct",
+    "Arrow Electronics"
+  ],
+  "mtbf_hours": 100000,
+  "after_sales_support": "提供專業級技術支援和校準報告。",
+  "maintenance_cycle_recommendations": "每2年返回原廠進行性能驗證與校準。"
+}
+
+########## 父文件 #25 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "6a771e3c-2e5e-45bb-a440-047269c81e03",
+  "source": "sensor.json",
+  "model_name": "STMicroelectronics ISM330DHCX",
+  "component_type": "inertial_measurement_units",
+  "sub_type": "imu"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "imu-ism330dhcx",
+  "model_name": "STMicroelectronics ISM330DHCX",
+  "type": "imu",
+  "included_sensors": [
+    "accelerometer",
+    "gyroscope"
+  ],
+  "accelerometer_range_g": [
+    -16,
+    16
+  ],
+  "gyroscope_range_dps": [
+    -4000,
+    4000
+  ],
+  "magnetometer_range_gauss": null,
+  "update_frequency_hz": 6660,
+  "accuracy": {
+    "accelerometer_accuracy_mg": 0.5,
+    "gyroscope_accuracy_dps_per_sqrt_hz": 0.0035,
+    "magnetometer_accuracy_mgauss": null
+  },
+  "temperature_drift_characteristics": {
+    "accelerometer_temp_drift_mg_per_c": 0.15,
+    "gyroscope_temp_drift_dps_per_c": 0.005
+  },
+  "interface_type": "SPI",
+  "weight_g": 0.2,
+  "dimensions_mm": [
+    2.5,
+    3,
+    0.83
+  ],
+  "power_consumption_mw": 4,
+  "manufacturer": "STMicroelectronics",
+  "datasheet_url": "https://www.st.com/en/mems-and-sensors/ism330dhcx.html",
+  "features": [
+    "high_precision",
+    "low_noise",
+    "machine_learning_core"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      105
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "vibration": "high_resistance",
+    "emi_environment": "low_interference"
+  },
+  "attitude_estimation_algorithm_compatibility": [
+    "ekf",
+    "kalman_filter"
+  ],
+  "calibration_requirements": "factory_calibration",
+  "keywords": [
+    "machine_learning",
+    "industrial",
+    "high_frequency",
+    "stm32"
+  ],
+  "notes": "內置機器學習核心，可在邊緣端執行姿態和運動檢測演算法，降低主處理器負擔。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 9.0,
+  "suppliers": [
+    "STMicroelectronics Direct",
+    "Digi-Key"
+  ],
+  "mtbf_hours": 80000,
+  "after_sales_support": "提供軟體庫和機器學習工具鏈。",
+  "maintenance_cycle_recommendations": "無需定期維護，建議使用原廠驅動以發揮全部性能。"
+}
+
+########## 父文件 #26 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "15545bb9-0e58-41db-acf0-58c852b81162",
+  "source": "sensor.json",
+  "model_name": "u-blox NEO-M8N",
+  "component_type": "gnss_receivers",
+  "sub_type": "gnss_receiver"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "gnss-ublox-neo-m8n",
+  "model_name": "u-blox NEO-M8N",
+  "type": "gnss_receiver",
+  "supported_satellite_systems": [
+    "GPS",
+    "GLONASS",
+    "BeiDou",
+    "Galileo"
+  ],
+  "positioning_accuracy": {
+    "standard_accuracy_m": 2.5,
+    "rtk_ppk_accuracy_cm": null
+  },
+  "time_to_first_fix_seconds": {
+    "cold_start_seconds": 26,
+    "hot_start_seconds": 1
+  },
+  "update_frequency_hz": 10,
+  "interface_type": "UART",
+  "weight_g": 15,
+  "dimensions_mm": [
+    35,
+    35,
+    8
+  ],
+  "power_consumption_mw": 80,
+  "manufacturer": "u-blox",
+  "datasheet_url": "https://www.u-blox.com/en/product/neo-m8-series",
+  "features": [
+    "multi_constellation_support",
+    "low_power"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "obscuration_performance": "urban_canyon",
+    "emi_environment": "moderate_interference"
+  },
+  "external_antenna_required": "yes",
+  "keywords": [
+    "gps",
+    "gnss",
+    "ublox",
+    "standard_positioning"
+  ],
+  "notes": "非常流行的標準GNSS模組，廣泛應用於各種無人機和機器人，性能穩定可靠。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 25.0,
+  "suppliers": [
+    "SparkFun",
+    "Holybro",
+    "u-blox Direct"
+  ],
+  "mtbf_hours": 150000,
+  "after_sales_support": "提供u-center軟體進行配置與測試。",
+  "maintenance_cycle_recommendations": "確保天線視野開闊，無遮擋。"
+}
+
+########## 父文件 #27 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "8c9d1436-ef2a-4d40-9a2f-6e7b9c3385fc",
+  "source": "sensor.json",
+  "model_name": "u-blox ZED-F9P",
+  "component_type": "gnss_receivers",
+  "sub_type": "rtk_ppk"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "gnss-ublox-zed-f9p",
+  "model_name": "u-blox ZED-F9P",
+  "type": "rtk_ppk",
+  "supported_satellite_systems": [
+    "GPS",
+    "GLONASS",
+    "BeiDou",
+    "Galileo"
+  ],
+  "positioning_accuracy": {
+    "standard_accuracy_m": 1.5,
+    "rtk_ppk_accuracy_cm": 1
+  },
+  "time_to_first_fix_seconds": {
+    "cold_start_seconds": 24,
+    "hot_start_seconds": 2
+  },
+  "update_frequency_hz": 20,
+  "interface_type": "UART",
+  "weight_g": 18,
+  "dimensions_mm": [
+    40,
+    40,
+    9
+  ],
+  "power_consumption_mw": 250,
+  "manufacturer": "u-blox",
+  "datasheet_url": "https://www.u-blox.com/en/product/zed-f9p-module",
+  "features": [
+    "high_precision",
+    "multi_constellation_support",
+    "differential_positioning"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "obscuration_performance": "urban_canyon",
+    "emi_environment": "moderate_interference"
+  },
+  "external_antenna_required": "yes",
+  "keywords": [
+    "rtk",
+    "ppk",
+    "high_precision_gps",
+    "surveying",
+    "mapping"
+  ],
+  "notes": "消費級RTK市場的標竿產品，實現了公分級定位，極大推動了高精度無人機測繪的普及。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 230.0,
+  "suppliers": [
+    "SparkFun",
+    "ArduSimple",
+    "Holybro"
+  ],
+  "mtbf_hours": 120000,
+  "after_sales_support": "需要搭配RTK基站或NTRIP服務才能達到公分級精度。",
+  "maintenance_cycle_recommendations": "使用高品質的多頻螺旋天線以獲得最佳RTK性能。"
+}
+
+########## 父文件 #28 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "bb932cab-2f7c-493e-badc-2563a9b3881e",
+  "source": "sensor.json",
+  "model_name": "Swift Navigation Piksi Multi",
+  "component_type": "gnss_receivers",
+  "sub_type": "rtk_ppk"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "gnss-swift-piksi-multi",
+  "model_name": "Swift Navigation Piksi Multi",
+  "type": "rtk_ppk",
+  "supported_satellite_systems": [
+    "GPS",
+    "GLONASS",
+    "BeiDou",
+    "Galileo"
+  ],
+  "positioning_accuracy": {
+    "standard_accuracy_m": 0.5,
+    "rtk_ppk_accuracy_cm": 1
+  },
+  "time_to_first_fix_seconds": {
+    "cold_start_seconds": 45,
+    "hot_start_seconds": 5
+  },
+  "update_frequency_hz": 10,
+  "interface_type": "UART",
+  "weight_g": 54,
+  "dimensions_mm": [
+    60,
+    60,
+    15
+  ],
+  "power_consumption_mw": 2500,
+  "manufacturer": "Swift Navigation",
+  "datasheet_url": "https://www.swiftnav.com/piksi-multi",
+  "features": [
+    "high_precision",
+    "multi_constellation_support",
+    "anti_interference"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "obscuration_performance": "forest",
+    "emi_environment": "low_interference"
+  },
+  "external_antenna_required": "yes",
+  "keywords": [
+    "professional_rtk",
+    "surveying",
+    "swiftnav"
+  ],
+  "notes": "專業級RTK GNSS接收器，具備更強的抗干擾和快速收斂能力。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 695.0,
+  "suppliers": [
+    "Swift Navigation Direct"
+  ],
+  "mtbf_hours": 100000,
+  "after_sales_support": "提供專業級技術支援和訂閱制修正服務。",
+  "maintenance_cycle_recommendations": "定期檢查天線和連接器是否完好。"
+}
+
+########## 父文件 #29 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "9f941412-5a75-46c4-8bbd-4481ea3dc653",
+  "source": "sensor.json",
+  "model_name": "CUAV NEO V2 Pro",
+  "component_type": "gnss_receivers",
+  "sub_type": "gnss_receiver"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "gnss-cuav-neo-v2",
+  "model_name": "CUAV NEO V2 Pro",
+  "type": "gnss_receiver",
+  "supported_satellite_systems": [
+    "GPS",
+    "GLONASS",
+    "BeiDou",
+    "Galileo"
+  ],
+  "positioning_accuracy": {
+    "standard_accuracy_m": 1.5,
+    "rtk_ppk_accuracy_cm": null
+  },
+  "time_to_first_fix_seconds": {
+    "cold_start_seconds": 25,
+    "hot_start_seconds": 2
+  },
+  "update_frequency_hz": 10,
+  "interface_type": "CAN",
+  "weight_g": 33,
+  "dimensions_mm": [
+    60,
+    60,
+    16
+  ],
+  "power_consumption_mw": 150,
+  "manufacturer": "CUAV",
+  "datasheet_url": "https://doc.cuav.net/gps/neo-v2-pro.html",
+  "features": [
+    "multi_constellation_support",
+    "anti_interference",
+    "safety_switch",
+    "led_indicator"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      70
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "obscuration_performance": "urban_canyon",
+    "emi_environment": "moderate_interference"
+  },
+  "external_antenna_required": "no",
+  "keywords": [
+    "can_gps",
+    "cuav",
+    "ardupilot",
+    "px4"
+  ],
+  "notes": "整合了磁力計、安全開關、蜂鳴器和指示燈，並採用CAN總線接口，抗干擾能力強，是ArduPilot和PX4生態系統的優選。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 65.0,
+  "suppliers": [
+    "CUAV Official Store",
+    "AliExpress"
+  ],
+  "mtbf_hours": 80000,
+  "after_sales_support": "提供線上社群和文檔支援。",
+  "maintenance_cycle_recommendations": "確保CAN總線終端電阻配置正確。"
+}
+
+########## 父文件 #30 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "6bc39864-cb81-4f6f-9b5b-df4260d78a78",
+  "source": "sensor.json",
+  "model_name": "Beitian BN-220",
+  "component_type": "gnss_receivers",
+  "sub_type": "gnss_receiver"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "gnss-bn-220",
+  "model_name": "Beitian BN-220",
+  "type": "gnss_receiver",
+  "supported_satellite_systems": [
+    "GPS",
+    "GLONASS"
+  ],
+  "positioning_accuracy": {
+    "standard_accuracy_m": 2.5,
+    "rtk_ppk_accuracy_cm": null
+  },
+  "time_to_first_fix_seconds": {
+    "cold_start_seconds": 32,
+    "hot_start_seconds": 1
+  },
+  "update_frequency_hz": 5,
+  "interface_type": "UART",
+  "weight_g": 5.2,
+  "dimensions_mm": [
+    22,
+    20,
+    6
+  ],
+  "power_consumption_mw": 70,
+  "manufacturer": "Beitian",
+  "datasheet_url": "http://www.sz-beitian.com/products/show/2.html",
+  "features": [
+    "low_power",
+    "lightweight"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      10,
+      95
+    ],
+    "obscuration_performance": "urban_canyon",
+    "emi_environment": "high_interference"
+  },
+  "external_antenna_required": "no",
+  "keywords": [
+    "mini_gps",
+    "fpv_drone",
+    "lightweight"
+  ],
+  "notes": "體積小、重量輕，非常適合需要GPS救援功能的FPV穿越機或小型固定翼飛機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 8.0,
+  "suppliers": [
+    "Banggood",
+    "AliExpress"
+  ],
+  "mtbf_hours": 50000,
+  "after_sales_support": "基本無，依賴社群支援。",
+  "maintenance_cycle_recommendations": "注意遠離圖傳天線安裝，以減少干擾。"
+}
+
+########## 父文件 #31 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "5a945edb-8da3-4ac1-aa6f-50cb01ef16aa",
+  "source": "sensor.json",
+  "model_name": "RunCam Phoenix 2",
+  "component_type": "cameras",
+  "sub_type": "fpv_camera"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "cam-fpv-runcam-phoenix2",
+  "model_name": "RunCam Phoenix 2",
+  "type": "fpv_camera",
+  "sensor_type": "CMOS",
+  "resolution": [
+    1000,
+    0
+  ],
+  "frame_rate_fps": 60,
+  "field_of_view_degrees": [
+    155,
+    0
+  ],
+  "focal_length_mm": 2.1,
+  "aperture_value": "F2.0",
+  "video_output_format": "CVBS",
+  "gimbal_axis_count": 0,
+  "storage_method": "real_time_transmission",
+  "interface_type": "CVBS",
+  "weight_g": 9,
+  "dimensions_mm": [
+    19,
+    19,
+    20
+  ],
+  "power_consumption_mw": 1200,
+  "manufacturer": "RunCam",
+  "datasheet_url": "https://www.runcam.com/download/Phoenix2/Phoenix2-manual.pdf",
+  "features": [
+    "low_light_performance",
+    "anti_shake"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -10,
+      55
+    ],
+    "humidity_percent": [
+      20,
+      80
+    ],
+    "lighting_conditions": "low_light",
+    "ip_rating": "IP30"
+  },
+  "application_scenarios": [
+    "navigation"
+  ],
+  "keywords": [
+    "fpv_camera",
+    "runcam",
+    "analog_fpv",
+    "low_light"
+  ],
+  "notes": "專為FPV設計的類比攝影機，在低光照條件下表現出色，是晨昏飛行的好選擇。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 32.99,
+  "suppliers": [
+    "RaceDayQuads",
+    "GetFPV"
+  ],
+  "mtbf_hours": 10000,
+  "after_sales_support": "1年製造商保固。",
+  "maintenance_cycle_recommendations": "定期用氣吹清潔鏡頭。"
+}
+
+########## 父文件 #32 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "e98cdb1e-9646-4050-bb6a-e1d88874c5c8",
+  "source": "sensor.json",
+  "model_name": "Sony Alpha 7R IV (for UAV)",
+  "component_type": "cameras",
+  "sub_type": "high_resolution"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "cam-mapping-sony-a7r4",
+  "model_name": "Sony Alpha 7R IV (for UAV)",
+  "type": "high_resolution",
+  "sensor_type": "CMOS",
+  "resolution": [
+    9504,
+    6336
+  ],
+  "frame_rate_fps": 30,
+  "field_of_view_degrees": null,
+  "focal_length_mm": 35,
+  "aperture_value": "F2.8",
+  "video_output_format": "H.264",
+  "gimbal_axis_count": 0,
+  "storage_method": "microsd",
+  "interface_type": "USB",
+  "weight_g": 665,
+  "dimensions_mm": [
+    128.9,
+    96.4,
+    77.5
+  ],
+  "power_consumption_mw": 4000,
+  "manufacturer": "Sony",
+  "datasheet_url": "https://www.sony.com/electronics/interchangeable-lens-cameras/ilce-7rm4/specifications",
+  "features": [
+    "image_stabilization",
+    "high_resolution_sensor"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      0,
+      40
+    ],
+    "humidity_percent": [
+      10,
+      85
+    ],
+    "lighting_conditions": "high_light",
+    "ip_rating": "IP51"
+  },
+  "application_scenarios": [
+    "mapping",
+    "surveying",
+    "inspection"
+  ],
+  "keywords": [
+    "mapping_camera",
+    "full_frame",
+    "high_resolution",
+    "sony"
+  ],
+  "notes": "6100萬像素全片幅感測器，提供極致的影像細節，是專業航空測繪的首選相機之一。需搭配定製的觸發器和雲台。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 3499.0,
+  "suppliers": [
+    "B&H Photo Video",
+    "Adorama"
+  ],
+  "mtbf_hours": 5000,
+  "after_sales_support": "Sony專業服務支援。",
+  "maintenance_cycle_recommendations": "根據使用環境定期清潔感測器。"
+}
+
+########## 父文件 #33 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "154e2be7-9cc9-4a1a-9673-1dac2a00fc86",
+  "source": "sensor.json",
+  "model_name": "FLIR Vue Pro R",
+  "component_type": "cameras",
+  "sub_type": "infrared"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "cam-thermal-flir-vue-pro",
+  "model_name": "FLIR Vue Pro R",
+  "type": "infrared",
+  "sensor_type": "Uncooled VOx Microbolometer",
+  "resolution": [
+    640,
+    512
+  ],
+  "frame_rate_fps": 30,
+  "field_of_view_degrees": [
+    45,
+    37
+  ],
+  "focal_length_mm": 13,
+  "aperture_value": "F1.25",
+  "video_output_format": "MJPEG",
+  "gimbal_axis_count": 0,
+  "storage_method": "microsd",
+  "interface_type": "USB",
+  "weight_g": 110,
+  "dimensions_mm": [
+    57.4,
+    44.5,
+    44.5
+  ],
+  "power_consumption_mw": 2100,
+  "manufacturer": "Teledyne FLIR",
+  "datasheet_url": "https://www.flir.com/products/vue-pro-r/",
+  "features": [
+    "radiometric_temperature_measurement",
+    "lightweight"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      50
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "lighting_conditions": "dark",
+    "ip_rating": "IP40"
+  },
+  "application_scenarios": [
+    "search_and_rescue",
+    "firefighting",
+    "inspection",
+    "agriculture"
+  ],
+  "keywords": [
+    "thermal_camera",
+    "infrared",
+    "flir",
+    "radiometric"
+  ],
+  "notes": "專業級熱像儀，可提供每個像素點的精確溫度數據，適用於搜救、太陽能板檢測、農業分析等。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 4195.0,
+  "suppliers": [
+    "Teledyne FLIR Official",
+    "Enterprise UAS"
+  ],
+  "mtbf_hours": 25000,
+  "after_sales_support": "提供專業軟體和技術支援。",
+  "maintenance_cycle_recommendations": "定期進行非均勻性校正(NUC)。"
+}
+
+########## 父文件 #34 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "e9fbe68e-7161-49a5-918f-b7ae95db3dbd",
+  "source": "sensor.json",
+  "model_name": "DJI Zenmuse H20T",
+  "component_type": "cameras",
+  "sub_type": "gimbal_camera"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "cam-gimbal-dji-h20t",
+  "model_name": "DJI Zenmuse H20T",
+  "type": "gimbal_camera",
+  "sensor_type": "CMOS",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "frame_rate_fps": 30,
+  "field_of_view_degrees": [
+    82.9,
+    4.6
+  ],
+  "focal_length_mm": "24-480 (equivalent)",
+  "aperture_value": "F2.8-F11",
+  "video_output_format": "H.264",
+  "gimbal_axis_count": 3,
+  "storage_method": "microsd",
+  "interface_type": "DJI SkyPort",
+  "weight_g": 828,
+  "dimensions_mm": [
+    167,
+    135,
+    196
+  ],
+  "power_consumption_mw": 18000,
+  "manufacturer": "DJI",
+  "datasheet_url": "https://www.dji.com/zenmuse-h20-series/specs",
+  "features": [
+    "image_stabilization",
+    "zoom_capability",
+    "visible_ir_switching",
+    "laser_rangefinder"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      50
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "lighting_conditions": "all",
+    "ip_rating": "IP44"
+  },
+  "application_scenarios": [
+    "surveillance",
+    "search_and_rescue",
+    "firefighting",
+    "inspection"
+  ],
+  "keywords": [
+    "gimbal_camera",
+    "dji",
+    "zoom_camera",
+    "thermal_hybrid"
+  ],
+  "notes": "集成了廣角、23倍光學變焦、640x512熱像儀和雷射測距儀的四合一雲台相機，功能強大，是工業應用的多面手。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 11000.0,
+  "suppliers": [
+    "DJI Enterprise Dealers"
+  ],
+  "mtbf_hours": 15000,
+  "after_sales_support": "DJI Enterprise Shield 服務計畫。",
+  "maintenance_cycle_recommendations": "保持雲台運動部件清潔，定期檢查減震球。"
+}
+
+########## 父文件 #35 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "265a1c9c-d453-491c-840a-a37e216baed8",
+  "source": "sensor.json",
+  "model_name": "MicaSense RedEdge-P",
+  "component_type": "cameras",
+  "sub_type": "multispectral"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "cam-multispectral-micasense-rededge-p",
+  "model_name": "MicaSense RedEdge-P",
+  "type": "multispectral",
+  "sensor_type": "CMOS",
+  "resolution": [
+    2464,
+    2056
+  ],
+  "frame_rate_fps": 1,
+  "field_of_view_degrees": [
+    49.6,
+    38.3
+  ],
+  "focal_length_mm": 10,
+  "aperture_value": "F5.6",
+  "video_output_format": "TIFF",
+  "gimbal_axis_count": 0,
+  "storage_method": "microsd",
+  "interface_type": "USB",
+  "weight_g": 350,
+  "dimensions_mm": [
+    82,
+    62,
+    54
+  ],
+  "power_consumption_mw": 10000,
+  "manufacturer": "MicaSense (AgEagle)",
+  "datasheet_url": "https://micasense.com/rededge-p/",
+  "features": [
+    "high_resolution_panchromatic_band",
+    "5_multispectral_bands"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      0,
+      40
+    ],
+    "humidity_percent": [
+      10,
+      80
+    ],
+    "lighting_conditions": "high_light",
+    "ip_rating": "IP4X"
+  },
+  "application_scenarios": [
+    "agriculture",
+    "forestry",
+    "environmental_monitoring"
+  ],
+  "keywords": [
+    "multispectral",
+    "ndvi",
+    "precision_agriculture",
+    "micasense"
+  ],
+  "notes": "專業多光譜相機，包含一個高解析度全色波段和五個窄帶多光譜波段，可生成高解析度的NDVI植被指數圖，用於精準農業。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 6900.0,
+  "suppliers": [
+    "MicaSense Direct",
+    "Enterprise UAS"
+  ],
+  "mtbf_hours": 10000,
+  "after_sales_support": "提供數據處理軟體和農業分析支援。",
+  "maintenance_cycle_recommendations": "每次飛行前使用校準板進行輻射校準。"
+}
+
+########## 父文件 #36 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "efe20ef8-d391-4fb6-af3f-4368367992ef",
+  "source": "sensor.json",
+  "model_name": "Unknown",
+  "component_type": "flight_controller_firmware_software",
+  "sub_type": "unknown"
+}
+
+--- 完整內容 (Content) ---
+{
+  "software_id": "fw-px4-v1",
+  "name": "PX4 Autopilot",
+  "latest_version": "v1.14",
+  "processor_compatibility": [
+    "ARM Cortex-M4",
+    "ARM Cortex-M7",
+    "STM32 F4/F7/H7"
+  ],
+  "supported_drone_types": [
+    "multi_rotor",
+    "fixed_wing",
+    "vtol"
+  ],
+  "main_features": [
+    "attitude_stabilization",
+    "navigation",
+    "mission_planning",
+    "obstacle_avoidance"
+  ],
+  "supported_sensor_types": [
+    "IMU",
+    "GNSS",
+    "barometer",
+    "lidar",
+    "vision_sensor"
+  ],
+  "supported_communication_protocols": [
+    "MAVLink",
+    "RTPS"
+  ],
+  "license_model": "open_source",
+  "development_language": "C++",
+  "community_activity": "high",
+  "official_website_url": "https://px4.io/",
+  "download_url": "https://github.com/PX4/PX4-Autopilot/releases",
+  "documentation_tutorial_url": "https://docs.px4.io/main/en/",
+  "keywords": [
+    "px4",
+    "open_source_autopilot",
+    "mavlink",
+    "professional_uav"
+  ],
+  "notes": "專為學術研究和商業應用設計的開源飛控軟體，架構清晰，模組化程度高。",
+  "status": "active_development"
+}
+
+########## 父文件 #37 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "6cfa989b-2359-401e-a323-90a73eef7a37",
+  "source": "sensor.json",
+  "model_name": "Unknown",
+  "component_type": "flight_controller_firmware_software",
+  "sub_type": "unknown"
+}
+
+--- 完整內容 (Content) ---
+{
+  "software_id": "fw-ardupilot-v4",
+  "name": "ArduPilot",
+  "latest_version": "Copter-4.4 / Plane-4.4",
+  "processor_compatibility": [
+    "ARM Cortex-M4",
+    "ARM Cortex-M7",
+    "STM32 F4/F7/H7"
+  ],
+  "supported_drone_types": [
+    "multi_rotor",
+    "fixed_wing",
+    "vtol",
+    "rover",
+    "submarine"
+  ],
+  "main_features": [
+    "attitude_stabilization",
+    "navigation",
+    "mission_planning",
+    "payload_control"
+  ],
+  "supported_sensor_types": [
+    "IMU",
+    "GNSS",
+    "barometer",
+    "lidar",
+    "optical_flow"
+  ],
+  "supported_communication_protocols": [
+    "MAVLink"
+  ],
+  "license_model": "open_source",
+  "development_language": "C++",
+  "community_activity": "high",
+  "official_website_url": "https://ardupilot.org/",
+  "download_url": "https://firmware.ardupilot.org/",
+  "documentation_tutorial_url": "https://ardupilot.org/ardupilot/",
+  "keywords": [
+    "ardupilot",
+    "open_source_autopilot",
+    "diy_drone",
+    "mavlink"
+  ],
+  "notes": "歷史最悠久、功能最全面的開源飛控項目之一，支援的硬體和載具類型極其廣泛。",
+  "status": "active_development"
+}
+
+########## 父文件 #38 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "95988760-9fd9-48b5-ac9f-cbb0170b3a07",
+  "source": "sensor.json",
+  "model_name": "Unknown",
+  "component_type": "flight_controller_firmware_software",
+  "sub_type": "unknown"
+}
+
+--- 完整內容 (Content) ---
+{
+  "software_id": "fw-betaflight-v4",
+  "name": "Betaflight",
+  "latest_version": "4.4",
+  "processor_compatibility": [
+    "STM32 F4/F7/H7"
+  ],
+  "supported_drone_types": [
+    "racing_drone",
+    "multi_rotor"
+  ],
+  "main_features": [
+    "attitude_stabilization"
+  ],
+  "supported_sensor_types": [
+    "IMU",
+    "barometer"
+  ],
+  "supported_communication_protocols": [
+    "CRSF",
+    "SBUS",
+    "DShot"
+  ],
+  "license_model": "open_source",
+  "development_language": "C",
+  "community_activity": "high",
+  "official_website_url": "https://betaflight.com/",
+  "download_url": "https://github.com/betaflight/betaflight/releases",
+  "documentation_tutorial_url": "https://betaflight.com/docs/wiki/",
+  "keywords": [
+    "betaflight",
+    "fpv",
+    "racing_drone",
+    "dshot"
+  ],
+  "notes": "專為FPV競速和花式飛行設計的飛控韌體，追求極致的飛行性能和最低的延遲。",
+  "status": "active_development"
+}
+
+########## 父文件 #39 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "fa6ae0bc-3d84-408c-92bc-32f9401a1189",
+  "source": "sensor.json",
+  "model_name": "Unknown",
+  "component_type": "flight_controller_firmware_software",
+  "sub_type": "unknown"
+}
+
+--- 完整內容 (Content) ---
+{
+  "software_id": "fw-cleanflight-v2",
+  "name": "Cleanflight",
+  "latest_version": "2.6.1",
+  "processor_compatibility": [
+    "STM32 F1/F3/F4"
+  ],
+  "supported_drone_types": [
+    "multi_rotor",
+    "racing_drone"
+  ],
+  "main_features": [
+    "attitude_stabilization"
+  ],
+  "supported_sensor_types": [
+    "IMU",
+    "barometer"
+  ],
+  "supported_communication_protocols": [
+    "SBUS",
+    "PPM",
+    "Oneshot"
+  ],
+  "license_model": "open_source",
+  "development_language": "C",
+  "community_activity": "low",
+  "official_website_url": "http://cleanflight.com/",
+  "download_url": "https://github.com/cleanflight/cleanflight/releases",
+  "documentation_tutorial_url": "https://github.com/cleanflight/cleanflight/tree/master/docs",
+  "keywords": [
+    "cleanflight",
+    "baseflight_fork"
+  ],
+  "notes": "Betaflight的源頭，曾經非常流行，但近年來開發活動趨緩，大部分用戶已轉向Betaflight或iNAV。",
+  "status": "maintenance"
+}
+
+########## 父文件 #40 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "da3887fb-c040-4d7e-9de9-5796118b0012",
+  "source": "sensor.json",
+  "model_name": "Unknown",
+  "component_type": "flight_controller_firmware_software",
+  "sub_type": "unknown"
+}
+
+--- 完整內容 (Content) ---
+{
+  "software_id": "fw-inav-v6",
+  "name": "iNAV",
+  "latest_version": "6.0",
+  "processor_compatibility": [
+    "STM32 F4/F7"
+  ],
+  "supported_drone_types": [
+    "multi_rotor",
+    "fixed_wing"
+  ],
+  "main_features": [
+    "attitude_stabilization",
+    "navigation",
+    "return_to_home"
+  ],
+  "supported_sensor_types": [
+    "IMU",
+    "GNSS",
+    "barometer"
+  ],
+  "supported_communication_protocols": [
+    "CRSF",
+    "SBUS",
+    "DShot"
+  ],
+  "license_model": "open_source",
+  "development_language": "C",
+  "community_activity": "medium",
+  "official_website_url": "https://inavflight.com/",
+  "download_url": "https://github.com/iNavFlight/inav/releases",
+  "documentation_tutorial_url": "https://github.com/iNavFlight/inav/wiki",
+  "keywords": [
+    "inav",
+    "gps_navigation",
+    "fixed_wing_fpv"
+  ],
+  "notes": "基於Betaflight，但專注於為FPV飛機和多旋翼增加GPS導航功能，如位置保持和自動返航。",
+  "status": "active_development"
+}
+
+########## 父文件 #41 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "40706bd1-45b5-4e0a-ac28-2f77f9ec921a",
+  "source": "sensor.json",
+  "model_name": "Espressif ESP32-WROOM-32",
+  "component_type": "wireless_communication_modules",
+  "sub_type": "wi-fi"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "wireless-esp32-wroom-32",
+  "model_name": "Espressif ESP32-WROOM-32",
+  "type": "Wi-Fi",
+  "communication_standard": "IEEE 802.11 b/g/n",
+  "frequency_band": "2.4GHz",
+  "max_transmission_range_m_km": "100m",
+  "max_data_rate_mbps": 150,
+  "latency_ms": 10,
+  "output_power_mw": 100,
+  "sim_card_support": "no",
+  "interface_type": "UART",
+  "weight_g": 2.5,
+  "dimensions_mm": [
+    18,
+    25.5,
+    3.1
+  ],
+  "power_consumption_mw_w": "500mW",
+  "manufacturer": "Espressif Systems",
+  "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf",
+  "features": [
+    "low_power",
+    "high_bandwidth",
+    "integrated_mcu"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "emi_environment": "high_interference",
+    "obscuration_performance": "low"
+  },
+  "carrier_compatibility": null,
+  "keywords": [
+    "esp32",
+    "wifi",
+    "bluetooth",
+    "iot"
+  ],
+  "notes": "高度整合的Wi-Fi和藍牙雙模晶片，常用於無人機的短距離遙測、參數調整或作為地面站的無線橋接。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 3.0,
+  "suppliers": [
+    "Digi-Key",
+    "Mouser",
+    "Adafruit"
+  ],
+  "mtbf_hours": 100000,
+  "after_sales_support": "提供完整的SDK和活躍的開發者社群。",
+  "maintenance_cycle_recommendations": "無特殊維護要求。"
+}
+
+########## 父文件 #42 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "8b3c4d8c-9890-4e7f-afda-404cb9e9c353",
+  "source": "sensor.json",
+  "model_name": "Quectel EC25 Series",
+  "component_type": "wireless_communication_modules",
+  "sub_type": "cellular_4g_5g"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "wireless-quectel-ec25",
+  "model_name": "Quectel EC25 Series",
+  "type": "cellular_4g_5g",
+  "communication_standard": "LTE Cat 4",
+  "frequency_band": "700MHz-2.6GHz",
+  "max_transmission_range_m_km": "global",
+  "max_data_rate_mbps": 150,
+  "latency_ms": 50,
+  "output_power_mw": 200,
+  "sim_card_support": "yes",
+  "interface_type": "USB",
+  "weight_g": 3.5,
+  "dimensions_mm": [
+    29,
+    32,
+    2.4
+  ],
+  "power_consumption_mw_w": "2W",
+  "manufacturer": "Quectel",
+  "datasheet_url": "https://www.quectel.com/product/lte-ec25-module",
+  "features": [
+    "global_coverage",
+    "high_data_rate"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "emi_environment": "moderate_interference",
+    "obscuration_performance": "high"
+  },
+  "carrier_compatibility": "AT&T, Verizon, T-Mobile, etc.",
+  "keywords": [
+    "4g_lte",
+    "cellular_drone",
+    "unlimited_range",
+    "quectel"
+  ],
+  "notes": "工業級LTE Cat 4模組，使無人機能夠透過蜂窩網路進行超視距(BVLOS)飛行控制和數據傳輸。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 25.0,
+  "suppliers": [
+    "Quectel Direct",
+    "Arrow Electronics"
+  ],
+  "mtbf_hours": 200000,
+  "after_sales_support": "提供驅動程式和AT指令集文件。",
+  "maintenance_cycle_recommendations": "確保SIM卡套餐有足夠的流量和覆蓋。"
+}
+
+########## 父文件 #43 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "ffaab02b-ef8d-4c9c-9be5-06bbefc4f0fe",
+  "source": "sensor.json",
+  "model_name": "SiK Telemetry Radio V3",
+  "component_type": "wireless_communication_modules",
+  "sub_type": "dedicated_telemetry_radio"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "wireless-sik-v3",
+  "model_name": "SiK Telemetry Radio V3",
+  "type": "dedicated_telemetry_radio",
+  "communication_standard": "Frequency-hopping spread spectrum (FHSS)",
+  "frequency_band": "915MHz",
+  "max_transmission_range_m_km": "1.5km",
+  "max_data_rate_mbps": 0.25,
+  "latency_ms": 40,
+  "output_power_mw": 100,
+  "sim_card_support": "no",
+  "interface_type": "UART",
+  "weight_g": 20,
+  "dimensions_mm": [
+    25,
+    50,
+    10
+  ],
+  "power_consumption_mw_w": "500mW",
+  "manufacturer": "mRobotics (based on 3DR design)",
+  "datasheet_url": "https://docs.mrobotics.io/mro-hardware/mro-telemetry-radios",
+  "features": [
+    "long_range_data_transmission",
+    "open_source_firmware"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -20,
+      70
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "emi_environment": "moderate_interference",
+    "obscuration_performance": "medium"
+  },
+  "carrier_compatibility": null,
+  "keywords": [
+    "sik_radio",
+    "telemetry",
+    "mavlink",
+    "915mhz"
+  ],
+  "notes": "經典的開源數傳電台，專為MAVLink協議設計，提供機載端與地面站之間的穩定遙測鏈路。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 40.0,
+  "suppliers": [
+    "mRobotics",
+    "Holybro"
+  ],
+  "mtbf_hours": 50000,
+  "after_sales_support": "通過開源社群和ArduPilot/PX4文檔支援。",
+  "maintenance_cycle_recommendations": "使用合適的天線以達到最佳通訊距離。"
+}
+
+########## 父文件 #44 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "28b951af-22b6-483a-8859-58db1e60b8e0",
+  "source": "sensor.json",
+  "model_name": "Nordic Semiconductor nRF52840",
+  "component_type": "wireless_communication_modules",
+  "sub_type": "bluetooth"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "wireless-nrf52840",
+  "model_name": "Nordic Semiconductor nRF52840",
+  "type": "bluetooth",
+  "communication_standard": "Bluetooth 5.0",
+  "frequency_band": "2.4GHz",
+  "max_transmission_range_m_km": "50m",
+  "max_data_rate_mbps": 2,
+  "latency_ms": 20,
+  "output_power_mw": 6,
+  "sim_card_support": "no",
+  "interface_type": "UART",
+  "weight_g": 1.5,
+  "dimensions_mm": [
+    17,
+    20,
+    2
+  ],
+  "power_consumption_mw_w": "20mW",
+  "manufacturer": "Nordic Semiconductor",
+  "datasheet_url": "https://www.nordicsemi.com/products/nrf52840",
+  "features": [
+    "low_power",
+    "bluetooth_long_range"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      10,
+      90
+    ],
+    "emi_environment": "high_interference",
+    "obscuration_performance": "low"
+  },
+  "carrier_compatibility": null,
+  "keywords": [
+    "bluetooth",
+    "ble",
+    "short_range_control",
+    "nordic"
+  ],
+  "notes": "高性能藍牙5.0 SoC，支援長距離模式，適用於透過手機APP進行近距離的無人機參數設定和狀態監控。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 6.0,
+  "suppliers": [
+    "Digi-Key",
+    "Mouser"
+  ],
+  "mtbf_hours": 200000,
+  "after_sales_support": "提供完整的軟體開發套件(SDK)和技術文件。",
+  "maintenance_cycle_recommendations": "無特殊維護要求。"
+}
+
+########## 父文件 #45 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "a3daad54-1be9-4a1d-b3f4-29c679453fa4",
+  "source": "sensor.json",
+  "model_name": "RFDesign RFD900x",
+  "component_type": "wireless_communication_modules",
+  "sub_type": "dedicated_telemetry_radio"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "wireless-rfd900x",
+  "model_name": "RFDesign RFD900x",
+  "type": "dedicated_telemetry_radio",
+  "communication_standard": "FHSS",
+  "frequency_band": "915MHz",
+  "max_transmission_range_m_km": "40km",
+  "max_data_rate_mbps": 0.5,
+  "latency_ms": 30,
+  "output_power_mw": 1000,
+  "sim_card_support": "no",
+  "interface_type": "UART",
+  "weight_g": 14.5,
+  "dimensions_mm": [
+    30,
+    57,
+    12.8
+  ],
+  "power_consumption_mw_w": "4W",
+  "manufacturer": "RFDesign",
+  "datasheet_url": "https://rfdesign.com.au/products/rfd900x-modem/",
+  "features": [
+    "long_range_data_transmission",
+    "high_reliability",
+    "diversity_antenna_support"
+  ],
+  "environmental_adaptability": {
+    "temperature_celsius": [
+      -40,
+      85
+    ],
+    "humidity_percent": [
+      5,
+      95
+    ],
+    "emi_environment": "low_interference",
+    "obscuration_performance": "high"
+  },
+  "carrier_compatibility": null,
+  "keywords": [
+    "long_range_telemetry",
+    "rfd900",
+    "professional_uav"
+  ],
+  "notes": "高性能、大功率的數傳電台，支援天線分集技術，可提供數十公里的超遠程遙測鏈路，適用於專業的長航時無人機應用。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 180.0,
+  "suppliers": [
+    "RFDesign Official",
+    "Enterprise UAS"
+  ],
+  "mtbf_hours": 80000,
+  "after_sales_support": "提供配置工具和技術支援。",
+  "maintenance_cycle_recommendations": "搭配高增益天線使用，並注意遵守當地無線電法規。"
+}
+
+########## 父文件 #46 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "3230df04-8bb2-4539-965c-274fad0ff9f4",
+  "source": "structure.json",
+  "model_name": "Lumenier QAV-S 5\" Freestyle",
+  "component_type": "frames_chassis",
+  "sub_type": "main_frame_arms"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "frame-fpv-qavs-5",
+  "model_name": "Lumenier QAV-S 5\" Freestyle",
+  "type": "main_frame_arms",
+  "drone_type": "multi_rotor",
+  "configuration": "x_type",
+  "material": "carbon_fiber",
+  "weight_g": 129,
+  "dimensions": {
+    "wheelbase_mm": 220,
+    "wingspan_mm": 0,
+    "length_width_height_mm": [
+      180,
+      145,
+      35
+    ]
+  },
+  "structural_form": "truss",
+  "max_takeoff_weight_capacity_kg": 1.5,
+  "stress_concentration_design_notes": "採用X-Lock臂鎖定系統，將側向衝擊力傳導至整個框架，避免應力集中在中心板的螺絲上。臂部末端加厚設計以增強馬達座剛性。",
+  "manufacturing_process": "cnc_machining",
+  "folding_mechanism": "no",
+  "folding_method": "not_applicable",
+  "folded_dimensions_mm": [
+    0,
+    0,
+    0
+  ],
+  "manufacturer": "Lumenier",
+  "datasheet_url": "https://www.lumenier.com/products/qav-s-5-freestyle-fpv-drone-frame",
+  "features": [
+    "high_strength",
+    "lightweight",
+    "high_rigidity",
+    "easy_assembly"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -20,
+      100
+    ],
+    "uv_resistance": "medium",
+    "corrosion_resistance": "high",
+    "ip_rating": "IP20",
+    "wind_resistance_mps": [
+      0,
+      15
+    ],
+    "impact_resistance": "high"
+  },
+  "compatibility": {
+    "recommended_motor_mount_pattern_mm": "16x16, 19x19",
+    "flight_controller_mounting_space_mm": [
+      30.5,
+      30.5,
+      20
+    ],
+    "battery_compartment_dimensions_mm": [
+      120,
+      50,
+      40
+    ]
+  },
+  "maintenance_requirements": [
+    "crack_inspection",
+    "screw_tightening"
+  ],
+  "design_standards_certifications": "遵循通用FPV競賽標準",
+  "keywords": [
+    "fpv_frame",
+    "5_inch",
+    "freestyle",
+    "carbon_fiber"
+  ],
+  "notes": "專為花式飛行設計的框架，結構堅固且易於維護，提供良好的飛行手感。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 74.99,
+  "suppliers": [
+    "GetFPV",
+    "RaceDayQuads"
+  ],
+  "mtbf_hours": 1000,
+  "after_sales_support": "提供備用零件購買及組裝指南。",
+  "maintenance_cycle_recommendations": "每次嚴重撞擊後檢查碳纖維臂是否有分層或裂紋。"
+}
+
+########## 父文件 #47 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "4a3c38be-ad2f-4986-b22b-e203576d7e90",
+  "source": "structure.json",
+  "model_name": "Tarot X8-II",
+  "component_type": "frames_chassis",
+  "sub_type": "main_frame_arms"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "frame-hl-tarot-x8-1000",
+  "model_name": "Tarot X8-II",
+  "type": "main_frame_arms",
+  "drone_type": "multi_rotor",
+  "configuration": "x_type",
+  "material": "carbon_fiber",
+  "weight_g": 2300,
+  "dimensions": {
+    "wheelbase_mm": 1050,
+    "wingspan_mm": 0,
+    "length_width_height_mm": [
+      950,
+      950,
+      450
+    ]
+  },
+  "structural_form": "truss",
+  "max_takeoff_weight_capacity_kg": 25,
+  "stress_concentration_design_notes": "機臂採用一體式折疊件，使用大型金屬鎖緊機構，確保飛行中剛性。中心板加厚並預留大量安裝孔位以分散設備重量。",
+  "manufacturing_process": "cnc_machining",
+  "folding_mechanism": "yes",
+  "folding_method": "arm_folding",
+  "folded_dimensions_mm": [
+    500,
+    500,
+    500
+  ],
+  "manufacturer": "Tarot",
+  "datasheet_url": "http://www.tarot-rc.com/Product/Detail.aspx?id=973e46c9-0442-4b2a-8d07-28d0859665f9",
+  "features": [
+    "high_strength",
+    "high_rigidity",
+    "modular_design"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -20,
+      60
+    ],
+    "uv_resistance": "medium",
+    "corrosion_resistance": "medium",
+    "ip_rating": "IP31",
+    "wind_resistance_mps": [
+      0,
+      14
+    ],
+    "impact_resistance": "medium"
+  },
+  "compatibility": {
+    "recommended_motor_mount_pattern_mm": "30x30, 40x40",
+    "flight_controller_mounting_space_mm": [
+      80,
+      80,
+      50
+    ],
+    "battery_compartment_dimensions_mm": [
+      250,
+      150,
+      100
+    ]
+  },
+  "maintenance_requirements": [
+    "crack_inspection",
+    "screw_tightening"
+  ],
+  "design_standards_certifications": "通用工業無人機設計參考",
+  "keywords": [
+    "heavy_lift",
+    "octocopter",
+    "foldable_frame",
+    "aerial_photography"
+  ],
+  "notes": "專為重載應用如專業航拍、小型物流設計的八軸飛行平台，可折疊設計便於運輸。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 450.0,
+  "suppliers": [
+    "Tarot RC",
+    "HobbyKing",
+    "AliExpress"
+  ],
+  "mtbf_hours": 2000,
+  "after_sales_support": "提供全套備件和升級件。",
+  "maintenance_cycle_recommendations": "每50次飛行檢查折疊機構的鎖緊力。"
+}
+
+########## 父文件 #48 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "4b2732c9-a419-4ce6-be24-312db8e2fa88",
+  "source": "structure.json",
+  "model_name": "SonicModell AR Wing Pro",
+  "component_type": "frames_chassis",
+  "sub_type": "wings"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "frame-fw-sonicmodell-arwing",
+  "model_name": "SonicModell AR Wing Pro",
+  "type": "wings",
+  "drone_type": "fixed_wing",
+  "configuration": "not_applicable",
+  "material": "composite_glass_fiber_kevlar",
+  "weight_g": 450,
+  "dimensions": {
+    "wheelbase_mm": 0,
+    "wingspan_mm": 1000,
+    "length_width_height_mm": [
+      417,
+      1000,
+      150
+    ]
+  },
+  "structural_form": "monocoque",
+  "max_takeoff_weight_capacity_kg": 2.5,
+  "stress_concentration_design_notes": "翼根處內嵌碳纖維管以加強結構，防止高G力飛行時彎曲。機頭部分採用高韌性塑膠，增強耐撞性。",
+  "manufacturing_process": "mold_forming",
+  "folding_mechanism": "yes",
+  "folding_method": "wing_detachment",
+  "folded_dimensions_mm": [
+    500,
+    300,
+    150
+  ],
+  "manufacturer": "SonicModell",
+  "datasheet_url": "https://www.sonicmodell.com/ar-wing-pro",
+  "features": [
+    "lightweight",
+    "easy_assembly",
+    "aerodynamic_optimization"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -10,
+      50
+    ],
+    "uv_resistance": "low",
+    "corrosion_resistance": "high",
+    "ip_rating": "IP20",
+    "wind_resistance_mps": [
+      0,
+      12
+    ],
+    "impact_resistance": "medium"
+  },
+  "compatibility": {
+    "recommended_motor_mount_pattern_mm": "19x19, 25x25",
+    "flight_controller_mounting_space_mm": [
+      100,
+      50,
+      40
+    ],
+    "battery_compartment_dimensions_mm": [
+      150,
+      60,
+      50
+    ]
+  },
+  "maintenance_requirements": [
+    "crack_inspection"
+  ],
+  "design_standards_certifications": "通用FPV飛翼模型標準",
+  "keywords": [
+    "fixed_wing",
+    "fpv_wing",
+    "flying_wing",
+    "epp_foam"
+  ],
+  "notes": "採用高密度EPP泡沫製成，耐用且易於修復。可拆卸機翼設計便於攜帶，適合FPV穿越和長距離飛行。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 89.99,
+  "suppliers": [
+    "Banggood",
+    "GetFPV"
+  ],
+  "mtbf_hours": 500,
+  "after_sales_support": "提供機身、機翼等替換零件。",
+  "maintenance_cycle_recommendations": "飛行後檢查機翼連接處卡扣是否牢固。"
+}
+
+########## 父文件 #49 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "d4f783c1-01d7-47bf-9aa2-6543bef2b44e",
+  "source": "structure.json",
+  "model_name": "MFE Fighter VTOL",
+  "component_type": "frames_chassis",
+  "sub_type": "unibody_frame"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "frame-vtol-mfe-fighter",
+  "model_name": "MFE Fighter VTOL",
+  "type": "unibody_frame",
+  "drone_type": "vtol_fixed_wing",
+  "configuration": "not_applicable",
+  "material": "composite_glass_fiber_kevlar",
+  "weight_g": 2750,
+  "dimensions": {
+    "wheelbase_mm": 0,
+    "wingspan_mm": 2430,
+    "length_width_height_mm": [
+      1450,
+      2430,
+      360
+    ]
+  },
+  "structural_form": "monocoque",
+  "max_takeoff_weight_capacity_kg": 11,
+  "stress_concentration_design_notes": "多旋翼電機臂與機翼結構一體化設計，並在連接處使用碳纖維布加強，以承受垂直起降和水平飛行之間的應力轉換。",
+  "manufacturing_process": "mold_forming",
+  "folding_mechanism": "yes",
+  "folding_method": "wing_detachment",
+  "folded_dimensions_mm": [
+    1200,
+    800,
+    400
+  ],
+  "manufacturer": "MyFlyDream (MFE)",
+  "datasheet_url": "https://www.mfefixedwing.com/mfe-fighter-2430mm-vtol-kit/",
+  "features": [
+    "aerodynamic_optimization",
+    "modular_design",
+    "high_strength"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -15,
+      55
+    ],
+    "uv_resistance": "medium",
+    "corrosion_resistance": "high",
+    "ip_rating": "IP43",
+    "wind_resistance_mps": [
+      0,
+      12
+    ],
+    "impact_resistance": "medium"
+  },
+  "compatibility": {
+    "recommended_motor_mount_pattern_mm": "VTOL: 25x25, Fixed-wing: 25x25",
+    "flight_controller_mounting_space_mm": [
+      150,
+      120,
+      100
+    ],
+    "battery_compartment_dimensions_mm": [
+      300,
+      100,
+      80
+    ]
+  },
+  "maintenance_requirements": [
+    "crack_inspection",
+    "screw_tightening"
+  ],
+  "design_standards_certifications": "工業級VTOL設計參考",
+  "keywords": [
+    "vtol",
+    "mapping_drone",
+    "long_endurance",
+    "composite"
+  ],
+  "notes": "專為長航時測繪和巡檢任務設計的VTOL平台，結合了多旋翼的靈活起降和固定翼的高效巡航能力。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 1299.0,
+  "suppliers": [
+    "MFE Direct",
+    "Enterprise UAS"
+  ],
+  "mtbf_hours": 1500,
+  "after_sales_support": "提供組裝和飛控設定教學支援。",
+  "maintenance_cycle_recommendations": "每次飛行模式轉換後檢查傾轉結構是否正常。"
+}
+
+########## 父文件 #50 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "cfc4f4a7-e433-43f1-a40a-cfb4775af6fb",
+  "source": "structure.json",
+  "model_name": "GEPRC CineLog35 Performance",
+  "component_type": "frames_chassis",
+  "sub_type": "main_frame_arms"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "frame-cinewhoop-geprc-cinelog35",
+  "model_name": "GEPRC CineLog35 Performance",
+  "type": "main_frame_arms",
+  "drone_type": "multi_rotor",
+  "configuration": "x_type",
+  "material": "carbon_fiber",
+  "weight_g": 135,
+  "dimensions": {
+    "wheelbase_mm": 142,
+    "wingspan_mm": 0,
+    "length_width_height_mm": [
+      203,
+      203,
+      42
+    ]
+  },
+  "structural_form": "truss",
+  "max_takeoff_weight_capacity_kg": 1,
+  "stress_concentration_design_notes": "採用推桿式設計，馬達反裝，螺旋槳由保護圈完全包圍。保護圈與主框架透過減震柱連接，隔離震動並提供結構強度。",
+  "manufacturing_process": "cnc_machining",
+  "folding_mechanism": "no",
+  "folding_method": "not_applicable",
+  "folded_dimensions_mm": [
+    0,
+    0,
+    0
+  ],
+  "manufacturer": "GEPRC",
+  "datasheet_url": "https://geprc.com/product/geprc-cinelog35-performance-hd-dji-o3-fpv-drone/",
+  "features": [
+    "high_rigidity",
+    "easy_assembly",
+    "propeller_protection"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -10,
+      60
+    ],
+    "uv_resistance": "medium",
+    "corrosion_resistance": "high",
+    "ip_rating": "IP20",
+    "wind_resistance_mps": [
+      0,
+      8
+    ],
+    "impact_resistance": "high"
+  },
+  "compatibility": {
+    "recommended_motor_mount_pattern_mm": "12x12",
+    "flight_controller_mounting_space_mm": [
+      25.5,
+      25.5,
+      20
+    ],
+    "battery_compartment_dimensions_mm": [
+      90,
+      40,
+      35
+    ]
+  },
+  "maintenance_requirements": [
+    "crack_inspection",
+    "screw_tightening"
+  ],
+  "design_standards_certifications": "Cinewhoop級別無人機標準",
+  "keywords": [
+    "cinewhoop",
+    "ducted_fan",
+    "cinematic_fpv",
+    "gopro_mount"
+  ],
+  "notes": "專為掛載GoPro等小型攝影機進行近距離穩定拍攝而設計，螺旋槳保護圈保障了飛行安全。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 65.0,
+  "suppliers": [
+    "GEPRC Official",
+    "RDQ"
+  ],
+  "mtbf_hours": 800,
+  "after_sales_support": "提供3D列印配件的開源文件。",
+  "maintenance_cycle_recommendations": "檢查保護圈是否有裂紋，減震柱是否老化。"
+}
+
+########## 父文件 #51 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "c370f1db-7c5f-40e6-8724-0041d422336e",
+  "source": "structure.json",
+  "model_name": "Universal Carbon Fiber Landing Skid 200mm",
+  "component_type": "landing_gears",
+  "sub_type": "skids"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "lg-fixed-cf-200",
+  "model_name": "Universal Carbon Fiber Landing Skid 200mm",
+  "type": "skids",
+  "material": "carbon_fiber",
+  "weight_g": 80,
+  "dimensions": {
+    "height_mm": 200,
+    "span_mm": 300
+  },
+  "max_load_capacity_kg": 8,
+  "damping_performance": "external_damping_interface",
+  "retraction_mechanism": "not_applicable",
+  "retraction_time_seconds": 0,
+  "min_ground_clearance_mm": 190,
+  "manufacturer": "Generic",
+  "datasheet_url": "https://generic-parts.com/lg/cf-200.pdf",
+  "features": [
+    "simple_structure",
+    "durable",
+    "lightweight"
+  ],
+  "environmental_adaptability": {
+    "applicable_terrain": [
+      "hard_surface",
+      "grass"
+    ],
+    "temperature_range_celsius": [
+      -40,
+      100
+    ],
+    "ip_rating": "IP54"
+  },
+  "keywords": [
+    "landing_skid",
+    "carbon_fiber",
+    "fixed_gear"
+  ],
+  "notes": "通用型固定式起落架，適用於軸距500-800mm的中型多旋翼無人機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 19.99,
+  "suppliers": [
+    "HobbyKing",
+    "AliExpress",
+    "Banggood"
+  ],
+  "mtbf_hours": 5000,
+  "after_sales_support": "無，為通用耗材。",
+  "maintenance_cycle_recommendations": "定期檢查與機身的連接螺絲是否鬆動。"
+}
+
+########## 父文件 #52 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "5a08050f-9d7a-4e26-8c2c-08be8bf4e295",
+  "source": "structure.json",
+  "model_name": "Tarot TL65B44 Small Electric Retractable Landing Gear",
+  "component_type": "landing_gears",
+  "sub_type": "retractable_landing_gear"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "lg-retract- Tarot-tl65b44",
+  "model_name": "Tarot TL65B44 Small Electric Retractable Landing Gear",
+  "type": "retractable_landing_gear",
+  "material": "aerospace_aluminum_alloy",
+  "weight_g": 210,
+  "dimensions": {
+    "height_mm": 260,
+    "span_mm": 350
+  },
+  "max_load_capacity_kg": 5,
+  "damping_performance": "built_in_damping",
+  "retraction_mechanism": "electric",
+  "retraction_time_seconds": 4,
+  "min_ground_clearance_mm": 0,
+  "manufacturer": "Tarot",
+  "datasheet_url": "http://www.tarot-rc.com/Product/Detail.aspx?id=01de640f-7b0f-488b-a5d5-94ac6b527783",
+  "features": [
+    "aerodynamic_optimization",
+    "durable"
+  ],
+  "environmental_adaptability": {
+    "applicable_terrain": [
+      "hard_surface"
+    ],
+    "temperature_range_celsius": [
+      -10,
+      50
+    ],
+    "ip_rating": "IP43"
+  },
+  "keywords": [
+    "retractable_landing_gear",
+    "electric_retracts",
+    "tarot"
+  ],
+  "notes": "電動收放起落架，可為雲台提供360度無遮擋的拍攝視野，適用於專業航拍機。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 65.0,
+  "suppliers": [
+    "Tarot RC",
+    "HobbyKing"
+  ],
+  "mtbf_hours": 3000,
+  "after_sales_support": "提供控制板和馬達等備件。",
+  "maintenance_cycle_recommendations": "每100次收放後檢查連桿結構並添加少量潤滑油。"
+}
+
+########## 父文件 #53 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "feecef6d-6071-4a47-adea-523dfb7e0eac",
+  "source": "structure.json",
+  "model_name": "C370 Water Landing Floats",
+  "component_type": "landing_gears",
+  "sub_type": "floats"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "lg-float-c370",
+  "model_name": "C370 Water Landing Floats",
+  "type": "floats",
+  "material": "plastics_abs_pc",
+  "weight_g": 350,
+  "dimensions": {
+    "height_mm": 150,
+    "span_mm": 450
+  },
+  "max_load_capacity_kg": 4,
+  "damping_performance": "external_damping_interface",
+  "retraction_mechanism": "not_applicable",
+  "retraction_time_seconds": 0,
+  "min_ground_clearance_mm": 140,
+  "manufacturer": "Generic",
+  "datasheet_url": "https://generic-parts.com/lg/c370-floats.pdf",
+  "features": [
+    "water_landing",
+    "simple_structure"
+  ],
+  "environmental_adaptability": {
+    "applicable_terrain": [
+      "water"
+    ],
+    "temperature_range_celsius": [
+      0,
+      40
+    ],
+    "ip_rating": "IP68"
+  },
+  "keywords": [
+    "floats",
+    "water_landing_gear",
+    "amphibious"
+  ],
+  "notes": "為中型無人機設計的浮筒，可實現水面起降。安裝後會增加風阻，影響飛行性能。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 35.0,
+  "suppliers": [
+    "AliExpress",
+    "Amazon"
+  ],
+  "mtbf_hours": 1000,
+  "after_sales_support": "無，為通用耗材。",
+  "maintenance_cycle_recommendations": "每次使用後檢查是否有漏水現象。"
+}
+
+########## 父文件 #54 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "511cc2d9-77e0-405b-a4bd-a0471dcbcb14",
+  "source": "structure.json",
+  "model_name": "DJI S1000 Heavy-Duty Skids",
+  "component_type": "landing_gears",
+  "sub_type": "skids"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "lg-skid-hl-dji-s1000",
+  "model_name": "DJI S1000 Heavy-Duty Skids",
+  "type": "skids",
+  "material": "carbon_fiber",
+  "weight_g": 650,
+  "dimensions": {
+    "height_mm": 450,
+    "span_mm": 600
+  },
+  "max_load_capacity_kg": 15,
+  "damping_performance": "built_in_damping",
+  "retraction_mechanism": "not_applicable",
+  "retraction_time_seconds": 0,
+  "min_ground_clearance_mm": 440,
+  "manufacturer": "DJI (Compatible)",
+  "datasheet_url": "https://dji-compatible.com/lg/s1000-skids.pdf",
+  "features": [
+    "durable",
+    "rugged_terrain_adaptability"
+  ],
+  "environmental_adaptability": {
+    "applicable_terrain": [
+      "hard_surface",
+      "grass",
+      "rugged_terrain"
+    ],
+    "temperature_range_celsius": [
+      -20,
+      60
+    ],
+    "ip_rating": "IP54"
+  },
+  "keywords": [
+    "heavy_duty_skids",
+    "s1000",
+    "industrial_drone"
+  ],
+  "notes": "專為DJI S1000及類似重載平台設計的加高加寬型起落架，提供極高的穩定性和離地間隙，以容納大型雲台。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 89.0,
+  "suppliers": [
+    "HobbyKing",
+    "AliExpress"
+  ],
+  "mtbf_hours": 4000,
+  "after_sales_support": "提供替換腳管和連接件。",
+  "maintenance_cycle_recommendations": "每次硬著陸後檢查碳管是否有裂紋。"
+}
+
+########## 父文件 #55 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "a223083c-3705-4c1e-8ba8-c1515a3df7a7",
+  "source": "structure.json",
+  "model_name": "F450/F550 Universal Plastic Landing Gear",
+  "component_type": "landing_gears",
+  "sub_type": "skids"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "lg-fixed-plastic-f450",
+  "model_name": "F450/F550 Universal Plastic Landing Gear",
+  "type": "skids",
+  "material": "plastics_abs_pc",
+  "weight_g": 180,
+  "dimensions": {
+    "height_mm": 180,
+    "span_mm": 280
+  },
+  "max_load_capacity_kg": 3,
+  "damping_performance": "external_damping_interface",
+  "retraction_mechanism": "not_applicable",
+  "retraction_time_seconds": 0,
+  "min_ground_clearance_mm": 170,
+  "manufacturer": "Generic",
+  "datasheet_url": "https://generic-parts.com/lg/f450-plastic.pdf",
+  "features": [
+    "simple_structure",
+    "lightweight"
+  ],
+  "environmental_adaptability": {
+    "applicable_terrain": [
+      "hard_surface",
+      "grass"
+    ],
+    "temperature_range_celsius": [
+      -10,
+      45
+    ],
+    "ip_rating": "IP41"
+  },
+  "keywords": [
+    "f450_frame",
+    "diy_drone",
+    "plastic_landing_gear"
+  ],
+  "notes": "適用於經典的F450/F550系列DIY框架的標準起落架，價格低廉，是入門玩家的首選。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 5.99,
+  "suppliers": [
+    "Amazon",
+    "Banggood",
+    "AliExpress"
+  ],
+  "mtbf_hours": 500,
+  "after_sales_support": "無，為通用耗材。",
+  "maintenance_cycle_recommendations": "硬著陸後易斷裂，建議多備幾個作為備件。"
+}
+
+########## 父文件 #56 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "b39407cd-1e13-406e-acd3-b0c6345533e0",
+  "source": "structure.json",
+  "model_name": "Brain3D FPV GoPro Hero 9/10 Mount Canopy",
+  "component_type": "enclosures_covers",
+  "sub_type": "canopy"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "enclosure-fpv-tpu-gopro",
+  "model_name": "Brain3D FPV GoPro Hero 9/10 Mount Canopy",
+  "type": "canopy",
+  "material": "plastics_abs_pc",
+  "weight_g": 35,
+  "dimensions": [
+    80,
+    70,
+    60
+  ],
+  "ip_rating": "IP20",
+  "cooling_design": "ventilation_holes",
+  "mounting_method": "screw_fixing",
+  "manufacturer": "Brain3D",
+  "datasheet_url": "https://www.brain3d.com/products/gopro-hero-9-10-fpv-mount",
+  "features": [
+    "internal_component_protection",
+    "camera_mount_integrated"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -10,
+      50
+    ],
+    "uv_resistance": "low",
+    "chemical_corrosion_resistance": "medium"
+  },
+  "compatible_frame_ids": [
+    "frame-fpv-qavs-5"
+  ],
+  "keywords": [
+    "3d_printed",
+    "tpu",
+    "gopro_mount",
+    "canopy"
+  ],
+  "notes": "採用TPU材料3D列印而成，具備一定彈性，能在撞擊中保護FPV攝影機和GoPro，並提供固定角度。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 15.99,
+  "suppliers": [
+    "Brain3D",
+    "GetFPV"
+  ],
+  "mtbf_hours": 200,
+  "after_sales_support": "提供多種顏色和角度可選。",
+  "maintenance_cycle_recommendations": "檢查是否有因日曬或撞擊造成的撕裂。"
+}
+
+########## 父文件 #57 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "7effd288-9d8c-4814-9cb7-4462011df380",
+  "source": "structure.json",
+  "model_name": "Industrial UAV Full Weatherproof Enclosure",
+  "component_type": "enclosures_covers",
+  "sub_type": "fairings"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "enclosure-weatherproof-ip67",
+  "model_name": "Industrial UAV Full Weatherproof Enclosure",
+  "type": "fairings",
+  "material": "composite_glass_fiber_kevlar",
+  "weight_g": 800,
+  "dimensions": [
+    500,
+    500,
+    150
+  ],
+  "ip_rating": "IP67",
+  "cooling_design": "built_in_air_ducts",
+  "mounting_method": "screw_fixing",
+  "manufacturer": "DroneShells Inc.",
+  "datasheet_url": "https://droneshells.com/enclosures/ip67-500.pdf",
+  "features": [
+    "internal_component_protection",
+    "aerodynamic_improvement"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -40,
+      80
+    ],
+    "uv_resistance": "high",
+    "chemical_corrosion_resistance": "high"
+  },
+  "compatible_frame_ids": [
+    "frame-hl-tarot-x8-1000"
+  ],
+  "keywords": [
+    "weatherproof",
+    "ip67",
+    "industrial_drone",
+    "enclosure"
+  ],
+  "notes": "全密封設計，提供IP67級防水防塵保護，確保無人機能在雨雪等惡劣天氣下執行任務。內部設計有風道，透過氣壓差引導氣流為電子設備散熱。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 299.0,
+  "suppliers": [
+    "DroneShells Inc.",
+    "Enterprise UAS"
+  ],
+  "mtbf_hours": 10000,
+  "after_sales_support": "提供密封圈等替換件。",
+  "maintenance_cycle_recommendations": "每次拆裝後檢查密封圈是否完好並正確安裝。"
+}
+
+########## 父文件 #58 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "cece5d1d-bb54-4f40-bfd3-c56181486119",
+  "source": "structure.json",
+  "model_name": "Clear PC GPS Dome Cover",
+  "component_type": "enclosures_covers",
+  "sub_type": "equipment_bay_cover"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "enclosure-gps-dome",
+  "model_name": "Clear PC GPS Dome Cover",
+  "type": "equipment_bay_cover",
+  "material": "transparent_pc",
+  "weight_g": 25,
+  "dimensions": [
+    80,
+    80,
+    40
+  ],
+  "ip_rating": "IP54",
+  "cooling_design": "none",
+  "mounting_method": "screw_fixing",
+  "manufacturer": "Generic",
+  "datasheet_url": "https://generic-parts.com/enclosures/gps-dome.pdf",
+  "features": [
+    "internal_component_protection",
+    "transparent_for_signal"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -40,
+      120
+    ],
+    "uv_resistance": "medium",
+    "chemical_corrosion_resistance": "low"
+  },
+  "compatible_frame_ids": [
+    "frame-hl-tarot-x8-1000"
+  ],
+  "keywords": [
+    "gps_puck_cover",
+    "dome",
+    "polycarbonate"
+  ],
+  "notes": "透明的聚碳酸酯保護罩，用於保護GPS天線免受物理損傷，同時不影響衛星信號接收。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 9.99,
+  "suppliers": [
+    "HobbyKing",
+    "AliExpress"
+  ],
+  "mtbf_hours": 8000,
+  "after_sales_support": "無。",
+  "maintenance_cycle_recommendations": "定期擦拭表面，保持潔淨以獲得最佳信號。"
+}
+
+########## 父文件 #59 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "6f8c2ccc-8a5a-4060-9b35-3096b32726a7",
+  "source": "structure.json",
+  "model_name": "QuickSwap Battery Cover",
+  "component_type": "enclosures_covers",
+  "sub_type": "battery_cover"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "enclosure-battery-snapfit",
+  "model_name": "QuickSwap Battery Cover",
+  "type": "battery_cover",
+  "material": "plastics_abs_pc",
+  "weight_g": 50,
+  "dimensions": [
+    150,
+    60,
+    50
+  ],
+  "ip_rating": "IP31",
+  "cooling_design": "ventilation_holes",
+  "mounting_method": "snap_fit",
+  "manufacturer": "FrameMods",
+  "datasheet_url": "https://framemods.com/covers/battery-snapfit.pdf",
+  "features": [
+    "easy_removal",
+    "internal_component_protection"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -20,
+      70
+    ],
+    "uv_resistance": "low",
+    "chemical_corrosion_resistance": "medium"
+  },
+  "compatible_frame_ids": [
+    "frame-fpv-qavs-5"
+  ],
+  "keywords": [
+    "battery_bay",
+    "snap_fit",
+    "quick_release"
+  ],
+  "notes": "卡扣式電池倉蓋，方便快速更換電池，同時保護電池在飛行中不會意外脫落。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 12.0,
+  "suppliers": [
+    "FrameMods"
+  ],
+  "mtbf_hours": 1000,
+  "after_sales_support": "無。",
+  "maintenance_cycle_recommendations": "檢查卡扣是否有磨損，以免鎖定力不足。"
+}
+
+########## 父文件 #60 ##########
+--- 元數據 (Metadata) ---
+{
+  "doc_id": "ddfe5e82-67ad-45e8-8464-93c039093f79",
+  "source": "structure.json",
+  "model_name": "VTOL Nose Cone & Tail Fairing Kit",
+  "component_type": "enclosures_covers",
+  "sub_type": "fairings"
+}
+
+--- 完整內容 (Content) ---
+{
+  "component_id": "enclosure-fairing-vtol",
+  "model_name": "VTOL Nose Cone & Tail Fairing Kit",
+  "type": "fairings",
+  "material": "glass_fiber",
+  "weight_g": 120,
+  "dimensions": [
+    300,
+    100,
+    80
+  ],
+  "ip_rating": "IP43",
+  "cooling_design": "none",
+  "mounting_method": "screw_fixing",
+  "manufacturer": "AeroDesign",
+  "datasheet_url": "https://aerodesign.com/fairings/vtol-kit.pdf",
+  "features": [
+    "aerodynamic_improvement",
+    "aesthetic_design"
+  ],
+  "environmental_adaptability": {
+    "temperature_range_celsius": [
+      -30,
+      90
+    ],
+    "uv_resistance": "medium",
+    "chemical_corrosion_resistance": "high"
+  },
+  "compatible_frame_ids": [
+    "frame-vtol-mfe-fighter"
+  ],
+  "keywords": [
+    "fairing",
+    "aerodynamics",
+    "vtol",
+    "nose_cone"
+  ],
+  "notes": "用於VTOL機頭和機尾的玻璃纖維整流罩，可大幅降低飛行阻力，提高巡航效率和續航時間。",
+  "status": "in_production",
+  "suggested_retail_price_usd": 55.0,
+  "suppliers": [
+    "AeroDesign Co."
+  ],
+  "mtbf_hours": 5000,
+  "after_sales_support": "提供安裝說明。",
+  "maintenance_cycle_recommendations": "檢查表面是否有裂紋或剝落。"
+}
+

@@ -1,0 +1,16 @@
+==================================================
+動態偵測到的可用元件類別
+==================================================
+
+- batteries
+- cameras
+- enclosures_covers
+- escs
+- flight_controller_firmware_software
+- frames_chassis
+- gnss_receivers
+- inertial_measurement_units
+- landing_gears
+- motors
+- propellers
+- wireless_communication_modules
