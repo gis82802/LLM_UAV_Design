@@ -7,6 +7,7 @@ from huggingface_hub import login
 import torch
 import gradio as gr
 
+
 # HuggingFace 登入
 login(token="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")
 
@@ -43,62 +44,43 @@ def llm_tool(prompt: str) -> str:
 def optimization_tool(result: str) -> str:
     return f"[優化] 已優化結果為：{result}"
 
-tools_map = {
-    "RAG 查詢": rag_tool,
-    "情境模擬": simulation_tool,
-    "格式化": formatter_tool,
-    "LLM 推理": llm_tool,
-    "結果優化": optimization_tool,
-    "直接用模型": None
-}
+# ==================== 自訂 Hoff Agent ====================
+class HoffAgent(Agent):
+    async def respond(self, prompt: str) -> str:
+        """改寫 Agent 直接用 HuggingFace 模型回應"""
+        inputs = tokenizer(prompt, return_tensors="pt").to(hf_model.device)
+        outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
+        return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-# ==================== 模型推論函式 ====================
-def run_hf_model(prompt: str):
+hoff_agent = HoffAgent(
+    name="Hoff",
+    instructions="你是個無人機專家，並且你現在是個流程管理者，請依據使用者的提問協調工具完成任務。",
+    tools=[rag_tool, simulation_tool, formatter_tool, llm_tool, optimization_tool],
+    model="custom_hf"
+)
+
+# ==================== 主程式 ====================
+async def main():
+    prompt = "我需要一台可以長途飛行且可運輸大型物資的無人機，請問需要的動力規格與結構為何?"
+    inputs = tokenizer(prompt, return_tensors="pt").to(hf_model.device)
+    outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
+    print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+# ==================== Gradio 介面 ====================
+def gradio_chat(prompt):
     inputs = tokenizer(prompt, return_tensors="pt").to(hf_model.device)
     outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-# ==================== Gradio 互動邏輯 ====================
-def process_input(user_input, selected_tool, format_type):
-    if not user_input.strip():
-        return "請輸入內容"
+iface = gr.Interface(
+    fn=gradio_chat,
+    inputs=gr.Textbox(lines=4, placeholder="輸入你的問題..."),
+    outputs="text",
+    title="Hoff 無人機專家",
+    description="輸入需求，Hoff 將根據模型回答。"
+)
 
-    # 如果選擇了工具，就用工具處理
-    if tools_map[selected_tool] is not None:
-        if selected_tool == "格式化":
-            return tools_map[selected_tool](user_input, format_type)
-        else:
-            return tools_map[selected_tool](user_input)
+if __name__ == "__main__":
+    iface.launch()
 
-    # 如果選擇 "直接用模型" → HuggingFace 推論
-    return run_hf_model(user_input)
-
-# ==================== Gradio 介面 ====================
-with gr.Blocks() as demo:
-    gr.Markdown("# 🤖 Hoff 無人機專家 - 多功能 AI 工具")
-    with gr.Row():
-        with gr.Column(scale=2):
-            user_input = gr.Textbox(lines=4, placeholder="輸入你的問題或內容...")
-            selected_tool = gr.Dropdown(
-                choices=list(tools_map.keys()),
-                value="直接用模型",
-                label="選擇工具"
-            )
-            format_type = gr.Dropdown(
-                choices=["markdown", "html", "plaintext"],
-                value="markdown",
-                label="格式化輸出類型（僅在格式化工具時使用）"
-            )
-            submit_btn = gr.Button("送出")
-        with gr.Column(scale=3):
-            output_box = gr.Textbox(label="輸出結果", lines=10)
-
-    submit_btn.click(
-        fn=process_input,
-        inputs=[user_input, selected_tool, format_type],
-        outputs=output_box
-    )
-
-demo.launch(share=True)
-
-
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
