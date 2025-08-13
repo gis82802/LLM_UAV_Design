@@ -7,10 +7,10 @@ from huggingface_hub import login
 import torch
 
 # HuggingFace 登入
-login(token="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")
+login(token="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")
 
 # 設定 OpenAI Tracing（非必要可移除）
-set_tracing_export_api_key('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')
+set_tracing_export_api_key('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')
 
 # ==================== HuggingFace 模型 ====================
 model_name = "taide/Llama-3.1-TAIDE-LX-8B-Chat"
@@ -64,5 +64,5 @@ async def main():
     outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
     print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
-
-asyncio.run(main())
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
