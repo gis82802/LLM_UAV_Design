@@ -7,7 +7,7 @@ from huggingface_hub import login
 import torch
 
 # HuggingFace 登入
-login(token="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")
+login(token="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")
 
 # 設定 OpenAI Tracing（非必要可移除）
 set_tracing_export_api_key('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')
@@ -66,3 +66,4 @@ async def main():
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
+
