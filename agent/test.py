@@ -9,7 +9,7 @@ import gradio as gr
 
 
 # HuggingFace 登入
-login(token="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")
+login(token="")
 
 # 設定 OpenAI Tracing（非必要可移除）
 set_tracing_export_api_key('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')
@@ -60,27 +60,45 @@ hoff_agent = HoffAgent(
 )
 
 # ==================== 主程式 ====================
-async def main():
-    prompt = "我需要一台可以長途飛行且可運輸大型物資的無人機，請問需要的動力規格與結構為何?"
-    inputs = tokenizer(prompt, return_tensors="pt").to(hf_model.device)
-    outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
-    print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+#async def main():
+#    prompt = "我需要一台可以長途飛行且可運輸大型物資的無人機，請問需要的動力規格與結構為何?"
+#    inputs = tokenizer(prompt, return_tensors="pt").to(hf_model.device)
+#    outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
+#    print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 # ==================== Gradio 介面 ====================
-def gradio_chat(prompt):
-    inputs = tokenizer(prompt, return_tensors="pt").to(hf_model.device)
+def gradio_chat(message, history):
+    history = history or []
+    # 用你的模型生成回覆
+    inputs = tokenizer(message, return_tensors="pt").to(hf_model.device)
     outputs = hf_model.generate(**inputs, max_new_tokens=500, temperature=0.7, top_p=0.9)
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+    reply = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # 把對話存進 history
+    history.append((message, reply))
+    return history, history
 
-iface = gr.Interface(
-    fn=gradio_chat,
-    inputs=gr.Textbox(lines=4, placeholder="輸入你的問題..."),
-    outputs="text",
-    title="Hoff 無人機專家",
-    description="輸入需求，Hoff 將根據模型回答。"
-)
+with gr.Blocks() as demo:
+    gr.Markdown("## 無人機專家")
+    chatbot = gr.Chatbot(height=500)
+    with gr.Row():
+        msg = gr.Textbox(
+            show_label=False,
+            placeholder="輸入你的問題...",
+            lines=2
+        )
+        send = gr.Button("送出")
 
+    send.click(
+        gradio_chat,
+        inputs=[msg, chatbot],
+        outputs=[chatbot, chatbot]
+    )
+    msg.submit(
+        gradio_chat,
+        inputs=[msg, chatbot],
+        outputs=[chatbot, chatbot]
+    )
 if __name__ == "__main__":
-    iface.launch()
+    demo.launch(share=True)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+#loop = asyncio.get_event_loop()
+#loop.run_until_complete(main())
