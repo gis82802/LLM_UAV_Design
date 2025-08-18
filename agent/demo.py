@@ -1,26 +1,30 @@
 import gradio as gr
 
 def chat_fn(message, history):
-    # 之後這邊換成你的 LLM
-    responses = [
-        f"輸出 1: {message}",
-        f"輸出 2: {message.upper()}",
-        f"輸出 3: {message[::-1]}"
-    ]
-    return [(message, r) for r in responses]
+    # 之後這邊換成你的 LLM (可以各自不同 prompt)
+    return (
+        f"Bot1 收到: {message}",
+        f"Bot2 收到: {message.upper()}",
+        f"Bot3 收到: {message[::-1]}"
+    )
 
 with gr.Blocks() as demo:
-    chatbot = gr.Chatbot()
     with gr.Row():
-        msg = gr.Textbox(label="輸入訊息", placeholder="請輸入文字", lines=1)
-        send = gr.Button("送出")
+        chatbot1 = gr.Chatbot(label="對話框 1")
+        chatbot2 = gr.Chatbot(label="對話框 2")
+        chatbot3 = gr.Chatbot(label="對話框 3")
 
-    def respond(message, chat_history):
-        responses = chat_fn(message, chat_history)
-        for user, bot in responses:
-            chat_history.append((user, bot))
-        return "", chat_history
+    msg = gr.Textbox(label="輸入訊息", placeholder="輸入文字，按送出", lines=1)
+    send = gr.Button("送出")
 
-    send.click(respond, [msg, chatbot], [msg, chatbot])  # 綁定送出按鈕
+    def respond(message, history1, history2, history3):
+        r1, r2, r3 = chat_fn(message, None)
+        history1.append((message, r1))
+        history2.append((message, r2))
+        history3.append((message, r3))
+        return "", history1, history2, history3
+
+    send.click(respond, [msg, chatbot1, chatbot2, chatbot3],
+                        [msg, chatbot1, chatbot2, chatbot3])
 
 demo.launch()
