@@ -1,23 +1,26 @@
 import gradio as gr
 
-# 先用假的 function 佔位，之後換成你的 LLM
 def chat_fn(message, history):
-    # 這邊先回傳三個不同的輸出文字
+    # 三個不同輸出 (這裡先假裝，之後換成你的 LLM)
     responses = [
         f"輸出 1: {message}",
         f"輸出 2: {message.upper()}",
         f"輸出 3: {message[::-1]}"
     ]
 
-    # 把三個輸出組成一個 block
-    combined_response = "\n---\n".join(responses)
-    return combined_response
+    # 回傳三個獨立訊息
+    return [(message, r) for r in responses]
 
-# 建立 ChatInterface
-demo = gr.ChatInterface(
-    fn=chat_fn,
-    title="LLM 多輸出對話 Demo",
-    description="輸入一句話，會得到三個輸出結果 (目前是 placeholder)"
-)
+with gr.Blocks() as demo:
+    chatbot = gr.Chatbot()
+    msg = gr.Textbox(label="輸入訊息")
+
+    def respond(message, chat_history):
+        responses = chat_fn(message, chat_history)
+        for user, bot in responses:
+            chat_history.append((user, bot))
+        return "", chat_history
+
+    msg.submit(respond, [msg, chatbot], [msg, chatbot])
 
 demo.launch()
