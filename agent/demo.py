@@ -1,7 +1,7 @@
 import gradio as gr
 
 def chat_fn(message, history):
-    # 三個不同輸出 (這裡先假裝，之後換成你的 LLM)
+    # 這裡之後換成你的 LLM 輸出
     responses = [
         f"輸出 1: {message}",
         f"輸出 2: {message.upper()}",
@@ -13,7 +13,7 @@ def chat_fn(message, history):
 
 with gr.Blocks() as demo:
     chatbot = gr.Chatbot()
-    msg = gr.Textbox(label="輸入訊息")
+    msg = gr.Textbox(label="輸入訊息", placeholder="輸入後按 Enter", lines=1)
 
     def respond(message, chat_history):
         responses = chat_fn(message, chat_history)
@@ -21,6 +21,6 @@ with gr.Blocks() as demo:
             chat_history.append((user, bot))
         return "", chat_history
 
-    msg.submit(respond, [msg, chatbot], [msg, chatbot])
+    msg.submit(respond, [msg, chatbot], [msg, chatbot])  # 綁定 Enter 送出
 
 demo.launch()
