@@ -1,0 +1,36 @@
+# --- Web 框架與伺服器 ---
+fastapi
+uvicorn[standard]
+gradio
+
+# --- 核心邏輯與 HTTP 請求 ---
+requests
+python-dotenv
+
+# --- LangChain 核心與元件 ---
+# 核心框架
+langchain
+langchain-core
+# 社群整合，例如 HuggingFaceEmbeddings
+langchain-community
+# Ollama 整合
+langchain-ollama
+# OpenAI 相容 API 整合
+langchain-openai
+# ChromaDB 向量資料庫整合
+langchain-chroma
+
+# --- LLM & 機器學習相關套件 ---
+# Ollama Python 客戶端 (langchain-ollama 的依賴)
+ollama
+# 用於 Embedding 和 Cross-Encoder 的句子轉換器模型
+sentence-transformers
+# PyTorch 深度學習框架 (sentence-transformers 的依賴)
+torch
+
+# --- 追蹤與監控 ---
+# LangSmith 用於追蹤 LLM 應用程式
+langsmith
+
+# --- 資料驗證 (FastAPI 和 Pydantic 模型使用) ---
+pydantic
