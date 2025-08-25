@@ -1,0 +1,1512 @@
+{
+  "drone_propulsion_and_energy_modules": {
+    "motors": [
+      {
+        "component_id": "motor-mr-2207-2400",
+        "model_name": "Raptor MR-2207",
+        "type": "brushless_dc_motor",
+        "application_type": "racing_drone",
+        "kv_value": 2400,
+        "max_current_a": 45,
+        "rated_power_w": 650,
+        "max_power_w": 720,
+        "rated_torque_mnm": 250,
+        "voltage_range_v": [
+          11.1,
+          16.8
+        ],
+        "no_load_current_a": 1.2,
+        "internal_resistance_mohm": 56,
+        "pole_count": 14,
+        "shaft_diameter_mm": 5,
+        "mounting_hole_pattern_mm": "16x16",
+        "weight_g": 32,
+        "dimensions_mm": [
+          27.5,
+          27.5,
+          18.4
+        ],
+        "recommended_propeller_size_inch": "5-6",
+        "recommended_esc_ids": [
+          "esc-s-45a-bl32",
+          "esc-q-50a-bl32"
+        ],
+        "manufacturer": "FPVTech",
+        "datasheet_url": "https://www.fpvtech.com/datasheets/motor-mr-2207-2400.pdf",
+        "performance_curves_url": "https://www.fpvtech.com/perfdata/motor-mr-2207-2400.png",
+        "features": [
+          "high_efficiency",
+          "low_vibration"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            60
+          ],
+          "humidity_percent": [
+            20,
+            90
+          ],
+          "wind_force_mps": [
+            0,
+            15
+          ],
+          "altitude_m": [
+            0,
+            4000
+          ],
+          "pollution": [
+            "dust"
+          ],
+          "emi_environment": "high_interference",
+          "vibration": "high_resistance",
+          "noise": "standard_noise"
+        },
+        "performance_calculation_notes": "馬達效率 (η) 的計算公式為：η = (P_out / P_in) * 100%，其中輸出功率 P_out = τ * ω (扭矩 * 角速度)，輸入功率 P_in = V * I (電壓 * 電流)。最大推力與螺旋槳和電壓相關。",
+        "efficiency_curve_formula_reference": "效率曲線通常呈現為拋物線，在特定負載下達到峰值。η(I) = ( (V - I * R) * (I - I_0) ) / (V * I)，其中 R 為內阻，I_0 為空載電流。",
+        "keywords": [
+          "racing_drone",
+          "2207_motor",
+          "high_kv",
+          "fpv"
+        ],
+        "notes": "此型號專為5吋競速無人機設計，反應速度極快。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 21.99,
+        "suppliers": [
+          "FPVExpress",
+          "DroneHobby"
+        ],
+        "mtbf_hours": 1500,
+        "after_sales_support": "提供1年原廠保固，線上技術支援。",
+        "maintenance_cycle_recommendations": "每飛行50小時後檢查軸承狀況，並清理馬達內部灰塵。"
+      },
+      {
+        "component_id": "motor-mr-3510-700",
+        "model_name": "SkyLift SL-3510",
+        "type": "brushless_dc_motor",
+        "application_type": "multi_rotor",
+        "kv_value": 700,
+        "max_current_a": 30,
+        "rated_power_w": 450,
+        "max_power_w": 550,
+        "rated_torque_mnm": 600,
+        "voltage_range_v": [
+          14.8,
+          25.2
+        ],
+        "no_load_current_a": 0.8,
+        "internal_resistance_mohm": 110,
+        "pole_count": 14,
+        "shaft_diameter_mm": 4,
+        "mounting_hole_pattern_mm": "19x25",
+        "weight_g": 85,
+        "dimensions_mm": [
+          42.5,
+          42.5,
+          28
+        ],
+        "recommended_propeller_size_inch": "12-14",
+        "recommended_esc_ids": [
+          "esc-s-40a-bls",
+          "esc-q-40a-pro"
+        ],
+        "manufacturer": "AeroDynamics",
+        "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/sl-3510.pdf",
+        "performance_curves_url": "https://www.aerodynamics-corp.com/perfdata/sl-3510.png",
+        "features": [
+          "high_efficiency",
+          "long_lifespan",
+          "built_in_fan"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -20,
+            50
+          ],
+          "humidity_percent": [
+            10,
+            95
+          ],
+          "wind_force_mps": [
+            0,
+            12
+          ],
+          "altitude_m": [
+            0,
+            5000
+          ],
+          "pollution": [
+            "dust",
+            "salt_spray"
+          ],
+          "emi_environment": "moderate_interference",
+          "vibration": "moderate_resistance",
+          "noise": "low_noise"
+        },
+        "performance_calculation_notes": "馬達轉速 (RPM) 計算公式：RPM = Kv * V。實際轉速會因負載而略低。扭矩常數 $K_t \\approx \\frac{60}{2\\pi \\times Kv}$。",
+        "efficiency_curve_formula_reference": "效率主要受銅損 ($I^2R$) 和鐵損 (與轉速和磁通量相關) 影響。",
+        "keywords": [
+          "aerial_photography",
+          "multi_rotor",
+          "low_kv",
+          "payload"
+        ],
+        "notes": "適用於中型多旋翼無人機，提供穩定的懸停動力。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 39.50,
+        "suppliers": [
+          "AeroDynamics Official",
+          "ProDroneParts"
+        ],
+        "mtbf_hours": 5000,
+        "after_sales_support": "提供2年原廠保固，及付費維修服務。",
+        "maintenance_cycle_recommendations": "每飛行100小時檢查軸承並根據需要添加潤滑油。"
+      },
+      {
+        "component_id": "motor-fw-4250-800",
+        "model_name": "FixedWing Pro FWP-4250",
+        "type": "brushless_dc_motor",
+        "application_type": "fixed_wing",
+        "kv_value": 800,
+        "max_current_a": 60,
+        "rated_power_w": 900,
+        "max_power_w": 1250,
+        "rated_torque_mnm": 1100,
+        "voltage_range_v": [
+          11.1,
+          22.2
+        ],
+        "no_load_current_a": 2.5,
+        "internal_resistance_mohm": 25,
+        "pole_count": 14,
+        "shaft_diameter_mm": 5,
+        "mounting_hole_pattern_mm": "25x25",
+        "weight_g": 155,
+        "dimensions_mm": [
+          42,
+          42,
+          50
+        ],
+        "recommended_propeller_size_inch": "10-12",
+        "recommended_esc_ids": [
+          "esc-s-80a-fw"
+        ],
+        "manufacturer": "PlanePower",
+        "datasheet_url": "https://www.planepower.com/datasheets/fwp-4250.pdf",
+        "performance_curves_url": "https://www.planepower.com/perfdata/fwp-4250.png",
+        "features": [
+          "high_efficiency",
+          "long_lifespan"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -15,
+            55
+          ],
+          "humidity_percent": [
+            20,
+            90
+          ],
+          "wind_force_mps": [
+            0,
+            20
+          ],
+          "altitude_m": [
+            0,
+            6000
+          ],
+          "pollution": [
+            "dust"
+          ],
+          "emi_environment": "low_interference",
+          "vibration": "moderate_resistance",
+          "noise": "standard_noise"
+        },
+        "performance_calculation_notes": "功率消耗 $P = V \\times I$。對於固定翼，推力需求隨飛行速度變化，需匹配合適的螺旋槳以在巡航速度下達到最佳效率。",
+        "efficiency_curve_formula_reference": "可參考製造商提供的推力-電流-轉速對照表進行精確計算。",
+        "keywords": [
+          "fixed_wing",
+          "pusher_motor",
+          "tractor_motor",
+          "uav"
+        ],
+        "notes": "高扭矩輸出，適用於中大型固定翼無人機的牽引式或推進式佈局。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 55.00,
+        "suppliers": [
+          "PlanePower Direct",
+          "UAVSystemsIntl"
+        ],
+        "mtbf_hours": 4000,
+        "after_sales_support": "提供18個月原廠保固。",
+        "maintenance_cycle_recommendations": "每次飛行前檢查螺絲緊固情況，每100小時檢查軸承磨損。"
+      },
+      {
+        "component_id": "motor-df-70mm-12b",
+        "model_name": "JetStream DF70",
+        "type": "ducted_fan",
+        "application_type": "multi_rotor",
+        "kv_value": 2100,
+        "max_current_a": 85,
+        "rated_power_w": 1800,
+        "max_power_w": 2000,
+        "rated_torque_mnm": 850,
+        "voltage_range_v": [
+          22.2,
+          25.2
+        ],
+        "no_load_current_a": 3.5,
+        "internal_resistance_mohm": 19,
+        "pole_count": 12,
+        "shaft_diameter_mm": 5,
+        "mounting_hole_pattern_mm": "N/A (Integrated)",
+        "weight_g": 350,
+        "dimensions_mm": [
+          90,
+          90,
+          115
+        ],
+        "recommended_propeller_size_inch": "N/A (Integrated 70mm fan)",
+        "recommended_esc_ids": [
+          "esc-s-100a-pro"
+        ],
+        "manufacturer": "EDF Systems",
+        "datasheet_url": "https://www.edfsystems.com/datasheets/df70.pdf",
+        "performance_curves_url": "https://www.edfsystems.com/perfdata/df70.png",
+        "features": [
+          "high_efficiency",
+          "low_vibration",
+          "built_in_fan"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            45
+          ],
+          "humidity_percent": [
+            20,
+            85
+          ],
+          "wind_force_mps": [
+            0,
+            10
+          ],
+          "altitude_m": [
+            0,
+            3000
+          ],
+          "pollution": [],
+          "emi_environment": "moderate_interference",
+          "vibration": "low_resistance",
+          "noise": "high_frequency_noise"
+        },
+        "performance_calculation_notes": "涵道風扇的靜推力 (Static Thrust) 通常由製造商直接標定 (單位g或N)。推力會隨進氣速度增加而略微下降。",
+        "efficiency_curve_formula_reference": "效率 (g/W) 是評估涵道風扇性能的關鍵指標，g/W = Thrust (g) / Power (W)。",
+        "keywords": [
+          "ducted_fan",
+          "edf",
+          "vtol",
+          "jet_model"
+        ],
+        "notes": "整合式設計，適用於需要高流速氣流的特殊應用，如VTOL或模型噴氣機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 129.00,
+        "suppliers": [
+          "EDF Systems",
+          "HobbyKing"
+        ],
+        "mtbf_hours": 2000,
+        "after_sales_support": "提供1年保固，動平衡校準服務。",
+        "maintenance_cycle_recommendations": "每20小時檢查扇葉是否有損傷或變形。"
+      },
+      {
+        "component_id": "motor-mr-u15-100",
+        "model_name": "U-Power U15",
+        "type": "brushless_dc_motor",
+        "application_type": "multi_rotor",
+        "kv_value": 100,
+        "max_current_a": 150,
+        "rated_power_w": 6000,
+        "max_power_w": 8000,
+        "rated_torque_mnm": 5500,
+        "voltage_range_v": [
+          44.4,
+          50.4
+        ],
+        "no_load_current_a": 4.0,
+        "internal_resistance_mohm": 22,
+        "pole_count": 24,
+        "shaft_diameter_mm": 15,
+        "mounting_hole_pattern_mm": "40x40",
+        "weight_g": 1600,
+        "dimensions_mm": [
+          155,
+          155,
+          65
+        ],
+        "recommended_propeller_size_inch": "30-34",
+        "recommended_esc_ids": [
+          "esc-s-150a-pro"
+        ],
+        "manufacturer": "T-Motor",
+        "datasheet_url": "https://store.tmotor.com/datasheets/U15_100KV.pdf",
+        "performance_curves_url": "https://store.tmotor.com/perfdata/U15_100KV.png",
+        "features": [
+          "high_efficiency",
+          "long_lifespan",
+          "built_in_fan",
+          "low_vibration"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -25,
+            60
+          ],
+          "humidity_percent": [
+            5,
+            95
+          ],
+          "wind_force_mps": [
+            0,
+            18
+          ],
+          "altitude_m": [
+            0,
+            5000
+          ],
+          "pollution": [
+            "dust",
+            "salt_spray"
+          ],
+          "emi_environment": "low_interference",
+          "vibration": "high_resistance",
+          "noise": "low_noise"
+        },
+        "performance_calculation_notes": "適用於重載無人機。推力可達 25kg 以上 (搭配特定螺旋槳與電壓)。效率是首要考量，以最大化飛行時間。",
+        "efficiency_curve_formula_reference": "η_max > 90% in optimal working range.",
+        "keywords": [
+          "heavy_lift",
+          "agriculture_drone",
+          "industrial_uav",
+          "t-motor"
+        ],
+        "notes": "工業級馬達，專為農業植保、物流運輸等重載應用設計，具備高可靠性。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 699.00,
+        "suppliers": [
+          "T-Motor Official Store",
+          "Industrial Drone Solutions"
+        ],
+        "mtbf_hours": 10000,
+        "after_sales_support": "提供3年保固及全球維修網絡。",
+        "maintenance_cycle_recommendations": "每200小時進行專業保養，包括軸承更換與線圈絕緣測試。"
+      }
+    ],
+    "propellers": [
+      {
+        "component_id": "prop-mr-cf-1345",
+        "model_name": "AeroForce CF1345",
+        "type": "multi_rotor_propeller",
+        "application_type": "multi_rotor",
+        "blade_count": 2,
+        "diameter_inch": 13,
+        "pitch_inch": 4.5,
+        "material": "carbon_fiber",
+        "weight_g": 18,
+        "bore_diameter_mm": 4,
+        "max_rpm": 8000,
+        "thrust_efficiency_data": [
+          {
+            "rpm": 3000,
+            "thrust_g": 650,
+            "power_w": 55,
+            "efficiency_g_per_w": 11.8
+          },
+          {
+            "rpm": 4500,
+            "thrust_g": 1200,
+            "power_w": 130,
+            "efficiency_g_per_w": 9.2
+          },
+          {
+            "rpm": 6000,
+            "thrust_g": 2100,
+            "power_w": 280,
+            "efficiency_g_per_w": 7.5
+          }
+        ],
+        "recommended_motor_type": "low_kv_motor",
+        "manufacturer": "AeroDynamics",
+        "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/prop-cf1345.pdf",
+        "features": [
+          "high_strength",
+          "lightweight",
+          "high_efficiency"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -40,
+            80
+          ],
+          "humidity_percent": [
+            0,
+            100
+          ],
+          "wind_force_mps": [
+            0,
+            15
+          ],
+          "noise": "standard_noise"
+        },
+        "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。其中 $C_T$ 是推力係數，$\\rho$ 是空氣密度，n 是轉速 (RPS)，D 是直徑 (m)。",
+        "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。其中 $C_P$ 是功率係數。",
+        "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。實際速度會因槳葉滑流而較低。",
+        "airfoil_profile": "NACA 4412 modified",
+        "hub_type_interface": "Direct Mount (2-hole)",
+        "balancing_precision": "Dynamic balance G2.5",
+        "keywords": [
+          "carbon_fiber_prop",
+          "13_inch",
+          "multi_rotor"
+        ],
+        "notes": "高剛性碳纖維材質可減少槳葉變形，提升高速運轉時的效率。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 25.00,
+        "suppliers": [
+          "AeroDynamics Official",
+          "ProDroneParts"
+        ],
+        "mtbf_hours": 2000,
+        "after_sales_support": "提供裂紋檢測諮詢。",
+        "maintenance_cycle_recommendations": "每次飛行後目視檢查是否有裂紋或損傷。"
+      },
+      {
+        "component_id": "prop-race-5145-3b",
+        "model_name": "Cyclone 5145 V3",
+        "type": "multi_rotor_propeller",
+        "application_type": "racing_drone",
+        "blade_count": 3,
+        "diameter_inch": 5.1,
+        "pitch_inch": 4.5,
+        "material": "polycarbonate",
+        "weight_g": 4.2,
+        "bore_diameter_mm": 5,
+        "max_rpm": 25000,
+        "thrust_efficiency_data": [
+          {
+            "rpm": 10000,
+            "thrust_g": 700,
+            "power_w": 150,
+            "efficiency_g_per_w": 4.7
+          },
+          {
+            "rpm": 15000,
+            "thrust_g": 1350,
+            "power_w": 320,
+            "efficiency_g_per_w": 4.2
+          },
+          {
+            "rpm": 20000,
+            "thrust_g": 1800,
+            "power_w": 550,
+            "efficiency_g_per_w": 3.3
+          }
+        ],
+        "recommended_motor_type": "high_kv_motor",
+        "manufacturer": "FPVTech",
+        "datasheet_url": "https://www.fpvtech.com/datasheets/prop-cy5145v3.pdf",
+        "features": [
+          "high_strength",
+          "lightweight"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            50
+          ],
+          "humidity_percent": [
+            10,
+            90
+          ],
+          "wind_force_mps": [
+            0,
+            15
+          ],
+          "noise": "standard_noise"
+        },
+        "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。三葉槳的 $C_T$ 通常高於同尺寸雙葉槳。",
+        "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。葉片增加會導致功率消耗顯著上升。",
+        "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。",
+        "airfoil_profile": "Custom high-speed profile",
+        "hub_type_interface": "Standard 5mm bore",
+        "balancing_precision": "Factory balanced",
+        "keywords": [
+          "5_inch_prop",
+          "tri_blade",
+          "racing",
+          "freestyle"
+        ],
+        "notes": "高韌性 PC 材質，耐炸，適合競速與花飛練習。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 3.99,
+        "suppliers": [
+          "FPVExpress",
+          "DroneHobby"
+        ],
+        "mtbf_hours": 100,
+        "after_sales_support": "不提供保固，消耗品。",
+        "maintenance_cycle_recommendations": "每次嚴重撞擊後建議更換。"
+      },
+      {
+        "component_id": "prop-mr-fold-3090",
+        "model_name": "AgriFold 3090",
+        "type": "foldable_propeller",
+        "application_type": "multi_rotor",
+        "blade_count": 2,
+        "diameter_inch": 30,
+        "pitch_inch": 9.0,
+        "material": "carbon_fiber_composite",
+        "weight_g": 150,
+        "bore_diameter_mm": 10,
+        "max_rpm": 4000,
+        "thrust_efficiency_data": [
+          {
+            "rpm": 1500,
+            "thrust_g": 5500,
+            "power_w": 800,
+            "efficiency_g_per_w": 6.9
+          },
+          {
+            "rpm": 2500,
+            "thrust_g": 12000,
+            "power_w": 2100,
+            "efficiency_g_per_w": 5.7
+          },
+          {
+            "rpm": 3500,
+            "thrust_g": 22000,
+            "power_w": 4500,
+            "efficiency_g_per_w": 4.9
+          }
+        ],
+        "recommended_motor_type": "low_kv_motor",
+        "manufacturer": "T-Motor",
+        "datasheet_url": "https://store.tmotor.com/datasheets/prop-af3090.pdf",
+        "features": [
+          "high_strength",
+          "high_efficiency",
+          "foldable"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -20,
+            60
+          ],
+          "humidity_percent": [
+            5,
+            95
+          ],
+          "wind_force_mps": [
+            0,
+            18
+          ],
+          "noise": "low_noise"
+        },
+        "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。",
+        "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。",
+        "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。",
+        "airfoil_profile": "High-lift airfoil",
+        "hub_type_interface": "Foldable adapter mount (M3 screws)",
+        "balancing_precision": "Dynamic balance G1.0",
+        "keywords": [
+          "agriculture_drone",
+          "heavy_lift",
+          "foldable_prop"
+        ],
+        "notes": "專為農業植保無人機設計，可折疊設計便於運輸和儲存。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 150.00,
+        "suppliers": [
+          "T-Motor Official Store",
+          "Industrial Drone Solutions"
+        ],
+        "mtbf_hours": 1500,
+        "after_sales_support": "提供槳葉動平衡檢測服務。",
+        "maintenance_cycle_recommendations": "每100飛行小時檢查折疊結構的緊固度和磨損情況。"
+      },
+      {
+        "component_id": "prop-fw-apc-1047",
+        "model_name": "APC 10x4.7 Slow Flyer",
+        "type": "fixed_wing_propeller",
+        "application_type": "fixed_wing",
+        "blade_count": 2,
+        "diameter_inch": 10,
+        "pitch_inch": 4.7,
+        "material": "composite",
+        "weight_g": 15,
+        "bore_diameter_mm": 6,
+        "max_rpm": 12000,
+        "thrust_efficiency_data": [
+          {
+            "rpm": 5000,
+            "thrust_g": 800,
+            "power_w": 90,
+            "efficiency_g_per_w": 8.9
+          },
+          {
+            "rpm": 7000,
+            "thrust_g": 1400,
+            "power_w": 180,
+            "efficiency_g_per_w": 7.8
+          },
+          {
+            "rpm": 9000,
+            "thrust_g": 2200,
+            "power_w": 350,
+            "efficiency_g_per_w": 6.3
+          }
+        ],
+        "recommended_motor_type": "low_kv_motor",
+        "manufacturer": "APC Propellers",
+        "datasheet_url": "https://www.apcprop.com/datasheets/10x4.7SF.pdf",
+        "features": [
+          "high_efficiency",
+          "lightweight"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -15,
+            50
+          ],
+          "humidity_percent": [
+            10,
+            90
+          ],
+          "wind_force_mps": [
+            0,
+            12
+          ],
+          "noise": "standard_noise"
+        },
+        "thrust_calculation_notes": "在有前進速度時，有效推力 $T_{eff} = T_{static} - k \\cdot v$, v為前進速度。",
+        "power_calculation_notes": "功率與飛行速度和攻角相關。",
+        "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。此槳型滑流較大，實際速度約為理論值的60-70%。",
+        "airfoil_profile": "Clark Y",
+        "hub_type_interface": "Stepped bore with adapter rings",
+        "balancing_precision": "Standard factory balance",
+        "keywords": [
+          "fixed_wing",
+          "slow_flyer",
+          "park_flyer",
+          "apc"
+        ],
+        "notes": "經典的慢速飛行槳，適用於訓練機和輕型固定翼航拍機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 4.50,
+        "suppliers": [
+          "APC Propellers US",
+          "Tower Hobbies"
+        ],
+        "mtbf_hours": 500,
+        "after_sales_support": "不提供保固，消耗品。",
+        "maintenance_cycle_recommendations": "著陸不慎或槳葉觸地後應立即檢查更換。"
+      },
+      {
+        "component_id": "prop-ln-9450",
+        "model_name": "Phantom Quiet 9450S",
+        "type": "low_noise_propeller",
+        "application_type": "multi_rotor",
+        "blade_count": 2,
+        "diameter_inch": 9.4,
+        "pitch_inch": 5.0,
+        "material": "plastic",
+        "weight_g": 13,
+        "bore_diameter_mm": 8,
+        "max_rpm": 9000,
+        "thrust_efficiency_data": [
+          {
+            "rpm": 4000,
+            "thrust_g": 600,
+            "power_w": 65,
+            "efficiency_g_per_w": 9.2
+          },
+          {
+            "rpm": 6000,
+            "thrust_g": 1100,
+            "power_w": 150,
+            "efficiency_g_per_w": 7.3
+          }
+        ],
+        "recommended_motor_type": "low_kv_motor",
+        "manufacturer": "DJI",
+        "datasheet_url": "https://www.dji.com/phantom-4-pro/info#specs",
+        "features": [
+          "low_noise",
+          "high_efficiency",
+          "self_locking_propeller"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            50
+          ],
+          "humidity_percent": [
+            10,
+            90
+          ],
+          "wind_force_mps": [
+            0,
+            10
+          ],
+          "noise": "low_noise"
+        },
+        "thrust_calculation_notes": "推力公式：$T = C_T \\cdot \\rho \\cdot n^2 \\cdot D^4$。",
+        "power_calculation_notes": "功率公式：$P = C_P \\cdot \\rho \\cdot n^3 \\cdot D^5$。",
+        "theoretical_pitch_speed_calculation": "理論前進速度 (m/s) = Pitch (inch) * 0.0254 * RPM / 60。",
+        "airfoil_profile": "Custom aerodynamic profile for noise reduction",
+        "hub_type_interface": "DJI Self-locking (Z-bend)",
+        "balancing_precision": "Dynamic balance G2.5",
+        "keywords": [
+          "dji",
+          "phantom",
+          "low_noise",
+          "quick_release"
+        ],
+        "notes": "採用優化的氣動設計，能顯著降低飛行噪音，適合在對噪音敏感的環境下作業。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 15.00,
+        "suppliers": [
+          "DJI Store",
+          "Authorized DJI Dealers"
+        ],
+        "mtbf_hours": 800,
+        "after_sales_support": "提供原廠保固，非人為損壞可換新。",
+        "maintenance_cycle_recommendations": "每次飛行後目視檢查，若有磨損或變形應立即更換。"
+      }
+    ],
+    "escs": [
+      {
+        "component_id": "esc-s-45a-bl32",
+        "model_name": "Raptor SLIM 45A",
+        "type": "single_esc",
+        "application_type": "racing_drone",
+        "rated_current_a": 45,
+        "burst_current_a": 55,
+        "input_voltage_v": [
+          11.1,
+          25.2
+        ],
+        "bec_output": "none",
+        "firmware_protocol": "BLHeli_32",
+        "pwm_frequency_khz": 96,
+        "refresh_rate_hz": 1200,
+        "weight_g": 7,
+        "dimensions_mm": [
+          35,
+          11,
+          7
+        ],
+        "processor": "STM32G071",
+        "features": [
+          "active_braking",
+          "telemetry",
+          "current_sensing",
+          "thermal_protection"
+        ],
+        "protection_mechanisms": [
+          "over_temperature",
+          "over_current",
+          "startup_protection"
+        ],
+        "data_logging_capability": "Yes, with compatible flight controller",
+        "firmware_upgradability": "Yes, via BLHeliSuite32",
+        "manufacturer": "FPVTech",
+        "datasheet_url": "https://www.fpvtech.com/datasheets/esc-raptor45.pdf",
+        "latest_firmware_software_url": "https://github.com/bitdump/BLHeli",
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            85
+          ],
+          "humidity_percent": [
+            20,
+            90
+          ],
+          "emi_environment": "high_interference",
+          "ip_rating": "IP40"
+        },
+        "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。其中 $I_{rms}$ 是均方根電流，$R_{ds(on)}$ 是MOSFET的導通電阻。在高頻率下，開關損耗也需考慮。",
+        "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。傳導損耗 $P_{conduction} = I^2 \\times R_{ds(on)} \\times D$ (D為占空比)。開關損耗與PWM頻率、電壓和電流上升/下降時間相關。",
+        "keywords": [
+          "blheli_32",
+          "esc",
+          "racing_drone",
+          "telemetry"
+        ],
+        "notes": "32位元處理器提供更快的響應和更平滑的馬達控制，帶有遙測功能，可將電流、溫度等數據回傳飛控。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 18.50,
+        "suppliers": [
+          "FPVExpress",
+          "DroneHobby"
+        ],
+        "mtbf_hours": 2000,
+        "after_sales_support": "提供1年保固，韌體更新支援。",
+        "maintenance_cycle_recommendations": "保持散熱良好，避免泥沙覆蓋。"
+      },
+      {
+        "component_id": "esc-q-50a-bl32",
+        "model_name": "Matrix 4-in-1 50A",
+        "type": "quad_esc",
+        "application_type": "racing_drone",
+        "rated_current_a": 50,
+        "burst_current_a": 65,
+        "input_voltage_v": [
+          11.1,
+          25.2
+        ],
+        "bec_output": "5V/3A",
+        "firmware_protocol": "BLHeli_32",
+        "pwm_frequency_khz": 96,
+        "refresh_rate_hz": 1200,
+        "weight_g": 16,
+        "dimensions_mm": [
+          36,
+          36,
+          8
+        ],
+        "processor": "STM32F051 (x4)",
+        "features": [
+          "active_braking",
+          "telemetry",
+          "current_sensing",
+          "thermal_protection",
+          "integrated_design"
+        ],
+        "protection_mechanisms": [
+          "over_temperature",
+          "over_current",
+          "startup_protection"
+        ],
+        "data_logging_capability": "Yes",
+        "firmware_upgradability": "Yes",
+        "manufacturer": "FPVTech",
+        "datasheet_url": "https://www.fpvtech.com/datasheets/esc-matrix50.pdf",
+        "latest_firmware_software_url": "https://github.com/bitdump/BLHeli",
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            80
+          ],
+          "humidity_percent": [
+            20,
+            90
+          ],
+          "emi_environment": "high_interference",
+          "ip_rating": "IP40"
+        },
+        "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx 4 \\times (I_{rms}^2 \\times R_{ds(on)})$。四合一設計散熱更集中，需確保機架內有足夠通風。",
+        "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。",
+        "keywords": [
+          "4_in_1_esc",
+          "blheli_32",
+          "fpv",
+          "integrated"
+        ],
+        "notes": "高度整合的四合一電調，簡化了穿越機的組裝流程，並包含一個5V BEC為飛控等設備供電。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 59.99,
+        "suppliers": [
+          "FPVExpress",
+          "DroneHobby"
+        ],
+        "mtbf_hours": 1800,
+        "after_sales_support": "提供1年保固。",
+        "maintenance_cycle_recommendations": "定期檢查焊點是否牢固，散熱片是否潔淨。"
+      },
+      {
+        "component_id": "esc-s-80a-fw",
+        "model_name": "HobbyWing FlyFun V5 80A",
+        "type": "single_esc",
+        "application_type": "fixed_wing",
+        "rated_current_a": 80,
+        "burst_current_a": 100,
+        "input_voltage_v": [
+          11.1,
+          25.2
+        ],
+        "bec_output": "5.2V/6V/7.4V @ 8A",
+        "firmware_protocol": "HobbyWing Protocol",
+        "pwm_frequency_khz": 32,
+        "refresh_rate_hz": 500,
+        "weight_g": 92,
+        "dimensions_mm": [
+          69.8,
+          34.6,
+          19.2
+        ],
+        "processor": "High-performance 32-bit ARM",
+        "features": [
+          "active_braking",
+          "thermal_protection",
+          "data_logging"
+        ],
+        "protection_mechanisms": [
+          "over_temperature",
+          "over_current",
+          "startup_protection",
+          "stall_protection"
+        ],
+        "data_logging_capability": "Yes, records max temperature, max current, etc.",
+        "firmware_upgradability": "Yes, via HobbyWing programming box",
+        "manufacturer": "HobbyWing",
+        "datasheet_url": "https://www.hobbywing.com/datasheets/FlyFun_V5_80A.pdf",
+        "latest_firmware_software_url": "https://www.hobbywing.com/pages/download",
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -20,
+            65
+          ],
+          "humidity_percent": [
+            10,
+            95
+          ],
+          "emi_environment": "low_interference",
+          "ip_rating": "IP20"
+        },
+        "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。大型散熱片設計有助於在持續大電流下散熱。",
+        "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。固定翼應用中，通常工作在部分油門，損耗相對穩定。",
+        "keywords": [
+          "hobbywing",
+          "fixed_wing_esc",
+          "high_power_bec"
+        ],
+        "notes": "專為固定翼設計，具備強大的開關模式BEC，可直接驅動多個大扭矩舵機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 65.00,
+        "suppliers": [
+          "HobbyWing Official",
+          "UAVSystemsIntl"
+        ],
+        "mtbf_hours": 5000,
+        "after_sales_support": "提供2年原廠保固。",
+        "maintenance_cycle_recommendations": "確保放置在通風良好處，避免過熱。"
+      },
+      {
+        "component_id": "esc-s-150a-pro",
+        "model_name": "T-Motor Flame 150A",
+        "type": "single_esc",
+        "application_type": "multi_rotor",
+        "rated_current_a": 150,
+        "burst_current_a": 180,
+        "input_voltage_v": [
+          22.2,
+          52.2
+        ],
+        "bec_output": "none",
+        "firmware_protocol": "T-Motor Protocol (Supports DShot)",
+        "pwm_frequency_khz": 24,
+        "refresh_rate_hz": 600,
+        "weight_g": 180,
+        "dimensions_mm": [
+          105,
+          45,
+          25
+        ],
+        "processor": "32-bit ARM",
+        "features": [
+          "telemetry",
+          "current_sensing",
+          "thermal_protection"
+        ],
+        "protection_mechanisms": [
+          "over_temperature",
+          "over_current",
+          "startup_protection",
+          "stall_protection"
+        ],
+        "data_logging_capability": "Yes, via CAN or UART",
+        "firmware_upgradability": "Yes",
+        "manufacturer": "T-Motor",
+        "datasheet_url": "https://store.tmotor.com/datasheets/Flame150A.pdf",
+        "latest_firmware_software_url": "https://store.tmotor.com/pages/download",
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -25,
+            65
+          ],
+          "humidity_percent": [
+            5,
+            95
+          ],
+          "emi_environment": "low_interference",
+          "ip_rating": "IP67"
+        },
+        "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。採用灌膠工藝和金屬外殼，散熱性能優異。",
+        "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。",
+        "keywords": [
+          "heavy_lift_esc",
+          "industrial_uav",
+          "t-motor",
+          "waterproof"
+        ],
+        "notes": "工業級大電流電調，IP67防水防塵等級，適用於農業、測繪等嚴苛環境。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 250.00,
+        "suppliers": [
+          "T-Motor Official Store",
+          "Industrial Drone Solutions"
+        ],
+        "mtbf_hours": 8000,
+        "after_sales_support": "提供3年保固及技術支援。",
+        "maintenance_cycle_recommendations": "定期清理外殼，檢查線纜接口是否完好。"
+      },
+      {
+        "component_id": "esc-s-40a-bls",
+        "model_name": "AeroDyne Standard 40A",
+        "type": "single_esc",
+        "application_type": "multi_rotor",
+        "rated_current_a": 40,
+        "burst_current_a": 50,
+        "input_voltage_v": [
+          11.1,
+          16.8
+        ],
+        "bec_output": "none",
+        "firmware_protocol": "BLHeli_S",
+        "pwm_frequency_khz": 48,
+        "refresh_rate_hz": 600,
+        "weight_g": 10,
+        "dimensions_mm": [
+          45,
+          24,
+          11
+        ],
+        "processor": "EFM8BB21",
+        "features": [
+          "active_braking"
+        ],
+        "protection_mechanisms": [
+          "over_temperature",
+          "startup_protection"
+        ],
+        "data_logging_capability": "No",
+        "firmware_upgradability": "Yes, via BLHeliSuite",
+        "manufacturer": "AeroDynamics",
+        "datasheet_url": "https://www.aerodynamics-corp.com/datasheets/esc-std40.pdf",
+        "latest_firmware_software_url": "https://github.com/blheli-configurator/blheli-configurator",
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            80
+          ],
+          "humidity_percent": [
+            20,
+            90
+          ],
+          "emi_environment": "moderate_interference",
+          "ip_rating": "IP20"
+        },
+        "heat_dissipation_estimation_notes": "發熱量估算 $P_{heat} \\approx I_{rms}^2 \\times R_{ds(on)}$。",
+        "power_loss_calculation_notes": "總功率損耗 $P_{loss} = P_{conduction} + P_{switching}$。",
+        "keywords": [
+          "blheli_s",
+          "dshot600",
+          "diy_drone"
+        ],
+        "notes": "性價比高的BLHeli_S電調，穩定可靠，適合DIY入門和中階航拍機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 12.00,
+        "suppliers": [
+          "AeroDynamics Official",
+          "ProDroneParts"
+        ],
+        "mtbf_hours": 3000,
+        "after_sales_support": "提供1年保固。",
+        "maintenance_cycle_recommendations": "避免在滿載情況下長時間運行。"
+      }
+    ],
+    "batteries": [
+      {
+        "component_id": "batt-lipo-2200-4s-75c",
+        "model_name": "Graphene Panther 2200mAh 4S 75C",
+        "type": "lipo",
+        "application_type": "high_discharge",
+        "capacity_mah": 2200,
+        "nominal_voltage_v": 14.8,
+        "discharge_rate_c": 75,
+        "max_burst_rate_c": 150,
+        "max_charge_rate_c": 5,
+        "internal_resistance_mohm_per_cell": 1.5,
+        "cell_count_s": 4,
+        "connector_type": "XT60",
+        "balance_connector_type": "JST-XH",
+        "weight_g": 255,
+        "dimensions_mm": [
+          106,
+          35,
+          34
+        ],
+        "cycle_life_min": 300,
+        "operating_temperature_celsius": [
+          0,
+          60
+        ],
+        "manufacturer": "Turnigy",
+        "datasheet_url": "https://hobbyking.com/datasheets/graphene_panther_2200.pdf",
+        "voltage_discharge_curve_url": "https://hobbyking.com/curves/graphene_panther_2200.png",
+        "safety_certifications": [
+          "UN38.3",
+          "CE",
+          "RoHS"
+        ],
+        "features": [
+          "high_energy_density",
+          "long_cycle_life",
+          "low_internal_resistance"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            60
+          ],
+          "humidity_percent": [
+            20,
+            75
+          ],
+          "altitude_m": [
+            0,
+            4000
+          ]
+        },
+        "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 14.8V \\times 2.2Ah = 32.56 Wh$。",
+        "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 75C \\times 2.2Ah = 165 A$。",
+        "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60。為保護電池壽命，通常只使用80%的容量進行估算。",
+        "state_of_health_estimation_notes": "電池健康度 (SoH) 可透過測量滿電電壓、內阻變化及實際放出容量來綜合評估。SoH (%) = (當前最大可用容量 / 設計容量) * 100%",
+        "energy_density_wh_per_kg": 127.7,
+        "power_density_w_per_kg": 962.7,
+        "storage_voltage_v": 15.2,
+        "number_of_charge_cycles": 0,
+        "self_discharge_rate_per_day": 0.1,
+        "keywords": [
+          "lipo",
+          "4s_battery",
+          "racing_drone",
+          "high_c_rate"
+        ],
+        "notes": "石墨烯添加技術有助於降低內阻、延長壽命和提高放電平台電壓，適合大電流放電的競速應用。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 35.99,
+        "suppliers": [
+          "HobbyKing"
+        ],
+        "mtbf_hours": 500,
+        "after_sales_support": "6個月製造缺陷保固。",
+        "maintenance_cycle_recommendations": "每次使用後檢查電池是否有膨脹、破損。長期不用應充電至儲存電壓 (3.8V/cell) 並存放在陰涼乾燥處。"
+      },
+      {
+        "component_id": "batt-liion-8000-6s-10c",
+        "model_name": "LongRanger 18650 Pack 8000mAh 6S",
+        "type": "li_ion",
+        "application_type": "long_endurance",
+        "capacity_mah": 8000,
+        "nominal_voltage_v": 22.2,
+        "discharge_rate_c": 10,
+        "max_burst_rate_c": 20,
+        "max_charge_rate_c": 1,
+        "internal_resistance_mohm_per_cell": 20,
+        "cell_count_s": 6,
+        "connector_type": "XT90",
+        "balance_connector_type": "JST-XH",
+        "weight_g": 890,
+        "dimensions_mm": [
+          140,
+          70,
+          60
+        ],
+        "cycle_life_min": 500,
+        "operating_temperature_celsius": [
+          -10,
+          60
+        ],
+        "manufacturer": "Endurance Power",
+        "datasheet_url": "https://www.endurancepower.com/datasheets/longranger_8000.pdf",
+        "voltage_discharge_curve_url": "https://www.endurancepower.com/curves/longranger_8000.png",
+        "safety_certifications": [
+          "UN38.3",
+          "CE"
+        ],
+        "features": [
+          "high_energy_density",
+          "long_cycle_life"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -20,
+            60
+          ],
+          "humidity_percent": [
+            10,
+            90
+          ],
+          "altitude_m": [
+            0,
+            5000
+          ]
+        },
+        "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 22.2V \\times 8Ah = 177.6 Wh$。",
+        "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 10C \\times 8Ah = 80 A$。",
+        "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.9 (鋰離子電池可用容量百分比較高)。",
+        "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%",
+        "energy_density_wh_per_kg": 199.5,
+        "power_density_w_per_kg": 1995.5,
+        "storage_voltage_v": 21.6,
+        "number_of_charge_cycles": 0,
+        "self_discharge_rate_per_day": 0.05,
+        "keywords": [
+          "li_ion",
+          "long_endurance",
+          "18650_pack",
+          "mapping_drone"
+        ],
+        "notes": "採用高品質18650鋰離子電芯製造，能量密度高，適合需要長航時的測繪、巡檢無人機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 120.00,
+        "suppliers": [
+          "Endurance Power",
+          "UAVSystemsIntl"
+        ],
+        "mtbf_hours": 800,
+        "after_sales_support": "1年保固。",
+        "maintenance_cycle_recommendations": "每月至少進行一次充放電循環以保持電芯活性。避免過度放電。"
+      },
+      {
+        "component_id": "batt-lipo-30000-12s-5c",
+        "model_name": "Tattu Pro 30000mAh 12S 5C",
+        "type": "lipo",
+        "application_type": "long_endurance",
+        "capacity_mah": 30000,
+        "nominal_voltage_v": 44.4,
+        "discharge_rate_c": 5,
+        "max_burst_rate_c": 10,
+        "max_charge_rate_c": 2,
+        "internal_resistance_mohm_per_cell": 2.5,
+        "cell_count_s": 12,
+        "connector_type": "AS150U",
+        "balance_connector_type": "JST-XH",
+        "weight_g": 6500,
+        "dimensions_mm": [
+          224,
+          163,
+          117
+        ],
+        "cycle_life_min": 500,
+        "operating_temperature_celsius": [
+          -20,
+          60
+        ],
+        "manufacturer": "Grepow (Tattu)",
+        "datasheet_url": "https://www.genstattu.com/datasheets/tattu_pro_30000.pdf",
+        "voltage_discharge_curve_url": "https://www.genstattu.com/curves/tattu_pro_30000.png",
+        "safety_certifications": [
+          "UN38.3",
+          "CE",
+          "MSDS"
+        ],
+        "features": [
+          "high_energy_density",
+          "long_cycle_life",
+          "fast_charging"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -20,
+            60
+          ],
+          "humidity_percent": [
+            10,
+            90
+          ],
+          "altitude_m": [
+            0,
+            4500
+          ]
+        },
+        "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 44.4V \\times 30Ah = 1332 Wh$。",
+        "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 5C \\times 30Ah = 150 A$。",
+        "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.8。",
+        "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%。專業級電池可搭配BMS讀取精確SoH。",
+        "energy_density_wh_per_kg": 204.9,
+        "power_density_w_per_kg": 1024.6,
+        "storage_voltage_v": 45.6,
+        "number_of_charge_cycles": 0,
+        "self_discharge_rate_per_day": 0.1,
+        "keywords": [
+          "heavy_lift",
+          "tattu",
+          "12s_battery",
+          "agriculture_drone"
+        ],
+        "notes": "大容量高電壓電池，為工業級重載無人機提供持久動力，通常與BMS系統搭配使用。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 899.00,
+        "suppliers": [
+          "GensTattu Official",
+          "Industrial Drone Solutions"
+        ],
+        "mtbf_hours": 1000,
+        "after_sales_support": "1年保固。",
+        "maintenance_cycle_recommendations": "使用專用充電器進行平衡充電，定期校準BMS。"
+      },
+      {
+        "component_id": "batt-lipo-5200-6s-50c",
+        "model_name": "CNHL G+ 5200mAh 6S 50C",
+        "type": "lipo",
+        "application_type": "general_purpose",
+        "capacity_mah": 5200,
+        "nominal_voltage_v": 22.2,
+        "discharge_rate_c": 50,
+        "max_burst_rate_c": 100,
+        "max_charge_rate_c": 5,
+        "internal_resistance_mohm_per_cell": 2.0,
+        "cell_count_s": 6,
+        "connector_type": "XT90",
+        "balance_connector_type": "JST-XH",
+        "weight_g": 780,
+        "dimensions_mm": [
+          145,
+          51,
+          57
+        ],
+        "cycle_life_min": 300,
+        "operating_temperature_celsius": [
+          0,
+          60
+        ],
+        "manufacturer": "China Hobby Line (CNHL)",
+        "datasheet_url": "https://chinahobbyline.com/datasheets/cnhl_gplus_5200.pdf",
+        "voltage_discharge_curve_url": "https://chinahobbyline.com/curves/cnhl_gplus_5200.png",
+        "safety_certifications": [
+          "UN38.3",
+          "CE"
+        ],
+        "features": [
+          "high_energy_density",
+          "fast_charging"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -10,
+            60
+          ],
+          "humidity_percent": [
+            20,
+            80
+          ],
+          "altitude_m": [
+            0,
+            4000
+          ]
+        },
+        "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 22.2V \\times 5.2Ah = 115.44 Wh$。",
+        "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 50C \\times 5.2Ah = 260 A$。",
+        "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.8。",
+        "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%",
+        "energy_density_wh_per_kg": 148.0,
+        "power_density_w_per_kg": 7435.9,
+        "storage_voltage_v": 22.8,
+        "number_of_charge_cycles": 0,
+        "self_discharge_rate_per_day": 0.1,
+        "keywords": [
+          "lipo",
+          "6s_battery",
+          "freestyle_drone",
+          "cnhl"
+        ],
+        "notes": "性能與價格均衡的通用型電池，適用於大型花式飛行無人機或中型航拍機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 75.00,
+        "suppliers": [
+          "China Hobby Line Official",
+          "FPVExpress"
+        ],
+        "mtbf_hours": 600,
+        "after_sales_support": "6個月製造缺陷保固。",
+        "maintenance_cycle_recommendations": "每次使用後檢查電池是否有膨脹、破損。長期不用應充電至儲存電壓 (3.8V/cell)。"
+      },
+      {
+        "component_id": "batt-solid-1000-4s",
+        "model_name": "FutureGen Solid-State 1000Wh/kg Prototype",
+        "type": "solid_state",
+        "application_type": "long_endurance",
+        "capacity_mah": 25000,
+        "nominal_voltage_v": 15.2,
+        "discharge_rate_c": 5,
+        "max_burst_rate_c": 10,
+        "max_charge_rate_c": 1,
+        "internal_resistance_mohm_per_cell": 10,
+        "cell_count_s": 4,
+        "connector_type": "XT90",
+        "balance_connector_type": "JST-XH",
+        "weight_g": 380,
+        "dimensions_mm": [
+          150,
+          50,
+          30
+        ],
+        "cycle_life_min": 1000,
+        "operating_temperature_celsius": [
+          -20,
+          70
+        ],
+        "manufacturer": "FutureGen Power",
+        "datasheet_url": "https://www.futuregen.com/datasheets/solid_state_1000.pdf",
+        "voltage_discharge_curve_url": "https://www.futuregen.com/curves/solid_state_1000.png",
+        "safety_certifications": [],
+        "features": [
+          "high_energy_density",
+          "long_cycle_life",
+          "enhanced_safety"
+        ],
+        "environmental_adaptability": {
+          "temperature_celsius": [
+            -30,
+            80
+          ],
+          "humidity_percent": [
+            5,
+            95
+          ],
+          "altitude_m": [
+            0,
+            8000
+          ]
+        },
+        "energy_calculation_notes": "總能量 (Wh) = 標稱電壓 (V) * (容量 (mAh) / 1000)。$E = 15.2V \\times 25Ah = 380 Wh$。",
+        "max_discharge_current_calculation_notes": "最大持續放電電流 (A) = 放電倍率 (C) * (容量 (mAh) / 1000)。$I_{max} = 5C \\times 25Ah = 125 A$。",
+        "theoretical_flight_time_estimation_notes": "理論飛行時間 (min) = (電池容量 (Ah) / 平均電流消耗 (A)) * 60 * 0.95 (固態電池可用容量更高)。",
+        "state_of_health_estimation_notes": "SoH (%) = (當前最大可用容量 / 設計容量) * 100%。內阻變化是主要參考指標。",
+        "energy_density_wh_per_kg": 1000,
+        "power_density_w_per_kg": 5000,
+        "storage_voltage_v": 15.2,
+        "number_of_charge_cycles": 0,
+        "self_discharge_rate_per_day": 0.01,
+        "keywords": [
+          "solid_state_battery",
+          "next_gen",
+          "high_energy_density"
+        ],
+        "notes": "原型階段的固態電池，能量密度極高，且不易燃燒，安全性遠超鋰聚合物電池，是未來長航時無人機的發展方向。",
+        "status": "prototype",
+        "suggested_retail_price_usd": 2000.00,
+        "suppliers": [
+          "FutureGen Power (Direct Inquiry)"
+        ],
+        "mtbf_hours": 2000,
+        "after_sales_support": "專案合作形式提供技術支援。",
+        "maintenance_cycle_recommendations": "遵循工程樣品測試指南。"
+      }
+    ]
+  }
+}

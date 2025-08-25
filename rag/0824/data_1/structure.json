@@ -1,0 +1,909 @@
+{
+  "drone_structure_and_airframe_modules": {
+    "frames_chassis": [
+      {
+        "component_id": "frame-fpv-qavs-5",
+        "model_name": "Lumenier QAV-S 5\" Freestyle",
+        "type": "main_frame_arms",
+        "drone_type": "multi_rotor",
+        "configuration": "x_type",
+        "material": "carbon_fiber",
+        "weight_g": 129,
+        "dimensions": {
+          "wheelbase_mm": 220,
+          "wingspan_mm": 0,
+          "length_width_height_mm": [
+            180,
+            145,
+            35
+          ]
+        },
+        "structural_form": "truss",
+        "max_takeoff_weight_capacity_kg": 1.5,
+        "stress_concentration_design_notes": "採用X-Lock臂鎖定系統，將側向衝擊力傳導至整個框架，避免應力集中在中心板的螺絲上。臂部末端加厚設計以增強馬達座剛性。",
+        "manufacturing_process": "cnc_machining",
+        "folding_mechanism": "no",
+        "folding_method": "not_applicable",
+        "folded_dimensions_mm": [
+          0,
+          0,
+          0
+        ],
+        "manufacturer": "Lumenier",
+        "datasheet_url": "https://www.lumenier.com/products/qav-s-5-freestyle-fpv-drone-frame",
+        "features": [
+          "high_strength",
+          "lightweight",
+          "high_rigidity",
+          "easy_assembly"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -20,
+            100
+          ],
+          "uv_resistance": "medium",
+          "corrosion_resistance": "high",
+          "ip_rating": "IP20",
+          "wind_resistance_mps": [
+            0,
+            15
+          ],
+          "impact_resistance": "high"
+        },
+        "compatibility": {
+          "recommended_motor_mount_pattern_mm": "16x16, 19x19",
+          "flight_controller_mounting_space_mm": [
+            30.5,
+            30.5,
+            20
+          ],
+          "battery_compartment_dimensions_mm": [
+            120,
+            50,
+            40
+          ]
+        },
+        "maintenance_requirements": [
+          "crack_inspection",
+          "screw_tightening"
+        ],
+        "design_standards_certifications": "遵循通用FPV競賽標準",
+        "keywords": [
+          "fpv_frame",
+          "5_inch",
+          "freestyle",
+          "carbon_fiber"
+        ],
+        "notes": "專為花式飛行設計的框架，結構堅固且易於維護，提供良好的飛行手感。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 74.99,
+        "suppliers": [
+          "GetFPV",
+          "RaceDayQuads"
+        ],
+        "mtbf_hours": 1000,
+        "after_sales_support": "提供備用零件購買及組裝指南。",
+        "maintenance_cycle_recommendations": "每次嚴重撞擊後檢查碳纖維臂是否有分層或裂紋。"
+      },
+      {
+        "component_id": "frame-hl-tarot-x8-1000",
+        "model_name": "Tarot X8-II",
+        "type": "main_frame_arms",
+        "drone_type": "multi_rotor",
+        "configuration": "x_type",
+        "material": "carbon_fiber",
+        "weight_g": 2300,
+        "dimensions": {
+          "wheelbase_mm": 1050,
+          "wingspan_mm": 0,
+          "length_width_height_mm": [
+            950,
+            950,
+            450
+          ]
+        },
+        "structural_form": "truss",
+        "max_takeoff_weight_capacity_kg": 25,
+        "stress_concentration_design_notes": "機臂採用一體式折疊件，使用大型金屬鎖緊機構，確保飛行中剛性。中心板加厚並預留大量安裝孔位以分散設備重量。",
+        "manufacturing_process": "cnc_machining",
+        "folding_mechanism": "yes",
+        "folding_method": "arm_folding",
+        "folded_dimensions_mm": [
+          500,
+          500,
+          500
+        ],
+        "manufacturer": "Tarot",
+        "datasheet_url": "http://www.tarot-rc.com/Product/Detail.aspx?id=973e46c9-0442-4b2a-8d07-28d0859665f9",
+        "features": [
+          "high_strength",
+          "high_rigidity",
+          "modular_design"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -20,
+            60
+          ],
+          "uv_resistance": "medium",
+          "corrosion_resistance": "medium",
+          "ip_rating": "IP31",
+          "wind_resistance_mps": [
+            0,
+            14
+          ],
+          "impact_resistance": "medium"
+        },
+        "compatibility": {
+          "recommended_motor_mount_pattern_mm": "30x30, 40x40",
+          "flight_controller_mounting_space_mm": [
+            80,
+            80,
+            50
+          ],
+          "battery_compartment_dimensions_mm": [
+            250,
+            150,
+            100
+          ]
+        },
+        "maintenance_requirements": [
+          "crack_inspection",
+          "screw_tightening"
+        ],
+        "design_standards_certifications": "通用工業無人機設計參考",
+        "keywords": [
+          "heavy_lift",
+          "octocopter",
+          "foldable_frame",
+          "aerial_photography"
+        ],
+        "notes": "專為重載應用如專業航拍、小型物流設計的八軸飛行平台，可折疊設計便於運輸。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 450.0,
+        "suppliers": [
+          "Tarot RC",
+          "HobbyKing",
+          "AliExpress"
+        ],
+        "mtbf_hours": 2000,
+        "after_sales_support": "提供全套備件和升級件。",
+        "maintenance_cycle_recommendations": "每50次飛行檢查折疊機構的鎖緊力。"
+      },
+      {
+        "component_id": "frame-fw-sonicmodell-arwing",
+        "model_name": "SonicModell AR Wing Pro",
+        "type": "wings",
+        "drone_type": "fixed_wing",
+        "configuration": "not_applicable",
+        "material": "composite_glass_fiber_kevlar",
+        "weight_g": 450,
+        "dimensions": {
+          "wheelbase_mm": 0,
+          "wingspan_mm": 1000,
+          "length_width_height_mm": [
+            417,
+            1000,
+            150
+          ]
+        },
+        "structural_form": "monocoque",
+        "max_takeoff_weight_capacity_kg": 2.5,
+        "stress_concentration_design_notes": "翼根處內嵌碳纖維管以加強結構，防止高G力飛行時彎曲。機頭部分採用高韌性塑膠，增強耐撞性。",
+        "manufacturing_process": "mold_forming",
+        "folding_mechanism": "yes",
+        "folding_method": "wing_detachment",
+        "folded_dimensions_mm": [
+          500,
+          300,
+          150
+        ],
+        "manufacturer": "SonicModell",
+        "datasheet_url": "https://www.sonicmodell.com/ar-wing-pro",
+        "features": [
+          "lightweight",
+          "easy_assembly",
+          "aerodynamic_optimization"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -10,
+            50
+          ],
+          "uv_resistance": "low",
+          "corrosion_resistance": "high",
+          "ip_rating": "IP20",
+          "wind_resistance_mps": [
+            0,
+            12
+          ],
+          "impact_resistance": "medium"
+        },
+        "compatibility": {
+          "recommended_motor_mount_pattern_mm": "19x19, 25x25",
+          "flight_controller_mounting_space_mm": [
+            100,
+            50,
+            40
+          ],
+          "battery_compartment_dimensions_mm": [
+            150,
+            60,
+            50
+          ]
+        },
+        "maintenance_requirements": [
+          "crack_inspection"
+        ],
+        "design_standards_certifications": "通用FPV飛翼模型標準",
+        "keywords": [
+          "fixed_wing",
+          "fpv_wing",
+          "flying_wing",
+          "epp_foam"
+        ],
+        "notes": "採用高密度EPP泡沫製成，耐用且易於修復。可拆卸機翼設計便於攜帶，適合FPV穿越和長距離飛行。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 89.99,
+        "suppliers": [
+          "Banggood",
+          "GetFPV"
+        ],
+        "mtbf_hours": 500,
+        "after_sales_support": "提供機身、機翼等替換零件。",
+        "maintenance_cycle_recommendations": "飛行後檢查機翼連接處卡扣是否牢固。"
+      },
+      {
+        "component_id": "frame-vtol-mfe-fighter",
+        "model_name": "MFE Fighter VTOL",
+        "type": "unibody_frame",
+        "drone_type": "vtol_fixed_wing",
+        "configuration": "not_applicable",
+        "material": "composite_glass_fiber_kevlar",
+        "weight_g": 2750,
+        "dimensions": {
+          "wheelbase_mm": 0,
+          "wingspan_mm": 2430,
+          "length_width_height_mm": [
+            1450,
+            2430,
+            360
+          ]
+        },
+        "structural_form": "monocoque",
+        "max_takeoff_weight_capacity_kg": 11,
+        "stress_concentration_design_notes": "多旋翼電機臂與機翼結構一體化設計，並在連接處使用碳纖維布加強，以承受垂直起降和水平飛行之間的應力轉換。",
+        "manufacturing_process": "mold_forming",
+        "folding_mechanism": "yes",
+        "folding_method": "wing_detachment",
+        "folded_dimensions_mm": [
+          1200,
+          800,
+          400
+        ],
+        "manufacturer": "MyFlyDream (MFE)",
+        "datasheet_url": "https://www.mfefixedwing.com/mfe-fighter-2430mm-vtol-kit/",
+        "features": [
+          "aerodynamic_optimization",
+          "modular_design",
+          "high_strength"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -15,
+            55
+          ],
+          "uv_resistance": "medium",
+          "corrosion_resistance": "high",
+          "ip_rating": "IP43",
+          "wind_resistance_mps": [
+            0,
+            12
+          ],
+          "impact_resistance": "medium"
+        },
+        "compatibility": {
+          "recommended_motor_mount_pattern_mm": "VTOL: 25x25, Fixed-wing: 25x25",
+          "flight_controller_mounting_space_mm": [
+            150,
+            120,
+            100
+          ],
+          "battery_compartment_dimensions_mm": [
+            300,
+            100,
+            80
+          ]
+        },
+        "maintenance_requirements": [
+          "crack_inspection",
+          "screw_tightening"
+        ],
+        "design_standards_certifications": "工業級VTOL設計參考",
+        "keywords": [
+          "vtol",
+          "mapping_drone",
+          "long_endurance",
+          "composite"
+        ],
+        "notes": "專為長航時測繪和巡檢任務設計的VTOL平台，結合了多旋翼的靈活起降和固定翼的高效巡航能力。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 1299.0,
+        "suppliers": [
+          "MFE Direct",
+          "Enterprise UAS"
+        ],
+        "mtbf_hours": 1500,
+        "after_sales_support": "提供組裝和飛控設定教學支援。",
+        "maintenance_cycle_recommendations": "每次飛行模式轉換後檢查傾轉結構是否正常。"
+      },
+      {
+        "component_id": "frame-cinewhoop-geprc-cinelog35",
+        "model_name": "GEPRC CineLog35 Performance",
+        "type": "main_frame_arms",
+        "drone_type": "multi_rotor",
+        "configuration": "x_type",
+        "material": "carbon_fiber",
+        "weight_g": 135,
+        "dimensions": {
+          "wheelbase_mm": 142,
+          "wingspan_mm": 0,
+          "length_width_height_mm": [
+            203,
+            203,
+            42
+          ]
+        },
+        "structural_form": "truss",
+        "max_takeoff_weight_capacity_kg": 1,
+        "stress_concentration_design_notes": "採用推桿式設計，馬達反裝，螺旋槳由保護圈完全包圍。保護圈與主框架透過減震柱連接，隔離震動並提供結構強度。",
+        "manufacturing_process": "cnc_machining",
+        "folding_mechanism": "no",
+        "folding_method": "not_applicable",
+        "folded_dimensions_mm": [
+          0,
+          0,
+          0
+        ],
+        "manufacturer": "GEPRC",
+        "datasheet_url": "https://geprc.com/product/geprc-cinelog35-performance-hd-dji-o3-fpv-drone/",
+        "features": [
+          "high_rigidity",
+          "easy_assembly",
+          "propeller_protection"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -10,
+            60
+          ],
+          "uv_resistance": "medium",
+          "corrosion_resistance": "high",
+          "ip_rating": "IP20",
+          "wind_resistance_mps": [
+            0,
+            8
+          ],
+          "impact_resistance": "high"
+        },
+        "compatibility": {
+          "recommended_motor_mount_pattern_mm": "12x12",
+          "flight_controller_mounting_space_mm": [
+            25.5,
+            25.5,
+            20
+          ],
+          "battery_compartment_dimensions_mm": [
+            90,
+            40,
+            35
+          ]
+        },
+        "maintenance_requirements": [
+          "crack_inspection",
+          "screw_tightening"
+        ],
+        "design_standards_certifications": "Cinewhoop級別無人機標準",
+        "keywords": [
+          "cinewhoop",
+          "ducted_fan",
+          "cinematic_fpv",
+          "gopro_mount"
+        ],
+        "notes": "專為掛載GoPro等小型攝影機進行近距離穩定拍攝而設計，螺旋槳保護圈保障了飛行安全。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 65.0,
+        "suppliers": [
+          "GEPRC Official",
+          "RDQ"
+        ],
+        "mtbf_hours": 800,
+        "after_sales_support": "提供3D列印配件的開源文件。",
+        "maintenance_cycle_recommendations": "檢查保護圈是否有裂紋，減震柱是否老化。"
+      }
+    ],
+    "landing_gears": [
+      {
+        "component_id": "lg-fixed-cf-200",
+        "model_name": "Universal Carbon Fiber Landing Skid 200mm",
+        "type": "skids",
+        "material": "carbon_fiber",
+        "weight_g": 80,
+        "dimensions": {
+          "height_mm": 200,
+          "span_mm": 300
+        },
+        "max_load_capacity_kg": 8,
+        "damping_performance": "external_damping_interface",
+        "retraction_mechanism": "not_applicable",
+        "retraction_time_seconds": 0,
+        "min_ground_clearance_mm": 190,
+        "manufacturer": "Generic",
+        "datasheet_url": "https://generic-parts.com/lg/cf-200.pdf",
+        "features": [
+          "simple_structure",
+          "durable",
+          "lightweight"
+        ],
+        "environmental_adaptability": {
+          "applicable_terrain": [
+            "hard_surface",
+            "grass"
+          ],
+          "temperature_range_celsius": [
+            -40,
+            100
+          ],
+          "ip_rating": "IP54"
+        },
+        "keywords": [
+          "landing_skid",
+          "carbon_fiber",
+          "fixed_gear"
+        ],
+        "notes": "通用型固定式起落架，適用於軸距500-800mm的中型多旋翼無人機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 19.99,
+        "suppliers": [
+          "HobbyKing",
+          "AliExpress",
+          "Banggood"
+        ],
+        "mtbf_hours": 5000,
+        "after_sales_support": "無，為通用耗材。",
+        "maintenance_cycle_recommendations": "定期檢查與機身的連接螺絲是否鬆動。"
+      },
+      {
+        "component_id": "lg-retract- Tarot-tl65b44",
+        "model_name": "Tarot TL65B44 Small Electric Retractable Landing Gear",
+        "type": "retractable_landing_gear",
+        "material": "aerospace_aluminum_alloy",
+        "weight_g": 210,
+        "dimensions": {
+          "height_mm": 260,
+          "span_mm": 350
+        },
+        "max_load_capacity_kg": 5,
+        "damping_performance": "built_in_damping",
+        "retraction_mechanism": "electric",
+        "retraction_time_seconds": 4,
+        "min_ground_clearance_mm": 0,
+        "manufacturer": "Tarot",
+        "datasheet_url": "http://www.tarot-rc.com/Product/Detail.aspx?id=01de640f-7b0f-488b-a5d5-94ac6b527783",
+        "features": [
+          "aerodynamic_optimization",
+          "durable"
+        ],
+        "environmental_adaptability": {
+          "applicable_terrain": [
+            "hard_surface"
+          ],
+          "temperature_range_celsius": [
+            -10,
+            50
+          ],
+          "ip_rating": "IP43"
+        },
+        "keywords": [
+          "retractable_landing_gear",
+          "electric_retracts",
+          "tarot"
+        ],
+        "notes": "電動收放起落架，可為雲台提供360度無遮擋的拍攝視野，適用於專業航拍機。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 65.0,
+        "suppliers": [
+          "Tarot RC",
+          "HobbyKing"
+        ],
+        "mtbf_hours": 3000,
+        "after_sales_support": "提供控制板和馬達等備件。",
+        "maintenance_cycle_recommendations": "每100次收放後檢查連桿結構並添加少量潤滑油。"
+      },
+      {
+        "component_id": "lg-float-c370",
+        "model_name": "C370 Water Landing Floats",
+        "type": "floats",
+        "material": "plastics_abs_pc",
+        "weight_g": 350,
+        "dimensions": {
+          "height_mm": 150,
+          "span_mm": 450
+        },
+        "max_load_capacity_kg": 4,
+        "damping_performance": "external_damping_interface",
+        "retraction_mechanism": "not_applicable",
+        "retraction_time_seconds": 0,
+        "min_ground_clearance_mm": 140,
+        "manufacturer": "Generic",
+        "datasheet_url": "https://generic-parts.com/lg/c370-floats.pdf",
+        "features": [
+          "water_landing",
+          "simple_structure"
+        ],
+        "environmental_adaptability": {
+          "applicable_terrain": [
+            "water"
+          ],
+          "temperature_range_celsius": [
+            0,
+            40
+          ],
+          "ip_rating": "IP68"
+        },
+        "keywords": [
+          "floats",
+          "water_landing_gear",
+          "amphibious"
+        ],
+        "notes": "為中型無人機設計的浮筒，可實現水面起降。安裝後會增加風阻，影響飛行性能。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 35.0,
+        "suppliers": [
+          "AliExpress",
+          "Amazon"
+        ],
+        "mtbf_hours": 1000,
+        "after_sales_support": "無，為通用耗材。",
+        "maintenance_cycle_recommendations": "每次使用後檢查是否有漏水現象。"
+      },
+      {
+        "component_id": "lg-skid-hl-dji-s1000",
+        "model_name": "DJI S1000 Heavy-Duty Skids",
+        "type": "skids",
+        "material": "carbon_fiber",
+        "weight_g": 650,
+        "dimensions": {
+          "height_mm": 450,
+          "span_mm": 600
+        },
+        "max_load_capacity_kg": 15,
+        "damping_performance": "built_in_damping",
+        "retraction_mechanism": "not_applicable",
+        "retraction_time_seconds": 0,
+        "min_ground_clearance_mm": 440,
+        "manufacturer": "DJI (Compatible)",
+        "datasheet_url": "https://dji-compatible.com/lg/s1000-skids.pdf",
+        "features": [
+          "durable",
+          "rugged_terrain_adaptability"
+        ],
+        "environmental_adaptability": {
+          "applicable_terrain": [
+            "hard_surface",
+            "grass",
+            "rugged_terrain"
+          ],
+          "temperature_range_celsius": [
+            -20,
+            60
+          ],
+          "ip_rating": "IP54"
+        },
+        "keywords": [
+          "heavy_duty_skids",
+          "s1000",
+          "industrial_drone"
+        ],
+        "notes": "專為DJI S1000及類似重載平台設計的加高加寬型起落架，提供極高的穩定性和離地間隙，以容納大型雲台。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 89.0,
+        "suppliers": [
+          "HobbyKing",
+          "AliExpress"
+        ],
+        "mtbf_hours": 4000,
+        "after_sales_support": "提供替換腳管和連接件。",
+        "maintenance_cycle_recommendations": "每次硬著陸後檢查碳管是否有裂紋。"
+      },
+      {
+        "component_id": "lg-fixed-plastic-f450",
+        "model_name": "F450/F550 Universal Plastic Landing Gear",
+        "type": "skids",
+        "material": "plastics_abs_pc",
+        "weight_g": 180,
+        "dimensions": {
+          "height_mm": 180,
+          "span_mm": 280
+        },
+        "max_load_capacity_kg": 3,
+        "damping_performance": "external_damping_interface",
+        "retraction_mechanism": "not_applicable",
+        "retraction_time_seconds": 0,
+        "min_ground_clearance_mm": 170,
+        "manufacturer": "Generic",
+        "datasheet_url": "https://generic-parts.com/lg/f450-plastic.pdf",
+        "features": [
+          "simple_structure",
+          "lightweight"
+        ],
+        "environmental_adaptability": {
+          "applicable_terrain": [
+            "hard_surface",
+            "grass"
+          ],
+          "temperature_range_celsius": [
+            -10,
+            45
+          ],
+          "ip_rating": "IP41"
+        },
+        "keywords": [
+          "f450_frame",
+          "diy_drone",
+          "plastic_landing_gear"
+        ],
+        "notes": "適用於經典的F450/F550系列DIY框架的標準起落架，價格低廉，是入門玩家的首選。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 5.99,
+        "suppliers": [
+          "Amazon",
+          "Banggood",
+          "AliExpress"
+        ],
+        "mtbf_hours": 500,
+        "after_sales_support": "無，為通用耗材。",
+        "maintenance_cycle_recommendations": "硬著陸後易斷裂，建議多備幾個作為備件。"
+      }
+    ],
+    "enclosures_covers": [
+      {
+        "component_id": "enclosure-fpv-tpu-gopro",
+        "model_name": "Brain3D FPV GoPro Hero 9/10 Mount Canopy",
+        "type": "canopy",
+        "material": "plastics_abs_pc",
+        "weight_g": 35,
+        "dimensions": [
+          80,
+          70,
+          60
+        ],
+        "ip_rating": "IP20",
+        "cooling_design": "ventilation_holes",
+        "mounting_method": "screw_fixing",
+        "manufacturer": "Brain3D",
+        "datasheet_url": "https://www.brain3d.com/products/gopro-hero-9-10-fpv-mount",
+        "features": [
+          "internal_component_protection",
+          "camera_mount_integrated"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -10,
+            50
+          ],
+          "uv_resistance": "low",
+          "chemical_corrosion_resistance": "medium"
+        },
+        "compatible_frame_ids": [
+          "frame-fpv-qavs-5"
+        ],
+        "keywords": [
+          "3d_printed",
+          "tpu",
+          "gopro_mount",
+          "canopy"
+        ],
+        "notes": "採用TPU材料3D列印而成，具備一定彈性，能在撞擊中保護FPV攝影機和GoPro，並提供固定角度。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 15.99,
+        "suppliers": [
+          "Brain3D",
+          "GetFPV"
+        ],
+        "mtbf_hours": 200,
+        "after_sales_support": "提供多種顏色和角度可選。",
+        "maintenance_cycle_recommendations": "檢查是否有因日曬或撞擊造成的撕裂。"
+      },
+      {
+        "component_id": "enclosure-weatherproof-ip67",
+        "model_name": "Industrial UAV Full Weatherproof Enclosure",
+        "type": "fairings",
+        "material": "composite_glass_fiber_kevlar",
+        "weight_g": 800,
+        "dimensions": [
+          500,
+          500,
+          150
+        ],
+        "ip_rating": "IP67",
+        "cooling_design": "built_in_air_ducts",
+        "mounting_method": "screw_fixing",
+        "manufacturer": "DroneShells Inc.",
+        "datasheet_url": "https://droneshells.com/enclosures/ip67-500.pdf",
+        "features": [
+          "internal_component_protection",
+          "aerodynamic_improvement"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -40,
+            80
+          ],
+          "uv_resistance": "high",
+          "chemical_corrosion_resistance": "high"
+        },
+        "compatible_frame_ids": [
+          "frame-hl-tarot-x8-1000"
+        ],
+        "keywords": [
+          "weatherproof",
+          "ip67",
+          "industrial_drone",
+          "enclosure"
+        ],
+        "notes": "全密封設計，提供IP67級防水防塵保護，確保無人機能在雨雪等惡劣天氣下執行任務。內部設計有風道，透過氣壓差引導氣流為電子設備散熱。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 299.0,
+        "suppliers": [
+          "DroneShells Inc.",
+          "Enterprise UAS"
+        ],
+        "mtbf_hours": 10000,
+        "after_sales_support": "提供密封圈等替換件。",
+        "maintenance_cycle_recommendations": "每次拆裝後檢查密封圈是否完好並正確安裝。"
+      },
+      {
+        "component_id": "enclosure-gps-dome",
+        "model_name": "Clear PC GPS Dome Cover",
+        "type": "equipment_bay_cover",
+        "material": "transparent_pc",
+        "weight_g": 25,
+        "dimensions": [
+          80,
+          80,
+          40
+        ],
+        "ip_rating": "IP54",
+        "cooling_design": "none",
+        "mounting_method": "screw_fixing",
+        "manufacturer": "Generic",
+        "datasheet_url": "https://generic-parts.com/enclosures/gps-dome.pdf",
+        "features": [
+          "internal_component_protection",
+          "transparent_for_signal"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -40,
+            120
+          ],
+          "uv_resistance": "medium",
+          "chemical_corrosion_resistance": "low"
+        },
+        "compatible_frame_ids": [
+          "frame-hl-tarot-x8-1000"
+        ],
+        "keywords": [
+          "gps_puck_cover",
+          "dome",
+          "polycarbonate"
+        ],
+        "notes": "透明的聚碳酸酯保護罩，用於保護GPS天線免受物理損傷，同時不影響衛星信號接收。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 9.99,
+        "suppliers": [
+          "HobbyKing",
+          "AliExpress"
+        ],
+        "mtbf_hours": 8000,
+        "after_sales_support": "無。",
+        "maintenance_cycle_recommendations": "定期擦拭表面，保持潔淨以獲得最佳信號。"
+      },
+      {
+        "component_id": "enclosure-battery-snapfit",
+        "model_name": "QuickSwap Battery Cover",
+        "type": "battery_cover",
+        "material": "plastics_abs_pc",
+        "weight_g": 50,
+        "dimensions": [
+          150,
+          60,
+          50
+        ],
+        "ip_rating": "IP31",
+        "cooling_design": "ventilation_holes",
+        "mounting_method": "snap_fit",
+        "manufacturer": "FrameMods",
+        "datasheet_url": "https://framemods.com/covers/battery-snapfit.pdf",
+        "features": [
+          "easy_removal",
+          "internal_component_protection"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -20,
+            70
+          ],
+          "uv_resistance": "low",
+          "chemical_corrosion_resistance": "medium"
+        },
+        "compatible_frame_ids": [
+          "frame-fpv-qavs-5"
+        ],
+        "keywords": [
+          "battery_bay",
+          "snap_fit",
+          "quick_release"
+        ],
+        "notes": "卡扣式電池倉蓋，方便快速更換電池，同時保護電池在飛行中不會意外脫落。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 12.0,
+        "suppliers": [
+          "FrameMods"
+        ],
+        "mtbf_hours": 1000,
+        "after_sales_support": "無。",
+        "maintenance_cycle_recommendations": "檢查卡扣是否有磨損，以免鎖定力不足。"
+      },
+      {
+        "component_id": "enclosure-fairing-vtol",
+        "model_name": "VTOL Nose Cone & Tail Fairing Kit",
+        "type": "fairings",
+        "material": "glass_fiber",
+        "weight_g": 120,
+        "dimensions": [
+          300,
+          100,
+          80
+        ],
+        "ip_rating": "IP43",
+        "cooling_design": "none",
+        "mounting_method": "screw_fixing",
+        "manufacturer": "AeroDesign",
+        "datasheet_url": "https://aerodesign.com/fairings/vtol-kit.pdf",
+        "features": [
+          "aerodynamic_improvement",
+          "aesthetic_design"
+        ],
+        "environmental_adaptability": {
+          "temperature_range_celsius": [
+            -30,
+            90
+          ],
+          "uv_resistance": "medium",
+          "chemical_corrosion_resistance": "high"
+        },
+        "compatible_frame_ids": [
+          "frame-vtol-mfe-fighter"
+        ],
+        "keywords": [
+          "fairing",
+          "aerodynamics",
+          "vtol",
+          "nose_cone"
+        ],
+        "notes": "用於VTOL機頭和機尾的玻璃纖維整流罩，可大幅降低飛行阻力，提高巡航效率和續航時間。",
+        "status": "in_production",
+        "suggested_retail_price_usd": 55.0,
+        "suppliers": [
+          "AeroDesign Co."
+        ],
+        "mtbf_hours": 5000,
+        "after_sales_support": "提供安裝說明。",
+        "maintenance_cycle_recommendations": "檢查表面是否有裂紋或剝落。"
+      }
+    ]
+  }
+}
