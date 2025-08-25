@@ -19,34 +19,71 @@
 本系統由前端 UI 和後端 API 伺服器組成，兩者獨立運行。
 
 ```mermaid
-graph TD
-    subgraph "使用者端"
-        A[使用者 Browser]
-    end
+flowchart TD
+ subgraph ClientSide["使用者端 (Client Side)"]
+        User["使用者瀏覽器"]
+  end
+ subgraph Frontend["前端服務 (Frontend Service)"]
+        Gradio["Gradio UI - gradio_ui_chatbot.py"]
+  end
+ subgraph Backend["後端核心服務 (Backend Core Service)"]
+        API["FastAPI Server - api_server_multi_llm.py"]
+        Translate["翻譯模組"]
+        QueryAnalysis["查詢意圖分析模組"]
+        RAG["RAG 回答生成模組"]
+        Summary["對話摘要更新模組"]
+        RAGHandler["RAG 核心 - rag_handler.py"]
+  end
+ subgraph DataLayer["資料層 (Data Layer)"]
+        Chroma["向量資料庫 - ChromaDB"]
+        JSONFiles["文件知識庫 - data_1/*.json"]
+  end
+ subgraph LLMService["LLM 推理服務 (Inference Services)"]
+        LLMs("Ollama Server / Proxy API")
+  end
+    User -- 輸入/輸出 --> Gradio
+    Gradio -- API Request --> API
+    API -- SSE Stream --> Gradio
+    API --> Translate & QueryAnalysis & RAG & Summary
+    Translate --> LLMs & API
+    LLMs --> Translate & QueryAnalysis & RAG & Summary
+    QueryAnalysis --> LLMs & API
+    RAG --> RAGHandler & LLMs & API
+    RAGHandler --> JSONFiles & Chroma & RAG
+    Summary --> LLMs & API
 
-    subgraph "前端服務 (Gradio)"
-        B[Gradio UI - gradio_ui_chatbot.py]
-    end
-
-    subgraph "後端服務 (FastAPI)"
-        C[API Server - api_server_multi_llm.py]
-        D[RAG 核心 - rag_handler.py]
-        E[向量資料庫 - ChromaDB]
-        F[文件知識庫 - data_1/*.json]
-    end
-
-    subgraph "LLM 服務 (遠端)"
-        G[Ollama Server @ 192.168.2.100:8001]
-        H[Proxy API (e.g., ChatAnywhere)]
-    end
-
-    A -- HTTP --> B
-    B -- API Requests --> C
-    C -- 執行 RAG --> D
-    D -- 讀取資料 --> F
-    D -- 嵌入/檢索 --> E
-    C -- LLM 推理 --> G
-    C -- LLM 推理 --> H
+    style User fill:#FFD580,stroke:#CC6600,stroke-width:1.5px
+    style ClientSide fill:#FFEECC,stroke:#FFAA33,stroke-width:2px
+    style Gradio fill:#80DEEA,stroke:#00838F,stroke-width:1.5px
+    style Frontend fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px
+    style API fill:#A5D6A7,stroke:#2E7D32,stroke-width:1.5px
+    style Translate fill:#C8E6C9,stroke:#388E3C,stroke-width:1px
+    style QueryAnalysis fill:#C8E6C9,stroke:#388E3C,stroke-width:1px
+    style RAG fill:#C8E6C9,stroke:#388E3C,stroke-width:1px
+    style Summary fill:#C8E6C9,stroke:#388E3C,stroke-width:1px
+    style RAGHandler fill:#C8E6C9,stroke:#388E3C,stroke-width:1px
+    style Backend fill:#E8F5E9,stroke:#43A047,stroke-width:2px
+    style Chroma fill:#CE93D8,stroke:#6A1B9A,stroke-width:1.5px
+    style JSONFiles fill:#CE93D8,stroke:#6A1B9A,stroke-width:1.5px
+    style DataLayer fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px
+    style LLMs fill:#FFF176,stroke:#F57F17,stroke-width:1.5px
+    style LLMService fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px
+    linkStyle 0 stroke:#1E88E5,stroke-width:2px,fill:none
+    linkStyle 1 stroke:#1E88E5,stroke-width:2px,fill:none
+    linkStyle 2 stroke:#000000,stroke-width:1.5px,fill:none
+    linkStyle 3 stroke:#000000,stroke-width:1.5px,fill:none
+    linkStyle 7 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 9 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 8 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 4 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 13 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 10 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 14 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 5 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 15 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 18 stroke:#43A047,stroke-width:2px,fill:none
+    linkStyle 19 stroke:#8E24AA,stroke-width:2px,fill:none
+    linkStyle 20 stroke:#8E24AA,stroke-width:2px,fill:none
 ```
 
 ## 專案結構
