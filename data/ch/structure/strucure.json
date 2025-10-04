@@ -1,0 +1,421 @@
+{
+  "general_parameters": {
+    "wingspan_and_chord": {
+      "reference_url": "https://www.uavcoach.com/drone-parts/",
+      "wingspan_b": {
+        "small_uav": "1.2–2.5m",
+        "medium_uav": "2.5–5.5m",
+        "large_uav": "≥5.5m"
+      },
+      "average_chord_c": {
+        "ratio_range": "b/6～b/12",
+        "example_5m_wingspan": "0.42–0.83m"
+      },
+      "spar_design_parameters": {
+        "spar_height_h_spar": "0.05–0.15 * chord (m)",
+        "spar_width_t_spar": "0.01–0.03 * chord (m)",
+        "material_density": {
+          "carbon_fiber": "1.5g/cm³",
+          "al7075": "2.8g/cm³"
+        },
+        "bending_modulus_E": {
+          "carbon_fiber": "70–250GPa",
+          "al_alloy": "69–72GPa"
+        },
+        "allowable_stress_sigma_allow": {
+          "carbon_fiber": "600–1500MPa",
+          "al_alloy": "300–500MPa"
+        },
+        "design_safety_factor_SF": "1.5–2.5"
+      }
+    },
+    "ribs": {
+      "reference_url": "https://ntrs.nasa.gov",
+      "frequency": "1 per 0.15–0.3m",
+      "thickness": "6–10mm",
+      "material": "Carbon/Kevlar patch + light foam infill",
+      "strength_target": "150% aerodynamic load, no local buckling"
+    },
+    "skin": {
+      "reference_url": "https://www.makeitfrom.com",
+      "material": "Carbon fiber prepreg composite, 3–8 layers",
+      "thickness": "0.3–1.5mm (light at tip, heavy at root)",
+      "safety_factor": "1.8–2.5 (higher for reinforced areas)",
+      "fatigue_life": ">50,000 cycles"
+    },
+    "aileron": {
+      "reference_url": "https://www.aerodynamics4students.com/control-surfaces/ailerons.php",
+      "length_to_wingspan_ratio": "20–30%",
+      "chord_to_chord_ratio": "18–25%",
+      "hinge_location_from_root": "80% semi-span",
+      "torsional_rigidity_GJ": "≥5000 N·m²"
+    },
+    "fuselage_frame": {
+      "geometry_dimensions": {
+        "reference_url": "https://www.militaryfactory.com",
+        "max_size": "Length ≤1.5m, Width ≤0.6m, Height ≤0.3m",
+        "wall_thickness": "2–5mm (skin + internal support)"
+      },
+      "material_properties": {
+        "reference_url": "https://www.matweb.com",
+        "density": {
+          "cfrp": "1.5–1.8g/cm³",
+          "al_alloy": "2.7–2.8g/cm³"
+        },
+        "bending_modulus": "Similar to wing",
+        "allowable_stress_sigma_allow": {
+          "cfrp": "400–1200MPa (orientation dependent)",
+          "al_alloy": "250–450MPa"
+        }
+      },
+      "structural_configuration": "Semi-monocoque + stiffeners/stringers (every 100–150mm)",
+      "fatigue_and_life": {
+        "design_life": "50,000–100,000 flight cycles",
+        "fatigue_safety_margin": "Goodman limit set to 0.6"
+      }
+    },
+    "landing_gear": {
+      "reference_url": "https://www.dronedesignerhub.com/drone-landing-gear-design/",
+      "type": "Fixed, Carbon fiber or Aluminum U-arm design",
+      "bending_and_impact": {
+        "material_stiffness_E": "30–90GPa",
+        "design_bearing_stress_sigma_allow": "≥400MPa",
+        "impact_absorption_energy": "mgh ≈0.5·m·v², v ≈1.2m/s",
+        "damping_stroke": "≥30–50mm"
+      }
+    },
+    "payload_bay": {
+      "reference_url": "https://www.uavsystemsinternational.com",
+      "dimensions_standard": {
+        "internal_space": "≥250×200×100mm",
+        "opening_size": "≥200×150mm"
+      },
+      "load_capacity": {
+        "uniform_load": "≥5.5kg",
+        "local_point_load": "≥10kg",
+        "vibration_standard": "MIL-STD-810F compliant"
+      },
+      "structural_interface": {
+        "quick_release_rail_width": "20–30mm",
+        "interface_tolerance": "±0.2mm (within 1m length)",
+        "reinforcement_plate_thickness": "3–6mm (CFRP or Al)"
+      }
+    },
+    "cg_shift_tolerance": {
+      "empty_aircraft_tolerance": "±30mm (longitudinal axis)",
+      "loaded_tolerance": "±20–30mm, close to original CG",
+      "installation_suggestion": "Use slide rails for CG adjustment"
+    },
+    "manufacturing_tolerance": {
+      "skin_seam_gap": "≤0.5mm",
+      "fastener_hole_tolerance": "H7/H8 grade",
+      "corner_radius_R": "R≥3–5mm (avoid stress concentration)"
+    },
+    "fatigue_life_indicators": {
+      "cfrp_structure_life": "Tens of thousands to hundreds of thousands cycles",
+      "al_alloy_fatigue_limit": "30–50% of allowable stress"
+    },
+    "summary": {
+      "size_parameters": {
+        "wingspan": "1.2–5.5m",
+        "chord_ratio": "6–12",
+        "fuselage_size": "Length ≤1.5m, Width ≤0.6m, Height ≤0.3m"
+      },
+      "material_density": {
+        "cfrp": "1.5–1.8g/cm³",
+        "al_alloy": "2.7–2.8g/cm³"
+      },
+      "mechanical_properties": {
+        "main_spar": "E≥130GPa; σ_allow ≥600MPa",
+        "fuselage_lower_limit": "E≥60GPa; σ_allow ≥300MPa",
+        "landing_gear": "σ_allow ≥400MPa",
+        "payload_interface": "σ_allow ≥500MPa"
+      },
+      "tolerance_and_precision": {
+        "cg_shift_tolerance": "±30mm",
+        "rail_tolerance": "±0.2mm",
+        "skin_gap": "≤0.5mm"
+      },
+      "design_life": {
+        "flight_cycles": "≥50,000",
+        "fatigue_safety_factor": "≥1.5"
+      }
+    }
+  },
+  "aerodynamic_and_performance": {
+    "lift_to_drag_ratio_ld": {
+      "description": "升阻比 (L/D)",
+      "range": "長滯空/偵察機：15 – 25；VTOL/多旋翼：5 – 10 (水平飛行時)",
+      "reference_url": "https://www.nasa.gov/aerodynamics-basics/"
+    },
+    "aspect_ratio_ar": {
+      "description": "展弦比 (Aspect Ratio, AR)",
+      "range": "高效率/長滯空機翼：10 – 20；戰術/敏捷機翼：5 – 8",
+      "reference_url": "https://www.aeroclass.org/aspect-ratio/"
+    },
+    "max_endurance": {
+      "description": "最大續航時間 (Endurance)",
+      "range": "小型戰術 UAV：2 – 8 小時；長程/戰略 UAV：> 20 小時",
+      "reference_url": "https://www.airbus.com/en/newsroom/stories/2021-03-zephyr-the-high-altitude-psa"
+    },
+    "cruise_speed": {
+      "description": "巡航速度 (Cruise Speed)",
+      "range": "30 – 150 m/s (取決於設計用途)",
+      "reference_url": "https://www.skybrary.aero/articles/aircraft-performance"
+    }
+  },
+  "advanced_engineering_and_qa": {
+    "torsional_stiffness_gj": {
+      "description": "扭轉剛性 (Torsional Stiffness, GJ)",
+      "spec": "翼展超過 3m 的主翼：≥ 8,000 N·m²；確保不會產生氣動彈性問題。",
+      "reference_url": "https://ntrs.nasa.gov"
+    },
+    "natural_frequency": {
+      "description": "結構振動自然頻率",
+      "spec": "結構的第一自然頻率應高於最大螺旋槳轉速振動頻率的 1.5 倍，避免共振。",
+      "reference_url": "https://www.sciencedirect.com/topics/engineering/natural-frequency"
+    },
+    "laminate_layup": {
+      "description": "層壓板堆疊順序 (Laminate Layup)",
+      "spec": "[0°/90°/45°/-45°]s 對稱堆疊，以平衡強度與扭轉。",
+      "reference_url": "https://www.compositesworld.com/articles/composite-laminate-design"
+    },
+    "glass_transition_temperature_tg": {
+      "description": "玻璃轉化溫度 (Tg)",
+      "spec": "熱固性複材 (環氧樹脂)：120°C – 180°C；需高於最高環境溫度與太陽輻射溫度。",
+      "reference_url": "https://www.makeitfrom.com"
+    },
+    "motor_mount_screw_spec": {
+      "description": "電機座固定螺絲規範",
+      "spec": "M3 或 M4 螺絲，螺絲長度進入螺紋深度應 ≥ 1.5 × 直徑。",
+      "reference_url": "https://www.rcgroups.com/forums/showthread.php?3110597"
+    },
+    "propeller_safety_margin": {
+      "description": "螺旋槳安全餘裕",
+      "spec": "螺旋槳尖端速度應 ≤ 0.85 馬赫數，避免產生衝擊波。",
+      "reference_url": "https://www.aopa.org/news-and-media/all-news/2022/november/pilot/savvy-aviator-propeller-basics"
+    },
+    "battery_bay_ventilation": {
+      "description": "電池艙通風率",
+      "spec": "電池艙體積應 ≥ 1.5 × 電池體積，並確保通風口面積佔艙壁 ≥ 10%。",
+      "reference_url": "https://www.nfpa.org/codes-and-standards/battery-storage"
+    },
+    "non_destructive_testing_ndt": {
+      "description": "無損檢測 (NDT) 要求",
+      "spec": "關鍵承載結構 (主樑、翼根) 需 100% 進行超音波或 X 射線探傷，孔隙率 ≤ 2%。",
+      "reference_url": "https://www.ndt.org/"
+    },
+    "alignment_tolerance": {
+      "description": "機翼/尾翼對齊公差",
+      "spec": "翼尖扭轉角公差：± 0.5°；確保氣動對稱性。",
+      "reference_url": "https://www.sae.org/standards/content/as9100/"
+    },
+    "corrosion_protection": {
+      "description": "腐蝕防護層厚度",
+      "spec": "鋁合金陽極氧化層厚度：5 µm – 25 µm；提供抗鹽霧防護。",
+      "reference_url": "https://www.metalfinishing.com/anodizing/"
+    }
+  },
+  "flight_scenario_parameters": {
+    "low_altitude_flight_0_500m": {
+      "wingspan": "1.2–3.0m",
+      "fuselage_size": "≤1.2m×0.5m×0.25m",
+      "empty_weight": "≤4.5kg",
+      "material_density": "CFRP 1.5–1.8g/cm³",
+      "spar_bending_modulus_E": "≥130GPa",
+      "allowable_stress_sigma_allow": "≥600MPa",
+      "landing_gear_stroke": "≥30mm",
+      "payload_bay_size": "≥200×150×80mm",
+      "max_payload": "≤4.0kg",
+      "cg_shift_tolerance": "±20mm"
+    },
+    "high_altitude_flight_over_500m": {
+      "wingspan": "3.0–5.5m",
+      "fuselage_size": "≤1.5m×0.6m×0.3m",
+      "empty_weight": "≤5.5kg",
+      "material_priority": "CFRP",
+      "spar_bending_modulus_E": "≥150GPa",
+      "allowable_stress_sigma_allow": "≥800MPa",
+      "landing_gear_stroke": "≥40mm",
+      "payload_bay_size": "≥250×200×100mm",
+      "max_payload": "≥5.5kg",
+      "cg_shift_tolerance": "±30mm"
+    },
+    "strong_wind_harsh_weather": {
+      "material": "High-strength Carbon fiber + Kevlar",
+      "safety_factor": "≥2.0",
+      "spar_bending_modulus_E": "≥200GPa",
+      "allowable_stress_sigma_allow": "≥1000MPa",
+      "landing_gear": "Reinforced U-shaped Al or CF",
+      "skin_thickness": "1.0–1.5mm",
+      "corrosion_treatment": "Anodizing or anti-salt-spray coating"
+    },
+    "structural_component_parameters_general": {
+      "wingspan_b": "1.2–5.5m",
+      "chord_c": "b/6~b/12",
+      "spar_height_h_spar": "0.05–0.15 * c",
+      "spar_width_t_spar": "0.01–0.03 * c",
+      "material_density": "CFRP 1.5g/cm³ / Al7075 2.8g/cm³",
+      "bending_modulus_E": "CFRP 70–250GPa / Al 69–72GPa",
+      "allowable_stress_sigma_allow": "CFRP 600–1500MPa / Al 300–500MPa",
+      "rib_spacing": "0.15–0.3m",
+      "rib_thickness": "6–10mm",
+      "skin_thickness": "0.3–1.5mm",
+      "aileron_size": "20–30% wingspan, 18–25% chord",
+      "fuselage_size": "Length ≤1.5m, Width ≤0.6m, Height ≤0.3m",
+      "landing_gear_stroke": "30–50mm",
+      "payload_bay_size": "≥250×200×100mm",
+      "max_payload_weight": "≥5.5kg",
+      "cg_shift_tolerance": "±30mm"
+    },
+    "manufacturing_and_life": {
+      "skin_seam_gap": "≤0.5mm",
+      "fastener_hole_tolerance": "H7/H8 grade",
+      "corner_radius_R": "≥3–5mm",
+      "fatigue_life_cfrp": "50,000–100,000 flight cycles",
+      "fatigue_safety_factor": "≥1.5"
+    }
+  },
+  "scenario_specific_parameters": {
+    "long_endurance_relay": [
+      {
+        "name": "Post-Typhoon Emergency Communication",
+        "wingspan": "≥ 3.5 m",
+        "fuselage_lw": "≤ 1.5 m × 1.5 m",
+        "empty_weight": "≤ 5.5 kg",
+        "material_density": "≤ 2.0 g/cm³ (e.g., CFRP, Kevlar, anti-salt-spray anodized Al)",
+        "bending_modulus_E": "≥ 130 GPa",
+        "allowable_stress_sigma_allow": "≥ 600 MPa",
+        "payload_bay_size": "≥ 250 × 200 × 100 mm",
+        "max_payload": "≥ 5.5 kg",
+        "cg_shift_tolerance": "±30 mm",
+        "reference_url": "https://www.unmannedsystemstechnology.com/company/pterodynamics/x-p5/"
+      },
+      {
+        "name": "Winter High Mountain Isolation Village Lifeline",
+        "wingspan": "3.0 ~ 3.5 m",
+        "fuselage_lw": "≤ 1.5 m × 1.2 m",
+        "empty_weight": "≤ 5.0 kg",
+        "material_density": "≤ 1.8 g/cm³ (e.g., high-toughness plastic, cold-weather composite, aero-foam lined structure)",
+        "bending_modulus_E": "≥ 120 GPa",
+        "allowable_stress_sigma_allow": "≥ 550 MPa",
+        "payload_bay_size": "≥ 200 × 180 × 100 mm",
+        "max_payload": "≥ 4.0 kg",
+        "cg_shift_tolerance": "±25 mm",
+        "reference_url": "https://skyeton.com/raybird/"
+      },
+      {
+        "name": "Night Sea Tanker Accident Monitoring",
+        "wingspan": "3.5 ~ 4.0 m",
+        "fuselage_lw": "≤ 1.6 m × 1.4 m",
+        "empty_weight": "≤ 6.0 kg",
+        "material_density": "≤ 2.0 g/cm³ (e.g., anti-corrosion skin, FRP composite panel, UV-stabilized coating)",
+        "bending_modulus_E": "≥ 130 GPa",
+        "allowable_stress_sigma_allow": "≥ 600 MPa",
+        "payload_bay_size": "≥ 250 × 200 × 120 mm",
+        "max_payload": "≥ 4.5 kg",
+        "cg_shift_tolerance": "±30 mm",
+        "reference_url": "https://en.wikipedia.org/wiki/WB_Electronics_FlyEye"
+      }
+    ],
+    "complex_terrain_vtol_monitoring": [
+      {
+        "name": "Mountain Forest Fire Early Detection",
+        "wingspan": "≤ 2.0 m",
+        "fuselage_lw": "≤ 1.2 m × 1.0 m",
+        "empty_weight": "≤ 4.5 kg",
+        "material_density": "≤ 1.8 g/cm³ (e.g., light CFRP, EPO/EPP foam plastic, PEEK)",
+        "bending_modulus_E": "≥ 110 GPa",
+        "allowable_stress_sigma_allow": "≥ 500 MPa",
+        "payload_bay_size": "≥ 180 × 150 × 80 mm",
+        "max_payload": "≥ 2.5 kg",
+        "cg_shift_tolerance": "±20 mm",
+        "reference_url": "https://www.infinitdrones.com/products/wingtraone-gen-ii?srsltid=AfmBOoofsFB32AM0XEFcqfIIpmtwYNlkubh50C2uxGRaYViOqETZxNOM"
+      },
+      {
+        "name": "Urban High-rise Structure Inspection",
+        "wingspan": "1.5 ~ 1.8 m",
+        "fuselage_lw": "≤ 1.0 m × 0.8 m",
+        "empty_weight": "≤ 4.0 kg",
+        "material_density": "≤ 1.7 g/cm³ (e.g., engineering grade ABS, Al alloy truss composite)",
+        "bending_modulus_E": "≥ 100 GPa",
+        "allowable_stress_sigma_allow": "≥ 450 MPa",
+        "payload_bay_size": "≥ 160 × 120 × 80 mm",
+        "max_payload": "≥ 2.0 kg",
+        "cg_shift_tolerance": "±15 mm",
+        "reference_url": "https://en.wikipedia.org/wiki/Conyca_Geodrone"
+      },
+      {
+        "name": "Canyon Power Line Detailed Inspection",
+        "wingspan": "≤ 2.2 m",
+        "fuselage_lw": "≤ 1.2 m × 1.0 m",
+        "empty_weight": "≤ 5.0 kg",
+        "material_density": "≤ 1.9 g/cm³ (e.g., aerospace Al alloy frame + CF skin, foam supports)",
+        "bending_modulus_E": "≥ 120 GPa",
+        "allowable_stress_sigma_allow": "≥ 550 MPa",
+        "payload_bay_size": "≥ 200 × 160 × 80 mm",
+        "max_payload": "≥ 3.0 kg",
+        "cg_shift_tolerance": "±20 mm",
+        "reference_url": "https://fixar.pro/products/fixar007ng/"
+      }
+    ],
+    "port_area_patrol_reconnaissance": [
+      {
+        "name": "Night Stowaway Vessel Identification",
+        "wingspan": "2.8 ~ 3.2 m",
+        "fuselage_lw": "≤ 1.5 m × 1.2 m",
+        "empty_weight": "≤ 5.5 kg",
+        "material_density": "≤ 2.0 g/cm³ (e.g., anodized Al alloy, coated CF, anti-fog UV-treated panels)",
+        "bending_modulus_E": "≥ 120 GPa",
+        "allowable_stress_sigma_allow": "≥ 550 MPa",
+        "payload_bay_size": "≥ 240 × 200 × 100 mm",
+        "max_payload": "≥ 3.5 kg",
+        "cg_shift_tolerance": "±25 mm",
+        "reference_url": "https://www.jouav.com/zh/products/cw-100.html"
+      },
+      {
+        "name": "Hazardous Chemical Leak Detection",
+        "wingspan": "2.5 ~ 3.0 m",
+        "fuselage_lw": "≤ 1.4 m × 1.0 m",
+        "empty_weight": "≤ 5.2 kg",
+        "material_density": "≤ 2.0 g/cm³ (e.g., chemical corrosion-resistant composite panel, acid/alkali-resistant plastic)",
+        "bending_modulus_E": "≥ 110 GPa",
+        "allowable_stress_sigma_allow": "≥ 500 MPa",
+        "payload_bay_size": "≥ 230 × 180 × 90 mm",
+        "max_payload": "≥ 3.0 kg",
+        "cg_shift_tolerance": "±25 mm",
+        "reference_url": "https://docs.tuyap.online/FDOCS/46228.pdf"
+      },
+      {
+        "name": "Automated Berth Scheduling Assistance",
+        "wingspan": "2.5 m",
+        "fuselage_lw": "≤ 1.2 m × 1.0 m",
+        "empty_weight": "≤ 4.5 kg",
+        "material_density": "≤ 1.9 g/cm³ (e.g., EPO structure, honeycomb Al panel + plastic skin)",
+        "bending_modulus_E": "≥ 100 GPa",
+        "allowable_stress_sigma_allow": "≥ 450 MPa",
+        "payload_bay_size": "≥ 200 × 150 × 80 mm",
+        "max_payload": "≥ 2.5 kg",
+        "cg_shift_tolerance": "±20 mm",
+        "reference_url": "https://www.jouav.com/zh/products/cw-007.html"
+      }
+    ]
+  },
+  "scenario_uav_model_suggestions": {
+    "post_typhoon_emergency_communication": [
+      "DJI M30T",
+      "Quantum Trinity Pro",
+      "Delair UX11"
+    ],
+    "mountain_low_altitude_inspection": [
+      "Parrot Anafi USA",
+      "DJI Matrice 300 RTK",
+      "senseFly eBee X"
+    ],
+    "high_altitude_monitoring_and_meteorology": [
+      "MQ-9 Reaper",
+      "Global Hawk",
+      "AeroVironment Tempest"
+    ]
+  }
+}
