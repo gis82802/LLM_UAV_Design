@@ -1,0 +1,347 @@
+I. Brushless DC Motor (BLDC Motor)
+
+
+1.1 Motor Specification Classification Table
+| Frame Size | Propeller Size | Motor Size | KV Range | Applicable Scenario |
+|:---|:---|:---|:---|:---|
+| 150mm and below | 3 inches and below | 1105,1106,1204,1306 | 3000KV and above | Indoor Racing Drone |
+| 180mm | 4 inches | 1806,2204 | 2600-3000KV | Small FPV |
+| 210mm | 5 inches | 2205,2208,2305,2306 | 2300-2600KV | Standard FPV |
+| 250mm | 6 inches | 2206,2208,2306 | 2000-2300KV | Long-Endurance FPV |
+| 350mm | 7 inches | 2506,2508 | 1200-2000KV | Heavy Lift |
+| Industrial/Heavy Lift | 10 inches and above | U series, G series (Large) | 100-800KV | Surveying, Agriculture |
+
+1.2 Common Motor Models and Specifications
+
+
+Model: T-Motor P80 III KV120
+Stator Dimensions: Φ91.6x43mm
+KV Rating: 120RPM/V
+Max Power/Thrust: 3600W / 18.2kg Thrust
+Weight: 649g
+Operating Voltage: 6S-12S
+Core Application Scenario: Industrial Heavy Lift, Agricultural Plant Protection (IP55 Waterproof)
+
+Model: T-Motor U11 KV100
+Stator Dimensions: Φ96x20mm
+KV Rating: 100RPM/V
+Max Thrust: Approx. 12kg Thrust
+Weight: 780g
+Operating Voltage: 12S (50.4V)
+Core Application Scenario: Ultra-Large Long-Flight-Time Industrial Platform
+
+Model: T-Motor MN2814 KV770
+Stator Dimensions: 28mmx14mm
+KV Rating: 770RPM/V
+Max Power: 850W
+Weight: 65g
+Operating Voltage: 4S-7S
+Core Application Scenario: Large Heavy Lift Drone, Multirotor Application
+
+Model: iFlight Xing2 2806.5 1350KV
+Stator Dimensions: 28x6.5mm
+KV Rating: 1350RPM/V
+Max Power: Approx. 1500W (Estimated)
+Weight: 47.9g
+Operating Voltage: 4S-6S (14.8V-25.2V)
+Core Application Scenario: Long-Endurance dedicated motor, suitable for 7-8 inch frames
+
+Model: RCINPOWER GTS V2 2207PLUS 1860KV
+Stator Dimensions: 22x7.5mm
+KV Rating: 1860RPM/V
+Max Power: 1000W
+Weight: 31.5g
+Shaft Diameter: 4mm (Hollow)
+Operating Voltage: 5S-6S
+Core Application Scenario: 5-inch drone, High-power freestyle
+
+Model: T-Motor F60 Pro IV 2207 1950KV
+Stator Dimensions: 22x7mm
+KV Rating: 1950RPM/V
+Max Power: 949W (60s)
+Weight: 33.4g
+Operating Voltage: 4S-6S (14.8V-25.2V)
+Core Application Scenario: Race-grade motor, High thrust, High durability
+
+Model: iFlight Xing-e Pro 2207 2750KV
+Stator Dimensions: 22x7mm
+KV Rating: 2750RPM/V
+Max Continuous Power: 800.5W
+Weight: 33.8g
+Shaft Diameter: 5mm (High-strength 4mm steel shaft)
+Operating Voltage: 3S-6S (7.4V-25.2V)
+Core Application Scenario: Common for FPV Racing/Freestyle, Balanced performance
+
+Model: EMAX ECO II 2004 3000KV
+Stator Dimensions: 20x4mm
+KV Rating: 3000RPM/V
+Max Power: 810W (6S)
+Weight: 16.4g (without cable)
+Operating Voltage: 3S-6S (11.1V-25.2V)
+Core Application Scenario: Lightweight design, suitable for 3-4 inch micro drones or Cinewhoop
+
+Model: HGLRC AEOLUS 1404 3600KV
+Stator Dimensions: 14x4mm
+KV Rating: 3600RPM/V
+Max Thrust: ~550g Thrust
+Weight: N/A
+Operating Voltage: 3S-4S
+Core Application Scenario: Extreme lightweight 3-inch drone
+
+
+II. Propeller Specifications
+
+
+2.1 Propeller Size and Application
+| Frame Size | Propeller Size | Blade Count | Material | Main Application |
+|:---|:---|:---|:---|:---|
+| 150mm and below | 3 inches and below | 2-3 Blades | PC/Nylon | Indoor Flying, Micro Drones |
+| 210mm | 5 inches | 3 Blades | PC | Racing/Freestyle Flying |
+| 250mm and above | 7 inches and above | 2-3 Blades | Carbon/Nylon | Long Endurance, Payload |
+| Cinewhoop | 2.5-4 inches | 5 Blades | PC | Low Noise, Ducted |
+
+2.2 Common Propeller Models and Brands
+
+
+Model: T-Motor T30x10.5
+Brand: T-Motor
+Diameter x Pitch: 30 x 10.5 inches
+Blade Count: 2 Blades
+Material: Carbon Fiber
+Core Application Scenario: Industrial Ultra-Large Long Endurance
+Notes: Extremely large size, designed for heavy lift industrial drones.
+
+Model: APC 13x5.5 MR
+Brand: APC
+Diameter x Pitch: 13 x 5.5 inches
+Blade Count: 2 Blades
+Weight: 24.1g
+Material: GFRC Nylon (Glass Fiber Reinforced Composite Nylon)
+Shaft Hole: 6.35mm
+Core Application Scenario: Medium lift, Low noise, Optimized hovering
+
+Model: T-Motor T1047
+Brand: T-Motor
+Diameter x Pitch: 10 x 4.7 inches
+Blade Count: 2 Blades
+Weight: 13g
+Material: Carbon Fiber Nylon Composite
+Core Application Scenario: Long endurance, Slow flight dedicated
+
+Model: HQProp Macroquad 7X4X3
+Brand: HQProp
+Diameter x Pitch: 7 x 4 inches
+Blade Count: 3 Blades
+Weight: Approx. 8.7g
+Material: Composite Nylon
+Core Application Scenario: Long-range dedicated drone, provides high efficiency and stable thrust
+
+Model: T-Motor T5147
+Brand: T-Motor
+Diameter x Pitch: 5.1 x 4.7 inches
+Blade Count: 3 Blades
+Weight: 4.4g
+Material: 100% Carbon Fiber
+Shaft Hole: 5mm
+Core Application Scenario: Racing/Freestyle (High thrust design), High rigidity
+
+Model: DALPROP Cyclone T5046C
+Brand: DALPROP
+Diameter x Pitch: 5 x 4.6 inches
+Blade Count: 3 Blades
+Weight: 4.2g
+Material: PC
+Core Application Scenario: Common for Racing/Freestyle flying, Good feel, Crash resistant
+
+Model: Gemfan Hurricane 51433
+Brand: Gemfan
+Diameter x Pitch: 5.1 x 4.3 inches
+Blade Count: 3 Blades
+Weight: Approx. 4.1g
+Material: PC
+Core Application Scenario: Racing dedicated, fast thrust response, excellent balance
+
+Model: Gemfan Ducted D63-5
+Brand: Gemfan
+Diameter x Pitch: 63mm (2.5 inches) x 1.65 inches
+Blade Count: 5 Blades
+Weight: Approx. 1.76g
+Material: PC
+Core Application Scenario: Cinewhoop ducted drone dedicated
+
+Model: Gemfan 1210-2
+Brand: Gemfan
+Diameter x Pitch: 31mm (1.2 inches) x 1 inch
+Blade Count: 2 Blades
+Weight: 0.19g
+Material: PC
+Core Application Scenario: Ultra-light Tiny Whoop prop, 1mm shaft hole
+
+
+III. Lithium Battery (LiPo/Li-Ion Battery)
+
+
+3.1 Battery Parameters and Types
+| Type | Voltage (S Count) | Capacity (mAh) | C Rating (Rate) | Main Application |
+|:---|:---|:---|:---|:---|
+| LiPo | 1S-6S | 450-2200 | 70C-150C+ | Lightweight, High-Power Flying |
+| Li-Ion | 4S-6S | 3000-6000 | 15C-30C | Long Endurance, Stable Flying |
+| HV LiPo | 4S-6S | 1300-2200 | 120C+ | Higher Voltage, Extreme Performance |
+
+3.2 Common Battery Models and Specifications
+
+
+Model: Tattu Plus 12S 16000mAh
+Brand: Tattu
+S Count/Voltage: 12S/44.4V
+Capacity: 16000mAh
+C Rating: 15C Continuous/30C Burst
+Weight: 4700g
+Dimensions: 224x163x90mm
+Connector: AS150U-F
+Core Application Scenario: Industrial Heavy Lift, built-in Smart BMS
+
+Model: CNHL Li-Ion 6S 4000mAh
+Brand: CNHL
+S Count/Voltage: 6S/22.2V
+Capacity: 4000mAh
+C Rating: Approx. 15C (Li-ion battery)
+Weight: Approx. 480g
+Core Application Scenario: High energy density Li-ion battery, designed for long-range/ultra-long endurance flying
+
+Model: Tattu R-Line V5.0 6S 1550mAh
+Brand: Tattu
+S Count/Voltage: 6S/22.2V
+Capacity: 1550mAh
+C Rating: 150C Continuous/300C Burst
+Weight: 254g
+Dimensions: 78x37x52mm
+Connector: XT60
+Core Application Scenario: Race-grade high discharge rate battery, utilizes wide-temperature core technology
+
+Model: RDQ Series 4S 1500mAh
+Brand: RDQ
+S Count/Voltage: 4S/14.8V
+Capacity: 1500mAh
+C Rating: 100C Continuous/200C Burst
+Weight: 180g
+Dimensions: 105x34x29mm
+Connector: XT60
+Core Application Scenario: Standard FPV application, balanced performance
+
+Model: Tattu R-Line 4S 1300mAh
+Brand: Tattu
+S Count/Voltage: 4S/14.8V
+Capacity: 1300mAh
+C Rating: 120C Continuous/240C Burst
+Weight: 154g
+Dimensions: 72x36x30mm
+Connector: XT60
+Core Application Scenario: High-performance racing battery, stable output
+
+Model: CNHL MiniStar 4S 850mAh
+Brand: CNHL
+S Count/Voltage: 4S/14.8V
+Capacity: 850mAh
+C Rating: 70C Continuous/140C Burst
+Weight: 110g
+Dimensions: 33x30x62mm
+Connector: XT30 or XT60 (Optional)
+Core Application Scenario: Micro drone/3-inch drone dedicated, lightweight, high C-rating
+
+Model: CNHL Ministar 1S 350mAh
+Brand: CNHL
+S Count/Voltage: 1S/3.8V (HV)
+Capacity: 350mAh
+C Rating: 80C
+Weight: 8.5g
+Connector: PH2.0
+Core Application Scenario: Micro Tiny Whoop (1S)
+
+
+IV. Electronic Speed Controller (ESC)
+
+
+4.1 ESC Type and Voltage
+| Type | Current (A) | Voltage (S Count) | Communication Protocol | Main Application |
+|:---|:---|:---|:---|:---|
+| 4in1 | 45-65A | 3S-6S | DShot600/1200 | FPV Quadcopter All-in-One |
+| Single | 50-160A | 3S-12S | PWM/DShot | Large Aircraft, Fixed-Wing, Helicopter |
+| Micro | 5-20A | 1S-4S | BLHeli_S/DShot | Micro Drones/AIO Flight Controller Board |
+
+4.2 Common ESC Models and Specifications
+
+Model: Castle Talon 180HV
+Brand: Castle Creations
+Type: Single ESC
+Continuous Current: 180A
+Burst Current: N/A
+Supported Battery: 6S-14S
+BEC Output: 20A Peak
+Core Application Scenario: Ultra-High Voltage Industrial/Giant Fixed-Wing or Helicopter
+
+Model: Castle Creations Phoenix Edge 160A HV
+Brand: Castle Creations
+Type: Single ESC
+Continuous Current: 160A (Requires airflow cooling)
+Burst Current: N/A
+Supported Battery: 3S-12S LiPo
+BEC Output: N/A (OPTO)
+Core Application Scenario: High-Voltage Industrial/Giant Aircraft dedicated, OPTO (No BEC)
+
+Model: Castle Creations Phoenix Edge 100 AMP ESC
+Brand: Castle Creations
+Type: Single ESC
+Continuous Current: 100A
+Burst Current: 100A
+Supported Battery: 2S-8S
+Communication Protocol: PWM, CastleLink
+Mounting Hole: 50.8×71.9×23.2mm
+Weight: 126.6g
+Core Application Scenario: Industrial-grade quality, dedicated for large aircraft
+
+Model: Hobbywing XRotor Micro 60A 4in1
+Brand: Hobbywing
+Type: 4-in-1
+Continuous Current: 60A×4
+Burst Current: 80A×4
+Supported Battery: 3S-6S
+Communication Protocol: DShot1200, BLHeli_32
+Mounting Hole: 30.5×30.5mm
+Weight: 15g
+Core Application Scenario: Race-grade 4-in-1 (Standard FPV)
+
+Model: T-Motor F55A Pro II 4in1
+Brand: T-Motor
+Type: 4-in-1
+Continuous Current: 55A×4
+Burst Current: 75A×4
+Supported Battery: 3S-6S
+Communication Protocol: DShot1200, BLHeli_32
+BEC Output: 10V@2A (Suitable for DJI FPV System)
+Mounting Hole: 30.5×30.5mm
+Weight: 17.5g (with heatsink)
+Core Application Scenario: High-Performance FPV 4-in-1
+
+Model: Diatone Mamba F65S Single ESC
+Brand: Diatone
+Type: Single ESC
+Continuous Current: 65A
+Burst Current: 75A
+Supported Battery: 3S-6S
+Communication Protocol: DShot1200
+Mounting Hole: 15×30mm (Single)
+Weight: Approx. 8g
+Core Application Scenario: Single independent ESC, suitable for stack design
+
+Model: YEP 80A ESC
+Brand: YEP
+Type: Single ESC
+Continuous Current: 80A
+Burst Current: 100A
+Supported Battery: 2S-6S
+Communication Protocol: DShot600/300/150, PWM
+Mounting Hole: 50×30mm
+Weight: 70g
+Core Application Scenario: High cost-performance, stable and reliable, medium to large aircraft
+
